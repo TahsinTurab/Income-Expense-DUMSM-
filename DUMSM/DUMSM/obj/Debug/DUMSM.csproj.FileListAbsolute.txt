@@ -1,0 +1,14 @@
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\bin\Debug\DUMSM.exe.config
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\bin\Debug\DUMSM.exe
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\bin\Debug\DUMSM.pdb
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\bin\Debug\bn-BD\DUMSM.resources.dll
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.csproj.AssemblyReference.cache
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Properties.Resources.resources
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.csproj.GenerateResource.cache
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.csproj.CoreCompileInputs.cache
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\bn-BD\DUMSM.resources.dll
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.exe
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.pdb
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Dashboard.resources
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Dashboard.bn-BD.resources
