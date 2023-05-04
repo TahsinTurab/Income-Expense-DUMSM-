@@ -53,6 +53,18 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Donor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donor.Designer.cs">
+      <DependentUpon>Donor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DonorProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonorProfile.Designer.cs">
+      <DependentUpon>DonorProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Expense.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +102,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donor.resx">
+      <DependentUpon>Donor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonorProfile.resx">
+      <DependentUpon>DonorProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Expense.resx">
       <DependentUpon>Expense.cs</DependentUpon>
