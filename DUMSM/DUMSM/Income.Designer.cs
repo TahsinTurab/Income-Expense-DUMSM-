@@ -36,7 +36,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.DashboardBtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -185,18 +185,19 @@
             this.button2.Text = "জমা";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // DashboardBtn
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(26, 133);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 41);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "ড্যাশবোর্ড";
-            this.button1.UseVisualStyleBackColor = false;
+            this.DashboardBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.DashboardBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DashboardBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.DashboardBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.DashboardBtn.Location = new System.Drawing.Point(26, 133);
+            this.DashboardBtn.Name = "DashboardBtn";
+            this.DashboardBtn.Size = new System.Drawing.Size(136, 41);
+            this.DashboardBtn.TabIndex = 6;
+            this.DashboardBtn.Text = "ড্যাশবোর্ড";
+            this.DashboardBtn.UseVisualStyleBackColor = false;
+            this.DashboardBtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -247,7 +248,7 @@
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.DashboardBtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -800,7 +801,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button DashboardBtn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
