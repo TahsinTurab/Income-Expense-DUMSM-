@@ -16,7 +16,7 @@ namespace DUMSM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TeacherProfile());
+            Application.Run(new WorkingTeacher());
         }
     }
 }

@@ -79,6 +79,12 @@
     <Compile Include="TeacherProfile.Designer.cs">
       <DependentUpon>TeacherProfile.cs</DependentUpon>
     </Compile>
+    <Compile Include="WorkingTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingTeacher.Designer.cs">
+      <DependentUpon>WorkingTeacher.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Dashboard.bn-BD.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherProfile.resx">
       <DependentUpon>TeacherProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingTeacher.resx">
+      <DependentUpon>WorkingTeacher.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
