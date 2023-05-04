@@ -51,17 +51,17 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl3.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -357,6 +357,14 @@
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "নতুন শিক্ষক নিবন্ধন    ";
             // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.textBox4.Location = new System.Drawing.Point(191, 117);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(308, 29);
+            this.textBox4.TabIndex = 33;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -370,14 +378,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.textBox4.Location = new System.Drawing.Point(191, 117);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(308, 29);
-            this.textBox4.TabIndex = 33;
             // 
             // button1
             // 
@@ -420,31 +420,40 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "কর্মরত শিক্ষকের তথ্য ";
             // 
-            // button8
+            // button11
             // 
-            this.button8.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button8.Location = new System.Drawing.Point(734, 478);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(217, 41);
-            this.button8.TabIndex = 32;
-            this.button8.Text = "তথ্য মুছুন";
-            this.button8.UseVisualStyleBackColor = false;
+            this.button11.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button11.Location = new System.Drawing.Point(27, 64);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(708, 41);
+            this.button11.TabIndex = 35;
+            this.button11.Text = "চলতি মাসের বেতনের তথ্য নিবন্ধন করুন ";
+            this.button11.UseVisualStyleBackColor = false;
             // 
-            // button9
+            // button10
             // 
-            this.button9.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button9.Location = new System.Drawing.Point(496, 6);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(227, 41);
-            this.button9.TabIndex = 31;
-            this.button9.Text = "প্রোফাইল দেখুন";
-            this.button9.UseVisualStyleBackColor = false;
+            this.button10.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button10.Location = new System.Drawing.Point(27, 109);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(708, 41);
+            this.button10.TabIndex = 34;
+            this.button10.Text = "পূর্ববর্তী বেতনের তথ্য দেখুন";
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(168, 11);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(301, 32);
+            this.comboBox1.TabIndex = 33;
             // 
             // button18
             // 
@@ -460,40 +469,31 @@
             this.button18.Text = "শিক্ষকের নাম";
             this.button18.UseVisualStyleBackColor = false;
             // 
-            // comboBox1
+            // button9
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(168, 11);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(301, 32);
-            this.comboBox1.TabIndex = 33;
+            this.button9.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button9.Location = new System.Drawing.Point(496, 6);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(227, 41);
+            this.button9.TabIndex = 31;
+            this.button9.Text = "প্রোফাইল দেখুন";
+            this.button9.UseVisualStyleBackColor = false;
             // 
-            // button10
+            // button8
             // 
-            this.button10.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button10.Location = new System.Drawing.Point(27, 109);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(708, 41);
-            this.button10.TabIndex = 34;
-            this.button10.Text = "পূর্ববর্তী বেতনের তথ্য দেখুন";
-            this.button10.UseVisualStyleBackColor = false;
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button11.Location = new System.Drawing.Point(27, 64);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(708, 41);
-            this.button11.TabIndex = 35;
-            this.button11.Text = "চলতি মাসের বেতনের তথ্য নিবন্ধন করুন ";
-            this.button11.UseVisualStyleBackColor = false;
+            this.button8.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button8.Location = new System.Drawing.Point(734, 454);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(217, 41);
+            this.button8.TabIndex = 32;
+            this.button8.Text = "তথ্য মুছুন";
+            this.button8.UseVisualStyleBackColor = false;
             // 
             // Teacher
             // 
