@@ -30,50 +30,55 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.button13 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.button14 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button15 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.button16 = new System.Windows.Forms.Button();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.button17 = new System.Windows.Forms.Button();
             this.textBox11 = new System.Windows.Forms.TextBox();
+            this.button17 = new System.Windows.Forms.Button();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.button16 = new System.Windows.Forms.Button();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.button15 = new System.Windows.Forms.Button();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.button14 = new System.Windows.Forms.Button();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.button13 = new System.Windows.Forms.Button();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button18 = new System.Windows.Forms.Button();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
             this.button19 = new System.Windows.Forms.Button();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.button18 = new System.Windows.Forms.Button();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.DashboardBtn = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -84,76 +89,15 @@
             this.tabPage4.SuspendLayout();
             this.tabControl4.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.panel2);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button7, "button7");
-            this.button7.Name = "button7";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button6, "button6");
-            this.button6.Name = "button6";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
@@ -208,37 +152,30 @@
             this.tabPage1.Controls.Add(this.button8);
             this.tabPage1.Name = "tabPage1";
             // 
-            // button8
+            // textBox6
             // 
-            this.button8.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button8, "button8");
-            this.button8.Name = "button8";
-            this.button8.UseVisualStyleBackColor = false;
+            resources.ApplyResources(this.textBox6, "textBox6");
+            this.textBox6.Name = "textBox6";
             // 
-            // button9
+            // textBox5
             // 
-            this.button9.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button9, "button9");
-            this.button9.Name = "button9";
-            this.button9.UseVisualStyleBackColor = false;
+            resources.ApplyResources(this.textBox5, "textBox5");
+            this.textBox5.Name = "textBox5";
             // 
-            // button10
+            // textBox4
             // 
-            this.button10.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button10, "button10");
-            this.button10.Name = "button10";
-            this.button10.UseVisualStyleBackColor = false;
+            resources.ApplyResources(this.textBox4, "textBox4");
+            this.textBox4.Name = "textBox4";
             // 
-            // button11
+            // textBox3
             // 
-            this.button11.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button11, "button11");
-            this.button11.Name = "button11";
-            this.button11.UseVisualStyleBackColor = false;
+            resources.ApplyResources(this.textBox3, "textBox3");
+            this.textBox3.Name = "textBox3";
+            // 
+            // textBox2
+            // 
+            resources.ApplyResources(this.textBox2, "textBox2");
+            this.textBox2.Name = "textBox2";
             // 
             // button12
             // 
@@ -249,30 +186,37 @@
             this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
-            // textBox2
+            // button11
             // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
+            this.button11.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button11, "button11");
+            this.button11.Name = "button11";
+            this.button11.UseVisualStyleBackColor = false;
             // 
-            // textBox3
+            // button10
             // 
-            resources.ApplyResources(this.textBox3, "textBox3");
-            this.textBox3.Name = "textBox3";
+            this.button10.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button10, "button10");
+            this.button10.Name = "button10";
+            this.button10.UseVisualStyleBackColor = false;
             // 
-            // textBox4
+            // button9
             // 
-            resources.ApplyResources(this.textBox4, "textBox4");
-            this.textBox4.Name = "textBox4";
+            this.button9.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button9, "button9");
+            this.button9.Name = "button9";
+            this.button9.UseVisualStyleBackColor = false;
             // 
-            // textBox5
+            // button8
             // 
-            resources.ApplyResources(this.textBox5, "textBox5");
-            this.textBox5.Name = "textBox5";
-            // 
-            // textBox6
-            // 
-            resources.ApplyResources(this.textBox6, "textBox6");
-            this.textBox6.Name = "textBox6";
+            this.button8.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button8, "button8");
+            this.button8.Name = "button8";
+            this.button8.UseVisualStyleBackColor = false;
             // 
             // tabPage2
             // 
@@ -291,64 +235,10 @@
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // tabControl2
+            // textBox11
             // 
-            this.tabControl2.Controls.Add(this.tabPage2);
-            resources.ApplyResources(this.tabControl2, "tabControl2");
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button13, "button13");
-            this.button13.Name = "button13";
-            this.button13.UseVisualStyleBackColor = false;
-            // 
-            // textBox7
-            // 
-            resources.ApplyResources(this.textBox7, "textBox7");
-            this.textBox7.Name = "textBox7";
-            // 
-            // button14
-            // 
-            this.button14.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button14, "button14");
-            this.button14.Name = "button14";
-            this.button14.UseVisualStyleBackColor = false;
-            // 
-            // textBox8
-            // 
-            resources.ApplyResources(this.textBox8, "textBox8");
-            this.textBox8.Name = "textBox8";
-            // 
-            // button15
-            // 
-            this.button15.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button15.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button15, "button15");
-            this.button15.Name = "button15";
-            this.button15.UseVisualStyleBackColor = false;
-            // 
-            // textBox9
-            // 
-            resources.ApplyResources(this.textBox9, "textBox9");
-            this.textBox9.Name = "textBox9";
-            // 
-            // button16
-            // 
-            this.button16.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button16.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button16, "button16");
-            this.button16.Name = "button16";
-            this.button16.UseVisualStyleBackColor = false;
-            // 
-            // textBox10
-            // 
-            resources.ApplyResources(this.textBox10, "textBox10");
-            this.textBox10.Name = "textBox10";
+            resources.ApplyResources(this.textBox11, "textBox11");
+            this.textBox11.Name = "textBox11";
             // 
             // button17
             // 
@@ -358,10 +248,64 @@
             this.button17.Name = "button17";
             this.button17.UseVisualStyleBackColor = false;
             // 
-            // textBox11
+            // textBox10
             // 
-            resources.ApplyResources(this.textBox11, "textBox11");
-            this.textBox11.Name = "textBox11";
+            resources.ApplyResources(this.textBox10, "textBox10");
+            this.textBox10.Name = "textBox10";
+            // 
+            // button16
+            // 
+            this.button16.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button16.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button16, "button16");
+            this.button16.Name = "button16";
+            this.button16.UseVisualStyleBackColor = false;
+            // 
+            // textBox9
+            // 
+            resources.ApplyResources(this.textBox9, "textBox9");
+            this.textBox9.Name = "textBox9";
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button15.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button15, "button15");
+            this.button15.Name = "button15";
+            this.button15.UseVisualStyleBackColor = false;
+            // 
+            // textBox8
+            // 
+            resources.ApplyResources(this.textBox8, "textBox8");
+            this.textBox8.Name = "textBox8";
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button14, "button14");
+            this.button14.Name = "button14";
+            this.button14.UseVisualStyleBackColor = false;
+            // 
+            // textBox7
+            // 
+            resources.ApplyResources(this.textBox7, "textBox7");
+            this.textBox7.Name = "textBox7";
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button13, "button13");
+            this.button13.Name = "button13";
+            this.button13.UseVisualStyleBackColor = false;
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabPage2);
+            resources.ApplyResources(this.tabControl2, "tabControl2");
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
             // 
             // tabControl3
             // 
@@ -381,24 +325,6 @@
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // button18
-            // 
-            this.button18.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button18.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button18, "button18");
-            this.button18.Name = "button18";
-            this.button18.UseVisualStyleBackColor = false;
-            // 
-            // textBox12
-            // 
-            resources.ApplyResources(this.textBox12, "textBox12");
-            this.textBox12.Name = "textBox12";
-            // 
-            // textBox13
-            // 
-            resources.ApplyResources(this.textBox13, "textBox13");
-            this.textBox13.Name = "textBox13";
-            // 
             // button19
             // 
             this.button19.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -406,6 +332,24 @@
             resources.ApplyResources(this.button19, "button19");
             this.button19.Name = "button19";
             this.button19.UseVisualStyleBackColor = false;
+            // 
+            // textBox13
+            // 
+            resources.ApplyResources(this.textBox13, "textBox13");
+            this.textBox13.Name = "textBox13";
+            // 
+            // textBox12
+            // 
+            resources.ApplyResources(this.textBox12, "textBox12");
+            this.textBox12.Name = "textBox12";
+            // 
+            // button18
+            // 
+            this.button18.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button18.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button18, "button18");
+            this.button18.Name = "button18";
+            this.button18.UseVisualStyleBackColor = false;
             // 
             // tabControl4
             // 
@@ -426,6 +370,111 @@
             resources.ApplyResources(this.monthCalendar1, "monthCalendar1");
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.ShowTodayCircle = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button5, "button5");
+            this.button5.Name = "button5";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button4, "button4");
+            this.button4.Name = "button4";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // DashboardBtn
+            // 
+            this.DashboardBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.DashboardBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.DashboardBtn, "DashboardBtn");
+            this.DashboardBtn.Name = "DashboardBtn";
+            this.DashboardBtn.UseVisualStyleBackColor = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel2.Controls.Add(this.button6);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.button7);
+            this.panel2.Controls.Add(this.button20);
+            this.panel2.Controls.Add(this.button21);
+            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.button22);
+            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.DashboardBtn);
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.RosyBrown;
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button6, "button6");
+            this.button6.Name = "button6";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.RosyBrown;
+            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button7, "button7");
+            this.button7.Name = "button7";
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // button20
+            // 
+            this.button20.BackColor = System.Drawing.Color.RosyBrown;
+            this.button20.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button20, "button20");
+            this.button20.Name = "button20";
+            this.button20.UseVisualStyleBackColor = false;
+            // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button21.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button21, "button21");
+            this.button21.Name = "button21";
+            this.button21.UseVisualStyleBackColor = false;
+            // 
+            // button22
+            // 
+            this.button22.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button22.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button22, "button22");
+            this.button22.Name = "button22";
+            this.button22.UseVisualStyleBackColor = false;
             // 
             // Dashboard
             // 
@@ -458,6 +507,7 @@
             this.tabPage4.PerformLayout();
             this.tabControl4.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -470,13 +520,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TextBox textBox2;
@@ -510,6 +553,18 @@
         private System.Windows.Forms.TabControl tabControl4;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button DashboardBtn;
     }
 }
 

@@ -35,6 +35,14 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -43,28 +51,33 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.button11 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.button12 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabControl3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // button17
@@ -153,6 +166,94 @@
             this.tabPage3.Size = new System.Drawing.Size(702, 209);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "শিক্ষক প্রোফাইল";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(403, 163);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(277, 29);
+            this.textBox4.TabIndex = 34;
+            this.textBox4.Text = "০১-০১-২০০৬";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(405, 118);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(277, 29);
+            this.textBox3.TabIndex = 33;
+            this.textBox3.Text = "০১২৩৪৫৬৭৮৯১";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(405, 71);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(277, 29);
+            this.textBox2.TabIndex = 32;
+            this.textBox2.Text = "মুহতামীম";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.Location = new System.Drawing.Point(403, 24);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(277, 29);
+            this.textBox8.TabIndex = 31;
+            this.textBox8.Text = "মাওলানা রিয়াজুল ইসলাম";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(27, 17);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(176, 182);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 30;
+            this.pictureBox2.TabStop = false;
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button14.Enabled = false;
+            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button14.Location = new System.Drawing.Point(220, 66);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(179, 41);
+            this.button14.TabIndex = 29;
+            this.button14.Text = "পদবী";
+            this.button14.UseVisualStyleBackColor = false;
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button15.Enabled = false;
+            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.button15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button15.Location = new System.Drawing.Point(220, 113);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(179, 41);
+            this.button15.TabIndex = 27;
+            this.button15.Text = "মোবাইল নাম্বার";
+            this.button15.UseVisualStyleBackColor = false;
+            // 
+            // button16
+            // 
+            this.button16.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button16.Enabled = false;
+            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button16.Location = new System.Drawing.Point(218, 19);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(179, 41);
+            this.button16.TabIndex = 25;
+            this.button16.Text = "শিক্ষকের নাম";
+            this.button16.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
@@ -245,6 +346,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button5);
@@ -258,84 +360,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(232, 661);
             this.panel1.TabIndex = 42;
-            // 
-            // button16
-            // 
-            this.button16.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button16.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button16.Enabled = false;
-            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button16.Location = new System.Drawing.Point(218, 19);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(179, 41);
-            this.button16.TabIndex = 25;
-            this.button16.Text = "শিক্ষকের নাম";
-            this.button16.UseVisualStyleBackColor = false;
-            // 
-            // button15
-            // 
-            this.button15.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button15.Enabled = false;
-            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button15.Location = new System.Drawing.Point(220, 113);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(179, 41);
-            this.button15.TabIndex = 27;
-            this.button15.Text = "মোবাইল নাম্বার";
-            this.button15.UseVisualStyleBackColor = false;
-            // 
-            // button14
-            // 
-            this.button14.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button14.Enabled = false;
-            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button14.Location = new System.Drawing.Point(220, 66);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(179, 41);
-            this.button14.TabIndex = 29;
-            this.button14.Text = "পদবী";
-            this.button14.UseVisualStyleBackColor = false;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(403, 24);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(277, 29);
-            this.textBox8.TabIndex = 31;
-            this.textBox8.Text = "মাওলানা রিয়াজুল ইসলাম";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(405, 71);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(277, 29);
-            this.textBox2.TabIndex = 32;
-            this.textBox2.Text = "মুহতামীম";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(405, 118);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(277, 29);
-            this.textBox3.TabIndex = 33;
-            this.textBox3.Text = "০১২৩৪৫৬৭৮৯১";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(403, 163);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(277, 29);
-            this.textBox4.TabIndex = 34;
-            this.textBox4.Text = "০১-০১-২০০৬";
             // 
             // button11
             // 
@@ -410,16 +434,6 @@
             this.button1.Text = "পূর্বের পাতা";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(27, 17);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(176, 182);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 30;
-            this.pictureBox2.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -433,6 +447,170 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 46;
             this.pictureBox1.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel2.Controls.Add(this.button8);
+            this.panel2.Controls.Add(this.button9);
+            this.panel2.Controls.Add(this.button10);
+            this.panel2.Controls.Add(this.button13);
+            this.panel2.Controls.Add(this.button20);
+            this.panel2.Controls.Add(this.button21);
+            this.panel2.Controls.Add(this.button18);
+            this.panel2.Controls.Add(this.button22);
+            this.panel2.Controls.Add(this.button19);
+            this.panel2.Controls.Add(this.button23);
+            this.panel2.Controls.Add(this.button24);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(232, 661);
+            this.panel2.TabIndex = 55;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.RosyBrown;
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button8.Location = new System.Drawing.Point(26, 514);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(185, 41);
+            this.button8.TabIndex = 16;
+            this.button8.Text = "প্রোফাইল সেটিংস";
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button9.Location = new System.Drawing.Point(26, 167);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(136, 41);
+            this.button9.TabIndex = 15;
+            this.button9.Text = "অনুদান";
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button10.Location = new System.Drawing.Point(26, 308);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(136, 41);
+            this.button10.TabIndex = 14;
+            this.button10.Text = "শিক্ষক";
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.RosyBrown;
+            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button13.Location = new System.Drawing.Point(26, 561);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(185, 41);
+            this.button13.TabIndex = 13;
+            this.button13.Text = "তথ্য ডিলিট করুন";
+            this.button13.UseVisualStyleBackColor = false;
+            // 
+            // button20
+            // 
+            this.button20.BackColor = System.Drawing.Color.RosyBrown;
+            this.button20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button20.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button20.Location = new System.Drawing.Point(26, 608);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(185, 41);
+            this.button20.TabIndex = 12;
+            this.button20.Text = "লগ আউট";
+            this.button20.UseVisualStyleBackColor = false;
+            // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button21.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button21.Location = new System.Drawing.Point(26, 449);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(136, 41);
+            this.button21.TabIndex = 11;
+            this.button21.Text = "রিপোর্ট";
+            this.button21.UseVisualStyleBackColor = false;
+            // 
+            // button18
+            // 
+            this.button18.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button18.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button18.Location = new System.Drawing.Point(26, 402);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(136, 41);
+            this.button18.TabIndex = 10;
+            this.button18.Text = "স্থায়ী সদস্য";
+            this.button18.UseVisualStyleBackColor = false;
+            // 
+            // button22
+            // 
+            this.button22.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button22.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button22.Location = new System.Drawing.Point(26, 355);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(136, 41);
+            this.button22.TabIndex = 9;
+            this.button22.Text = "স্টাফ";
+            this.button22.UseVisualStyleBackColor = false;
+            // 
+            // button19
+            // 
+            this.button19.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button19.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button19.Location = new System.Drawing.Point(26, 261);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(136, 41);
+            this.button19.TabIndex = 8;
+            this.button19.Text = "খরচ";
+            this.button19.UseVisualStyleBackColor = false;
+            // 
+            // button23
+            // 
+            this.button23.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button23.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button23.Location = new System.Drawing.Point(26, 214);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(136, 41);
+            this.button23.TabIndex = 7;
+            this.button23.Text = "জমা";
+            this.button23.UseVisualStyleBackColor = false;
+            // 
+            // button24
+            // 
+            this.button24.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button24.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button24.Location = new System.Drawing.Point(26, 120);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(136, 41);
+            this.button24.TabIndex = 6;
+            this.button24.Text = "ড্যাশবোর্ড";
+            this.button24.UseVisualStyleBackColor = false;
             // 
             // TeacherProfile
             // 
@@ -453,13 +631,14 @@
             this.Text = "TeacherProfile";
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabControl3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -496,5 +675,17 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button24;
     }
 }
