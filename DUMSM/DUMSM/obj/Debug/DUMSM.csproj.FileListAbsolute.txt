@@ -19,3 +19,4 @@ C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.TeacherPro
 C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.WorkingTeacher.resources
 C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Donor.resources
 C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.DonorProfile.resources
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.DonorList.resources
