@@ -157,7 +157,7 @@
     <value>NoControl</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 167</value>
+    <value>49, 173</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 41</value>
@@ -187,7 +187,7 @@
     <value>NoControl</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 308</value>
+    <value>49, 314</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 41</value>
@@ -277,7 +277,7 @@
     <value>NoControl</value>
   </data>
   <data name="button21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 449</value>
+    <value>49, 455</value>
   </data>
   <data name="button21.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 41</value>
@@ -307,7 +307,7 @@
     <value>NoControl</value>
   </data>
   <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 402</value>
+    <value>49, 408</value>
   </data>
   <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 41</value>
@@ -337,7 +337,7 @@
     <value>NoControl</value>
   </data>
   <data name="button22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 355</value>
+    <value>49, 361</value>
   </data>
   <data name="button22.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 41</value>
@@ -367,7 +367,7 @@
     <value>NoControl</value>
   </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 261</value>
+    <value>49, 267</value>
   </data>
   <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 41</value>
@@ -397,7 +397,7 @@
     <value>NoControl</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 214</value>
+    <value>49, 220</value>
   </data>
   <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 41</value>
@@ -427,7 +427,7 @@
     <value>NoControl</value>
   </data>
   <data name="DashboardBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 120</value>
+    <value>49, 126</value>
   </data>
   <data name="DashboardBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 41</value>
