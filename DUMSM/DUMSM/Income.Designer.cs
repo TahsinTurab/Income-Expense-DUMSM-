@@ -41,6 +41,18 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button31 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.button32 = new System.Windows.Forms.Button();
+            this.button33 = new System.Windows.Forms.Button();
+            this.button34 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
+            this.button35 = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
+            this.button29 = new System.Windows.Forms.Button();
+            this.button30 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -49,18 +61,6 @@
             this.button24 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.tabControl4 = new System.Windows.Forms.TabControl();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button18 = new System.Windows.Forms.Button();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.button19 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -81,29 +81,31 @@
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
-            this.button30 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button31 = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
-            this.button35 = new System.Windows.Forms.Button();
+            this.button36 = new System.Windows.Forms.Button();
+            this.tabControl4 = new System.Windows.Forms.TabControl();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.button18 = new System.Windows.Forms.Button();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.button19 = new System.Windows.Forms.Button();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button37 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabControl4.SuspendLayout();
-            this.tabPage4.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabControl3.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.tabControl4.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -270,11 +272,176 @@
             this.panel1.Size = new System.Drawing.Size(188, 661);
             this.panel1.TabIndex = 12;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panel2.Controls.Add(this.button31);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.button26);
+            this.panel2.Controls.Add(this.button32);
+            this.panel2.Controls.Add(this.button33);
+            this.panel2.Controls.Add(this.button34);
+            this.panel2.Controls.Add(this.button27);
+            this.panel2.Controls.Add(this.button35);
+            this.panel2.Controls.Add(this.button28);
+            this.panel2.Controls.Add(this.button29);
+            this.panel2.Controls.Add(this.button30);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(192, 661);
+            this.panel2.TabIndex = 54;
+            // 
+            // button31
+            // 
+            this.button31.BackColor = System.Drawing.Color.RosyBrown;
+            this.button31.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button31.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button31.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button31.Location = new System.Drawing.Point(3, 514);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(182, 41);
+            this.button31.TabIndex = 16;
+            this.button31.Text = "প্রোফাইল সেটিংস";
+            this.button31.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button1.Location = new System.Drawing.Point(26, 167);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(136, 41);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "অনুদান";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button26
+            // 
+            this.button26.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button26.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button26.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button26.Location = new System.Drawing.Point(26, 308);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(136, 41);
+            this.button26.TabIndex = 14;
+            this.button26.Text = "শিক্ষক";
+            this.button26.UseVisualStyleBackColor = false;
+            // 
+            // button32
+            // 
+            this.button32.BackColor = System.Drawing.Color.RosyBrown;
+            this.button32.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button32.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button32.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button32.Location = new System.Drawing.Point(3, 561);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(182, 41);
+            this.button32.TabIndex = 13;
+            this.button32.Text = "তথ্য ডিলিট করুন";
+            this.button32.UseVisualStyleBackColor = false;
+            // 
+            // button33
+            // 
+            this.button33.BackColor = System.Drawing.Color.RosyBrown;
+            this.button33.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button33.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button33.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button33.Location = new System.Drawing.Point(3, 608);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(182, 41);
+            this.button33.TabIndex = 12;
+            this.button33.Text = "লগ আউট";
+            this.button33.UseVisualStyleBackColor = false;
+            // 
+            // button34
+            // 
+            this.button34.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button34.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button34.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button34.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button34.Location = new System.Drawing.Point(26, 449);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(136, 41);
+            this.button34.TabIndex = 11;
+            this.button34.Text = "রিপোর্ট";
+            this.button34.UseVisualStyleBackColor = false;
+            // 
+            // button27
+            // 
+            this.button27.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button27.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button27.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button27.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button27.Location = new System.Drawing.Point(26, 402);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(136, 41);
+            this.button27.TabIndex = 10;
+            this.button27.Text = "স্থায়ী সদস্য";
+            this.button27.UseVisualStyleBackColor = false;
+            // 
+            // button35
+            // 
+            this.button35.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button35.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button35.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button35.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button35.Location = new System.Drawing.Point(26, 355);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(136, 41);
+            this.button35.TabIndex = 9;
+            this.button35.Text = "স্টাফ";
+            this.button35.UseVisualStyleBackColor = false;
+            // 
+            // button28
+            // 
+            this.button28.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button28.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button28.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button28.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button28.Location = new System.Drawing.Point(26, 261);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(136, 41);
+            this.button28.TabIndex = 8;
+            this.button28.Text = "খরচ";
+            this.button28.UseVisualStyleBackColor = false;
+            // 
+            // button29
+            // 
+            this.button29.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button29.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button29.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button29.Location = new System.Drawing.Point(26, 214);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(136, 41);
+            this.button29.TabIndex = 7;
+            this.button29.Text = "জমা";
+            this.button29.UseVisualStyleBackColor = false;
+            // 
+            // button30
+            // 
+            this.button30.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button30.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button30.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button30.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button30.Location = new System.Drawing.Point(26, 120);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(136, 41);
+            this.button30.TabIndex = 6;
+            this.button30.Text = "ড্যাশবোর্ড";
+            this.button30.UseVisualStyleBackColor = false;
+            this.button30.Click += new System.EventHandler(this.button30_Click);
+            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.tabControl1.Location = new System.Drawing.Point(199, 453);
+            this.tabControl1.Location = new System.Drawing.Point(199, 411);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(372, 196);
@@ -362,168 +529,11 @@
             this.button8.Text = "আজকের মোট জমা";
             this.button8.UseVisualStyleBackColor = false;
             // 
-            // tabControl4
-            // 
-            this.tabControl4.Controls.Add(this.tabPage4);
-            this.tabControl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.tabControl4.Location = new System.Drawing.Point(587, 133);
-            this.tabControl4.Name = "tabControl4";
-            this.tabControl4.SelectedIndex = 0;
-            this.tabControl4.Size = new System.Drawing.Size(382, 310);
-            this.tabControl4.TabIndex = 20;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.Color.Transparent;
-            this.tabPage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.tabPage4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage4.Controls.Add(this.comboBox2);
-            this.tabPage4.Controls.Add(this.button18);
-            this.tabPage4.Controls.Add(this.dateTimePicker2);
-            this.tabPage4.Controls.Add(this.button19);
-            this.tabPage4.Controls.Add(this.textBox9);
-            this.tabPage4.Controls.Add(this.textBox11);
-            this.tabPage4.Controls.Add(this.button20);
-            this.tabPage4.Controls.Add(this.button21);
-            this.tabPage4.Controls.Add(this.button22);
-            this.tabPage4.Controls.Add(this.button23);
-            this.tabPage4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage4.Location = new System.Drawing.Point(4, 40);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(374, 266);
-            this.tabPage4.TabIndex = 0;
-            this.tabPage4.Text = "গোরাবা জমা নিবন্ধন    ";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "যাকাত",
-            "ফিতরা",
-            "মান্নত",
-            "কাফফারা",
-            "কোরবানীর চামড়া",
-            "ব্যাংক ঋণ",
-            "কর্য গ্রহন ",
-            "বিবিধ "});
-            this.comboBox2.Location = new System.Drawing.Point(191, 70);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(172, 32);
-            this.comboBox2.TabIndex = 33;
-            // 
-            // button18
-            // 
-            this.button18.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button18.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button18.Location = new System.Drawing.Point(191, 215);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(172, 41);
-            this.button18.TabIndex = 32;
-            this.button18.Text = "তথ্য মুছুন";
-            this.button18.UseVisualStyleBackColor = false;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(191, 162);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(172, 26);
-            this.dateTimePicker2.TabIndex = 20;
-            // 
-            // button19
-            // 
-            this.button19.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button19.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button19.Location = new System.Drawing.Point(17, 215);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(166, 41);
-            this.button19.TabIndex = 31;
-            this.button19.Text = "জমা করুন";
-            this.button19.UseVisualStyleBackColor = false;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.textBox9.Location = new System.Drawing.Point(191, 117);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(172, 29);
-            this.textBox9.TabIndex = 30;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.textBox11.Location = new System.Drawing.Point(191, 23);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(172, 29);
-            this.textBox11.TabIndex = 26;
-            // 
-            // button20
-            // 
-            this.button20.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button20.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button20.Enabled = false;
-            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button20.Location = new System.Drawing.Point(6, 112);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(179, 41);
-            this.button20.TabIndex = 29;
-            this.button20.Text = "জমা দানের পরিমাণ";
-            this.button20.UseVisualStyleBackColor = false;
-            // 
-            // button21
-            // 
-            this.button21.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button21.Enabled = false;
-            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button21.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button21.Location = new System.Drawing.Point(6, 65);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(179, 41);
-            this.button21.TabIndex = 27;
-            this.button21.Text = "জমা দানের খাত";
-            this.button21.UseVisualStyleBackColor = false;
-            // 
-            // button22
-            // 
-            this.button22.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button22.Enabled = false;
-            this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button22.Location = new System.Drawing.Point(6, 18);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(179, 41);
-            this.button22.TabIndex = 25;
-            this.button22.Text = "রশিদ নং";
-            this.button22.UseVisualStyleBackColor = false;
-            // 
-            // button23
-            // 
-            this.button23.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button23.Enabled = false;
-            this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button23.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button23.Location = new System.Drawing.Point(6, 159);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(177, 41);
-            this.button23.TabIndex = 23;
-            this.button23.Text = "জমাদানের তারিখ";
-            this.button23.UseVisualStyleBackColor = false;
-            // 
             // tabControl2
             // 
             this.tabControl2.Controls.Add(this.tabPage2);
             this.tabControl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.tabControl2.Location = new System.Drawing.Point(587, 453);
+            this.tabControl2.Location = new System.Drawing.Point(577, 411);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
             this.tabControl2.Size = new System.Drawing.Size(372, 196);
@@ -615,10 +625,10 @@
             // 
             this.tabControl3.Controls.Add(this.tabPage3);
             this.tabControl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.tabControl3.Location = new System.Drawing.Point(199, 133);
+            this.tabControl3.Location = new System.Drawing.Point(195, 113);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(382, 310);
+            this.tabControl3.Size = new System.Drawing.Size(376, 296);
             this.tabControl3.TabIndex = 22;
             // 
             // tabPage3
@@ -640,7 +650,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 40);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(374, 266);
+            this.tabPage3.Size = new System.Drawing.Size(368, 252);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "সাধারণ জমা নিবন্ধন    ";
             // 
@@ -657,7 +667,7 @@
             "লাইব্রেরী",
             "অনুষ্ঠান / ইফতার  ",
             "বিবিধ "});
-            this.comboBox1.Location = new System.Drawing.Point(191, 73);
+            this.comboBox1.Location = new System.Drawing.Point(187, 58);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(172, 32);
             this.comboBox1.TabIndex = 23;
@@ -668,7 +678,7 @@
             this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.button12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button12.Location = new System.Drawing.Point(191, 215);
+            this.button12.Location = new System.Drawing.Point(9, 201);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(172, 41);
             this.button12.TabIndex = 32;
@@ -678,7 +688,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(191, 162);
+            this.dateTimePicker1.Location = new System.Drawing.Point(187, 153);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(172, 26);
             this.dateTimePicker1.TabIndex = 20;
@@ -689,17 +699,18 @@
             this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.button13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button13.Location = new System.Drawing.Point(17, 215);
+            this.button13.Location = new System.Drawing.Point(187, 201);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(166, 41);
             this.button13.TabIndex = 31;
             this.button13.Text = "জমা করুন";
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click_1);
             // 
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.textBox6.Location = new System.Drawing.Point(191, 117);
+            this.textBox6.Location = new System.Drawing.Point(187, 105);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(172, 29);
             this.textBox6.TabIndex = 30;
@@ -708,7 +719,7 @@
             // textBox8
             // 
             this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(191, 23);
+            this.textBox8.Location = new System.Drawing.Point(187, 11);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(172, 29);
             this.textBox8.TabIndex = 26;
@@ -720,7 +731,7 @@
             this.button14.Enabled = false;
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button14.Location = new System.Drawing.Point(6, 112);
+            this.button14.Location = new System.Drawing.Point(6, 100);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(179, 41);
             this.button14.TabIndex = 29;
@@ -734,7 +745,7 @@
             this.button15.Enabled = false;
             this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.button15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button15.Location = new System.Drawing.Point(6, 65);
+            this.button15.Location = new System.Drawing.Point(6, 53);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(179, 41);
             this.button15.TabIndex = 27;
@@ -748,7 +759,7 @@
             this.button16.Enabled = false;
             this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button16.Location = new System.Drawing.Point(6, 18);
+            this.button16.Location = new System.Drawing.Point(6, 6);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(179, 41);
             this.button16.TabIndex = 25;
@@ -762,185 +773,206 @@
             this.button17.Enabled = false;
             this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.button17.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button17.Location = new System.Drawing.Point(6, 159);
+            this.button17.Location = new System.Drawing.Point(6, 147);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(177, 41);
             this.button17.TabIndex = 23;
             this.button17.Text = "জমাদানের তারিখ";
             this.button17.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // button36
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(26, 167);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 41);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "অনুদান";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button36.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button36.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button36.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button36.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button36.Location = new System.Drawing.Point(199, 613);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(368, 41);
+            this.button36.TabIndex = 23;
+            this.button36.Text = "সাধারণ জমার বিস্তারিত তালিকা দেখুন";
+            this.button36.UseVisualStyleBackColor = false;
             // 
-            // button26
+            // tabControl4
             // 
-            this.button26.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button26.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button26.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button26.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button26.Location = new System.Drawing.Point(26, 308);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(136, 41);
-            this.button26.TabIndex = 14;
-            this.button26.Text = "শিক্ষক";
-            this.button26.UseVisualStyleBackColor = false;
+            this.tabControl4.Controls.Add(this.tabPage4);
+            this.tabControl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
+            this.tabControl4.Location = new System.Drawing.Point(573, 113);
+            this.tabControl4.Name = "tabControl4";
+            this.tabControl4.SelectedIndex = 0;
+            this.tabControl4.Size = new System.Drawing.Size(376, 296);
+            this.tabControl4.TabIndex = 24;
             // 
-            // button27
+            // tabPage4
             // 
-            this.button27.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button27.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button27.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button27.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button27.Location = new System.Drawing.Point(26, 402);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(136, 41);
-            this.button27.TabIndex = 10;
-            this.button27.Text = "স্থায়ী সদস্য";
-            this.button27.UseVisualStyleBackColor = false;
+            this.tabPage4.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.tabPage4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPage4.Controls.Add(this.comboBox2);
+            this.tabPage4.Controls.Add(this.button18);
+            this.tabPage4.Controls.Add(this.dateTimePicker2);
+            this.tabPage4.Controls.Add(this.button19);
+            this.tabPage4.Controls.Add(this.textBox7);
+            this.tabPage4.Controls.Add(this.textBox9);
+            this.tabPage4.Controls.Add(this.button20);
+            this.tabPage4.Controls.Add(this.button21);
+            this.tabPage4.Controls.Add(this.button22);
+            this.tabPage4.Controls.Add(this.button23);
+            this.tabPage4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage4.Location = new System.Drawing.Point(4, 40);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(368, 252);
+            this.tabPage4.TabIndex = 0;
+            this.tabPage4.Text = "গোরাবা জমা নিবন্ধন    ";
             // 
-            // button28
+            // comboBox2
             // 
-            this.button28.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button28.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button28.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button28.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button28.Location = new System.Drawing.Point(26, 261);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(136, 41);
-            this.button28.TabIndex = 8;
-            this.button28.Text = "খরচ";
-            this.button28.UseVisualStyleBackColor = false;
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "সাধারণ অনুদান",
+            "ফরম / ভর্তি ফি",
+            "শিক্ষার্থীর বেতন",
+            "বোডিং/খানার চার্জ",
+            "নির্মাণ ও মেরামত",
+            "লাইব্রেরী",
+            "অনুষ্ঠান / ইফতার  ",
+            "বিবিধ "});
+            this.comboBox2.Location = new System.Drawing.Point(187, 58);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(172, 32);
+            this.comboBox2.TabIndex = 23;
             // 
-            // button29
+            // button18
             // 
-            this.button29.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button29.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button29.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button29.Location = new System.Drawing.Point(26, 214);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(136, 41);
-            this.button29.TabIndex = 7;
-            this.button29.Text = "জমা";
-            this.button29.UseVisualStyleBackColor = false;
+            this.button18.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button18.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button18.Location = new System.Drawing.Point(9, 201);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(172, 41);
+            this.button18.TabIndex = 32;
+            this.button18.Text = "তথ্য মুছুন";
+            this.button18.UseVisualStyleBackColor = false;
             // 
-            // button30
+            // dateTimePicker2
             // 
-            this.button30.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button30.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button30.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button30.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button30.Location = new System.Drawing.Point(26, 120);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(136, 41);
-            this.button30.TabIndex = 6;
-            this.button30.Text = "ড্যাশবোর্ড";
-            this.button30.UseVisualStyleBackColor = false;
+            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker2.Location = new System.Drawing.Point(187, 153);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(172, 26);
+            this.dateTimePicker2.TabIndex = 20;
             // 
-            // panel2
+            // button19
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel2.Controls.Add(this.button31);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button26);
-            this.panel2.Controls.Add(this.button32);
-            this.panel2.Controls.Add(this.button33);
-            this.panel2.Controls.Add(this.button34);
-            this.panel2.Controls.Add(this.button27);
-            this.panel2.Controls.Add(this.button35);
-            this.panel2.Controls.Add(this.button28);
-            this.panel2.Controls.Add(this.button29);
-            this.panel2.Controls.Add(this.button30);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(192, 661);
-            this.panel2.TabIndex = 54;
+            this.button19.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button19.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button19.Location = new System.Drawing.Point(187, 201);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(166, 41);
+            this.button19.TabIndex = 31;
+            this.button19.Text = "জমা করুন";
+            this.button19.UseVisualStyleBackColor = false;
             // 
-            // button31
+            // textBox7
             // 
-            this.button31.BackColor = System.Drawing.Color.RosyBrown;
-            this.button31.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button31.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button31.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button31.Location = new System.Drawing.Point(3, 514);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(182, 41);
-            this.button31.TabIndex = 16;
-            this.button31.Text = "প্রোফাইল সেটিংস";
-            this.button31.UseVisualStyleBackColor = false;
+            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.textBox7.Location = new System.Drawing.Point(187, 105);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(172, 29);
+            this.textBox7.TabIndex = 30;
             // 
-            // button32
+            // textBox9
             // 
-            this.button32.BackColor = System.Drawing.Color.RosyBrown;
-            this.button32.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button32.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button32.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button32.Location = new System.Drawing.Point(3, 561);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(182, 41);
-            this.button32.TabIndex = 13;
-            this.button32.Text = "তথ্য ডিলিট করুন";
-            this.button32.UseVisualStyleBackColor = false;
+            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.Location = new System.Drawing.Point(187, 11);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(172, 29);
+            this.textBox9.TabIndex = 26;
             // 
-            // button33
+            // button20
             // 
-            this.button33.BackColor = System.Drawing.Color.RosyBrown;
-            this.button33.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button33.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button33.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button33.Location = new System.Drawing.Point(3, 608);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(182, 41);
-            this.button33.TabIndex = 12;
-            this.button33.Text = "লগ আউট";
-            this.button33.UseVisualStyleBackColor = false;
+            this.button20.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button20.Enabled = false;
+            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button20.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button20.Location = new System.Drawing.Point(6, 100);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(179, 41);
+            this.button20.TabIndex = 29;
+            this.button20.Text = "জমা দানের পরিমাণ";
+            this.button20.UseVisualStyleBackColor = false;
             // 
-            // button34
+            // button21
             // 
-            this.button34.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button34.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button34.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button34.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button34.Location = new System.Drawing.Point(26, 449);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(136, 41);
-            this.button34.TabIndex = 11;
-            this.button34.Text = "রিপোর্ট";
-            this.button34.UseVisualStyleBackColor = false;
+            this.button21.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button21.Enabled = false;
+            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.button21.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button21.Location = new System.Drawing.Point(6, 53);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(179, 41);
+            this.button21.TabIndex = 27;
+            this.button21.Text = "জমা দানের খাত";
+            this.button21.UseVisualStyleBackColor = false;
             // 
-            // button35
+            // button22
             // 
-            this.button35.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button35.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button35.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button35.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button35.Location = new System.Drawing.Point(26, 355);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(136, 41);
-            this.button35.TabIndex = 9;
-            this.button35.Text = "স্টাফ";
-            this.button35.UseVisualStyleBackColor = false;
+            this.button22.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button22.Enabled = false;
+            this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button22.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button22.Location = new System.Drawing.Point(6, 6);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(179, 41);
+            this.button22.TabIndex = 25;
+            this.button22.Text = "রশিদ নং";
+            this.button22.UseVisualStyleBackColor = false;
+            // 
+            // button23
+            // 
+            this.button23.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button23.Enabled = false;
+            this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.button23.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button23.Location = new System.Drawing.Point(6, 147);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(177, 41);
+            this.button23.TabIndex = 23;
+            this.button23.Text = "জমাদানের তারিখ";
+            this.button23.UseVisualStyleBackColor = false;
+            // 
+            // button37
+            // 
+            this.button37.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button37.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button37.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button37.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button37.Location = new System.Drawing.Point(581, 613);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(368, 41);
+            this.button37.TabIndex = 25;
+            this.button37.Text = "গোরাবা জমার বিস্তারিত তালিকা দেখুন";
+            this.button37.UseVisualStyleBackColor = false;
             // 
             // Income
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.button37);
+            this.Controls.Add(this.tabControl4);
+            this.Controls.Add(this.button36);
             this.Controls.Add(this.tabControl3);
             this.Controls.Add(this.tabControl2);
-            this.Controls.Add(this.tabControl4);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -950,22 +982,23 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Income";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "জমা";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.tabControl4.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
             this.tabControl2.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabControl3.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            this.panel2.ResumeLayout(false);
+            this.tabControl4.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -989,17 +1022,6 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TabControl tabControl4;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button23;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
@@ -1024,7 +1046,6 @@
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button31;
         private System.Windows.Forms.Button button1;
@@ -1037,5 +1058,19 @@
         private System.Windows.Forms.Button button28;
         private System.Windows.Forms.Button button29;
         private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.Button button36;
+        private System.Windows.Forms.TabControl tabControl4;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button37;
     }
 }

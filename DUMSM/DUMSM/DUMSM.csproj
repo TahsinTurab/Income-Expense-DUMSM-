@@ -83,6 +83,18 @@
     <Compile Include="Income.Designer.cs">
       <DependentUpon>Income.cs</DependentUpon>
     </Compile>
+    <Compile Include="IncomeDetailsCommon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncomeDetailsCommon.Designer.cs">
+      <DependentUpon>IncomeDetailsCommon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncomeDetailsInsolvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncomeDetailsInsolvent.Designer.cs">
+      <DependentUpon>IncomeDetailsInsolvent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Teacher.cs">
@@ -123,6 +135,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Income.resx">
       <DependentUpon>Income.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncomeDetailsCommon.resx">
+      <DependentUpon>IncomeDetailsCommon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncomeDetailsInsolvent.resx">
+      <DependentUpon>IncomeDetailsInsolvent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

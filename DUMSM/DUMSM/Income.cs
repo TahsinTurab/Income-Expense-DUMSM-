@@ -57,5 +57,16 @@ namespace DUMSM
             Dashboard dashboard = new Dashboard();
             dashboard.Show();
         }
+
+        private void button13_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+        }
     }
 }
