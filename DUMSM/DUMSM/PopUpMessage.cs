@@ -15,10 +15,10 @@ namespace DUMSM
                 InformationFormName, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        public static void SuccessMessage(string InformationFormName)
+        public static void SuccessRegistrationMessage(string InformationFormName)
         {
-            MessageBox.Show($"সফল হয়েছে!",
-                InformationFormName, MessageBoxButtons.OK, MessageBoxIcon.None);
+            MessageBox.Show($"সফল ভাবে নিবন্ধিত হয়েছে!",
+                InformationFormName, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         public static void ErrorMessage(string InformationFormName)

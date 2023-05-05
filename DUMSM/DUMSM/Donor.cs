@@ -95,7 +95,7 @@ namespace DUMSM
                 if (willInsert)
                 {
                     CRUDOperation.Insert(donor);
-                    PopUpMessage.SuccessMessage("দাতার তথ্য নিবন্ধন");
+                    PopUpMessage.SuccessRegistrationMessage("দাতার তথ্য নিবন্ধন");
                     ResetForm();
                 }
                 else
