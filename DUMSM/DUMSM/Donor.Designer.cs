@@ -176,6 +176,7 @@
             this.Resetbtn.TabIndex = 32;
             this.Resetbtn.Text = "তথ্য মুছুন";
             this.Resetbtn.UseVisualStyleBackColor = false;
+            this.Resetbtn.Click += new System.EventHandler(this.Resetbtn_Click);
             // 
             // Registerbtn
             // 

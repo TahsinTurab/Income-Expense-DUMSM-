@@ -4,9 +4,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Runtime.InteropServices.ComTypes;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -27,52 +29,103 @@ namespace DUMSM
 
         private void button13_Click(object sender, EventArgs e)
         {
-            var donor = new DonerClass();
-            donor.DonorName = DonorNametxt.Text;
-            donor.MobileNumber = MobileNumbertxt.Text;
-            donor.Address = Addresstxt.Text;
-            object selectedItem = DonorTypetxt.SelectedValue;
-            donor.DonorType = ((string)selectedItem);
-
-            int result;
-            var IsDonationAmmountOK = int.TryParse(DonationAmmounttxt.Text, out result);
-
-            var willInsert = true;
-
-            if (IsDonationAmmountOK)
+            try
             {
-                donor.DonationAmmount = Convert.ToInt32(DonationAmmounttxt.Text);
+                var donor = new Donors();
+                donor.DonorName = DonorNametxt.Text.Trim();
+                donor.MobileNumber = MobileNumbertxt.Text.Trim();
+                donor.Address = Addresstxt.Text.Trim();
+                object selectedItem = DonorTypetxt.SelectedItem;
+                string type = ((string)selectedItem);
+                donor.DonorType = ((string)selectedItem);
+
+                var IsDonationAmmountOK = Conversion.BnNumber2EnNumber(DonationAmmounttxt.Text.Trim());
+
+                //var check = Convert.ToInt32(numberString);
+
+                var willInsert = true;
+
+                string errorMessage = "";
+
+                if (donor.DonorName == "")
+                {
+                    errorMessage += " দাতার নাম";
+                    willInsert = false;
+
+                }
+
+                if (donor.MobileNumber == "" || Conversion.BnNumber2EnNumber(MobileNumbertxt.Text.Trim()) == "false"
+                    || Conversion.BnNumber2EnNumber(MobileNumbertxt.Text.Trim()).Length != 11)
+                {
+                    if (errorMessage.Length > 0)
+                    {
+                        errorMessage += ',';
+                    }
+                    errorMessage += " মোবাইল নাম্বার";
+
+                    willInsert = false;
+
+                }
+
+                if (donor.DonorType == null)
+                {
+                    if (errorMessage.Length > 0)
+                    {
+                        errorMessage += ',';
+                    }
+                    errorMessage += " দাতার ধরণ";
+
+                    willInsert = false;
+                }
+
+                if (IsDonationAmmountOK != "false")
+                {
+                    donor.DonationAmmount = int.Parse(IsDonationAmmountOK);
+                }
+                else
+                {
+                    if (errorMessage.Length > 0)
+                    {
+                        errorMessage += ',';
+                    }
+                    errorMessage += " ধার্যকৃত অনুদান";
+                    willInsert = false;
+                }
+
+                if (willInsert)
+                {
+                    CRUDOperation.Insert(donor);
+                    PopUpMessage.SuccessMessage("দাতার তথ্য নিবন্ধন");
+                    ResetForm();
+                }
+                else
+                {
+                    PopUpMessage.DataMissingMessage(errorMessage, "দাতার তথ্য নিবন্ধন");
+                }
             }
-            else
+            catch
             {
-                PopUpMessage.DataMissingMessage("ধার্যকৃত অনুদান", "দাতার তথ্য নিবন্ধন");
-                willInsert = false;
-            }
-            
-            if(donor.DonorName == "")
-            {
-                PopUpMessage.DataMissingMessage("দাতার নাম", "দাতার তথ্য নিবন্ধন");
-                willInsert = false;
-                
-            }
-
-            if (donor.MobileNumber == "")
-            {
-                PopUpMessage.DataMissingMessage("মোবাইল নাম্বার", "দাতার তথ্য নিবন্ধন");
-                willInsert = false;
-
-            }
-
-            if (willInsert)
-            {
-                CRUDOperation.Insert(donor);
+                PopUpMessage.ErrorMessage("দাতার তথ্য নিবন্ধন");
             }
         }
 
         private void DonorTypetxt_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            //comboBoxData(DonorTypetxt);
         }
 
+        private void Resetbtn_Click(object sender, EventArgs e)
+        {
+            ResetForm();
+        }
+
+        private void ResetForm()
+        {
+            DonorNametxt.Text = "";
+            DonorTypetxt.Text = "";
+            DonationAmmounttxt.Text = "";
+            MobileNumbertxt.Text = "";
+            Addresstxt.Text = "";
+        }
     }
 }

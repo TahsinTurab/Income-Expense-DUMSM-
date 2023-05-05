@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DUMSM.Classes
 {
-    public class DonerClass
+    public class Donors
     {
         public string DonorName { get; set; }
         public string DonorType { get; set; }

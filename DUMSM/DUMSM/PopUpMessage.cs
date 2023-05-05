@@ -12,7 +12,19 @@ namespace DUMSM
         public static void DataMissingMessage(string DataFieldName, string InformationFormName)
         {
             MessageBox.Show($"দয়া করে {DataFieldName} সঠিক তথ্য দিয়ে পূরণ করুন!", 
-                InformationFormName, (MessageBoxButtons)MessageBoxIcon.Error);
+                InformationFormName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        public static void SuccessMessage(string InformationFormName)
+        {
+            MessageBox.Show($"সফল হয়েছে!",
+                InformationFormName, MessageBoxButtons.OK, MessageBoxIcon.None);
+        }
+
+        public static void ErrorMessage(string InformationFormName)
+        {
+            MessageBox.Show($"দুঃখিত! দয়া করে আবার চেষ্টা করুন।",
+                InformationFormName, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }

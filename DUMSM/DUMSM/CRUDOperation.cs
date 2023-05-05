@@ -39,6 +39,10 @@ namespace DUMSM
                 var value = properties[i].GetValue(obj);
                 if (value != null)
                 {
+                    if (properties[i].PropertyType == typeof(string))
+                    {
+                        query += 'N';
+                    }
                     query += $"'{value.ToString()}'";
                 }
                 else

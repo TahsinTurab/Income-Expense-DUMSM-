@@ -47,7 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\DonerClass.cs" />
+    <Compile Include="Classes\Donors.cs" />
+    <Compile Include="Conversion.cs" />
     <Compile Include="CRUDOperation.cs" />
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
