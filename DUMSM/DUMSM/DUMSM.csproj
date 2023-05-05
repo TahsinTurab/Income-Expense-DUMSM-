@@ -47,6 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\DonerClass.cs" />
+    <Compile Include="CRUDOperation.cs" />
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +85,8 @@
     <Compile Include="Expense.Designer.cs">
       <DependentUpon>Expense.cs</DependentUpon>
     </Compile>
+    <Compile Include="PopUpMessage.cs" />
+    <Compile Include="SQLConnection.cs" />
     <Compile Include="TeacherDetails.cs">
       <SubType>Form</SubType>
     </Compile>
