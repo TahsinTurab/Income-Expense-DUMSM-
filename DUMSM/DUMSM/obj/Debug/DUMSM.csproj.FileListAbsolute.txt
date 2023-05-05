@@ -22,3 +22,4 @@ C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.DonorProfi
 C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.DonorList.resources
 C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.IncomeDetailsCommon.resources
 C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.IncomeDetailsInsolvent.resources
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Donation.resources
