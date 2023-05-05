@@ -67,9 +67,6 @@ namespace DUMSM
             {
                 CRUDOperation.Insert(donor);
             }
-
-
-
         }
 
         private void DonorTypetxt_SelectedIndexChanged(object sender, EventArgs e)

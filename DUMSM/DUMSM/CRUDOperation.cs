@@ -10,6 +10,7 @@ namespace DUMSM
 {
     public static class CRUDOperation
     {
+        private static string connectionString = SQLConnection.conReturn();
 
         public static void Insert(object obj)
         {
@@ -52,7 +53,7 @@ namespace DUMSM
             query += ")";
 
             // Execute the SQL query using a connection and a command object
-            string connectionString = "your_connection_string_here";
+            
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlCommand command = new SqlCommand(query, connection);
