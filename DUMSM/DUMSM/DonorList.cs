@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Office.Interop.Excel;
+using Rectangle = System.Drawing.Rectangle;
 
 namespace DUMSM
 {
@@ -261,7 +263,11 @@ namespace DUMSM
 
         private void Backupbtn_Click(object sender, EventArgs e)
         {
-
+            
+            BackupOperation.Backup2Excel("Donors");
+            MessageBox.Show("সফলভাবে স্থায়ী দাতাবৃন্দের তথ্য ব্যাকআপ নেয়া হয়েছে");
         }
+
+        
     }
 }
