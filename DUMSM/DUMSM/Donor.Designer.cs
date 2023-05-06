@@ -50,7 +50,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.button8 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button9 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabControl3 = new System.Windows.Forms.TabControl();
@@ -75,6 +74,7 @@
             this.button22 = new System.Windows.Forms.Button();
             this.DonorListbtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.tabPage3.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -334,14 +334,14 @@
             this.tabPage1.BackColor = System.Drawing.Color.Transparent;
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPage1.Controls.Add(this.textBox2);
             this.tabPage1.Controls.Add(this.button8);
-            this.tabPage1.Controls.Add(this.comboBox1);
             this.tabPage1.Controls.Add(this.button9);
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.Location = new System.Drawing.Point(4, 40);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(769, 111);
+            this.tabPage1.Size = new System.Drawing.Size(769, 73);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "স্থায়ী দাতাগণের তথ্য ";
             // 
@@ -352,21 +352,12 @@
             this.button8.Enabled = false;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button8.Location = new System.Drawing.Point(27, 6);
+            this.button8.Location = new System.Drawing.Point(27, 13);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(135, 41);
             this.button8.TabIndex = 35;
-            this.button8.Text = "দাতার নাম";
+            this.button8.Text = "দাতার আইডি";
             this.button8.UseVisualStyleBackColor = false;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(168, 11);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(583, 32);
-            this.comboBox1.TabIndex = 33;
             // 
             // button9
             // 
@@ -374,9 +365,9 @@
             this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.button9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button9.Location = new System.Drawing.Point(27, 53);
+            this.button9.Location = new System.Drawing.Point(388, 13);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(724, 41);
+            this.button9.Size = new System.Drawing.Size(363, 41);
             this.button9.TabIndex = 31;
             this.button9.Text = "প্রোফাইল দেখুন";
             this.button9.UseVisualStyleBackColor = false;
@@ -388,14 +379,14 @@
             this.tabControl1.Location = new System.Drawing.Point(195, 113);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(777, 155);
+            this.tabControl1.Size = new System.Drawing.Size(777, 117);
             this.tabControl1.TabIndex = 50;
             // 
             // tabControl3
             // 
             this.tabControl3.Controls.Add(this.tabPage3);
             this.tabControl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.tabControl3.Location = new System.Drawing.Point(199, 274);
+            this.tabControl3.Location = new System.Drawing.Point(199, 245);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
             this.tabControl3.Size = new System.Drawing.Size(769, 338);
@@ -667,7 +658,7 @@
             this.DonorListbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DonorListbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.DonorListbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.DonorListbtn.Location = new System.Drawing.Point(203, 614);
+            this.DonorListbtn.Location = new System.Drawing.Point(203, 598);
             this.DonorListbtn.Name = "DonorListbtn";
             this.DonorListbtn.Size = new System.Drawing.Size(761, 41);
             this.DonorListbtn.TabIndex = 51;
@@ -688,6 +679,14 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 46;
             this.pictureBox1.TabStop = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(168, 20);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(214, 29);
+            this.textBox2.TabIndex = 39;
             // 
             // Donor
             // 
@@ -710,6 +709,7 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabControl3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -739,7 +739,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabControl tabControl3;
@@ -768,5 +767,6 @@
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.TextBox Idtxt;
         private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
