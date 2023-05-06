@@ -8,6 +8,7 @@ namespace DUMSM.Classes
 {
     public class Donors
     {
+        public string Id { get; set; }
         public string DonorName { get; set; }
         public string DonorType { get; set; }
         public string MobileNumber { get; set; }

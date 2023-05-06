@@ -32,6 +32,7 @@ namespace DUMSM
             try
             {
                 var donor = new Donors();
+                donor.Id = Idtxt.Text.Trim();
                 donor.DonorName = DonorNametxt.Text.Trim();
                 donor.MobileNumber = MobileNumbertxt.Text.Trim();
                 donor.Address = Addresstxt.Text.Trim();
@@ -47,8 +48,19 @@ namespace DUMSM
 
                 string errorMessage = "";
 
+                if(donor.Id == "")
+                {
+                    errorMessage += " আইডি নাম্বার";
+                    willInsert = false;
+                }
+
                 if (donor.DonorName == "")
                 {
+                    if (errorMessage.Length > 0)
+                    {
+                        errorMessage += ',';
+                    }
+
                     errorMessage += " দাতার নাম";
                     willInsert = false;
 
@@ -126,6 +138,14 @@ namespace DUMSM
             DonationAmmounttxt.Text = "";
             MobileNumbertxt.Text = "";
             Addresstxt.Text = "";
+        }
+
+        private void DonorListbtn_Click(object sender, EventArgs e)
+        {
+            DonorList donorList = new DonorList();
+            donorList.Location = this.Location;
+            donorList.Show();
+            this.Close();
         }
     }
 }

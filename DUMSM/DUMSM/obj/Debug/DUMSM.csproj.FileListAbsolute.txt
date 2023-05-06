@@ -24,3 +24,5 @@ C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.IncomeDeta
 C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.IncomeDetailsInsolvent.resources
 C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Donation.resources
 C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.TeacherDetails.resources
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\bin\Debug\DUMSMDataBase.mdf
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\bin\Debug\DUMSMDataBase_log.ldf

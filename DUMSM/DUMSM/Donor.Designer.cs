@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Donor));
             this.button17 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.Idtxt = new System.Windows.Forms.TextBox();
+            this.button12 = new System.Windows.Forms.Button();
             this.DonorTypetxt = new System.Windows.Forms.ComboBox();
             this.button10 = new System.Windows.Forms.Button();
             this.DonationAmmounttxt = new System.Windows.Forms.TextBox();
@@ -71,7 +73,7 @@
             this.button20 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.DonorListbtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage3.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -101,6 +103,8 @@
             this.tabPage3.BackColor = System.Drawing.Color.Transparent;
             this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tabPage3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPage3.Controls.Add(this.Idtxt);
+            this.tabPage3.Controls.Add(this.button12);
             this.tabPage3.Controls.Add(this.DonorTypetxt);
             this.tabPage3.Controls.Add(this.button10);
             this.tabPage3.Controls.Add(this.DonationAmmounttxt);
@@ -121,6 +125,28 @@
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "নতুন দাতা নিবন্ধন    ";
             // 
+            // Idtxt
+            // 
+            this.Idtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Idtxt.Location = new System.Drawing.Point(533, 16);
+            this.Idtxt.Name = "Idtxt";
+            this.Idtxt.Size = new System.Drawing.Size(214, 29);
+            this.Idtxt.TabIndex = 38;
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button12.Enabled = false;
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button12.Location = new System.Drawing.Point(348, 11);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(179, 41);
+            this.button12.TabIndex = 37;
+            this.button12.Text = "আইডি নাম্বার";
+            this.button12.UseVisualStyleBackColor = false;
+            // 
             // DonorTypetxt
             // 
             this.DonorTypetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -128,9 +154,9 @@
             this.DonorTypetxt.Items.AddRange(new object[] {
             "মাসিক দাতা",
             "বাৎসরিক দাতা"});
-            this.DonorTypetxt.Location = new System.Drawing.Point(194, 60);
+            this.DonorTypetxt.Location = new System.Drawing.Point(194, 15);
             this.DonorTypetxt.Name = "DonorTypetxt";
-            this.DonorTypetxt.Size = new System.Drawing.Size(550, 32);
+            this.DonorTypetxt.Size = new System.Drawing.Size(135, 32);
             this.DonorTypetxt.TabIndex = 36;
             this.DonorTypetxt.SelectedIndexChanged += new System.EventHandler(this.DonorTypetxt_SelectedIndexChanged);
             // 
@@ -141,7 +167,7 @@
             this.button10.Enabled = false;
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button10.Location = new System.Drawing.Point(8, 58);
+            this.button10.Location = new System.Drawing.Point(9, 11);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(179, 41);
             this.button10.TabIndex = 35;
@@ -203,7 +229,7 @@
             // DonorNametxt
             // 
             this.DonorNametxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DonorNametxt.Location = new System.Drawing.Point(191, 13);
+            this.DonorNametxt.Location = new System.Drawing.Point(194, 65);
             this.DonorNametxt.Name = "DonorNametxt";
             this.DonorNametxt.Size = new System.Drawing.Size(553, 29);
             this.DonorNametxt.TabIndex = 26;
@@ -244,7 +270,7 @@
             this.button16.Enabled = false;
             this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button16.Location = new System.Drawing.Point(6, 11);
+            this.button16.Location = new System.Drawing.Point(6, 58);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(179, 41);
             this.button16.TabIndex = 25;
@@ -635,18 +661,19 @@
             this.button22.Text = "ড্যাশবোর্ড";
             this.button22.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // DonorListbtn
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(203, 614);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(761, 41);
-            this.button1.TabIndex = 51;
-            this.button1.Text = "স্থায়ী দাতাগণের তালিকা দেখুন";
-            this.button1.UseVisualStyleBackColor = false;
+            this.DonorListbtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.DonorListbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DonorListbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.DonorListbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.DonorListbtn.Location = new System.Drawing.Point(203, 614);
+            this.DonorListbtn.Name = "DonorListbtn";
+            this.DonorListbtn.Size = new System.Drawing.Size(761, 41);
+            this.DonorListbtn.TabIndex = 51;
+            this.DonorListbtn.Text = "স্থায়ী দাতাগণের তালিকা দেখুন";
+            this.DonorListbtn.UseVisualStyleBackColor = false;
+            this.DonorListbtn.Click += new System.EventHandler(this.DonorListbtn_Click);
             // 
             // pictureBox1
             // 
@@ -667,7 +694,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 661);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.DonorListbtn);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.tabControl3);
             this.Controls.Add(this.pictureBox1);
@@ -724,7 +751,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button DonorListbtn;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.ComboBox DonorTypetxt;
         private System.Windows.Forms.Panel panel2;
@@ -739,5 +766,7 @@
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.TextBox Idtxt;
+        private System.Windows.Forms.Button button12;
     }
 }

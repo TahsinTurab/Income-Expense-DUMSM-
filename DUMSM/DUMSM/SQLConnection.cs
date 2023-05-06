@@ -10,8 +10,8 @@ namespace DUMSM
     {
         public static string conReturn()
         {
-            //return (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + System.IO.Path.GetFullPath("BasicsoftDB.mdf") + ";Integrated Security=True;Connect Timeout=30");
-            return (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Tahsin Hasan Turab\Documents\DUMSMDataBase.mdf"";Integrated Security=True;Connect Timeout=30");
+            return (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + System.IO.Path.GetFullPath("DUMSMDataBase.mdf") + ";Integrated Security=True;Connect Timeout=30");
+            //return (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Tahsin Hasan Turab\Documents\DUMSMDataBase.mdf"";Integrated Security=True;Connect Timeout=30");
         }
     }
 }
