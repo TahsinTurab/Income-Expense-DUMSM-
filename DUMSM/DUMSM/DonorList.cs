@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Office.Interop.Excel;
 using Rectangle = System.Drawing.Rectangle;
+using DataTable = System.Data.DataTable;
 
 namespace DUMSM
 {
@@ -268,6 +269,10 @@ namespace DUMSM
             MessageBox.Show("সফলভাবে স্থায়ী দাতাবৃন্দের তথ্য ব্যাকআপ নেয়া হয়েছে");
         }
 
-        
+        private void Searchbtn_Click(object sender, EventArgs e)
+        {
+            (Donordgv.DataSource as DataTable).DefaultView.RowFilter =
+                String.Format("donorName like '%" + searchNametxt.Text + "%'");
+        }
     }
 }
