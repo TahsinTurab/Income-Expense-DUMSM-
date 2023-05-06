@@ -30,28 +30,19 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DonorList));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DonorList));
             this.Donordgv = new System.Windows.Forms.DataGridView();
-            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.donorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Mobile = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.donorType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.donationAmmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.Backbtn = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
+            this.Backupbtn = new System.Windows.Forms.Button();
+            this.DeleteAllbtn = new System.Windows.Forms.Button();
+            this.Printbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dUMSMDataBaseDataSet = new DUMSM.DUMSMDataBaseDataSet();
             this.donorsBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -71,6 +62,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.Resetbtn = new System.Windows.Forms.Button();
             this.Registerbtn = new System.Windows.Forms.Button();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Mobile = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donorType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donationAmmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Donordgv)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -94,14 +95,14 @@
             this.Donordgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.Donordgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Donordgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Delete,
-            this.Update,
             this.id,
             this.donorName,
             this.Mobile,
             this.donorType,
             this.donationAmmount,
-            this.Address});
+            this.Address,
+            this.Delete,
+            this.Update});
             this.Donordgv.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Donordgv.GridColor = System.Drawing.SystemColors.Window;
             this.Donordgv.Location = new System.Drawing.Point(3, 3);
@@ -110,77 +111,6 @@
             this.Donordgv.TabIndex = 0;
             this.Donordgv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.Donordgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Donordgv_CellContentClick);
-            // 
-            // Delete
-            // 
-            this.Delete.DataPropertyName = "Delete";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Transparent;
-            this.Delete.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Delete.HeaderText = "ডিলিট";
-            this.Delete.MinimumWidth = 7;
-            this.Delete.Name = "Delete";
-            this.Delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Delete.Text = "ডিলিট";
-            this.Delete.UseColumnTextForButtonValue = true;
-            this.Delete.Width = 70;
-            // 
-            // Update
-            // 
-            this.Update.DataPropertyName = "Update";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Update.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Update.HeaderText = "আপডেট";
-            this.Update.MinimumWidth = 7;
-            this.Update.Name = "Update";
-            this.Update.Text = "আপডেট";
-            this.Update.UseColumnTextForButtonValue = true;
-            this.Update.Width = 70;
-            // 
-            // id
-            // 
-            this.id.DataPropertyName = "Id";
-            this.id.HeaderText = "আইডি ";
-            this.id.Name = "id";
-            this.id.Width = 60;
-            // 
-            // donorName
-            // 
-            this.donorName.DataPropertyName = "DonorName";
-            this.donorName.HeaderText = "দাতার নাম ";
-            this.donorName.Name = "donorName";
-            this.donorName.Width = 150;
-            // 
-            // Mobile
-            // 
-            this.Mobile.DataPropertyName = "MobileNumber";
-            this.Mobile.HeaderText = "মোবাইল ";
-            this.Mobile.Name = "Mobile";
-            this.Mobile.Width = 150;
-            // 
-            // donorType
-            // 
-            this.donorType.DataPropertyName = "DonorType";
-            this.donorType.HeaderText = "দাতার ধরন ";
-            this.donorType.Name = "donorType";
-            this.donorType.Width = 130;
-            // 
-            // donationAmmount
-            // 
-            this.donationAmmount.DataPropertyName = "DonationAmmount";
-            this.donationAmmount.HeaderText = "ধার্যকৃত অনুদান";
-            this.donationAmmount.Name = "donationAmmount";
-            this.donationAmmount.Width = 130;
-            // 
-            // Address
-            // 
-            this.Address.DataPropertyName = "Address";
-            this.Address.HeaderText = "ঠিকানা ";
-            this.Address.Name = "Address";
-            this.Address.Width = 140;
             // 
             // tabControl1
             // 
@@ -244,19 +174,6 @@
             this.textBox1.TabIndex = 61;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.RosyBrown;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button4.Location = new System.Drawing.Point(279, 608);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(217, 41);
-            this.button4.TabIndex = 70;
-            this.button4.Text = "আপডেট করুন";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
             // Backbtn
             // 
             this.Backbtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -271,44 +188,47 @@
             this.Backbtn.UseVisualStyleBackColor = false;
             this.Backbtn.Click += new System.EventHandler(this.Backbtn_Click);
             // 
-            // button2
+            // Backupbtn
             // 
-            this.button2.BackColor = System.Drawing.Color.RosyBrown;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button2.Location = new System.Drawing.Point(725, 608);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(216, 41);
-            this.button2.TabIndex = 69;
-            this.button2.Text = "ব্যাকআপ ";
-            this.button2.UseVisualStyleBackColor = false;
+            this.Backupbtn.BackColor = System.Drawing.Color.RosyBrown;
+            this.Backupbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Backupbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.Backupbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.Backupbtn.Location = new System.Drawing.Point(725, 608);
+            this.Backupbtn.Name = "Backupbtn";
+            this.Backupbtn.Size = new System.Drawing.Size(216, 41);
+            this.Backupbtn.TabIndex = 69;
+            this.Backupbtn.Text = "ব্যাকআপ ";
+            this.Backupbtn.UseVisualStyleBackColor = false;
+            this.Backupbtn.Click += new System.EventHandler(this.Backupbtn_Click);
             // 
-            // button1
+            // DeleteAllbtn
             // 
-            this.button1.BackColor = System.Drawing.Color.RosyBrown;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(34, 608);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(233, 41);
-            this.button1.TabIndex = 68;
-            this.button1.Text = "ডিলিট করুন";
-            this.button1.UseVisualStyleBackColor = false;
+            this.DeleteAllbtn.BackColor = System.Drawing.Color.RosyBrown;
+            this.DeleteAllbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DeleteAllbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.DeleteAllbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.DeleteAllbtn.Location = new System.Drawing.Point(34, 608);
+            this.DeleteAllbtn.Name = "DeleteAllbtn";
+            this.DeleteAllbtn.Size = new System.Drawing.Size(462, 41);
+            this.DeleteAllbtn.TabIndex = 68;
+            this.DeleteAllbtn.Text = "সকল তথ্য ডিলিট করুন";
+            this.DeleteAllbtn.UseVisualStyleBackColor = false;
+            this.DeleteAllbtn.Click += new System.EventHandler(this.DeleteAllbtn_Click);
             // 
-            // button29
+            // Printbtn
             // 
-            this.button29.BackColor = System.Drawing.Color.RosyBrown;
-            this.button29.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button29.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button29.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button29.Location = new System.Drawing.Point(502, 608);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(217, 41);
-            this.button29.TabIndex = 67;
-            this.button29.Text = "প্রিন্ট করুন";
-            this.button29.UseVisualStyleBackColor = false;
+            this.Printbtn.BackColor = System.Drawing.Color.RosyBrown;
+            this.Printbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Printbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.Printbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.Printbtn.Location = new System.Drawing.Point(502, 608);
+            this.Printbtn.Name = "Printbtn";
+            this.Printbtn.Size = new System.Drawing.Size(217, 41);
+            this.Printbtn.TabIndex = 67;
+            this.Printbtn.Text = "প্রিন্ট করুন";
+            this.Printbtn.UseVisualStyleBackColor = false;
+            this.Printbtn.Click += new System.EventHandler(this.Printbtn_Click);
             // 
             // label1
             // 
@@ -501,6 +421,90 @@
             this.Registerbtn.UseVisualStyleBackColor = false;
             this.Registerbtn.Click += new System.EventHandler(this.Registerbtn_Click);
             // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Document = this.printDocument1;
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "Id";
+            this.id.HeaderText = "আইডি ";
+            this.id.Name = "id";
+            this.id.Width = 60;
+            // 
+            // donorName
+            // 
+            this.donorName.DataPropertyName = "DonorName";
+            this.donorName.HeaderText = "দাতার নাম ";
+            this.donorName.Name = "donorName";
+            this.donorName.Width = 150;
+            // 
+            // Mobile
+            // 
+            this.Mobile.DataPropertyName = "MobileNumber";
+            this.Mobile.HeaderText = "মোবাইল ";
+            this.Mobile.Name = "Mobile";
+            this.Mobile.Width = 150;
+            // 
+            // donorType
+            // 
+            this.donorType.DataPropertyName = "DonorType";
+            this.donorType.HeaderText = "দাতার ধরন ";
+            this.donorType.Name = "donorType";
+            this.donorType.Width = 130;
+            // 
+            // donationAmmount
+            // 
+            this.donationAmmount.DataPropertyName = "DonationAmmount";
+            this.donationAmmount.HeaderText = "ধার্যকৃত অনুদান";
+            this.donationAmmount.Name = "donationAmmount";
+            this.donationAmmount.Width = 130;
+            // 
+            // Address
+            // 
+            this.Address.DataPropertyName = "Address";
+            this.Address.HeaderText = "ঠিকানা ";
+            this.Address.Name = "Address";
+            this.Address.Width = 140;
+            // 
+            // Delete
+            // 
+            this.Delete.DataPropertyName = "Delete";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Transparent;
+            this.Delete.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Delete.HeaderText = "ডিলিট";
+            this.Delete.Name = "Delete";
+            this.Delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Delete.Text = "ডিলিট";
+            this.Delete.UseColumnTextForButtonValue = true;
+            this.Delete.Width = 70;
+            // 
+            // Update
+            // 
+            this.Update.DataPropertyName = "Update";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Update.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Update.HeaderText = "আপডেট";
+            this.Update.Name = "Update";
+            this.Update.Text = "আপডেট";
+            this.Update.UseColumnTextForButtonValue = true;
+            this.Update.Width = 70;
+            // 
             // DonorList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -513,10 +517,9 @@
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button29);
+            this.Controls.Add(this.Backupbtn);
+            this.Controls.Add(this.DeleteAllbtn);
+            this.Controls.Add(this.Printbtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -545,11 +548,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button Backbtn;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button29;
+        private System.Windows.Forms.Button Backupbtn;
+        private System.Windows.Forms.Button DeleteAllbtn;
+        private System.Windows.Forms.Button Printbtn;
         private System.Windows.Forms.Label label1;
         private DUMSMDataBaseDataSet dUMSMDataBaseDataSet;
         private System.Windows.Forms.BindingSource donorsBindingSource;
@@ -569,13 +571,15 @@
         private System.Windows.Forms.TextBox DonationAmmounttxt;
         private System.Windows.Forms.TextBox Addresstxt;
         private System.Windows.Forms.TextBox MobileNumbertxt;
-        private System.Windows.Forms.DataGridViewButtonColumn Delete;
-        private System.Windows.Forms.DataGridViewButtonColumn Update;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn donorName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Mobile;
         private System.Windows.Forms.DataGridViewTextBoxColumn donorType;
         private System.Windows.Forms.DataGridViewTextBoxColumn donationAmmount;
         private System.Windows.Forms.DataGridViewTextBoxColumn Address;
+        private System.Windows.Forms.DataGridViewButtonColumn Delete;
+        private System.Windows.Forms.DataGridViewButtonColumn Update;
     }
 }

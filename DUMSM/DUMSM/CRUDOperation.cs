@@ -133,5 +133,19 @@ namespace DUMSM
 
         }
 
+        public static void DeleteAllData(string tableName)
+        {
+            string query = $"DELETE FROM {tableName}";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+                command.ExecuteNonQuery();
+                connection.Close();
+            }
+
+        }
+
     }
 }

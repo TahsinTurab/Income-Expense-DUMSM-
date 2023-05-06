@@ -225,5 +225,43 @@ namespace DUMSM
         {
 
         }
+
+        private void DeleteAllbtn_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("আপনি স্থায়ী দাতা সদস্যবৃন্দের সকল তথ্য চিরতরে মুছে ফেলতে চাচ্ছেন?",
+                "স্থায়ী দাতা সদস্যের তালিকা", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if(result == DialogResult.Yes)
+            {
+                CRUDOperation.DeleteAllData("Donors");
+                MessageBox.Show("সকল তথ্য মুছে ফেলা হয়েছে।");
+            }
+            else
+            {
+                MessageBox.Show("কোনো তথ্য মুছে ফেলা হয়নি।"); 
+            }
+        }
+
+        private Bitmap bitmap;
+        private void Printbtn_Click(object sender, EventArgs e)
+        {
+            int height = Donordgv.Height;
+            Donordgv.Height = Donordgv.RowCount * Donordgv.RowTemplate.Height * 2;
+            bitmap = new Bitmap(Donordgv.Width, Donordgv.Height);
+            Donordgv.DrawToBitmap(bitmap,new Rectangle(0, 0, Donordgv.Width, Donordgv.Height));
+            printPreviewDialog1.PrintPreviewControl.Zoom = 1;
+            printPreviewDialog1.ShowDialog();
+            Donordgv.Height = height;
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(bitmap, 0, 0);
+        }
+
+        private void Backupbtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
