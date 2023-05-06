@@ -17,7 +17,7 @@ namespace DUMSM
 
         public static void SuccessRegistrationMessage(string InformationFormName)
         {
-            MessageBox.Show($"সফল ভাবে নিবন্ধিত হয়েছে!",
+            MessageBox.Show($"সফল হয়েছে!",
                 InformationFormName, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 

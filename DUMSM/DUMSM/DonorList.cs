@@ -45,6 +45,24 @@ namespace DUMSM
 
             }
 
+            else if (Donordgv.Columns[e.ColumnIndex].HeaderText.Trim() == "আপডেট")
+            {
+                Donors donor = new Donors();
+                donor.Id = Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString();
+                donor.DonorName = Donordgv.Rows[e.RowIndex].Cells["donorName"].Value.ToString();
+                donor.DonorType = Donordgv.Rows[e.RowIndex].Cells["donorType"].Value.ToString();
+                donor.MobileNumber = Donordgv.Rows[e.RowIndex].Cells["Mobile"].Value.ToString();
+                donor.Address = Donordgv.Rows[e.RowIndex].Cells["Address"].Value.ToString();
+                //int ammount = (int) Donordgv.Rows[e.RowIndex].Cells["donationAmmount"].Value;
+
+                donor.DonationAmmount = (int) Donordgv.Rows[e.RowIndex].Cells["donationAmmount"].Value;
+
+                UpdateDonorDetails updateForm = new UpdateDonorDetails(donor);
+                updateForm.ShowDialog();
+
+               
+            }
+
         }
 
         private void DonorList_Load(object sender, EventArgs e)
@@ -201,6 +219,11 @@ namespace DUMSM
         private void DonorList_Activated(object sender, EventArgs e)
         {
             DisplayData();
+        }
+
+        private void Donordgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
