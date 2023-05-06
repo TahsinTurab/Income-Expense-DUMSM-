@@ -133,6 +133,7 @@ namespace DUMSM
 
         private void ResetForm()
         {
+            Idtxt.Text = "";
             DonorNametxt.Text = "";
             DonorTypetxt.Text = "";
             DonationAmmounttxt.Text = "";

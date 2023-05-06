@@ -34,5 +34,30 @@ namespace DUMSM
                 connection.Close();
             }
         }
+        
+        public static void GetDataFromDataBase(DataGridView dataGrid, string tableName)
+        {
+            
+            SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+            try
+            {
+                string query = $"SELECT * FROM {tableName}";
+                SqlCommand sqlCommand = new SqlCommand(query,connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(sqlCommand);
+
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                dataGrid.DataSource = dt;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show($"দুঃখিত! {ex.Message}");
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
     }
 }
