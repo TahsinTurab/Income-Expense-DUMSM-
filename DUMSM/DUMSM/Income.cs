@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DUMSM.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -60,6 +61,59 @@ namespace DUMSM
 
         private void button13_Click_1(object sender, EventArgs e)
         {
+            try
+            {
+                string errorMessage = "";
+                var willInsert = true;
+
+                var generalIncome = new GeneralIncome();
+                var IsDonationAmmountOK = Conversion.BnNumber2EnNumber(Ammounttxt.Text.Trim());
+                generalIncome.SlipNumber = SlipNumbertxt.Text;
+                generalIncome.RegisterDate = DateTimetxt.Value.ToString("dd/MM/yyyy");
+
+                if (IsDonationAmmountOK != "false")
+                {
+                    generalIncome.Ammount = int.Parse(IsDonationAmmountOK);
+                }
+                else
+                {
+                    if (errorMessage.Length > 0)
+                    {
+                        errorMessage += ',';
+                    }
+                    errorMessage += " জমার পরিমান";
+                    willInsert = false;
+                }
+                //donation.DonationAmmount = Ammounttxt.Text;
+                
+                object selectedItem = Fieldtxt.SelectedItem;
+                string type = ((string)selectedItem);
+                generalIncome.Field = ((string)selectedItem);
+
+                
+
+                if (willInsert)
+                {
+                    CRUDOperation.Insert(generalIncome);
+                    PopUpMessage.SuccessRegistrationMessage("আয়ের তথ্য নিবন্ধন ");
+                    ResetForm();
+                }
+                else
+                {
+                    PopUpMessage.DataMissingMessage(errorMessage, "আয়ের তথ্য নিবন্ধন");
+                }
+            }
+            catch
+            {
+                PopUpMessage.ErrorMessage("আয়ের তথ্য নিবন্ধন");
+            }
+        }
+
+        public void ResetForm()
+        {
+            Ammounttxt.Text = "";
+            Fieldtxt.Text = "";
+            SlipNumbertxt.Text = "";
 
         }
 
@@ -67,6 +121,11 @@ namespace DUMSM
         {
             Dashboard dashboard = new Dashboard();
             dashboard.Show();
+        }
+
+        private void GeneralResetbtn_Click(object sender, EventArgs e)
+        {
+            ResetForm();
         }
     }
 }

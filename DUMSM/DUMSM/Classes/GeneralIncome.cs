@@ -8,11 +8,11 @@ namespace DUMSM.Classes
 {
     public class GeneralIncome
     {
-        string SlipNumber { get; set; }
+        public string SlipNumber { get; set; }
         public string Field { get; set; }
         public bool IsDonation { get; set; }
         public string DonationId { get; set; }
-        public DateTime RegisterDate { get; set; }
+        public string RegisterDate { get; set; }
         public int Ammount { get; set; }
     }
 }

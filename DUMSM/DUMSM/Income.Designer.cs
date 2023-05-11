@@ -71,12 +71,12 @@
             this.button25 = new System.Windows.Forms.Button();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button12 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button13 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.Fieldtxt = new System.Windows.Forms.ComboBox();
+            this.GeneralResetbtn = new System.Windows.Forms.Button();
+            this.DateTimetxt = new System.Windows.Forms.DateTimePicker();
+            this.GeneralRegisterbtn = new System.Windows.Forms.Button();
+            this.Ammounttxt = new System.Windows.Forms.TextBox();
+            this.SlipNumbertxt = new System.Windows.Forms.TextBox();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
@@ -636,12 +636,12 @@
             this.tabPage3.BackColor = System.Drawing.Color.Transparent;
             this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tabPage3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage3.Controls.Add(this.comboBox1);
-            this.tabPage3.Controls.Add(this.button12);
-            this.tabPage3.Controls.Add(this.dateTimePicker1);
-            this.tabPage3.Controls.Add(this.button13);
-            this.tabPage3.Controls.Add(this.textBox6);
-            this.tabPage3.Controls.Add(this.textBox8);
+            this.tabPage3.Controls.Add(this.Fieldtxt);
+            this.tabPage3.Controls.Add(this.GeneralResetbtn);
+            this.tabPage3.Controls.Add(this.DateTimetxt);
+            this.tabPage3.Controls.Add(this.GeneralRegisterbtn);
+            this.tabPage3.Controls.Add(this.Ammounttxt);
+            this.tabPage3.Controls.Add(this.SlipNumbertxt);
             this.tabPage3.Controls.Add(this.button14);
             this.tabPage3.Controls.Add(this.button15);
             this.tabPage3.Controls.Add(this.button16);
@@ -654,12 +654,11 @@
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "সাধারণ জমা নিবন্ধন    ";
             // 
-            // comboBox1
+            // Fieldtxt
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "সাধারণ অনুদান",
+            this.Fieldtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fieldtxt.FormattingEnabled = true;
+            this.Fieldtxt.Items.AddRange(new object[] {
             "ফরম / ভর্তি ফি",
             "শিক্ষার্থীর বেতন",
             "বোডিং/খানার চার্জ",
@@ -667,62 +666,63 @@
             "লাইব্রেরী",
             "অনুষ্ঠান / ইফতার  ",
             "বিবিধ "});
-            this.comboBox1.Location = new System.Drawing.Point(187, 58);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(172, 32);
-            this.comboBox1.TabIndex = 23;
+            this.Fieldtxt.Location = new System.Drawing.Point(187, 58);
+            this.Fieldtxt.Name = "Fieldtxt";
+            this.Fieldtxt.Size = new System.Drawing.Size(172, 32);
+            this.Fieldtxt.TabIndex = 23;
             // 
-            // button12
+            // GeneralResetbtn
             // 
-            this.button12.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button12.Location = new System.Drawing.Point(9, 201);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(172, 41);
-            this.button12.TabIndex = 32;
-            this.button12.Text = "তথ্য মুছুন";
-            this.button12.UseVisualStyleBackColor = false;
+            this.GeneralResetbtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.GeneralResetbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GeneralResetbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.GeneralResetbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.GeneralResetbtn.Location = new System.Drawing.Point(9, 201);
+            this.GeneralResetbtn.Name = "GeneralResetbtn";
+            this.GeneralResetbtn.Size = new System.Drawing.Size(172, 41);
+            this.GeneralResetbtn.TabIndex = 32;
+            this.GeneralResetbtn.Text = "তথ্য মুছুন";
+            this.GeneralResetbtn.UseVisualStyleBackColor = false;
+            this.GeneralResetbtn.Click += new System.EventHandler(this.GeneralResetbtn_Click);
             // 
-            // dateTimePicker1
+            // DateTimetxt
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(187, 153);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(172, 26);
-            this.dateTimePicker1.TabIndex = 20;
+            this.DateTimetxt.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateTimetxt.Location = new System.Drawing.Point(187, 153);
+            this.DateTimetxt.Name = "DateTimetxt";
+            this.DateTimetxt.Size = new System.Drawing.Size(172, 26);
+            this.DateTimetxt.TabIndex = 20;
             // 
-            // button13
+            // GeneralRegisterbtn
             // 
-            this.button13.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button13.Location = new System.Drawing.Point(187, 201);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(166, 41);
-            this.button13.TabIndex = 31;
-            this.button13.Text = "জমা করুন";
-            this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.button13_Click_1);
+            this.GeneralRegisterbtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.GeneralRegisterbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GeneralRegisterbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.GeneralRegisterbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.GeneralRegisterbtn.Location = new System.Drawing.Point(187, 201);
+            this.GeneralRegisterbtn.Name = "GeneralRegisterbtn";
+            this.GeneralRegisterbtn.Size = new System.Drawing.Size(166, 41);
+            this.GeneralRegisterbtn.TabIndex = 31;
+            this.GeneralRegisterbtn.Text = "জমা করুন";
+            this.GeneralRegisterbtn.UseVisualStyleBackColor = false;
+            this.GeneralRegisterbtn.Click += new System.EventHandler(this.button13_Click_1);
             // 
-            // textBox6
+            // Ammounttxt
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.textBox6.Location = new System.Drawing.Point(187, 105);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(172, 29);
-            this.textBox6.TabIndex = 30;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.Ammounttxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.Ammounttxt.Location = new System.Drawing.Point(187, 105);
+            this.Ammounttxt.Name = "Ammounttxt";
+            this.Ammounttxt.Size = new System.Drawing.Size(172, 29);
+            this.Ammounttxt.TabIndex = 30;
+            this.Ammounttxt.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
-            // textBox8
+            // SlipNumbertxt
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(187, 11);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(172, 29);
-            this.textBox8.TabIndex = 26;
+            this.SlipNumbertxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SlipNumbertxt.Location = new System.Drawing.Point(187, 11);
+            this.SlipNumbertxt.Name = "SlipNumbertxt";
+            this.SlipNumbertxt.Size = new System.Drawing.Size(172, 29);
+            this.SlipNumbertxt.TabIndex = 26;
             // 
             // button14
             // 
@@ -831,7 +831,6 @@
             this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "সাধারণ অনুদান",
             "ফরম / ভর্তি ফি",
             "শিক্ষার্থীর বেতন",
             "বোডিং/খানার চার্জ",
@@ -1036,16 +1035,16 @@
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Button GeneralResetbtn;
+        private System.Windows.Forms.DateTimePicker DateTimetxt;
+        private System.Windows.Forms.Button GeneralRegisterbtn;
+        private System.Windows.Forms.TextBox Ammounttxt;
+        private System.Windows.Forms.TextBox SlipNumbertxt;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox Fieldtxt;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button31;
         private System.Windows.Forms.Button button1;
