@@ -84,12 +84,12 @@
             this.button36 = new System.Windows.Forms.Button();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button18 = new System.Windows.Forms.Button();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.button19 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.GorabaFieldtxt = new System.Windows.Forms.ComboBox();
+            this.GorabaResetbtn = new System.Windows.Forms.Button();
+            this.GorabaDateTimetxt = new System.Windows.Forms.DateTimePicker();
+            this.GorabaRegisterbtn = new System.Windows.Forms.Button();
+            this.GorabaAmmounttxt = new System.Windows.Forms.TextBox();
+            this.GorabaSlipNumbertxt = new System.Windows.Forms.TextBox();
             this.button20 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
@@ -808,12 +808,12 @@
             this.tabPage4.BackColor = System.Drawing.Color.Transparent;
             this.tabPage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tabPage4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage4.Controls.Add(this.comboBox2);
-            this.tabPage4.Controls.Add(this.button18);
-            this.tabPage4.Controls.Add(this.dateTimePicker2);
-            this.tabPage4.Controls.Add(this.button19);
-            this.tabPage4.Controls.Add(this.textBox7);
-            this.tabPage4.Controls.Add(this.textBox9);
+            this.tabPage4.Controls.Add(this.GorabaFieldtxt);
+            this.tabPage4.Controls.Add(this.GorabaResetbtn);
+            this.tabPage4.Controls.Add(this.GorabaDateTimetxt);
+            this.tabPage4.Controls.Add(this.GorabaRegisterbtn);
+            this.tabPage4.Controls.Add(this.GorabaAmmounttxt);
+            this.tabPage4.Controls.Add(this.GorabaSlipNumbertxt);
             this.tabPage4.Controls.Add(this.button20);
             this.tabPage4.Controls.Add(this.button21);
             this.tabPage4.Controls.Add(this.button22);
@@ -826,11 +826,11 @@
             this.tabPage4.TabIndex = 0;
             this.tabPage4.Text = "গোরাবা জমা নিবন্ধন    ";
             // 
-            // comboBox2
+            // GorabaFieldtxt
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.GorabaFieldtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GorabaFieldtxt.FormattingEnabled = true;
+            this.GorabaFieldtxt.Items.AddRange(new object[] {
             "ফরম / ভর্তি ফি",
             "শিক্ষার্থীর বেতন",
             "বোডিং/খানার চার্জ",
@@ -838,60 +838,62 @@
             "লাইব্রেরী",
             "অনুষ্ঠান / ইফতার  ",
             "বিবিধ "});
-            this.comboBox2.Location = new System.Drawing.Point(187, 58);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(172, 32);
-            this.comboBox2.TabIndex = 23;
+            this.GorabaFieldtxt.Location = new System.Drawing.Point(187, 58);
+            this.GorabaFieldtxt.Name = "GorabaFieldtxt";
+            this.GorabaFieldtxt.Size = new System.Drawing.Size(172, 32);
+            this.GorabaFieldtxt.TabIndex = 23;
             // 
-            // button18
+            // GorabaResetbtn
             // 
-            this.button18.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button18.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button18.Location = new System.Drawing.Point(9, 201);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(172, 41);
-            this.button18.TabIndex = 32;
-            this.button18.Text = "তথ্য মুছুন";
-            this.button18.UseVisualStyleBackColor = false;
+            this.GorabaResetbtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.GorabaResetbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GorabaResetbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.GorabaResetbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.GorabaResetbtn.Location = new System.Drawing.Point(9, 201);
+            this.GorabaResetbtn.Name = "GorabaResetbtn";
+            this.GorabaResetbtn.Size = new System.Drawing.Size(172, 41);
+            this.GorabaResetbtn.TabIndex = 32;
+            this.GorabaResetbtn.Text = "তথ্য মুছুন";
+            this.GorabaResetbtn.UseVisualStyleBackColor = false;
+            this.GorabaResetbtn.Click += new System.EventHandler(this.GorabaResetbtn_Click);
             // 
-            // dateTimePicker2
+            // GorabaDateTimetxt
             // 
-            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(187, 153);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(172, 26);
-            this.dateTimePicker2.TabIndex = 20;
+            this.GorabaDateTimetxt.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GorabaDateTimetxt.Location = new System.Drawing.Point(187, 153);
+            this.GorabaDateTimetxt.Name = "GorabaDateTimetxt";
+            this.GorabaDateTimetxt.Size = new System.Drawing.Size(172, 26);
+            this.GorabaDateTimetxt.TabIndex = 20;
             // 
-            // button19
+            // GorabaRegisterbtn
             // 
-            this.button19.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button19.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button19.Location = new System.Drawing.Point(187, 201);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(166, 41);
-            this.button19.TabIndex = 31;
-            this.button19.Text = "জমা করুন";
-            this.button19.UseVisualStyleBackColor = false;
+            this.GorabaRegisterbtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.GorabaRegisterbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GorabaRegisterbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.GorabaRegisterbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.GorabaRegisterbtn.Location = new System.Drawing.Point(187, 201);
+            this.GorabaRegisterbtn.Name = "GorabaRegisterbtn";
+            this.GorabaRegisterbtn.Size = new System.Drawing.Size(166, 41);
+            this.GorabaRegisterbtn.TabIndex = 31;
+            this.GorabaRegisterbtn.Text = "জমা করুন";
+            this.GorabaRegisterbtn.UseVisualStyleBackColor = false;
+            this.GorabaRegisterbtn.Click += new System.EventHandler(this.GorabaRegisterbtn_Click);
             // 
-            // textBox7
+            // GorabaAmmounttxt
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.textBox7.Location = new System.Drawing.Point(187, 105);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(172, 29);
-            this.textBox7.TabIndex = 30;
+            this.GorabaAmmounttxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.GorabaAmmounttxt.Location = new System.Drawing.Point(187, 105);
+            this.GorabaAmmounttxt.Name = "GorabaAmmounttxt";
+            this.GorabaAmmounttxt.Size = new System.Drawing.Size(172, 29);
+            this.GorabaAmmounttxt.TabIndex = 30;
             // 
-            // textBox9
+            // GorabaSlipNumbertxt
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(187, 11);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(172, 29);
-            this.textBox9.TabIndex = 26;
+            this.GorabaSlipNumbertxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GorabaSlipNumbertxt.Location = new System.Drawing.Point(187, 11);
+            this.GorabaSlipNumbertxt.Name = "GorabaSlipNumbertxt";
+            this.GorabaSlipNumbertxt.Size = new System.Drawing.Size(172, 29);
+            this.GorabaSlipNumbertxt.TabIndex = 26;
             // 
             // button20
             // 
@@ -1060,12 +1062,12 @@
         private System.Windows.Forms.Button button36;
         private System.Windows.Forms.TabControl tabControl4;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.ComboBox GorabaFieldtxt;
+        private System.Windows.Forms.Button GorabaResetbtn;
+        private System.Windows.Forms.DateTimePicker GorabaDateTimetxt;
+        private System.Windows.Forms.Button GorabaRegisterbtn;
+        private System.Windows.Forms.TextBox GorabaAmmounttxt;
+        private System.Windows.Forms.TextBox GorabaSlipNumbertxt;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button22;

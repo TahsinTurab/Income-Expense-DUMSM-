@@ -114,6 +114,10 @@ namespace DUMSM
             Ammounttxt.Text = "";
             Fieldtxt.Text = "";
             SlipNumbertxt.Text = "";
+            GorabaAmmounttxt.Text = "";
+            GorabaFieldtxt.Text = "";
+            GorabaSlipNumbertxt.Text = "";
+
 
         }
 
@@ -124,6 +128,63 @@ namespace DUMSM
         }
 
         private void GeneralResetbtn_Click(object sender, EventArgs e)
+        {
+            ResetForm();
+        }
+
+        private void GorabaRegisterbtn_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                string errorMessage = "";
+                var willInsert = true;
+
+                var gorabaIncome = new GorabaIncome();
+                var IsDonationAmmountOK = Conversion.BnNumber2EnNumber(GorabaAmmounttxt.Text.Trim());
+                gorabaIncome.SlipNumber = GorabaSlipNumbertxt.Text;
+                gorabaIncome.RegisterDate = GorabaDateTimetxt.Value.ToString("dd/MM/yyyy");
+
+                if (IsDonationAmmountOK != "false")
+                {
+                    gorabaIncome.Ammount = int.Parse(IsDonationAmmountOK);
+                }
+                else
+                {
+                    if (errorMessage.Length > 0)
+                    {
+                        errorMessage += ',';
+                    }
+                    errorMessage += " জমার পরিমান";
+                    willInsert = false;
+                }
+                //donation.DonationAmmount = Ammounttxt.Text;
+
+                object selectedItem = Fieldtxt.SelectedItem;
+                string type = ((string)selectedItem);
+                gorabaIncome.Field = ((string)selectedItem);
+
+
+
+                if (willInsert)
+                {
+                    CRUDOperation.Insert(gorabaIncome);
+                    PopUpMessage.SuccessRegistrationMessage("আয়ের তথ্য নিবন্ধন ");
+                    ResetForm();
+                }
+                else
+                {
+                    PopUpMessage.DataMissingMessage(errorMessage, "আয়ের তথ্য নিবন্ধন");
+                }
+            }
+            catch
+            {
+                PopUpMessage.ErrorMessage("আয়ের তথ্য নিবন্ধন");
+            }
+
+        }
+
+        private void GorabaResetbtn_Click(object sender, EventArgs e)
         {
             ResetForm();
         }
