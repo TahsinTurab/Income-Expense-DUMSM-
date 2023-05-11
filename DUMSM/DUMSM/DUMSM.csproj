@@ -63,7 +63,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BackupOperation.cs" />
+    <Compile Include="Classes\Donations.cs" />
     <Compile Include="Classes\Donors.cs" />
+    <Compile Include="Classes\GeneralIncome.cs" />
+    <Compile Include="Classes\GeneralExpense.cs" />
+    <Compile Include="Classes\GorabaExpense.cs" />
+    <Compile Include="Classes\GorabaIncome.cs" />
+    <Compile Include="Classes\MonthlyInformations.cs" />
+    <Compile Include="Classes\Stuffs.cs" />
+    <Compile Include="Classes\Teachers.cs" />
     <Compile Include="Conversion.cs" />
     <Compile Include="CRUDOperation.cs" />
     <Compile Include="Dashboard.cs">

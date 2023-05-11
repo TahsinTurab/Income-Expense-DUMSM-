@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2023-05-03T16:34:34.594Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.1 Chrome/112.0.5615.87 Electron/24.1.2 Safari/537.36" etag="Cqdunp2Kl4lUK6IRuuFe" version="21.2.1" type="device">
+<mxfile host="app.diagrams.net" modified="2023-05-11T03:28:03.648Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="kdbxAwrm1qyg3kAOSYfd" version="21.2.9" type="device">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2165" dy="818" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1081" dy="442" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -9,502 +9,520 @@
             <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-8" value="আই ডি নাম্বার (pk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--0">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-8" value="আই ডি নাম্বার (pk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--0" vertex="1">
           <mxGeometry y="26" width="160" height="20" as="geometry" />
         </mxCell>
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--4" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--0" vertex="1">
           <mxGeometry y="46" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-6" value="নাম" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--0">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-6" value="নাম" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--0" vertex="1">
           <mxGeometry y="54" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-7" value="মোবাইল নাম্বার " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--0">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-7" value="মোবাইল নাম্বার " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="zkfFHV4jXpPFQw0GAbJ--0" vertex="1">
           <mxGeometry y="80" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--3" value="ঠিকানা" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="zkfFHV4jXpPFQw0GAbJ--0" vertex="1">
           <mxGeometry y="106" width="160" height="32" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-10" value="ধার্যকৃত অনুদানের পরিমান" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--0">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-10" value="ধার্যকৃত অনুদানের পরিমান" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="zkfFHV4jXpPFQw0GAbJ--0" vertex="1">
           <mxGeometry y="138" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--17" value="অনুদান " style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="200" y="114" width="160" height="238" as="geometry">
+          <mxGeometry x="200" y="114" width="160" height="252" as="geometry">
             <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-15" value="রশিদ নাম্বার " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--17">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-15" value="রশিদ নাম্বার " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
           <mxGeometry y="26" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-13" value="অনুদানের পরিমান " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--17">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-13" value="অনুদানের পরিমান " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
           <mxGeometry y="56" width="160" height="32" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-11" value="অনুদান জমা দেয়ার তারিখ " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--17">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-11" value="অনুদান জমা দেয়ার তারিখ " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
           <mxGeometry y="88" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-16" value="জমাদানকারী" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--17">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-16" value="জমাদানকারী" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
           <mxGeometry y="118" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-17" value="অনুদানের ধরণ " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--17">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-17" value="অনুদানের ধরণ " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
           <mxGeometry y="148" width="160" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="uLnAXZ_327Rf6GjiVPoH-3" value="অনুদানের খাত&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--17">
+          <mxGeometry y="178" width="160" height="26" as="geometry" />
+        </mxCell>
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--23" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
-          <mxGeometry y="178" width="160" height="8" as="geometry" />
+          <mxGeometry y="204" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-18" value="আই ডি নাম্বার (pk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--17">
-          <mxGeometry y="186" width="160" height="20" as="geometry" />
+        <mxCell id="EevCdk19dvMD4sVWMDVo-18" value="আই ডি নাম্বার (pk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
+          <mxGeometry y="212" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-19" value="স্থায়ী দাতার আইডি (fk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--17">
-          <mxGeometry y="206" width="160" height="20" as="geometry" />
+        <mxCell id="EevCdk19dvMD4sVWMDVo-19" value="স্থায়ী দাতার আইডি (fk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
+          <mxGeometry y="232" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-0" value="অনুদানের ধরন" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-0" value="অনুদানের ধরন" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="414" y="160" width="160" height="106" as="geometry">
             <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-1" value="সাধারণ অনুদান" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-0">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-1" value="সাধারণ অনুদান" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-0" vertex="1">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-2" value="গোরাবা অনুদান" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-0">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-2" value="গোরাবা অনুদান" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-0" vertex="1">
           <mxGeometry y="52" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-186" value="এগুলা অপশন হিসেবে থাকবে" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-0">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-186" value="এগুলা অপশন হিসেবে থাকবে" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-0" vertex="1">
           <mxGeometry y="78" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-4" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-0">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-4" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-0" vertex="1">
           <mxGeometry y="98" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-20" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EevCdk19dvMD4sVWMDVo-8" target="EevCdk19dvMD4sVWMDVo-18">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-20" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EevCdk19dvMD4sVWMDVo-8" target="EevCdk19dvMD4sVWMDVo-18" edge="1">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="270" y="160" as="sourcePoint" />
             <mxPoint x="370" y="60" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-21" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EevCdk19dvMD4sVWMDVo-17" target="EevCdk19dvMD4sVWMDVo-1">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-21" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EevCdk19dvMD4sVWMDVo-17" target="EevCdk19dvMD4sVWMDVo-1" edge="1">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="460" y="279" as="sourcePoint" />
             <mxPoint x="560" y="179" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-22" value="শিক্ষক " style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry y="1240" width="160" height="120" as="geometry">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-22" value="শিক্ষক " style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry y="1240" width="160" height="158" as="geometry">
             <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-23" value="আই ডি নাম্বার (pk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-22">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-23" value="আই ডি নাম্বার (pk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-22" vertex="1">
           <mxGeometry y="26" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-24" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-22">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-24" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-22" vertex="1">
           <mxGeometry y="46" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-25" value="নাম" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-22">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-25" value="নাম" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-22" vertex="1">
           <mxGeometry y="54" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-26" value="মোবাইল নাম্বার " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-22">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-26" value="মোবাইল নাম্বার " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-22" vertex="1">
           <mxGeometry y="80" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-30" value="বেতন " style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-200" y="1240" width="160" height="466" as="geometry">
+        <mxCell id="uLnAXZ_327Rf6GjiVPoH-0" value="পদমর্যাদা" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-22">
+          <mxGeometry y="106" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="uLnAXZ_327Rf6GjiVPoH-1" value="যোগদানের তারিখ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-22">
+          <mxGeometry y="132" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="EevCdk19dvMD4sVWMDVo-30" value="বেতন " style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="-200" y="1240" width="160" height="492" as="geometry">
             <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-31" value="উপস্থিতি" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-30">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-31" value="উপস্থিতি" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-30" vertex="1">
           <mxGeometry y="26" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-32" value="ছুটি" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-30">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-32" value="ছুটি" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-30" vertex="1">
           <mxGeometry y="56" width="160" height="32" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-33" value="অনুপস্থিতি" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-30">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-33" value="অনুপস্থিতি" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-30" vertex="1">
           <mxGeometry y="88" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-34" value="মূল বেতন" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-30">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-34" value="মূল বেতন" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-30" vertex="1">
           <mxGeometry y="118" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-35" value="অতিরিক্ত দায়িত্বের সম্মানী" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-30">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-35" value="অতিরিক্ত দায়িত্বের সম্মানী" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-30" vertex="1">
           <mxGeometry y="148" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-39" value="পূর্বের বকেয়া" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-30">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-39" value="পূর্বের বকেয়া" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-30" vertex="1">
           <mxGeometry y="178" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-43" value="মোট প্রাপ্য" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-30">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-43" value="মোট প্রাপ্য" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-30" vertex="1">
           <mxGeometry y="208" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-40" value="প্রভিডেন্ট ফান্ডে জমা" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-30">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-40" value="প্রভিডেন্ট ফান্ডে জমা" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-30" vertex="1">
           <mxGeometry y="238" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-41" value="ঋণ কর্তন" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-30">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-41" value="ঋণ কর্তন" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-30" vertex="1">
           <mxGeometry y="268" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-42" value="অগ্রিম" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-30">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-42" value="অগ্রিম" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-30" vertex="1">
           <mxGeometry y="298" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-44" value="অবশিষ্ট প্রাপ্য টাকা" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-30">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-44" value="অবশিষ্ট প্রাপ্য টাকা" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-30" vertex="1">
           <mxGeometry y="328" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-45" value="পরিশোধ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-30">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-45" value="পরিশোধ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-30" vertex="1">
           <mxGeometry y="358" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-46" value="পরিশোধের তারিখ " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-30">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-46" value="পরিশোধের তারিখ " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-30" vertex="1">
           <mxGeometry y="388" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-36" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-30">
-          <mxGeometry y="418" width="160" height="8" as="geometry" />
+        <mxCell id="uLnAXZ_327Rf6GjiVPoH-2" value="মাসের নাম&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-30">
+          <mxGeometry y="418" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-37" value="আই ডি নাম্বার (pk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-30">
-          <mxGeometry y="426" width="160" height="20" as="geometry" />
+        <mxCell id="EevCdk19dvMD4sVWMDVo-36" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-30" vertex="1">
+          <mxGeometry y="444" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-38" value="শিক্ষকের আইডি (fk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-30">
-          <mxGeometry y="446" width="160" height="20" as="geometry" />
+        <mxCell id="EevCdk19dvMD4sVWMDVo-37" value="আই ডি নাম্বার (pk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-30" vertex="1">
+          <mxGeometry y="452" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-47" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;endFill=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EevCdk19dvMD4sVWMDVo-23" target="EevCdk19dvMD4sVWMDVo-38">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-38" value="শিক্ষকের আইডি (fk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-30" vertex="1">
+          <mxGeometry y="472" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EevCdk19dvMD4sVWMDVo-47" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;endFill=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EevCdk19dvMD4sVWMDVo-23" target="EevCdk19dvMD4sVWMDVo-38" edge="1">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="360" y="670" as="sourcePoint" />
             <mxPoint x="460" y="570" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-48" value=" গোরাবা জমা খাত " style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-48" value=" গোরাবা জমা খাত " style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-200" y="320" width="160" height="336" as="geometry">
             <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-50" value="যাকাত" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-48">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-50" value="যাকাত" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-48" vertex="1">
           <mxGeometry y="26" width="160" height="32" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-51" value="ফিতরা" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-48">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-51" value="ফিতরা" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-48" vertex="1">
           <mxGeometry y="58" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-52" value="মান্নত" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-48">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-52" value="মান্নত" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-48" vertex="1">
           <mxGeometry y="88" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-53" value="কাফফারা" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-48">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-53" value="কাফফারা" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-48" vertex="1">
           <mxGeometry y="118" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-54" value="কোরবানীর চামড়া" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-48">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-54" value="কোরবানীর চামড়া" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-48" vertex="1">
           <mxGeometry y="148" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-55" value="ব্যাংক ঋণ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-48">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-55" value="ব্যাংক ঋণ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-48" vertex="1">
           <mxGeometry y="178" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-56" value=" কর্য গ্রহন" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-48">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-56" value=" কর্য গ্রহন" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-48" vertex="1">
           <mxGeometry y="208" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-57" value="বিবিধ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-48">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-57" value="বিবিধ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-48" vertex="1">
           <mxGeometry y="238" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-62" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-48">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-62" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-48" vertex="1">
           <mxGeometry y="268" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-63" value="আই ডি নাম্বার (pk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-48">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-63" value="আই ডি নাম্বার (pk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-48" vertex="1">
           <mxGeometry y="276" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-64" value="গোরাবা জমা আই ডি (fk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-48">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-64" value="গোরাবা জমা আই ডি (fk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-48" vertex="1">
           <mxGeometry y="296" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-185" value="এগুলা অপশন হিসেবে থাকবে" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-48">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-185" value="এগুলা অপশন হিসেবে থাকবে" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-48" vertex="1">
           <mxGeometry y="316" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-65" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.019;entryY=1.2;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EevCdk19dvMD4sVWMDVo-94" target="EevCdk19dvMD4sVWMDVo-19">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-65" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.019;entryY=1.2;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EevCdk19dvMD4sVWMDVo-94" target="EevCdk19dvMD4sVWMDVo-19" edge="1">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="120" y="360" as="sourcePoint" />
             <mxPoint x="380" y="360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-66" value=" গোরাবা খরচ খাত " style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-66" value=" গোরাবা খরচ খাত " style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-200" y="703" width="160" height="456" as="geometry">
             <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-68" value="খোরাকী " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-66">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-68" value="খোরাকী " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-66" vertex="1">
           <mxGeometry y="26" width="160" height="32" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-69" value="নগদ প্রদান" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-66">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-69" value="নগদ প্রদান" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-66" vertex="1">
           <mxGeometry y="58" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-70" value="কিতাব ক্রয়" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-66">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-70" value="কিতাব ক্রয়" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-66" vertex="1">
           <mxGeometry y="88" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-71" value="চিকিৎসা " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-66">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-71" value="চিকিৎসা " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-66" vertex="1">
           <mxGeometry y="118" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-72" value="পোষাক" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-66">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-72" value="পোষাক" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-66" vertex="1">
           <mxGeometry y="148" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-73" value="নির্মাণ ও মেরামত" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-66">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-73" value="নির্মাণ ও মেরামত" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-66" vertex="1">
           <mxGeometry y="178" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-74" value="আসবাব পত্র" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-66">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-74" value="আসবাব পত্র" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-66" vertex="1">
           <mxGeometry y="208" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-75" value="ছাপা ও স্টেশনারী" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-66">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-75" value="ছাপা ও স্টেশনারী" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-66" vertex="1">
           <mxGeometry y="238" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-76" value="যাতায়াত" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-66">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-76" value="যাতায়াত" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-66" vertex="1">
           <mxGeometry y="268" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-80" value="ব্যাংক ঋণ পরিশোধ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-66">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-80" value="ব্যাংক ঋণ পরিশোধ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-66" vertex="1">
           <mxGeometry y="298" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-81" value="কর্য পরিশোধ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-66">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-81" value="কর্য পরিশোধ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-66" vertex="1">
           <mxGeometry y="328" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-82" value="বিবিধ " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-66">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-82" value="বিবিধ " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-66" vertex="1">
           <mxGeometry y="358" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-77" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-66">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-77" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-66" vertex="1">
           <mxGeometry y="388" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-78" value="আই ডি নাম্বার (pk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-66">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-78" value="আই ডি নাম্বার (pk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-66" vertex="1">
           <mxGeometry y="396" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-112" value="গোরাবা খরচ আই ডি (fk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-66">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-112" value="গোরাবা খরচ আই ডি (fk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-66" vertex="1">
           <mxGeometry y="416" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-183" value="এগুলা অপশন হিসেবে থাকবে" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-66">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-183" value="এগুলা অপশন হিসেবে থাকবে" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-66" vertex="1">
           <mxGeometry y="436" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-84" value=" গোরাবা জমা" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry y="358" width="160" height="206" as="geometry">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-84" value=" গোরাবা জমা" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry y="358" width="160" height="236" as="geometry">
             <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-85" value="রশিদ নাম্বার" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-84">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-85" value="রশিদ নাম্বার" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-84" vertex="1">
           <mxGeometry y="26" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-94" value="জমা দানের তারিখ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-84">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-94" value="জমা দানের তারিখ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-84" vertex="1">
           <mxGeometry y="56" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-107" value="জমা দানের খাত" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-84">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-107" value="জমা দানের খাত" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-84" vertex="1">
           <mxGeometry y="86" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-133" value="জমার পরিমান " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-84">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-133" value="জমার পরিমান " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-84" vertex="1">
           <mxGeometry y="116" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-95" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-84">
-          <mxGeometry y="146" width="160" height="8" as="geometry" />
+        <mxCell id="uLnAXZ_327Rf6GjiVPoH-4" value="ডোনেশন " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-84">
+          <mxGeometry y="146" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-96" value="আই ডি নাম্বার (pk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-84">
-          <mxGeometry y="154" width="160" height="26" as="geometry" />
+        <mxCell id="EevCdk19dvMD4sVWMDVo-95" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-84" vertex="1">
+          <mxGeometry y="176" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-134" value="অনুদানের আই ডি নাম্বার (fk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-84">
-          <mxGeometry y="180" width="160" height="26" as="geometry" />
+        <mxCell id="EevCdk19dvMD4sVWMDVo-96" value="আই ডি নাম্বার (pk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-84" vertex="1">
+          <mxGeometry y="184" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-99" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERone;endFill=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1.006;exitY=0.1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EevCdk19dvMD4sVWMDVo-64">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-134" value="অনুদানের আই ডি নাম্বার (fk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-84" vertex="1">
+          <mxGeometry y="210" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="EevCdk19dvMD4sVWMDVo-99" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERone;endFill=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1.006;exitY=0.1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EevCdk19dvMD4sVWMDVo-64" edge="1">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="360" y="470" as="sourcePoint" />
             <mxPoint y="515" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-100" value=" গোরাবা খরচ" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-100" value=" গোরাবা খরচ" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry y="703" width="160" height="174" as="geometry">
             <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-109" value="ভাউচার নাম্বার" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-100">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-109" value="ভাউচার নাম্বার" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-100" vertex="1">
           <mxGeometry y="26" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-102" value="খরচের তারিখ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-100">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-102" value="খরচের তারিখ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-100" vertex="1">
           <mxGeometry y="56" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-110" value="খরচের খাত" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-100">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-110" value="খরচের খাত" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-100" vertex="1">
           <mxGeometry y="86" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-140" value="খরচের পরিমাণ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-100">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-140" value="খরচের পরিমাণ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-100" vertex="1">
           <mxGeometry y="116" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-103" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-100">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-103" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-100" vertex="1">
           <mxGeometry y="146" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-104" value="আই ডি নাম্বার (pk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-100">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-104" value="আই ডি নাম্বার (pk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-100" vertex="1">
           <mxGeometry y="154" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-111" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERone;endFill=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1.006;exitY=0.1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-111" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERone;endFill=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1.006;exitY=0.1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="-39" y="943" as="sourcePoint" />
             <mxPoint y="840" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-115" value=" সাধারণ জমা খাত " style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-115" value=" সাধারণ জমা খাত " style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="660" y="320" width="160" height="366" as="geometry">
             <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-116" value="স্থায়ী সদস্যের অনুদান" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-115">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-116" value="স্থায়ী সদস্যের অনুদান" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-115" vertex="1">
           <mxGeometry y="26" width="160" height="32" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-117" value="অনুদান " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-115">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-117" value="অনুদান " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-115" vertex="1">
           <mxGeometry y="58" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-118" value="ফরম/ভর্তি ফি" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-115">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-118" value="ফরম/ভর্তি ফি" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-115" vertex="1">
           <mxGeometry y="88" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-119" value="শিক্ষার্থীর বেতন" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-115">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-119" value="শিক্ষার্থীর বেতন" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-115" vertex="1">
           <mxGeometry y="118" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-120" value="বোডিং/খানার চার্জ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-115">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-120" value="বোডিং/খানার চার্জ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-115" vertex="1">
           <mxGeometry y="148" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-139" value="নির্মাণ ও মেরামত" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-115">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-139" value="নির্মাণ ও মেরামত" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-115" vertex="1">
           <mxGeometry y="178" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-121" value="লাইব্রেরী" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-115">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-121" value="লাইব্রেরী" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-115" vertex="1">
           <mxGeometry y="208" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-122" value="অনুষ্ঠান/ইফতার" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-115">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-122" value="অনুষ্ঠান/ইফতার" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-115" vertex="1">
           <mxGeometry y="238" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-123" value="বিবিধ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-115">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-123" value="বিবিধ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-115" vertex="1">
           <mxGeometry y="268" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-124" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-115">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-124" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-115" vertex="1">
           <mxGeometry y="298" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-125" value="আই ডি নাম্বার (pk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-115">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-125" value="আই ডি নাম্বার (pk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-115" vertex="1">
           <mxGeometry y="306" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-126" value="সাধারণ জমা আই ডি (fk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-115">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-126" value="সাধারণ জমা আই ডি (fk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-115" vertex="1">
           <mxGeometry y="326" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-184" value="এগুলা অপশন হিসেবে থাকবে" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-115">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-184" value="এগুলা অপশন হিসেবে থাকবে" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-115" vertex="1">
           <mxGeometry y="346" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-127" value=" সাধারণ জমা" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="460" y="358" width="160" height="200" as="geometry">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-127" value=" সাধারণ জমা" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="460" y="358" width="160" height="230" as="geometry">
             <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-128" value="রশিদ নাম্বার" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-127">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-128" value="রশিদ নাম্বার" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-127" vertex="1">
           <mxGeometry y="26" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-129" value="জমা দানের তারিখ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-127">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-129" value="জমা দানের তারিখ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-127" vertex="1">
           <mxGeometry y="56" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-130" value="জমা দানের খাত" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-127">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-130" value="জমা দানের খাত" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-127" vertex="1">
           <mxGeometry y="86" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-137" value="জমার পরিমান " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-127">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-137" value="জমার পরিমান " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-127" vertex="1">
           <mxGeometry y="116" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-131" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-127">
-          <mxGeometry y="146" width="160" height="8" as="geometry" />
+        <mxCell id="uLnAXZ_327Rf6GjiVPoH-5" value="ডোনেশন " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-127">
+          <mxGeometry y="146" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-132" value="আই ডি নাম্বার (pk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-127">
-          <mxGeometry y="154" width="160" height="20" as="geometry" />
+        <mxCell id="EevCdk19dvMD4sVWMDVo-131" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-127" vertex="1">
+          <mxGeometry y="176" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-138" value="অনুদানের আই ডি নাম্বার (fk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-127">
-          <mxGeometry y="174" width="160" height="26" as="geometry" />
+        <mxCell id="EevCdk19dvMD4sVWMDVo-132" value="আই ডি নাম্বার (pk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-127" vertex="1">
+          <mxGeometry y="184" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-135" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;exitX=-0.012;exitY=0.135;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EevCdk19dvMD4sVWMDVo-127" target="EevCdk19dvMD4sVWMDVo-19">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-138" value="অনুদানের আই ডি নাম্বার (fk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-127" vertex="1">
+          <mxGeometry y="204" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="EevCdk19dvMD4sVWMDVo-135" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;exitX=-0.012;exitY=0.135;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EevCdk19dvMD4sVWMDVo-127" target="EevCdk19dvMD4sVWMDVo-19" edge="1">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="377" y="415" as="sourcePoint" />
             <mxPoint x="414" y="330" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-136" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;entryX=1.006;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EevCdk19dvMD4sVWMDVo-119" target="EevCdk19dvMD4sVWMDVo-129">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-136" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;entryX=1.006;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="EevCdk19dvMD4sVWMDVo-119" target="EevCdk19dvMD4sVWMDVo-129" edge="1">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="738" y="468" as="sourcePoint" />
             <mxPoint x="640" y="417" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-141" value=" সাধারণ খরচ" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-141" value=" সাধারণ খরচ" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="470" y="710" width="160" height="174" as="geometry">
             <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-142" value="ভাউচার নাম্বার" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-141">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-142" value="ভাউচার নাম্বার" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-141" vertex="1">
           <mxGeometry y="26" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-143" value="খরচের তারিখ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-141">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-143" value="খরচের তারিখ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-141" vertex="1">
           <mxGeometry y="56" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-144" value="খরচের খাত" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-141">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-144" value="খরচের খাত" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-141" vertex="1">
           <mxGeometry y="86" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-145" value="খরচের পরিমাণ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-141">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-145" value="খরচের পরিমাণ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-141" vertex="1">
           <mxGeometry y="116" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-146" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-141">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-146" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-141" vertex="1">
           <mxGeometry y="146" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-147" value="আই ডি নাম্বার (pk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-141">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-147" value="আই ডি নাম্বার (pk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-141" vertex="1">
           <mxGeometry y="154" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-148" value=" গোরাবা খরচ খাত " style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-148" value=" গোরাবা খরচ খাত " style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="660" y="710" width="160" height="510" as="geometry">
             <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-149" value="শিক্ষক ও স্টাফ বেতন" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-148">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-149" value="শিক্ষক ও স্টাফ বেতন" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-148" vertex="1">
           <mxGeometry y="26" width="160" height="32" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-150" value="বোর্ডিং" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-148">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-150" value="বোর্ডিং" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-148" vertex="1">
           <mxGeometry y="58" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-154" value="নির্মাণ ও মেরামত" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-148">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-154" value="নির্মাণ ও মেরামত" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-148" vertex="1">
           <mxGeometry y="88" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-152" value="লাইব্রেরী" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-148">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-152" value="লাইব্রেরী" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-148" vertex="1">
           <mxGeometry y="118" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-151" value="আসবাব পত্র" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-148">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-151" value="আসবাব পত্র" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-148" vertex="1">
           <mxGeometry y="148" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-153" value=" অনুষ্ঠান/ইফতার" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-148">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-153" value=" অনুষ্ঠান/ইফতার" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-148" vertex="1">
           <mxGeometry y="178" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-155" value="সম্মানী/অডিট/বোর্ড ফি" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-148">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-155" value="সম্মানী/অডিট/বোর্ড ফি" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-148" vertex="1">
           <mxGeometry y="208" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-156" value="ফোন" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-148">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-156" value="ফোন" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-148" vertex="1">
           <mxGeometry y="238" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-157" value="পানি, বিদ্যুত ও গ্যাস" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-148">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-157" value="পানি, বিদ্যুত ও গ্যাস" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-148" vertex="1">
           <mxGeometry y="268" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-180" value="ছাপা ও স্টেশনারী" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-148">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-180" value="ছাপা ও স্টেশনারী" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-148" vertex="1">
           <mxGeometry y="298" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-181" value="যাতায়াত" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-148">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-181" value="যাতায়াত" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-148" vertex="1">
           <mxGeometry y="328" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-158" value="ঋণ পরিশোধ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-148">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-158" value="ঋণ পরিশোধ" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-148" vertex="1">
           <mxGeometry y="358" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-160" value="বিবিধ " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-148">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-160" value="বিবিধ " style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="EevCdk19dvMD4sVWMDVo-148" vertex="1">
           <mxGeometry y="388" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-161" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-148">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-161" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-148" vertex="1">
           <mxGeometry y="418" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-162" value="আই ডি নাম্বার (pk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-148">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-162" value="আই ডি নাম্বার (pk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-148" vertex="1">
           <mxGeometry y="426" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-163" value="গোরাবা খরচ আই ডি (fk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-148">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-163" value="গোরাবা খরচ আই ডি (fk)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-148" vertex="1">
           <mxGeometry y="446" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-182" value="এগুলা অপশন হিসেবে থাকবে" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EevCdk19dvMD4sVWMDVo-148">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-182" value="এগুলা অপশন হিসেবে থাকবে" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="EevCdk19dvMD4sVWMDVo-148" vertex="1">
           <mxGeometry y="466" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-187" value="মূল টেবিল" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-187" value="মূল টেবিল" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry y="670" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-188" value="মূল টেবিল" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-188" value="মূল টেবিল" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-180" y="1200" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-189" value="মূল টেবিল" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-189" value="মূল টেবিল" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="30" y="1220" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-190" value="মূল টেবিল" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-190" value="মূল টেবিল" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="490" y="670" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-191" value="মূল টেবিল" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-191" value="মূল টেবিল" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="460" y="322" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-192" value="মূল টেবিল" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-192" value="মূল টেবিল" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry y="328" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-193" value="মূল টেবিল" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-193" value="মূল টেবিল" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="10" y="84" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="EevCdk19dvMD4sVWMDVo-194" value="মূল টেবিল" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="EevCdk19dvMD4sVWMDVo-194" value="মূল টেবিল" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="200" y="80" width="160" height="30" as="geometry" />
         </mxCell>
       </root>

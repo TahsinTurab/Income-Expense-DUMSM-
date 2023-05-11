@@ -28,3 +28,33 @@ C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\bin\Debug\DUMSMDataBase.md
 C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\bin\Debug\DUMSMDataBase_log.ldf
 C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.UpdateDonorDetails.resources
 C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.csproj.ResolveComReference.cache
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\bin\Debug\DUMSMDataBase.mdf
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\bin\Debug\DUMSMDataBase_log.ldf
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\bin\Debug\DUMSM.exe.config
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\bin\Debug\DUMSM.exe
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\bin\Debug\DUMSM.pdb
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\bin\Debug\bn-BD\DUMSM.resources.dll
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.csproj.ResolveComReference.cache
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Dashboard.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Donation.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Donor.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.DonorList.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.DonorProfile.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Expense.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.TeacherDetails.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Income.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.IncomeDetailsCommon.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.IncomeDetailsInsolvent.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Properties.Resources.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Teacher.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.TeacherProfile.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.UpdateDonorDetails.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.WorkingTeacher.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Dashboard.bn-BD.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.csproj.GenerateResource.cache
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\bn-BD\DUMSM.resources.dll
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.exe
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.pdb
