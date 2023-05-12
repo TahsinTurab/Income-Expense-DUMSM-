@@ -50,7 +50,7 @@
             this.ResetBtn = new System.Windows.Forms.Button();
             this.RegisterDate = new System.Windows.Forms.DateTimePicker();
             this.RegisterBtn = new System.Windows.Forms.Button();
-            this.Ammount = new System.Windows.Forms.TextBox();
+            this.Ammounttxt = new System.Windows.Forms.TextBox();
             this.SlipNumbertxt = new System.Windows.Forms.TextBox();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
@@ -71,6 +71,10 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.Fieldtxt = new System.Windows.Forms.ComboBox();
+            this.GorabaFieldtxt = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.tabControl3.SuspendLayout();
@@ -313,15 +317,6 @@
             // 
             this.DonorComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DonorComboBox.FormattingEnabled = true;
-            this.DonorComboBox.Items.AddRange(new object[] {
-            "সাধারণ অনুদান",
-            "ফরম / ভর্তি ফি",
-            "শিক্ষার্থীর বেতন",
-            "বোডিং/খানার চার্জ",
-            "নির্মাণ ও মেরামত",
-            "লাইব্রেরী",
-            "অনুষ্ঠান / ইফতার  ",
-            "বিবিধ "});
             this.DonorComboBox.Location = new System.Drawing.Point(187, 58);
             this.DonorComboBox.Name = "DonorComboBox";
             this.DonorComboBox.Size = new System.Drawing.Size(172, 32);
@@ -333,17 +328,18 @@
             this.ResetBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ResetBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.ResetBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ResetBtn.Location = new System.Drawing.Point(6, 210);
+            this.ResetBtn.Location = new System.Drawing.Point(13, 241);
             this.ResetBtn.Name = "ResetBtn";
             this.ResetBtn.Size = new System.Drawing.Size(172, 41);
             this.ResetBtn.TabIndex = 32;
             this.ResetBtn.Text = "তথ্য মুছুন";
             this.ResetBtn.UseVisualStyleBackColor = false;
+            this.ResetBtn.Click += new System.EventHandler(this.ResetBtn_Click);
             // 
             // RegisterDate
             // 
             this.RegisterDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegisterDate.Location = new System.Drawing.Point(187, 153);
+            this.RegisterDate.Location = new System.Drawing.Point(188, 200);
             this.RegisterDate.Name = "RegisterDate";
             this.RegisterDate.Size = new System.Drawing.Size(172, 26);
             this.RegisterDate.TabIndex = 20;
@@ -354,7 +350,7 @@
             this.RegisterBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RegisterBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.RegisterBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.RegisterBtn.Location = new System.Drawing.Point(194, 210);
+            this.RegisterBtn.Location = new System.Drawing.Point(194, 241);
             this.RegisterBtn.Name = "RegisterBtn";
             this.RegisterBtn.Size = new System.Drawing.Size(166, 41);
             this.RegisterBtn.TabIndex = 31;
@@ -362,13 +358,13 @@
             this.RegisterBtn.UseVisualStyleBackColor = false;
             this.RegisterBtn.Click += new System.EventHandler(this.RegisterBtn_Click);
             // 
-            // Ammount
+            // Ammounttxt
             // 
-            this.Ammount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.Ammount.Location = new System.Drawing.Point(187, 105);
-            this.Ammount.Name = "Ammount";
-            this.Ammount.Size = new System.Drawing.Size(172, 29);
-            this.Ammount.TabIndex = 30;
+            this.Ammounttxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.Ammounttxt.Location = new System.Drawing.Point(187, 105);
+            this.Ammounttxt.Name = "Ammounttxt";
+            this.Ammounttxt.Size = new System.Drawing.Size(172, 29);
+            this.Ammounttxt.TabIndex = 30;
             // 
             // SlipNumbertxt
             // 
@@ -413,7 +409,7 @@
             this.button17.Enabled = false;
             this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.button17.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button17.Location = new System.Drawing.Point(6, 147);
+            this.button17.Location = new System.Drawing.Point(8, 194);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(177, 41);
             this.button17.TabIndex = 23;
@@ -440,7 +436,7 @@
             this.tabControl3.Location = new System.Drawing.Point(211, 120);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(376, 323);
+            this.tabControl3.Size = new System.Drawing.Size(376, 344);
             this.tabControl3.TabIndex = 56;
             // 
             // tabPage3
@@ -448,11 +444,13 @@
             this.tabPage3.BackColor = System.Drawing.Color.Transparent;
             this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tabPage3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPage3.Controls.Add(this.Fieldtxt);
+            this.tabPage3.Controls.Add(this.button2);
             this.tabPage3.Controls.Add(this.DonorComboBox);
             this.tabPage3.Controls.Add(this.ResetBtn);
             this.tabPage3.Controls.Add(this.RegisterDate);
             this.tabPage3.Controls.Add(this.RegisterBtn);
-            this.tabPage3.Controls.Add(this.Ammount);
+            this.tabPage3.Controls.Add(this.Ammounttxt);
             this.tabPage3.Controls.Add(this.SlipNumbertxt);
             this.tabPage3.Controls.Add(this.button14);
             this.tabPage3.Controls.Add(this.button15);
@@ -462,7 +460,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 40);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(368, 279);
+            this.tabPage3.Size = new System.Drawing.Size(368, 300);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "সাধারণ অনুদান নিবন্ধন    ";
             // 
@@ -487,7 +485,7 @@
             this.tabControl1.Location = new System.Drawing.Point(593, 120);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(376, 323);
+            this.tabControl1.Size = new System.Drawing.Size(376, 344);
             this.tabControl1.TabIndex = 60;
             // 
             // tabPage1
@@ -495,6 +493,8 @@
             this.tabPage1.BackColor = System.Drawing.Color.Transparent;
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPage1.Controls.Add(this.GorabaFieldtxt);
+            this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.GorabaDonorComboBox);
             this.tabPage1.Controls.Add(this.GorabaResetBtn);
             this.tabPage1.Controls.Add(this.GorabaRegisterDate);
@@ -509,7 +509,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 40);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(368, 279);
+            this.tabPage1.Size = new System.Drawing.Size(368, 300);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "গোরাবা অনুদান নিবন্ধন    ";
             // 
@@ -517,15 +517,6 @@
             // 
             this.GorabaDonorComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GorabaDonorComboBox.FormattingEnabled = true;
-            this.GorabaDonorComboBox.Items.AddRange(new object[] {
-            "সাধারণ অনুদান",
-            "ফরম / ভর্তি ফি",
-            "শিক্ষার্থীর বেতন",
-            "বোডিং/খানার চার্জ",
-            "নির্মাণ ও মেরামত",
-            "লাইব্রেরী",
-            "অনুষ্ঠান / ইফতার  ",
-            "বিবিধ "});
             this.GorabaDonorComboBox.Location = new System.Drawing.Point(187, 58);
             this.GorabaDonorComboBox.Name = "GorabaDonorComboBox";
             this.GorabaDonorComboBox.Size = new System.Drawing.Size(172, 32);
@@ -537,17 +528,18 @@
             this.GorabaResetBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.GorabaResetBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.GorabaResetBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.GorabaResetBtn.Location = new System.Drawing.Point(6, 210);
+            this.GorabaResetBtn.Location = new System.Drawing.Point(6, 241);
             this.GorabaResetBtn.Name = "GorabaResetBtn";
             this.GorabaResetBtn.Size = new System.Drawing.Size(172, 41);
             this.GorabaResetBtn.TabIndex = 32;
             this.GorabaResetBtn.Text = "তথ্য মুছুন";
             this.GorabaResetBtn.UseVisualStyleBackColor = false;
+            this.GorabaResetBtn.Click += new System.EventHandler(this.GorabaResetBtn_Click);
             // 
             // GorabaRegisterDate
             // 
             this.GorabaRegisterDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GorabaRegisterDate.Location = new System.Drawing.Point(187, 153);
+            this.GorabaRegisterDate.Location = new System.Drawing.Point(187, 202);
             this.GorabaRegisterDate.Name = "GorabaRegisterDate";
             this.GorabaRegisterDate.Size = new System.Drawing.Size(172, 26);
             this.GorabaRegisterDate.TabIndex = 20;
@@ -558,12 +550,13 @@
             this.GorabaRegisterBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.GorabaRegisterBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.GorabaRegisterBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.GorabaRegisterBtn.Location = new System.Drawing.Point(194, 210);
+            this.GorabaRegisterBtn.Location = new System.Drawing.Point(187, 241);
             this.GorabaRegisterBtn.Name = "GorabaRegisterBtn";
             this.GorabaRegisterBtn.Size = new System.Drawing.Size(166, 41);
             this.GorabaRegisterBtn.TabIndex = 31;
             this.GorabaRegisterBtn.Text = "জমা করুন";
             this.GorabaRegisterBtn.UseVisualStyleBackColor = false;
+            this.GorabaRegisterBtn.Click += new System.EventHandler(this.GorabaRegisterBtn_Click);
             // 
             // GorabaAmmount
             // 
@@ -630,12 +623,71 @@
             this.button7.Enabled = false;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.button7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button7.Location = new System.Drawing.Point(6, 147);
+            this.button7.Location = new System.Drawing.Point(6, 196);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(177, 41);
             this.button7.TabIndex = 23;
             this.button7.Text = "জমাদানের তারিখ";
             this.button7.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Enabled = false;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button2.Location = new System.Drawing.Point(8, 147);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(177, 41);
+            this.button2.TabIndex = 33;
+            this.button2.Text = "অনুদানের খাত";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.Enabled = false;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.button3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button3.Location = new System.Drawing.Point(6, 149);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(177, 41);
+            this.button3.TabIndex = 34;
+            this.button3.Text = "অনুদানের খাত";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // Fieldtxt
+            // 
+            this.Fieldtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fieldtxt.FormattingEnabled = true;
+            this.Fieldtxt.Items.AddRange(new object[] {
+            "সাধারণ অনুদান ",
+            "নির্মাণ ও মেরামত",
+            "লাইব্রেরী",
+            "অনুষ্ঠান / ইফতার  ",
+            "বিবিধ "});
+            this.Fieldtxt.Location = new System.Drawing.Point(187, 152);
+            this.Fieldtxt.Name = "Fieldtxt";
+            this.Fieldtxt.Size = new System.Drawing.Size(172, 32);
+            this.Fieldtxt.TabIndex = 34;
+            // 
+            // GorabaFieldtxt
+            // 
+            this.GorabaFieldtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GorabaFieldtxt.FormattingEnabled = true;
+            this.GorabaFieldtxt.Items.AddRange(new object[] {
+            "গোরাবা অনুদান ",
+            "নির্মাণ ও মেরামত",
+            "লাইব্রেরী",
+            "অনুষ্ঠান / ইফতার  ",
+            "বিবিধ "});
+            this.GorabaFieldtxt.Location = new System.Drawing.Point(187, 154);
+            this.GorabaFieldtxt.Name = "GorabaFieldtxt";
+            this.GorabaFieldtxt.Size = new System.Drawing.Size(172, 32);
+            this.GorabaFieldtxt.TabIndex = 35;
             // 
             // Donation
             // 
@@ -690,7 +742,7 @@
         private System.Windows.Forms.Button ResetBtn;
         private System.Windows.Forms.DateTimePicker RegisterDate;
         private System.Windows.Forms.Button RegisterBtn;
-        private System.Windows.Forms.TextBox Ammount;
+        private System.Windows.Forms.TextBox Ammounttxt;
         private System.Windows.Forms.TextBox SlipNumbertxt;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
@@ -711,5 +763,9 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ComboBox Fieldtxt;
+        private System.Windows.Forms.ComboBox GorabaFieldtxt;
     }
 }

@@ -9,7 +9,7 @@ namespace DUMSM.Classes
     public class GorabaExpense
     {
         public string VoucherNumber { get; set; }
-        public DateTime ExpenseDate { get; set; }
+        public string ExpenseDate { get; set; }
         public string Field { get; set; }
         public int Ammount { get; set; }
     }

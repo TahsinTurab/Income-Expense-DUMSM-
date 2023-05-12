@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BackupOperation.cs" />
+    <Compile Include="Classes\GorabaDonations.cs" />
     <Compile Include="Classes\Donations.cs" />
     <Compile Include="Classes\Donors.cs" />
     <Compile Include="Classes\GeneralIncome.cs" />

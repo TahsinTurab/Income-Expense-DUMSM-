@@ -125,6 +125,7 @@ namespace DUMSM
                     CRUDOperation.Insert(generalIncome);
                     PopUpMessage.SuccessRegistrationMessage("আয়ের তথ্য নিবন্ধন ");
                     ResetForm();
+                    display();
                 }
                 else
                 {
@@ -199,6 +200,7 @@ namespace DUMSM
                     CRUDOperation.Insert(gorabaIncome);
                     PopUpMessage.SuccessRegistrationMessage("আয়ের তথ্য নিবন্ধন ");
                     ResetForm();
+                    display();
                 }
                 else
                 {
