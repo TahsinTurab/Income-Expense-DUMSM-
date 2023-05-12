@@ -81,6 +81,56 @@ namespace DUMSM
 
         }
 
+
+    public static List<string> GetColumnValues(string tableName, string columnName)
+        {
+            List<string> values = new List<string>();
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = $"SELECT {columnName} FROM {tableName}";
+                SqlCommand command = new SqlCommand(query, connection);
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    values.Add(reader[columnName].ToString());
+                }
+
+                reader.Close();
+            }
+
+            return values;
+        }
+
+    public static List<string> GetColumnValues(string tableName, string columnName, string Condition)
+    {
+        List<string> values = new List<string>();
+
+        using (SqlConnection connection = new SqlConnection(connectionString))
+        {
+            connection.Open();
+
+            string query = $"SELECT {columnName} FROM {tableName} Where {Condition}";
+            SqlCommand command = new SqlCommand(query, connection);
+
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                values.Add(reader[columnName].ToString());
+            }
+
+            reader.Close();
+        }
+
+        return values;
+    }
+
+
         public static void Update(Object obj)
         {
 

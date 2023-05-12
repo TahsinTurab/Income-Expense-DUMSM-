@@ -32,5 +32,25 @@ namespace DUMSM
             return result;
         }
 
+        public static string EnNumber2BnNumber(string s)
+        {
+            string result = "";
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] >= '0' && s[i] <= '9')
+                {
+                    char num = (char)((int)s[i] - (int)'0' + (int)'০');
+                    result += num.ToString();
+                }
+                
+                else
+                {
+                    result = "false";
+                    break;
+                }
+            }
+            return result;
+        }
+
     }
 }

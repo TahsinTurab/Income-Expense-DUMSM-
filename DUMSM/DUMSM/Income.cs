@@ -16,6 +16,34 @@ namespace DUMSM
         public Income()
         {
             InitializeComponent();
+            display();
+
+        }
+
+        public void display()
+        {
+            //TotalClass.TotalOfColumnWithoutCondition("GeneralIncome", "Ammount");
+            TotalGeneraltxt.Text = "৳ " + Conversion.EnNumber2BnNumber(
+                TotalClass.TotalOfColumnWithoutCondition("GeneralIncome", "Ammount").ToString());
+
+            
+            TotalGorabatxt.Text = "৳ " + Conversion.EnNumber2BnNumber(
+                TotalClass.TotalOfColumnWithoutCondition("GorabaIncome", "Ammount").ToString());
+
+            DateTime firstDayOfMonth = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
+            string formattedDate = firstDayOfMonth.ToString("dd/MM/yyyy");
+
+            string presentDay = DateTime.Now.ToString("dd/MM/yyyy");
+
+            string Condition = $"RegisterDate >= '{formattedDate}' and RegisterDate <= '{presentDay}'";
+
+            MonthlyTotalGeneraltxt.Text = "৳ " + Conversion.EnNumber2BnNumber(
+                TotalClass.TotalOfColumnWithCondition("GeneralIncome", "Ammount", Condition).ToString() );
+
+            MonthlyTotalGorabatxt.Text = "৳ " + Conversion.EnNumber2BnNumber(
+                TotalClass.TotalOfColumnWithCondition("GorabaIncome", "Ammount", Condition).ToString());
+
+
         }
 
         private void button8_Click(object sender, EventArgs e)

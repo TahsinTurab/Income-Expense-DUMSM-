@@ -55,20 +55,16 @@
             this.button30 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TotalGeneraltxt = new System.Windows.Forms.TextBox();
+            this.MonthlyTotalGeneraltxt = new System.Windows.Forms.TextBox();
             this.button24 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.TotalGorabatxt = new System.Windows.Forms.TextBox();
+            this.MonthlyTotalGorabatxt = new System.Windows.Forms.TextBox();
             this.button9 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.Fieldtxt = new System.Windows.Forms.ComboBox();
@@ -441,10 +437,10 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.tabControl1.Location = new System.Drawing.Point(199, 411);
+            this.tabControl1.Location = new System.Drawing.Point(199, 433);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(372, 196);
+            this.tabControl1.Size = new System.Drawing.Size(372, 154);
             this.tabControl1.TabIndex = 17;
             // 
             // tabPage1
@@ -452,43 +448,33 @@
             this.tabPage1.BackColor = System.Drawing.Color.Transparent;
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage1.Controls.Add(this.textBox4);
-            this.tabPage1.Controls.Add(this.textBox3);
-            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.TotalGeneraltxt);
+            this.tabPage1.Controls.Add(this.MonthlyTotalGeneraltxt);
             this.tabPage1.Controls.Add(this.button24);
             this.tabPage1.Controls.Add(this.button10);
-            this.tabPage1.Controls.Add(this.button8);
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.tabPage1.Location = new System.Drawing.Point(4, 40);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(364, 152);
+            this.tabPage1.Size = new System.Drawing.Size(364, 110);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "সাধারণ জমার তথ্য ";
             // 
-            // textBox4
+            // TotalGeneraltxt
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.textBox4.Location = new System.Drawing.Point(222, 102);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(133, 29);
-            this.textBox4.TabIndex = 35;
+            this.TotalGeneraltxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.TotalGeneraltxt.Location = new System.Drawing.Point(222, 62);
+            this.TotalGeneraltxt.Name = "TotalGeneraltxt";
+            this.TotalGeneraltxt.Size = new System.Drawing.Size(133, 29);
+            this.TotalGeneraltxt.TabIndex = 35;
             // 
-            // textBox3
+            // MonthlyTotalGeneraltxt
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.textBox3.Location = new System.Drawing.Point(222, 54);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(133, 29);
-            this.textBox3.TabIndex = 34;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.textBox2.Location = new System.Drawing.Point(222, 11);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(133, 29);
-            this.textBox2.TabIndex = 33;
+            this.MonthlyTotalGeneraltxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.MonthlyTotalGeneraltxt.Location = new System.Drawing.Point(221, 14);
+            this.MonthlyTotalGeneraltxt.Name = "MonthlyTotalGeneraltxt";
+            this.MonthlyTotalGeneraltxt.Size = new System.Drawing.Size(133, 29);
+            this.MonthlyTotalGeneraltxt.TabIndex = 34;
             // 
             // button24
             // 
@@ -496,7 +482,7 @@
             this.button24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.button24.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button24.Location = new System.Drawing.Point(6, 94);
+            this.button24.Location = new System.Drawing.Point(6, 54);
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(210, 46);
             this.button24.TabIndex = 16;
@@ -509,34 +495,21 @@
             this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.button10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button10.Location = new System.Drawing.Point(6, 46);
+            this.button10.Location = new System.Drawing.Point(5, 6);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(210, 46);
             this.button10.TabIndex = 15;
             this.button10.Text = "চলতি মাসের মোট জমা";
             this.button10.UseVisualStyleBackColor = false;
             // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button8.Location = new System.Drawing.Point(6, 4);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(210, 41);
-            this.button8.TabIndex = 13;
-            this.button8.Text = "আজকের মোট জমা";
-            this.button8.UseVisualStyleBackColor = false;
-            // 
             // tabControl2
             // 
             this.tabControl2.Controls.Add(this.tabPage2);
             this.tabControl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.tabControl2.Location = new System.Drawing.Point(577, 411);
+            this.tabControl2.Location = new System.Drawing.Point(577, 433);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(372, 196);
+            this.tabControl2.Size = new System.Drawing.Size(372, 154);
             this.tabControl2.TabIndex = 21;
             // 
             // tabPage2
@@ -544,43 +517,33 @@
             this.tabPage2.BackColor = System.Drawing.Color.Transparent;
             this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tabPage2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage2.Controls.Add(this.textBox5);
-            this.tabPage2.Controls.Add(this.textBox12);
-            this.tabPage2.Controls.Add(this.textBox13);
+            this.tabPage2.Controls.Add(this.TotalGorabatxt);
+            this.tabPage2.Controls.Add(this.MonthlyTotalGorabatxt);
             this.tabPage2.Controls.Add(this.button9);
             this.tabPage2.Controls.Add(this.button11);
-            this.tabPage2.Controls.Add(this.button25);
             this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
             this.tabPage2.Location = new System.Drawing.Point(4, 40);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(364, 152);
+            this.tabPage2.Size = new System.Drawing.Size(364, 110);
             this.tabPage2.TabIndex = 0;
             this.tabPage2.Text = "গোরাবা জমার তথ্য ";
             // 
-            // textBox5
+            // TotalGorabatxt
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.textBox5.Location = new System.Drawing.Point(222, 102);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(133, 29);
-            this.textBox5.TabIndex = 35;
+            this.TotalGorabatxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.TotalGorabatxt.Location = new System.Drawing.Point(218, 65);
+            this.TotalGorabatxt.Name = "TotalGorabatxt";
+            this.TotalGorabatxt.Size = new System.Drawing.Size(133, 29);
+            this.TotalGorabatxt.TabIndex = 35;
             // 
-            // textBox12
+            // MonthlyTotalGorabatxt
             // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.textBox12.Location = new System.Drawing.Point(222, 54);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(133, 29);
-            this.textBox12.TabIndex = 34;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.textBox13.Location = new System.Drawing.Point(222, 11);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(133, 29);
-            this.textBox13.TabIndex = 33;
+            this.MonthlyTotalGorabatxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.MonthlyTotalGorabatxt.Location = new System.Drawing.Point(216, 14);
+            this.MonthlyTotalGorabatxt.Name = "MonthlyTotalGorabatxt";
+            this.MonthlyTotalGorabatxt.Size = new System.Drawing.Size(133, 29);
+            this.MonthlyTotalGorabatxt.TabIndex = 34;
             // 
             // button9
             // 
@@ -588,7 +551,7 @@
             this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.button9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button9.Location = new System.Drawing.Point(6, 94);
+            this.button9.Location = new System.Drawing.Point(2, 57);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(210, 46);
             this.button9.TabIndex = 16;
@@ -601,25 +564,12 @@
             this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.button11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button11.Location = new System.Drawing.Point(6, 46);
+            this.button11.Location = new System.Drawing.Point(2, 6);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(210, 46);
             this.button11.TabIndex = 15;
             this.button11.Text = "চলতি মাসের মোট জমা";
             this.button11.UseVisualStyleBackColor = false;
-            // 
-            // button25
-            // 
-            this.button25.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button25.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button25.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button25.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button25.Location = new System.Drawing.Point(6, 4);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(210, 41);
-            this.button25.TabIndex = 13;
-            this.button25.Text = "আজকের মোট জমা";
-            this.button25.UseVisualStyleBackColor = false;
             // 
             // tabControl3
             // 
@@ -786,7 +736,7 @@
             this.button36.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button36.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.button36.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button36.Location = new System.Drawing.Point(199, 613);
+            this.button36.Location = new System.Drawing.Point(199, 593);
             this.button36.Name = "button36";
             this.button36.Size = new System.Drawing.Size(368, 41);
             this.button36.TabIndex = 23;
@@ -957,7 +907,7 @@
             this.button37.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button37.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.button37.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button37.Location = new System.Drawing.Point(581, 613);
+            this.button37.Location = new System.Drawing.Point(581, 593);
             this.button37.Name = "button37";
             this.button37.Size = new System.Drawing.Size(368, 41);
             this.button37.TabIndex = 25;
@@ -1022,19 +972,15 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TotalGeneraltxt;
+        private System.Windows.Forms.TextBox MonthlyTotalGeneraltxt;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox TotalGorabatxt;
+        private System.Windows.Forms.TextBox MonthlyTotalGorabatxt;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button25;
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button GeneralResetbtn;
