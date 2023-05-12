@@ -16,5 +16,10 @@ namespace DUMSM
         {
             InitializeComponent();
         }
+
+        private void RegisterBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
