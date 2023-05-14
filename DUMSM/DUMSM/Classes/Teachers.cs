@@ -12,6 +12,6 @@ namespace DUMSM.Classes
         public string Name { get; set; }
         public string Designation { get; set; }
         public string MobileNumber { get; set; }
-        public DateTime JoinDate { get; set; }
+        public string JoinDate { get; set; }
     }
 }

@@ -147,7 +147,6 @@ namespace DUMSM
         {
             string presentDay = DateTime.Now.ToString("dd/MM/yyyy");
             string Condition1 = $"ExpenseDate = '{presentDay}'";
-            //TotalClass.TotalOfColumnWithoutCondition("GeneralIncome", "Ammount");
             DailyTotalGeneraltxt.Text = "৳ " + Conversion.EnNumber2BnNumber(
                 TotalClass.TotalOfColumnWithCondition("GeneralExpense", "Ammount", Condition1).ToString());
 

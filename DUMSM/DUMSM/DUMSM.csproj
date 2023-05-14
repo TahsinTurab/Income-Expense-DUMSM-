@@ -111,6 +111,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DUMSMDataBaseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DUMSMDataBaseTeachers.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DUMSMDataBaseTeachers.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Expense.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +124,12 @@
     </Compile>
     <Compile Include="PopUpMessage.cs" />
     <Compile Include="SQLConnection.cs" />
+    <Compile Include="Stuff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stuff.Designer.cs">
+      <DependentUpon>Stuff.cs</DependentUpon>
+    </Compile>
     <Compile Include="TeacherDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +162,12 @@
     <Compile Include="Teacher.Designer.cs">
       <DependentUpon>Teacher.cs</DependentUpon>
     </Compile>
+    <Compile Include="TeacherList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherList.Designer.cs">
+      <DependentUpon>TeacherList.cs</DependentUpon>
+    </Compile>
     <Compile Include="TeacherProfile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +180,12 @@
     </Compile>
     <Compile Include="UpdateDonorDetails.Designer.cs">
       <DependentUpon>UpdateDonorDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateTeacherDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateTeacherDetails.Designer.cs">
+      <DependentUpon>UpdateTeacherDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="WorkingTeacher.cs">
       <SubType>Form</SubType>
@@ -191,6 +214,9 @@
     <EmbeddedResource Include="Expense.resx">
       <DependentUpon>Expense.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Stuff.resx">
+      <DependentUpon>Stuff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TeacherDetails.resx">
       <DependentUpon>TeacherDetails.cs</DependentUpon>
     </EmbeddedResource>
@@ -216,11 +242,17 @@
     <EmbeddedResource Include="Teacher.resx">
       <DependentUpon>Teacher.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TeacherList.resx">
+      <DependentUpon>TeacherList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TeacherProfile.resx">
       <DependentUpon>TeacherProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateDonorDetails.resx">
       <DependentUpon>UpdateDonorDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateTeacherDetails.resx">
+      <DependentUpon>UpdateTeacherDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkingTeacher.resx">
       <DependentUpon>WorkingTeacher.cs</DependentUpon>
@@ -235,6 +267,17 @@
     </None>
     <None Include="DUMSMDataBaseDataSet.xss">
       <DependentUpon>DUMSMDataBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DUMSMDataBaseTeachers.xsc">
+      <DependentUpon>DUMSMDataBaseTeachers.xsd</DependentUpon>
+    </None>
+    <None Include="DUMSMDataBaseTeachers.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DUMSMDataBaseTeachers.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DUMSMDataBaseTeachers.xss">
+      <DependentUpon>DUMSMDataBaseTeachers.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

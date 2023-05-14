@@ -32,11 +32,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button13 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.Resetbtn = new System.Windows.Forms.Button();
+            this.RegisterDatetxt = new System.Windows.Forms.DateTimePicker();
+            this.Registerbtn = new System.Windows.Forms.Button();
+            this.Mobiletxt = new System.Windows.Forms.TextBox();
+            this.Nametxt = new System.Windows.Forms.TextBox();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
@@ -63,7 +63,9 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.Idtxt = new System.Windows.Forms.TextBox();
+            this.button20 = new System.Windows.Forms.Button();
+            this.Designationtxt = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -74,8 +76,6 @@
             this.button18 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControl3.SuspendLayout();
@@ -124,55 +124,57 @@
             this.button6.Text = "রিপোর্ট";
             this.button6.UseVisualStyleBackColor = false;
             // 
-            // button12
+            // Resetbtn
             // 
-            this.button12.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button12.Location = new System.Drawing.Point(121, 236);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(172, 41);
-            this.button12.TabIndex = 32;
-            this.button12.Text = "তথ্য মুছুন";
-            this.button12.UseVisualStyleBackColor = false;
+            this.Resetbtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Resetbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Resetbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.Resetbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.Resetbtn.Location = new System.Drawing.Point(121, 236);
+            this.Resetbtn.Name = "Resetbtn";
+            this.Resetbtn.Size = new System.Drawing.Size(172, 41);
+            this.Resetbtn.TabIndex = 32;
+            this.Resetbtn.Text = "তথ্য মুছুন";
+            this.Resetbtn.UseVisualStyleBackColor = false;
+            this.Resetbtn.Click += new System.EventHandler(this.Resetbtn_Click);
             // 
-            // dateTimePicker1
+            // RegisterDatetxt
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(185, 190);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(310, 26);
-            this.dateTimePicker1.TabIndex = 20;
+            this.RegisterDatetxt.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegisterDatetxt.Location = new System.Drawing.Point(185, 190);
+            this.RegisterDatetxt.Name = "RegisterDatetxt";
+            this.RegisterDatetxt.Size = new System.Drawing.Size(310, 26);
+            this.RegisterDatetxt.TabIndex = 20;
             // 
-            // button13
+            // Registerbtn
             // 
-            this.button13.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button13.Location = new System.Drawing.Point(299, 236);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(166, 41);
-            this.button13.TabIndex = 31;
-            this.button13.Text = "নিবন্ধন করুন";
-            this.button13.UseVisualStyleBackColor = false;
+            this.Registerbtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Registerbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Registerbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.Registerbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.Registerbtn.Location = new System.Drawing.Point(299, 236);
+            this.Registerbtn.Name = "Registerbtn";
+            this.Registerbtn.Size = new System.Drawing.Size(166, 41);
+            this.Registerbtn.TabIndex = 31;
+            this.Registerbtn.Text = "নিবন্ধন করুন";
+            this.Registerbtn.UseVisualStyleBackColor = false;
+            this.Registerbtn.Click += new System.EventHandler(this.Registerbtn_Click);
             // 
-            // textBox6
+            // Mobiletxt
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.textBox6.Location = new System.Drawing.Point(185, 100);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(305, 29);
-            this.textBox6.TabIndex = 30;
+            this.Mobiletxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.Mobiletxt.Location = new System.Drawing.Point(185, 100);
+            this.Mobiletxt.Name = "Mobiletxt";
+            this.Mobiletxt.Size = new System.Drawing.Size(305, 29);
+            this.Mobiletxt.TabIndex = 30;
             // 
-            // textBox8
+            // Nametxt
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(185, 60);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(308, 29);
-            this.textBox8.TabIndex = 26;
+            this.Nametxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nametxt.Location = new System.Drawing.Point(185, 60);
+            this.Nametxt.Name = "Nametxt";
+            this.Nametxt.Size = new System.Drawing.Size(308, 29);
+            this.Nametxt.TabIndex = 26;
             // 
             // button14
             // 
@@ -519,14 +521,14 @@
             this.tabPage3.BackColor = System.Drawing.Color.Transparent;
             this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tabPage3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage3.Controls.Add(this.textBox2);
+            this.tabPage3.Controls.Add(this.Idtxt);
             this.tabPage3.Controls.Add(this.button20);
-            this.tabPage3.Controls.Add(this.textBox4);
-            this.tabPage3.Controls.Add(this.button12);
-            this.tabPage3.Controls.Add(this.dateTimePicker1);
-            this.tabPage3.Controls.Add(this.button13);
-            this.tabPage3.Controls.Add(this.textBox6);
-            this.tabPage3.Controls.Add(this.textBox8);
+            this.tabPage3.Controls.Add(this.Designationtxt);
+            this.tabPage3.Controls.Add(this.Resetbtn);
+            this.tabPage3.Controls.Add(this.RegisterDatetxt);
+            this.tabPage3.Controls.Add(this.Registerbtn);
+            this.tabPage3.Controls.Add(this.Mobiletxt);
+            this.tabPage3.Controls.Add(this.Nametxt);
             this.tabPage3.Controls.Add(this.button14);
             this.tabPage3.Controls.Add(this.button15);
             this.tabPage3.Controls.Add(this.button16);
@@ -539,13 +541,35 @@
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "নতুন শিক্ষক নিবন্ধন    ";
             // 
-            // textBox4
+            // Idtxt
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.textBox4.Location = new System.Drawing.Point(185, 152);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(308, 29);
-            this.textBox4.TabIndex = 33;
+            this.Idtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Idtxt.Location = new System.Drawing.Point(185, 13);
+            this.Idtxt.Name = "Idtxt";
+            this.Idtxt.Size = new System.Drawing.Size(308, 29);
+            this.Idtxt.TabIndex = 35;
+            // 
+            // button20
+            // 
+            this.button20.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button20.Enabled = false;
+            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button20.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button20.Location = new System.Drawing.Point(2, 8);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(179, 41);
+            this.button20.TabIndex = 34;
+            this.button20.Text = " শিক্ষকের আইডি";
+            this.button20.UseVisualStyleBackColor = false;
+            // 
+            // Designationtxt
+            // 
+            this.Designationtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.Designationtxt.Location = new System.Drawing.Point(185, 152);
+            this.Designationtxt.Name = "Designationtxt";
+            this.Designationtxt.Size = new System.Drawing.Size(308, 29);
+            this.Designationtxt.TabIndex = 33;
             // 
             // pictureBox1
             // 
@@ -573,6 +597,7 @@
             this.button1.TabIndex = 34;
             this.button1.Text = "কর্মরত শিক্ষকবৃন্দের তালিকা";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // tabControl1
             // 
@@ -677,28 +702,6 @@
             this.button8.Text = "সকল শিক্ষকের বেতনের তথ্য নিবন্ধন";
             this.button8.UseVisualStyleBackColor = false;
             // 
-            // button20
-            // 
-            this.button20.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button20.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button20.Enabled = false;
-            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button20.Location = new System.Drawing.Point(2, 8);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(179, 41);
-            this.button20.TabIndex = 34;
-            this.button20.Text = " শিক্ষকের আইডি";
-            this.button20.UseVisualStyleBackColor = false;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(185, 13);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(308, 29);
-            this.textBox2.TabIndex = 35;
-            // 
             // Teacher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -734,11 +737,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Button Resetbtn;
+        private System.Windows.Forms.DateTimePicker RegisterDatetxt;
+        private System.Windows.Forms.Button Registerbtn;
+        private System.Windows.Forms.TextBox Mobiletxt;
+        private System.Windows.Forms.TextBox Nametxt;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
@@ -754,7 +757,7 @@
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox Designationtxt;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
@@ -776,7 +779,7 @@
         private System.Windows.Forms.Button button28;
         private System.Windows.Forms.Button button29;
         private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Idtxt;
         private System.Windows.Forms.Button button20;
     }
 }
