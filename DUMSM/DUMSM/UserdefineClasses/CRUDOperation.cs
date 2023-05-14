@@ -70,7 +70,7 @@ namespace DUMSM
         public static void Delete(string tableName, string Id)
         {
             
-            string query = $"DELETE FROM {tableName} WHERE  Id = {Id}";
+            string query = $"DELETE FROM {tableName} WHERE  Id = '{Id}'";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {

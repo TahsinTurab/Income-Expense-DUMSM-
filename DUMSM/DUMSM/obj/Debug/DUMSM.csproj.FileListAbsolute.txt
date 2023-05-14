@@ -61,3 +61,4 @@ C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.pdb
 C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Stuff.resources
 C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.TeacherList.resources
 C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.UpdateTeacherDetails.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.DonationForm.GeneralDonationList.resources
