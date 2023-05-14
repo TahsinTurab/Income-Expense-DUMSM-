@@ -123,13 +123,13 @@ namespace DUMSM
         private void Backupbtn_Click(object sender, EventArgs e)
         {
             BackupOperation.Backup2Excel("Teachers");
-            MessageBox.Show("সফলভাবে স্থায়ী দাতাবৃন্দের তথ্য ব্যাকআপ নেয়া হয়েছে");
+            MessageBox.Show("সফলভাবে শিক্ষকবৃন্দের তথ্য ব্যাকআপ নেয়া হয়েছে");
         }
 
         private void Searchbtn_Click(object sender, EventArgs e)
         {
             (Donordgv.DataSource as DataTable).DefaultView.RowFilter =
-                String.Format("donorName like '%" + searchNametxt.Text + "%'");
+                String.Format("Name like '%" + searchNametxt.Text + "%'");
         }
 
         private void TeacherList_Load_1(object sender, EventArgs e)

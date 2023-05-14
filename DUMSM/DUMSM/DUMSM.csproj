@@ -62,7 +62,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BackupOperation.cs" />
+    <Compile Include="UserdefineClasses\BackupOperation.cs" />
     <Compile Include="Classes\GorabaDonations.cs" />
     <Compile Include="Classes\Donations.cs" />
     <Compile Include="Classes\Donors.cs" />
@@ -73,37 +73,37 @@
     <Compile Include="Classes\MonthlyInformations.cs" />
     <Compile Include="Classes\Stuffs.cs" />
     <Compile Include="Classes\Teachers.cs" />
-    <Compile Include="Conversion.cs" />
-    <Compile Include="CRUDOperation.cs" />
-    <Compile Include="Dashboard.cs">
+    <Compile Include="UserdefineClasses\Conversion.cs" />
+    <Compile Include="UserdefineClasses\CRUDOperation.cs" />
+    <Compile Include="DashboardForm\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dashboard.Designer.cs">
+    <Compile Include="DashboardForm\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataGridViewOperation.cs" />
-    <Compile Include="Donation.cs">
+    <Compile Include="UserdefineClasses\DataGridViewOperation.cs" />
+    <Compile Include="DonationForm\Donation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Donation.Designer.cs">
+    <Compile Include="DonationForm\Donation.Designer.cs">
       <DependentUpon>Donation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Donor.cs">
+    <Compile Include="DonorForm\Donor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Donor.Designer.cs">
+    <Compile Include="DonorForm\Donor.Designer.cs">
       <DependentUpon>Donor.cs</DependentUpon>
     </Compile>
-    <Compile Include="DonorList.cs">
+    <Compile Include="DonorForm\DonorList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DonorList.Designer.cs">
+    <Compile Include="DonorForm\DonorList.Designer.cs">
       <DependentUpon>DonorList.cs</DependentUpon>
     </Compile>
-    <Compile Include="DonorProfile.cs">
+    <Compile Include="DonorForm\DonorProfile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DonorProfile.Designer.cs">
+    <Compile Include="DonorForm\DonorProfile.Designer.cs">
       <DependentUpon>DonorProfile.cs</DependentUpon>
     </Compile>
     <Compile Include="DUMSMDataBaseDataSet.Designer.cs">
@@ -116,117 +116,117 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DUMSMDataBaseTeachers.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Expense.cs">
+    <Compile Include="ExpenseForm\Expense.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Expense.Designer.cs">
+    <Compile Include="ExpenseForm\Expense.Designer.cs">
       <DependentUpon>Expense.cs</DependentUpon>
     </Compile>
-    <Compile Include="PopUpMessage.cs" />
-    <Compile Include="SQLConnection.cs" />
-    <Compile Include="Stuff.cs">
+    <Compile Include="UserdefineClasses\PopUpMessage.cs" />
+    <Compile Include="UserdefineClasses\SQLConnection.cs" />
+    <Compile Include="StuffForm\Stuff.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Stuff.Designer.cs">
+    <Compile Include="StuffForm\Stuff.Designer.cs">
       <DependentUpon>Stuff.cs</DependentUpon>
     </Compile>
-    <Compile Include="TeacherDetails.cs">
+    <Compile Include="TeacherForm\TeacherDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TeacherDetails.Designer.cs">
+    <Compile Include="TeacherForm\TeacherDetails.Designer.cs">
       <DependentUpon>TeacherDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="Income.cs">
+    <Compile Include="IncomeForm\Income.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Income.Designer.cs">
+    <Compile Include="IncomeForm\Income.Designer.cs">
       <DependentUpon>Income.cs</DependentUpon>
     </Compile>
-    <Compile Include="IncomeDetailsCommon.cs">
+    <Compile Include="IncomeForm\IncomeDetailsCommon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IncomeDetailsCommon.Designer.cs">
+    <Compile Include="IncomeForm\IncomeDetailsCommon.Designer.cs">
       <DependentUpon>IncomeDetailsCommon.cs</DependentUpon>
     </Compile>
-    <Compile Include="IncomeDetailsInsolvent.cs">
+    <Compile Include="IncomeForm\IncomeDetailsInsolvent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IncomeDetailsInsolvent.Designer.cs">
+    <Compile Include="IncomeForm\IncomeDetailsInsolvent.Designer.cs">
       <DependentUpon>IncomeDetailsInsolvent.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Teacher.cs">
+    <Compile Include="TeacherForm\Teacher.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Teacher.Designer.cs">
+    <Compile Include="TeacherForm\Teacher.Designer.cs">
       <DependentUpon>Teacher.cs</DependentUpon>
     </Compile>
-    <Compile Include="TeacherList.cs">
+    <Compile Include="TeacherForm\TeacherList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TeacherList.Designer.cs">
+    <Compile Include="TeacherForm\TeacherList.Designer.cs">
       <DependentUpon>TeacherList.cs</DependentUpon>
     </Compile>
-    <Compile Include="TeacherProfile.cs">
+    <Compile Include="TeacherForm\TeacherProfile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TeacherProfile.Designer.cs">
+    <Compile Include="TeacherForm\TeacherProfile.Designer.cs">
       <DependentUpon>TeacherProfile.cs</DependentUpon>
     </Compile>
-    <Compile Include="TotalClass.cs" />
-    <Compile Include="UpdateDonorDetails.cs">
+    <Compile Include="UserdefineClasses\TotalClass.cs" />
+    <Compile Include="DonorForm\UpdateDonorDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpdateDonorDetails.Designer.cs">
+    <Compile Include="DonorForm\UpdateDonorDetails.Designer.cs">
       <DependentUpon>UpdateDonorDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="UpdateTeacherDetails.cs">
+    <Compile Include="TeacherForm\UpdateTeacherDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpdateTeacherDetails.Designer.cs">
+    <Compile Include="TeacherForm\UpdateTeacherDetails.Designer.cs">
       <DependentUpon>UpdateTeacherDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="WorkingTeacher.cs">
+    <Compile Include="TeacherForm\WorkingTeacher.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WorkingTeacher.Designer.cs">
+    <Compile Include="TeacherForm\WorkingTeacher.Designer.cs">
       <DependentUpon>WorkingTeacher.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Dashboard.bn-BD.resx">
+    <EmbeddedResource Include="DashboardForm\Dashboard.bn-BD.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dashboard.resx">
+    <EmbeddedResource Include="DashboardForm\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Donation.resx">
+    <EmbeddedResource Include="DonationForm\Donation.resx">
       <DependentUpon>Donation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Donor.resx">
+    <EmbeddedResource Include="DonorForm\Donor.resx">
       <DependentUpon>Donor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DonorList.resx">
+    <EmbeddedResource Include="DonorForm\DonorList.resx">
       <DependentUpon>DonorList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DonorProfile.resx">
+    <EmbeddedResource Include="DonorForm\DonorProfile.resx">
       <DependentUpon>DonorProfile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Expense.resx">
+    <EmbeddedResource Include="ExpenseForm\Expense.resx">
       <DependentUpon>Expense.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Stuff.resx">
+    <EmbeddedResource Include="StuffForm\Stuff.resx">
       <DependentUpon>Stuff.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TeacherDetails.resx">
+    <EmbeddedResource Include="TeacherForm\TeacherDetails.resx">
       <DependentUpon>TeacherDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Income.resx">
+    <EmbeddedResource Include="IncomeForm\Income.resx">
       <DependentUpon>Income.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IncomeDetailsCommon.resx">
+    <EmbeddedResource Include="IncomeForm\IncomeDetailsCommon.resx">
       <DependentUpon>IncomeDetailsCommon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IncomeDetailsInsolvent.resx">
+    <EmbeddedResource Include="IncomeForm\IncomeDetailsInsolvent.resx">
       <DependentUpon>IncomeDetailsInsolvent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -239,22 +239,22 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Teacher.resx">
+    <EmbeddedResource Include="TeacherForm\Teacher.resx">
       <DependentUpon>Teacher.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TeacherList.resx">
+    <EmbeddedResource Include="TeacherForm\TeacherList.resx">
       <DependentUpon>TeacherList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TeacherProfile.resx">
+    <EmbeddedResource Include="TeacherForm\TeacherProfile.resx">
       <DependentUpon>TeacherProfile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UpdateDonorDetails.resx">
+    <EmbeddedResource Include="DonorForm\UpdateDonorDetails.resx">
       <DependentUpon>UpdateDonorDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UpdateTeacherDetails.resx">
+    <EmbeddedResource Include="TeacherForm\UpdateTeacherDetails.resx">
       <DependentUpon>UpdateTeacherDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WorkingTeacher.resx">
+    <EmbeddedResource Include="TeacherForm\WorkingTeacher.resx">
       <DependentUpon>WorkingTeacher.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DUMSMDataBaseDataSet.xsc">
@@ -351,5 +351,6 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

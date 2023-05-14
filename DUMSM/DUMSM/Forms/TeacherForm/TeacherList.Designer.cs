@@ -51,16 +51,16 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Donordgv = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dUMSMDataBaseTeachers = new DUMSM.DUMSMDataBaseTeachers();
+            this.dUMSMDataBaseTeachersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TeacherName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Mobile = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Designation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.JoinDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dUMSMDataBaseTeachers = new DUMSM.DUMSMDataBaseTeachers();
-            this.dUMSMDataBaseTeachersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.donorsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dUMSMDataBaseDataSet)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -259,13 +259,13 @@
             this.Donordgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.Donordgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Donordgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Delete,
+            this.Update,
             this.id,
             this.TeacherName,
             this.Mobile,
             this.Designation,
-            this.JoinDate,
-            this.Delete,
-            this.Update});
+            this.JoinDate});
             this.Donordgv.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Donordgv.GridColor = System.Drawing.SystemColors.Window;
             this.Donordgv.Location = new System.Drawing.Point(3, 3);
@@ -273,66 +273,6 @@
             this.Donordgv.Size = new System.Drawing.Size(946, 351);
             this.Donordgv.TabIndex = 0;
             this.Donordgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Donordgv_CellContentClick);
-            // 
-            // id
-            // 
-            this.id.DataPropertyName = "Id";
-            this.id.HeaderText = "আইডি ";
-            this.id.Name = "id";
-            this.id.Width = 60;
-            // 
-            // TeacherName
-            // 
-            this.TeacherName.DataPropertyName = "Name";
-            this.TeacherName.HeaderText = "শিক্ষকের নাম ";
-            this.TeacherName.Name = "TeacherName";
-            this.TeacherName.Width = 150;
-            // 
-            // Mobile
-            // 
-            this.Mobile.DataPropertyName = "MobileNumber";
-            this.Mobile.HeaderText = "মোবাইল ";
-            this.Mobile.Name = "Mobile";
-            this.Mobile.Width = 150;
-            // 
-            // Designation
-            // 
-            this.Designation.DataPropertyName = "Designation";
-            this.Designation.HeaderText = "পদবী ";
-            this.Designation.Name = "Designation";
-            // 
-            // JoinDate
-            // 
-            this.JoinDate.DataPropertyName = "JoinDate";
-            this.JoinDate.HeaderText = "যোগদানের তারিখ";
-            this.JoinDate.Name = "JoinDate";
-            // 
-            // Delete
-            // 
-            this.Delete.DataPropertyName = "Delete";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Transparent;
-            this.Delete.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Delete.HeaderText = "ডিলিট";
-            this.Delete.Name = "Delete";
-            this.Delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Delete.Text = "ডিলিট";
-            this.Delete.UseColumnTextForButtonValue = true;
-            this.Delete.Width = 70;
-            // 
-            // Update
-            // 
-            this.Update.DataPropertyName = "Update";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Update.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Update.HeaderText = "আপডেট";
-            this.Update.Name = "Update";
-            this.Update.Text = "আপডেট";
-            this.Update.UseColumnTextForButtonValue = true;
-            this.Update.Width = 70;
             // 
             // pictureBox1
             // 
@@ -357,6 +297,70 @@
             // 
             this.dUMSMDataBaseTeachersBindingSource.DataSource = this.dUMSMDataBaseTeachers;
             this.dUMSMDataBaseTeachersBindingSource.Position = 0;
+            // 
+            // Delete
+            // 
+            this.Delete.DataPropertyName = "Delete";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Transparent;
+            this.Delete.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Delete.HeaderText = "ডিলিট";
+            this.Delete.Name = "Delete";
+            this.Delete.Text = "ডিলিট";
+            this.Delete.UseColumnTextForButtonValue = true;
+            this.Delete.Width = 70;
+            // 
+            // Update
+            // 
+            this.Update.DataPropertyName = "Update";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Update.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Update.HeaderText = "আপডেট";
+            this.Update.Name = "Update";
+            this.Update.Text = "আপডেট";
+            this.Update.UseColumnTextForButtonValue = true;
+            this.Update.Width = 70;
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "Id";
+            this.id.HeaderText = "আইডি ";
+            this.id.Name = "id";
+            this.id.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.id.Width = 60;
+            // 
+            // TeacherName
+            // 
+            this.TeacherName.DataPropertyName = "Name";
+            this.TeacherName.HeaderText = "শিক্ষকের নাম ";
+            this.TeacherName.Name = "TeacherName";
+            this.TeacherName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.TeacherName.Width = 150;
+            // 
+            // Mobile
+            // 
+            this.Mobile.DataPropertyName = "MobileNumber";
+            this.Mobile.HeaderText = "মোবাইল ";
+            this.Mobile.Name = "Mobile";
+            this.Mobile.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Mobile.Width = 150;
+            // 
+            // Designation
+            // 
+            this.Designation.DataPropertyName = "Designation";
+            this.Designation.HeaderText = "পদবী ";
+            this.Designation.Name = "Designation";
+            this.Designation.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // JoinDate
+            // 
+            this.JoinDate.DataPropertyName = "JoinDate";
+            this.JoinDate.HeaderText = "যোগদানের তারিখ";
+            this.JoinDate.Name = "JoinDate";
+            this.JoinDate.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // TeacherList
             // 
@@ -415,12 +419,12 @@
         private System.Windows.Forms.DataGridView Donordgv;
         private System.Windows.Forms.BindingSource dUMSMDataBaseTeachersBindingSource;
         private DUMSMDataBaseTeachers dUMSMDataBaseTeachers;
+        private System.Windows.Forms.DataGridViewButtonColumn Delete;
+        private System.Windows.Forms.DataGridViewButtonColumn Update;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn TeacherName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Mobile;
         private System.Windows.Forms.DataGridViewTextBoxColumn Designation;
         private System.Windows.Forms.DataGridViewTextBoxColumn JoinDate;
-        private System.Windows.Forms.DataGridViewButtonColumn Delete;
-        private System.Windows.Forms.DataGridViewButtonColumn Update;
     }
 }
