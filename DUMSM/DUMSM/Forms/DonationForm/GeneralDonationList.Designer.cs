@@ -346,7 +346,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(952, 262);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "স্থায়ী দাতা সদস্যের বিস্তারিত বিবরণ";
+            this.tabPage1.Text = "সাধারণ দানের বিস্তারিত বিবরণ";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // GeneralDonationList
