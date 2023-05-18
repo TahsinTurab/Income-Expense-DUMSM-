@@ -68,10 +68,10 @@
     <Compile Include="Forms\DonationForm\GeneralDonationList.Designer.cs">
       <DependentUpon>GeneralDonationList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\DonorForm\UpdateDonationDetails.cs">
+    <Compile Include="Forms\DonationForm\UpdateDonationDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\DonorForm\UpdateDonationDetails.Designer.cs">
+    <Compile Include="Forms\DonationForm\UpdateDonationDetails.Designer.cs">
       <DependentUpon>UpdateDonationDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="UserdefineClasses\BackupOperation.cs" />
@@ -216,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DonationForm\GeneralDonationList.resx">
       <DependentUpon>GeneralDonationList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DonationForm\UpdateDonationDetails.resx">
+      <DependentUpon>UpdateDonationDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DonorForm\Donor.resx">
       <DependentUpon>Donor.cs</DependentUpon>
