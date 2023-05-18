@@ -12,7 +12,7 @@ namespace DUMSM
         {
             //return (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + System.IO.Path.GetFullPath("DUMSMDataBase.mdf") + ";Integrated Security=True;Connect Timeout=30");
             //return (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\DUMSMDataBase.mdf;Integrated Security=True;Connect Timeout=30");
-            return (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Tahsin Hasan Turab\Documents\DUMSMDataBase.mdf"";Integrated Security=True;Connect Timeout=30");
+            return (@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\DUMSMDataBase.mdf"";Integrated Security=True;Connect Timeout=30");
         }
     }
 }
