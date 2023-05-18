@@ -1,4 +1,5 @@
 ﻿using DUMSM.Classes;
+using DUMSM.Forms.DonorForm;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -146,6 +147,40 @@ namespace DUMSM
             DonorList donorList = new DonorList();
             donorList.Location = this.Location;
             donorList.Show();
+            this.Close();
+        }
+
+        private void Donor_Load(object sender, EventArgs e)
+        {
+            LoadDonorList();
+        }
+
+        public void LoadDonorList()
+        {
+            var list = CRUDOperation.GetColumnValues("Donors", "DonorName");
+
+            DonorComboBox.Items.AddRange(list.ToArray());
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            object selectedDonor = DonorComboBox.SelectedItem;
+            string DonorName = ((string)selectedDonor);
+
+            string Condition = $"DonorName = N'{DonorName}'";
+
+            var value = CRUDOperation.RetrieveRecord("Donors", Condition);
+            var donor = new Donors();
+            donor.Id = (string)value["Id"];
+            donor.DonorName = (string)value["DonorName"];
+            donor.Address = (string)value["Address"];
+            donor.DonationAmmount = (int)value["DonationAmmount"];
+            donor.DonorType = (string)value["DonorType"];
+            donor.MobileNumber = (string)value["MobileNumber"];
+
+            
+            DonorProfile donorProfile = new DonorProfile(donor);
+            donorProfile.ShowDialog();
             this.Close();
         }
     }

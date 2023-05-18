@@ -74,7 +74,7 @@
             this.button22 = new System.Windows.Forms.Button();
             this.DonorListbtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.DonorComboBox = new System.Windows.Forms.ComboBox();
             this.tabPage3.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -334,7 +334,7 @@
             this.tabPage1.BackColor = System.Drawing.Color.Transparent;
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.DonorComboBox);
             this.tabPage1.Controls.Add(this.button8);
             this.tabPage1.Controls.Add(this.button9);
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -371,6 +371,7 @@
             this.button9.TabIndex = 31;
             this.button9.Text = "প্রোফাইল দেখুন";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // tabControl1
             // 
@@ -680,13 +681,14 @@
             this.pictureBox1.TabIndex = 46;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox2
+            // DonorComboBox
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(168, 20);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(214, 29);
-            this.textBox2.TabIndex = 39;
+            this.DonorComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DonorComboBox.FormattingEnabled = true;
+            this.DonorComboBox.Location = new System.Drawing.Point(168, 18);
+            this.DonorComboBox.Name = "DonorComboBox";
+            this.DonorComboBox.Size = new System.Drawing.Size(214, 32);
+            this.DonorComboBox.TabIndex = 37;
             // 
             // Donor
             // 
@@ -706,10 +708,10 @@
             this.Name = "Donor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Donor";
+            this.Load += new System.EventHandler(this.Donor_Load);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabControl3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -767,6 +769,6 @@
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.TextBox Idtxt;
         private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ComboBox DonorComboBox;
     }
 }

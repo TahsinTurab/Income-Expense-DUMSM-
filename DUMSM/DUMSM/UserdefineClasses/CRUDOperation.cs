@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Microsoft.Office.Interop.Excel;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DUMSM
 {
@@ -83,7 +85,7 @@ namespace DUMSM
         }
 
 
-    public static List<string> GetColumnValues(string tableName, string columnName)
+        public static List<string> GetColumnValues(string tableName, string columnName)
         {
             List<string> values = new List<string>();
 
@@ -107,7 +109,7 @@ namespace DUMSM
             return values;
         }
 
-    public static List<string> GetColumnValues(string tableName, string columnName, string Condition)
+        public static List<string> GetColumnValues(string tableName, string columnName, string Condition)
     {
         List<string> values = new List<string>();
 
@@ -130,6 +132,42 @@ namespace DUMSM
 
         return values;
     }
+
+        public static Dictionary<string, object> RetrieveRecord(string tableName, string Condition)
+        {
+            Dictionary<string, object> record = null;
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string sqlQuery = $"SELECT * FROM {tableName} WHERE {Condition}"; 
+                using (SqlCommand command = new SqlCommand(sqlQuery, connection))
+                {
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    if (reader.HasRows)
+                    {
+                        reader.Read();
+
+                        record = new Dictionary<string, object>();
+
+                        for (int i = 0; i < reader.FieldCount; i++)
+                        {
+                            string fieldName = reader.GetName(i);
+                            object fieldValue = reader.GetValue(i);
+                            record.Add(fieldName, fieldValue);
+                        }
+                    }
+
+                    reader.Close();
+                }
+
+                connection.Close();
+            }
+
+            return record;
+        }
 
 
         public static void Update(Object obj)

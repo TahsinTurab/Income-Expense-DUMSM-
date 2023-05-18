@@ -17,7 +17,7 @@ namespace DUMSM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GorabaDonationList());
+            Application.Run(new Donor());
         }
     }
 }
