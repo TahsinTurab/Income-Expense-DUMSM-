@@ -35,11 +35,12 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.teacherId = new System.Windows.Forms.TextBox();
+            this.button25 = new System.Windows.Forms.Button();
+            this.teacherJoinDate = new System.Windows.Forms.TextBox();
+            this.teacherMobile = new System.Windows.Forms.TextBox();
+            this.teacherDesignation = new System.Windows.Forms.TextBox();
+            this.teacherName = new System.Windows.Forms.TextBox();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
@@ -69,16 +70,15 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.button12 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button25 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabControl3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -152,12 +152,12 @@
             // 
             this.tabPage3.BackColor = System.Drawing.Color.Transparent;
             this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.tabPage3.Controls.Add(this.textBox6);
+            this.tabPage3.Controls.Add(this.teacherId);
             this.tabPage3.Controls.Add(this.button25);
-            this.tabPage3.Controls.Add(this.textBox4);
-            this.tabPage3.Controls.Add(this.textBox3);
-            this.tabPage3.Controls.Add(this.textBox2);
-            this.tabPage3.Controls.Add(this.textBox8);
+            this.tabPage3.Controls.Add(this.teacherJoinDate);
+            this.tabPage3.Controls.Add(this.teacherMobile);
+            this.tabPage3.Controls.Add(this.teacherDesignation);
+            this.tabPage3.Controls.Add(this.teacherName);
             this.tabPage3.Controls.Add(this.pictureBox2);
             this.tabPage3.Controls.Add(this.button14);
             this.tabPage3.Controls.Add(this.button15);
@@ -171,51 +171,59 @@
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "শিক্ষক প্রোফাইল";
             // 
-            // textBox4
+            // teacherId
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(403, 190);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(277, 29);
-            this.textBox4.TabIndex = 34;
-            this.textBox4.Text = "০১-০১-২০০৬";
+            this.teacherId.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teacherId.Location = new System.Drawing.Point(403, 17);
+            this.teacherId.Name = "teacherId";
+            this.teacherId.Size = new System.Drawing.Size(277, 29);
+            this.teacherId.TabIndex = 36;
             // 
-            // textBox3
+            // button25
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(403, 148);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(277, 29);
-            this.textBox3.TabIndex = 33;
-            this.textBox3.Text = "০১২৩৪৫৬৭৮৯১";
+            this.button25.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button25.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button25.Enabled = false;
+            this.button25.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button25.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button25.Location = new System.Drawing.Point(222, 9);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(179, 41);
+            this.button25.TabIndex = 35;
+            this.button25.Text = "আইডি";
+            this.button25.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // teacherJoinDate
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(403, 113);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(277, 29);
-            this.textBox2.TabIndex = 32;
-            this.textBox2.Text = "মুহতামীম";
+            this.teacherJoinDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teacherJoinDate.Location = new System.Drawing.Point(403, 190);
+            this.teacherJoinDate.Name = "teacherJoinDate";
+            this.teacherJoinDate.Size = new System.Drawing.Size(277, 29);
+            this.teacherJoinDate.TabIndex = 34;
             // 
-            // textBox8
+            // teacherMobile
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(403, 66);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(277, 29);
-            this.textBox8.TabIndex = 31;
-            this.textBox8.Text = "মাওলানা রিয়াজুল ইসলাম";
+            this.teacherMobile.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teacherMobile.Location = new System.Drawing.Point(403, 148);
+            this.teacherMobile.Name = "teacherMobile";
+            this.teacherMobile.Size = new System.Drawing.Size(277, 29);
+            this.teacherMobile.TabIndex = 33;
             // 
-            // pictureBox2
+            // teacherDesignation
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(27, 17);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(176, 182);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 30;
-            this.pictureBox2.TabStop = false;
+            this.teacherDesignation.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teacherDesignation.Location = new System.Drawing.Point(403, 113);
+            this.teacherDesignation.Name = "teacherDesignation";
+            this.teacherDesignation.Size = new System.Drawing.Size(277, 29);
+            this.teacherDesignation.TabIndex = 32;
+            // 
+            // teacherName
+            // 
+            this.teacherName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teacherName.Location = new System.Drawing.Point(403, 66);
+            this.teacherName.Name = "teacherName";
+            this.teacherName.Size = new System.Drawing.Size(277, 29);
+            this.teacherName.TabIndex = 31;
             // 
             // button14
             // 
@@ -539,8 +547,9 @@
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(708, 41);
             this.button11.TabIndex = 50;
-            this.button11.Text = "চলতি মাসের বেতনের তথ্য নিবন্ধন করুন ";
+            this.button11.Text = "তথ্য আপডেট করুন";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // tabControl1
             // 
@@ -601,6 +610,17 @@
             this.button1.TabIndex = 52;
             this.button1.Text = "পূর্বের পাতা";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(27, 17);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(176, 182);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 30;
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -615,29 +635,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 46;
             this.pictureBox1.TabStop = false;
-            // 
-            // button25
-            // 
-            this.button25.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button25.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button25.Enabled = false;
-            this.button25.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button25.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button25.Location = new System.Drawing.Point(222, 9);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(179, 41);
-            this.button25.TabIndex = 35;
-            this.button25.Text = "আইডি";
-            this.button25.UseVisualStyleBackColor = false;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(403, 17);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(277, 29);
-            this.textBox6.TabIndex = 36;
-            this.textBox6.Text = "০০১";
             // 
             // TeacherProfile
             // 
@@ -656,15 +653,16 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TeacherProfile";
             this.Text = "TeacherProfile";
+            this.Load += new System.EventHandler(this.TeacherProfile_Load);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabControl3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -692,10 +690,10 @@
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox teacherJoinDate;
+        private System.Windows.Forms.TextBox teacherMobile;
+        private System.Windows.Forms.TextBox teacherDesignation;
+        private System.Windows.Forms.TextBox teacherName;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
@@ -714,7 +712,7 @@
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox teacherId;
         private System.Windows.Forms.Button button25;
     }
 }

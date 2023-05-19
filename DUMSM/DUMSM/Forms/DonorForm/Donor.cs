@@ -164,24 +164,31 @@ namespace DUMSM
 
         private void button9_Click(object sender, EventArgs e)
         {
-            object selectedDonor = DonorComboBox.SelectedItem;
-            string DonorName = ((string)selectedDonor);
+            try
+            {
+                object selectedDonor = DonorComboBox.SelectedItem;
+                string DonorName = ((string)selectedDonor);
 
-            string Condition = $"DonorName = N'{DonorName}'";
+                string Condition = $"DonorName = N'{DonorName}'";
 
-            var value = CRUDOperation.RetrieveRecord("Donors", Condition);
-            var donor = new Donors();
-            donor.Id = (string)value["Id"];
-            donor.DonorName = (string)value["DonorName"];
-            donor.Address = (string)value["Address"];
-            donor.DonationAmmount = (int)value["DonationAmmount"];
-            donor.DonorType = (string)value["DonorType"];
-            donor.MobileNumber = (string)value["MobileNumber"];
+                var value = CRUDOperation.RetrieveRecord("Donors", Condition);
+                var donor = new Donors();
+                donor.Id = (string)value["Id"];
+                donor.DonorName = (string)value["DonorName"];
+                donor.Address = (string)value["Address"];
+                donor.DonationAmmount = (int)value["DonationAmmount"];
+                donor.DonorType = (string)value["DonorType"];
+                donor.MobileNumber = (string)value["MobileNumber"];
 
-            
-            DonorProfile donorProfile = new DonorProfile(donor);
-            donorProfile.ShowDialog();
-            this.Close();
+
+                DonorProfile donorProfile = new DonorProfile(donor);
+                donorProfile.ShowDialog();
+                this.Close();
+            }
+            catch
+            {
+                MessageBox.Show("দাতার নাম সিলেক্ট করুন"); 
+            }
         }
     }
 }
