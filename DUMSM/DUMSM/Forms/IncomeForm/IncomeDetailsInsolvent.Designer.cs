@@ -36,7 +36,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.searchNametxt = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.Searchbtn = new System.Windows.Forms.Button();
@@ -53,11 +52,12 @@
             this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.DeleteAllbtn = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Donordgv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button35
@@ -113,24 +113,10 @@
             this.textBox1.TabIndex = 45;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = global::DUMSM.Properties.Resources.logo1;
-            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(164, 19);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(116, 83);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 46;
-            this.pictureBox1.TabStop = false;
-            // 
             // searchNametxt
             // 
             this.searchNametxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchNametxt.Location = new System.Drawing.Point(115, 598);
+            this.searchNametxt.Location = new System.Drawing.Point(106, 601);
             this.searchNametxt.Name = "searchNametxt";
             this.searchNametxt.Size = new System.Drawing.Size(250, 29);
             this.searchNametxt.TabIndex = 94;
@@ -151,12 +137,13 @@
             this.Searchbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Searchbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.Searchbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Searchbtn.Location = new System.Drawing.Point(372, 594);
+            this.Searchbtn.Location = new System.Drawing.Point(359, 594);
             this.Searchbtn.Name = "Searchbtn";
             this.Searchbtn.Size = new System.Drawing.Size(167, 41);
             this.Searchbtn.TabIndex = 93;
             this.Searchbtn.Text = "অনুসন্ধান করুন";
             this.Searchbtn.UseVisualStyleBackColor = false;
+            this.Searchbtn.Click += new System.EventHandler(this.Searchbtn_Click);
             // 
             // tabControl1
             // 
@@ -296,31 +283,47 @@
             this.button2.TabIndex = 91;
             this.button2.Text = "ব্যাকআপ ";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // pictureBox1
             // 
-            this.button1.BackColor = System.Drawing.Color.RosyBrown;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(580, 594);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(182, 41);
-            this.button1.TabIndex = 90;
-            this.button1.Text = "ডিলিট করুন";
-            this.button1.UseVisualStyleBackColor = false;
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Image = global::DUMSM.Properties.Resources.logo1;
+            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pictureBox1.Location = new System.Drawing.Point(164, 19);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(116, 83);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 46;
+            this.pictureBox1.TabStop = false;
+            // 
+            // DeleteAllbtn
+            // 
+            this.DeleteAllbtn.BackColor = System.Drawing.Color.RosyBrown;
+            this.DeleteAllbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DeleteAllbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.DeleteAllbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.DeleteAllbtn.Location = new System.Drawing.Point(532, 594);
+            this.DeleteAllbtn.Name = "DeleteAllbtn";
+            this.DeleteAllbtn.Size = new System.Drawing.Size(245, 41);
+            this.DeleteAllbtn.TabIndex = 96;
+            this.DeleteAllbtn.Text = "সকল তথ্য ডিলিট করুন";
+            this.DeleteAllbtn.UseVisualStyleBackColor = false;
+            this.DeleteAllbtn.Click += new System.EventHandler(this.DeleteAllbtn_Click);
             // 
             // IncomeDetailsInsolvent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.DeleteAllbtn);
             this.Controls.Add(this.searchNametxt);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.Searchbtn);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.button35);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -330,10 +333,10 @@
             this.Name = "IncomeDetailsInsolvent";
             this.Text = "গোরাবা জমার বিস্তারিত বিবরণ";
             this.Load += new System.EventHandler(this.IncomeDetailsInsolvent_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Donordgv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -361,6 +364,6 @@
         private System.Windows.Forms.DataGridViewButtonColumn Delete;
         private System.Windows.Forms.DataGridViewButtonColumn Update;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button DeleteAllbtn;
     }
 }

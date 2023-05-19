@@ -80,5 +80,34 @@ namespace DUMSM
             this.Close();
             income.ShowDialog();
         }
+
+        private void DeleteAllbtn_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("আপনি গোরাবা জমার সকল তথ্য চিরতরে মুছে ফেলতে চাচ্ছেন?",
+                "গোরাবা জমার সদস্যের তালিকা", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                CRUDOperation.DeleteAllData("GorabaIncome");
+                MessageBox.Show("সকল তথ্য মুছে ফেলা হয়েছে।");
+            }
+            else
+            {
+                MessageBox.Show("কোনো তথ্য মুছে ফেলা হয়নি।");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            BackupOperation.Backup2Excel("GorabaIncome");
+            MessageBox.Show("সফলভাবে গোরাবা জমার তথ্য ব্যাকআপ নেয়া হয়েছে");
+        }
+
+        private void Searchbtn_Click(object sender, EventArgs e)
+        {
+            (Donordgv.DataSource as DataTable).DefaultView.RowFilter =
+                String.Format("SlipNumber like '%" + searchNametxt.Text + "%'");
+        }
     }
 }

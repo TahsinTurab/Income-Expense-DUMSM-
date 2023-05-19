@@ -36,15 +36,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Donordgv = new System.Windows.Forms.DataGridView();
-            this.searchNametxt = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.Searchbtn = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SlipNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IsDonation = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,6 +49,11 @@
             this.RegisterDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.searchNametxt = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.Searchbtn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.DeleteAllbtn = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Donordgv)).BeginInit();
@@ -114,19 +114,6 @@
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.RosyBrown;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(580, 608);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(182, 41);
-            this.button1.TabIndex = 41;
-            this.button1.Text = "ডিলিট করুন";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.RosyBrown;
@@ -139,6 +126,7 @@
             this.button2.TabIndex = 42;
             this.button2.Text = "ব্যাকআপ ";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // tabControl1
             // 
@@ -192,51 +180,6 @@
             this.Donordgv.Size = new System.Drawing.Size(946, 376);
             this.Donordgv.TabIndex = 0;
             this.Donordgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Donordgv_CellContentClick);
-            // 
-            // searchNametxt
-            // 
-            this.searchNametxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchNametxt.Location = new System.Drawing.Point(115, 612);
-            this.searchNametxt.Name = "searchNametxt";
-            this.searchNametxt.Size = new System.Drawing.Size(250, 29);
-            this.searchNametxt.TabIndex = 88;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(15, 615);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(94, 24);
-            this.label9.TabIndex = 89;
-            this.label9.Text = "রশিদ নাম্বার";
-            // 
-            // Searchbtn
-            // 
-            this.Searchbtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Searchbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Searchbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.Searchbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Searchbtn.Location = new System.Drawing.Point(372, 608);
-            this.Searchbtn.Name = "Searchbtn";
-            this.Searchbtn.Size = new System.Drawing.Size(167, 41);
-            this.Searchbtn.TabIndex = 87;
-            this.Searchbtn.Text = "অনুসন্ধান করুন";
-            this.Searchbtn.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = global::DUMSM.Properties.Resources.logo1;
-            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(166, 12);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(116, 83);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 35;
-            this.pictureBox1.TabStop = false;
             // 
             // id
             // 
@@ -311,17 +254,77 @@
             this.Update.UseColumnTextForButtonValue = true;
             this.Update.Width = 70;
             // 
+            // searchNametxt
+            // 
+            this.searchNametxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchNametxt.Location = new System.Drawing.Point(104, 612);
+            this.searchNametxt.Name = "searchNametxt";
+            this.searchNametxt.Size = new System.Drawing.Size(250, 29);
+            this.searchNametxt.TabIndex = 88;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(12, 615);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(94, 24);
+            this.label9.TabIndex = 89;
+            this.label9.Text = "রশিদ নাম্বার";
+            // 
+            // Searchbtn
+            // 
+            this.Searchbtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Searchbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Searchbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.Searchbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.Searchbtn.Location = new System.Drawing.Point(360, 608);
+            this.Searchbtn.Name = "Searchbtn";
+            this.Searchbtn.Size = new System.Drawing.Size(167, 41);
+            this.Searchbtn.TabIndex = 87;
+            this.Searchbtn.Text = "অনুসন্ধান করুন";
+            this.Searchbtn.UseVisualStyleBackColor = false;
+            this.Searchbtn.Click += new System.EventHandler(this.Searchbtn_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Image = global::DUMSM.Properties.Resources.logo1;
+            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pictureBox1.Location = new System.Drawing.Point(166, 12);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(116, 83);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 35;
+            this.pictureBox1.TabStop = false;
+            // 
+            // DeleteAllbtn
+            // 
+            this.DeleteAllbtn.BackColor = System.Drawing.Color.RosyBrown;
+            this.DeleteAllbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DeleteAllbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.DeleteAllbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.DeleteAllbtn.Location = new System.Drawing.Point(533, 608);
+            this.DeleteAllbtn.Name = "DeleteAllbtn";
+            this.DeleteAllbtn.Size = new System.Drawing.Size(245, 41);
+            this.DeleteAllbtn.TabIndex = 90;
+            this.DeleteAllbtn.Text = "সকল তথ্য ডিলিট করুন";
+            this.DeleteAllbtn.UseVisualStyleBackColor = false;
+            this.DeleteAllbtn.Click += new System.EventHandler(this.DeleteAllbtn_Click);
+            // 
             // IncomeDetailsCommon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.DeleteAllbtn);
             this.Controls.Add(this.searchNametxt);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.Searchbtn);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.button35);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -347,7 +350,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
@@ -364,5 +366,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn RegisterDate;
         private System.Windows.Forms.DataGridViewButtonColumn Delete;
         private System.Windows.Forms.DataGridViewButtonColumn Update;
+        private System.Windows.Forms.Button DeleteAllbtn;
     }
 }
