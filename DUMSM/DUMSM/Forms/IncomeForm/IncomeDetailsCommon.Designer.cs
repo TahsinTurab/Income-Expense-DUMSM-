@@ -86,6 +86,7 @@
             this.label1.Size = new System.Drawing.Size(460, 39);
             this.label1.TabIndex = 36;
             this.label1.Text = "দারুল উলূম মুহিউস সুন্নাহ মাদরাসা\r\n";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -99,6 +100,7 @@
             this.label2.Size = new System.Drawing.Size(283, 25);
             this.label2.TabIndex = 37;
             this.label2.Text = "খোয়াজপুর, বেগমগঞ্জ, নোয়াখালী";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBox1
             // 
@@ -137,6 +139,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(960, 424);
             this.tabControl1.TabIndex = 67;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // tabPage1
             // 
@@ -149,6 +152,7 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "সাধারণ অনুদানের বিস্তারিত বিবরণ";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // Donordgv
             // 
@@ -261,6 +265,7 @@
             this.searchNametxt.Name = "searchNametxt";
             this.searchNametxt.Size = new System.Drawing.Size(250, 29);
             this.searchNametxt.TabIndex = 88;
+            this.searchNametxt.TextChanged += new System.EventHandler(this.searchNametxt_TextChanged);
             // 
             // label9
             // 
@@ -271,6 +276,7 @@
             this.label9.Size = new System.Drawing.Size(94, 24);
             this.label9.TabIndex = 89;
             this.label9.Text = "রশিদ নাম্বার";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // Searchbtn
             // 
@@ -299,6 +305,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 35;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // DeleteAllbtn
             // 

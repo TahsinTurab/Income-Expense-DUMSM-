@@ -1,4 +1,5 @@
 ﻿using DUMSM.Classes;
+using DUMSM.Forms.ExpenseForm;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,6 +28,7 @@ namespace DUMSM
                 var willInsert = true;
 
                 var generalExpense = new GeneralExpense();
+                generalExpense.Id = Guid.NewGuid();
                 var IsDonationAmmountOK = Conversion.BnNumber2EnNumber(Ammounttxt.Text.Trim());
                 generalExpense.VoucherNumber = Vouchertxt.Text;
                 generalExpense.ExpenseDate = RegisterDatetxt.Value.ToString("dd/MM/yyyy");
@@ -100,6 +102,7 @@ namespace DUMSM
                 var willInsert = true;
 
                 var gorabaExpense = new GorabaExpense();
+                gorabaExpense.Id = Guid.NewGuid();
                 var IsDonationAmmountOK = Conversion.BnNumber2EnNumber(GorabaAmmounttxt.Text.Trim());
                 gorabaExpense.VoucherNumber = GorabaVouchertxt.Text;
                 gorabaExpense.ExpenseDate = GorabaRegisterDatetxt.Value.ToString("dd/MM/yyyy");
@@ -173,6 +176,22 @@ namespace DUMSM
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button34_Click(object sender, EventArgs e)
+        {
+            ExpenseDetailsCommon expenseDetailsCommon = new ExpenseDetailsCommon();
+            
+            expenseDetailsCommon.Show();
+            this.Hide();
+        }
+
+        private void button35_Click(object sender, EventArgs e)
+        {
+            ExpenseDetailsGoraba expenseDetailsGoraba = new ExpenseDetailsGoraba();
+
+            expenseDetailsGoraba.Show();
+            this.Hide();
         }
     }
 }

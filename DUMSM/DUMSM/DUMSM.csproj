@@ -86,6 +86,30 @@
     <Compile Include="Forms\DonationForm\UpdateGorabaDonationDetails.Designer.cs">
       <DependentUpon>UpdateGorabaDonationDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ExpenseForm\ExpenseDetailsCommon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ExpenseForm\ExpenseDetailsCommon.Designer.cs">
+      <DependentUpon>ExpenseDetailsCommon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ExpenseForm\ExpenseDetailsGoraba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ExpenseForm\ExpenseDetailsGoraba.Designer.cs">
+      <DependentUpon>ExpenseDetailsGoraba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ExpenseForm\UpdateCommonExpenseDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ExpenseForm\UpdateCommonExpenseDetails.Designer.cs">
+      <DependentUpon>UpdateCommonExpenseDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ExpenseForm\UpdateGorabaExpenseDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ExpenseForm\UpdateGorabaExpenseDetails.Designer.cs">
+      <DependentUpon>UpdateGorabaExpenseDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\IncomeForm\UpdateCommonIncomeDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,12 +127,6 @@
     </Compile>
     <Compile Include="Forms\TeacherForm\StuffProfile.Designer.cs">
       <DependentUpon>StuffProfile.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Teacher_Stuff\Teacher.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Teacher_Stuff\Teacher.Designer.cs">
-      <DependentUpon>Teacher.cs</DependentUpon>
     </Compile>
     <Compile Include="UserdefineClasses\BackupOperation.cs" />
     <Compile Include="Classes\GorabaDonations.cs" />
@@ -172,12 +190,6 @@
     </Compile>
     <Compile Include="UserdefineClasses\PopUpMessage.cs" />
     <Compile Include="UserdefineClasses\SQLConnection.cs" />
-    <Compile Include="Forms\StuffForm\Stuff.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\StuffForm\Stuff.Designer.cs">
-      <DependentUpon>Stuff.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\TeacherForm\TeacherDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -274,14 +286,23 @@
     <EmbeddedResource Include="Forms\ExpenseForm\Expense.resx">
       <DependentUpon>Expense.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ExpenseForm\ExpenseDetailsCommon.resx">
+      <DependentUpon>ExpenseDetailsCommon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ExpenseForm\ExpenseDetailsGoraba.resx">
+      <DependentUpon>ExpenseDetailsGoraba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ExpenseForm\UpdateCommonExpenseDetails.resx">
+      <DependentUpon>UpdateCommonExpenseDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ExpenseForm\UpdateGorabaExpenseDetails.resx">
+      <DependentUpon>UpdateGorabaExpenseDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\IncomeForm\UpdateCommonIncomeDetails.resx">
       <DependentUpon>UpdateCommonIncomeDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\IncomeForm\UpdateGorabaIncomeDetails.resx">
       <DependentUpon>UpdateGorabaIncomeDetails.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\StuffForm\Stuff.resx">
-      <DependentUpon>Stuff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TeacherForm\StuffProfile.resx">
       <DependentUpon>StuffProfile.cs</DependentUpon>
@@ -297,9 +318,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\IncomeForm\IncomeDetailsInsolvent.resx">
       <DependentUpon>IncomeDetailsInsolvent.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Teacher_Stuff\Teacher.resx">
-      <DependentUpon>Teacher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

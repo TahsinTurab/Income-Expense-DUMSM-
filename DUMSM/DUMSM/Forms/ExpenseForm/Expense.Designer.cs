@@ -55,6 +55,7 @@
             this.GorabaFieldtxt = new System.Windows.Forms.ComboBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.DailyTotalGeneraltxt = new System.Windows.Forms.TextBox();
             this.button10 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -73,7 +74,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.DashboardBtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -90,7 +90,7 @@
             this.button28 = new System.Windows.Forms.Button();
             this.button34 = new System.Windows.Forms.Button();
             this.button35 = new System.Windows.Forms.Button();
-            this.DailyTotalGeneraltxt = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl2.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabControl3.SuspendLayout();
@@ -99,9 +99,9 @@
             this.tabPage1.SuspendLayout();
             this.tabControl4.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // MonthlyTotalGeneraltxt
@@ -431,6 +431,15 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "সাধারণ খরচের তথ্য ";
             // 
+            // DailyTotalGeneraltxt
+            // 
+            this.DailyTotalGeneraltxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.DailyTotalGeneraltxt.Location = new System.Drawing.Point(222, 11);
+            this.DailyTotalGeneraltxt.Name = "DailyTotalGeneraltxt";
+            this.DailyTotalGeneraltxt.Size = new System.Drawing.Size(133, 29);
+            this.DailyTotalGeneraltxt.TabIndex = 33;
+            this.DailyTotalGeneraltxt.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
             // button10
             // 
             this.button10.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -677,20 +686,6 @@
             this.label2.TabIndex = 27;
             this.label2.Text = "খোয়াজপুর, বেগমগঞ্জ, নোয়াখালী";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = global::DUMSM.Properties.Resources.logo1;
-            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(168, 12);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(116, 83);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
-            // 
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -898,6 +893,7 @@
             this.button34.TabIndex = 32;
             this.button34.Text = "সাধারণ খরচের বিস্তারিত বিবরণ দেখুন";
             this.button34.UseVisualStyleBackColor = false;
+            this.button34.Click += new System.EventHandler(this.button34_Click);
             // 
             // button35
             // 
@@ -911,15 +907,21 @@
             this.button35.TabIndex = 33;
             this.button35.Text = "গোরাবা খরচের বিস্তারিত বিবরণ দেখুন";
             this.button35.UseVisualStyleBackColor = false;
+            this.button35.Click += new System.EventHandler(this.button35_Click);
             // 
-            // DailyTotalGeneraltxt
+            // pictureBox1
             // 
-            this.DailyTotalGeneraltxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.DailyTotalGeneraltxt.Location = new System.Drawing.Point(222, 11);
-            this.DailyTotalGeneraltxt.Name = "DailyTotalGeneraltxt";
-            this.DailyTotalGeneraltxt.Size = new System.Drawing.Size(133, 29);
-            this.DailyTotalGeneraltxt.TabIndex = 33;
-            this.DailyTotalGeneraltxt.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Image = global::DUMSM.Properties.Resources.logo1;
+            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pictureBox1.Location = new System.Drawing.Point(168, 12);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(116, 83);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 25;
+            this.pictureBox1.TabStop = false;
             // 
             // Expense
             // 
@@ -952,9 +954,9 @@
             this.tabControl4.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
