@@ -81,7 +81,7 @@ namespace DUMSM.Forms.DonorForm
                     generalIncome.SlipNumber = generalDonation.SlipNumber;
                     generalIncome.Ammount = generalDonation.DonationAmmount;
                     generalIncome.RegisterDate = generalDonation.DonationDate;
-                    generalIncome.IsDonation = true;
+                    generalIncome.IsDonation = "হ্যাঁ";
                     generalIncome.Field = generalDonation.DonationField;
                     generalIncome.DonationId = generalDonation.Id.ToString();
                     CRUDOperation.Update(generalDonation);

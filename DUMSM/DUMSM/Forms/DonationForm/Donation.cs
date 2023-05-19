@@ -67,10 +67,11 @@ namespace DUMSM
                 if (willInsert)
                 {
                     var generalIncome = new GeneralIncome();
+                    generalIncome.Id = Guid.NewGuid();
                     generalIncome.SlipNumber = generalDonation.SlipNumber;
                     generalIncome.Ammount = generalDonation.DonationAmmount;
                     generalIncome.RegisterDate = generalDonation.DonationDate;
-                    generalIncome.IsDonation = true;
+                    generalIncome.IsDonation = "হ্যাঁ";
                     generalIncome.Field = generalDonation.DonationField;
                     generalIncome.DonationId = generalDonation.Id.ToString();
                     CRUDOperation.Insert(generalDonation);
@@ -163,10 +164,11 @@ namespace DUMSM
                 if (willInsert)
                 {
                     var gorabaIncome = new GorabaIncome();
+                    gorabaIncome.Id = Guid.NewGuid();
                     gorabaIncome.SlipNumber = gorabaDonation.SlipNumber;
                     gorabaIncome.Ammount = gorabaDonation.DonationAmmount;
                     gorabaIncome.RegisterDate = gorabaDonation.DonationDate;
-                    gorabaIncome.IsDonation = true;
+                    gorabaIncome.IsDonation = "হ্যাঁ";
                     gorabaIncome.Field = gorabaDonation.DonationField;
                     gorabaIncome.DonationId = gorabaDonation.Id.ToString();
                     CRUDOperation.Insert(gorabaDonation);

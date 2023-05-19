@@ -97,6 +97,7 @@ namespace DUMSM
                 var generalIncome = new GeneralIncome();
                 var IsDonationAmmountOK = Conversion.BnNumber2EnNumber(Ammounttxt.Text.Trim());
                 generalIncome.SlipNumber = SlipNumbertxt.Text;
+                generalIncome.IsDonation = "না"; 
                 generalIncome.RegisterDate = DateTimetxt.Value.ToString("dd/MM/yyyy");
 
                 if (IsDonationAmmountOK != "false")
@@ -170,8 +171,10 @@ namespace DUMSM
                 var willInsert = true;
 
                 var gorabaIncome = new GorabaIncome();
+                gorabaIncome.Id = Guid.NewGuid();
                 var IsDonationAmmountOK = Conversion.BnNumber2EnNumber(GorabaAmmounttxt.Text.Trim());
                 gorabaIncome.SlipNumber = GorabaSlipNumbertxt.Text;
+                gorabaIncome.IsDonation = "না";
                 gorabaIncome.RegisterDate = GorabaDateTimetxt.Value.ToString("dd/MM/yyyy");
 
                 if (IsDonationAmmountOK != "false")
@@ -189,7 +192,7 @@ namespace DUMSM
                 }
                 //donation.DonationAmmount = Ammounttxt.Text;
 
-                object selectedItem = Fieldtxt.SelectedItem;
+                object selectedItem = GorabaFieldtxt.SelectedItem;
                 string type = ((string)selectedItem);
                 gorabaIncome.Field = ((string)selectedItem);
 
@@ -217,6 +220,22 @@ namespace DUMSM
         private void GorabaResetbtn_Click(object sender, EventArgs e)
         {
             ResetForm();
+        }
+
+        private void button36_Click(object sender, EventArgs e)
+        {
+            var IncomeDetailsCommon = new IncomeDetailsCommon();
+            this.Hide();
+            IncomeDetailsCommon.Location = this.Location;
+            IncomeDetailsCommon.ShowDialog();
+        }
+
+        private void button37_Click(object sender, EventArgs e)
+        {
+            var IncomeDetailsInsolvant = new IncomeDetailsInsolvent();
+            this.Hide();
+            IncomeDetailsInsolvant.Location = this.Location;
+            IncomeDetailsInsolvant.ShowDialog();
         }
     }
 }

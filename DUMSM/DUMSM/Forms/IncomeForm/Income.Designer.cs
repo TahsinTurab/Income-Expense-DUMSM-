@@ -742,6 +742,7 @@
             this.button36.TabIndex = 23;
             this.button36.Text = "সাধারণ জমার বিস্তারিত তালিকা দেখুন";
             this.button36.UseVisualStyleBackColor = false;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
             // 
             // tabControl4
             // 
@@ -913,6 +914,7 @@
             this.button37.TabIndex = 25;
             this.button37.Text = "গোরাবা জমার বিস্তারিত তালিকা দেখুন";
             this.button37.UseVisualStyleBackColor = false;
+            this.button37.Click += new System.EventHandler(this.button37_Click);
             // 
             // Income
             // 

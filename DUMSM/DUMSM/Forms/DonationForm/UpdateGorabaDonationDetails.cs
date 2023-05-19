@@ -81,7 +81,7 @@ namespace DUMSM.Forms.DonationForm
                     gorabaIncome.SlipNumber = generalDonation.SlipNumber;
                     gorabaIncome.Ammount = generalDonation.DonationAmmount;
                     gorabaIncome.RegisterDate = generalDonation.DonationDate;
-                    gorabaIncome.IsDonation = true;
+                    gorabaIncome.IsDonation = "হ্যাঁ";
                     gorabaIncome.Field = generalDonation.DonationField;
                     gorabaIncome.DonationId = generalDonation.Id.ToString();
                     CRUDOperation.Update(generalDonation);
