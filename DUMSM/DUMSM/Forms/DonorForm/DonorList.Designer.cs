@@ -193,6 +193,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(960, 304);
             this.tabControl1.TabIndex = 66;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // tabPage1
             // 
@@ -362,6 +363,7 @@
             this.groupBox1.TabIndex = 72;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "নতুন দাতা নিবন্ধন";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // Addresstxt
             // 
@@ -529,6 +531,7 @@
             this.searchNametxt.Name = "searchNametxt";
             this.searchNametxt.Size = new System.Drawing.Size(250, 29);
             this.searchNametxt.TabIndex = 85;
+            this.searchNametxt.TextChanged += new System.EventHandler(this.searchNametxt_TextChanged);
             // 
             // label9
             // 
@@ -539,6 +542,7 @@
             this.label9.Size = new System.Drawing.Size(84, 24);
             this.label9.TabIndex = 86;
             this.label9.Text = "দাতার নাম";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // DonorList
             // 

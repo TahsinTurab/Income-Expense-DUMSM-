@@ -274,5 +274,25 @@ namespace DUMSM
             (Donordgv.DataSource as DataTable).DefaultView.RowFilter =
                 String.Format("donorName like '%" + searchNametxt.Text + "%'");
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void searchNametxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

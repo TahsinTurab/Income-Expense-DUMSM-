@@ -62,6 +62,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Salaries.cs" />
     <Compile Include="Forms\DonationForm\GeneralDonationList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +122,12 @@
     </Compile>
     <Compile Include="Forms\IncomeForm\UpdateGorabaIncomeDetails.Designer.cs">
       <DependentUpon>UpdateGorabaIncomeDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Salary\Salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Salary\Salary.Designer.cs">
+      <DependentUpon>Salary.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\TeacherForm\StuffProfile.cs">
       <SubType>Form</SubType>
@@ -303,6 +310,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\IncomeForm\UpdateGorabaIncomeDetails.resx">
       <DependentUpon>UpdateGorabaIncomeDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Salary\Salary.resx">
+      <DependentUpon>Salary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TeacherForm\StuffProfile.resx">
       <DependentUpon>StuffProfile.cs</DependentUpon>
