@@ -129,6 +129,12 @@
     <Compile Include="Forms\Salary\Salary.Designer.cs">
       <DependentUpon>Salary.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Salary\UpdateSalaryDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Salary\UpdateSalaryDetails.Designer.cs">
+      <DependentUpon>UpdateSalaryDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\TeacherForm\StuffProfile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -313,6 +319,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Salary\Salary.resx">
       <DependentUpon>Salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Salary\UpdateSalaryDetails.resx">
+      <DependentUpon>UpdateSalaryDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TeacherForm\StuffProfile.resx">
       <DependentUpon>StuffProfile.cs</DependentUpon>

@@ -1,4 +1,5 @@
 ﻿using DUMSM.Classes;
+using DUMSM.Forms.DonorForm;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,7 +33,56 @@ namespace DUMSM.Forms.Salary
 
         private void Donordgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (Donordgv.Columns[e.ColumnIndex].HeaderText == "ডিলিট")
+            {
+                string id = Donordgv.Rows[e.RowIndex].Cells["Id"].Value.ToString();
 
+                DialogResult result = MessageBox.Show($"বেতনের আইডিঃ {id}\n\nআপনি এই তথ্যটি ডিলিট করতে ইচ্ছুক? ",
+                    "বেতনের তালিকা", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (result == DialogResult.Yes)
+                {
+                    CRUDOperation.Delete("Salaries", id);
+                    MessageBox.Show("বেতনের তথ্য মুছে ফেলা হয়েছে।");
+                    //DisplayData();
+                }
+
+                else
+                {
+                    MessageBox.Show("বেতনের তথ্য মুছে ফেলা হয়নি।");
+
+                }
+
+            }
+
+            else if (Donordgv.Columns[e.ColumnIndex].HeaderText.Trim() == "আপডেট")
+            {
+                MonthlyInformations monthlyInformations = new MonthlyInformations();
+                monthlyInformations.Id = Guid.Parse(Donordgv.Rows[e.RowIndex].Cells["Id"].Value.ToString());
+                monthlyInformations.TotalPresent = int.Parse(Donordgv.Rows[e.RowIndex].Cells["TotalPresent"].Value.ToString());
+                monthlyInformations.TotalAbsent = int.Parse(Donordgv.Rows[e.RowIndex].Cells["TotalAbsent"].Value.ToString());
+                monthlyInformations.TotalLeave = int.Parse(Donordgv.Rows[e.RowIndex].Cells["TotalLeave"].Value.ToString());
+                monthlyInformations.Advance = int.Parse(Donordgv.Rows[e.RowIndex].Cells["Advance"].Value.ToString());
+                monthlyInformations.Loan = int.Parse(Donordgv.Rows[e.RowIndex].Cells["Loan"].Value.ToString());
+                monthlyInformations.Bonous = int.Parse(Donordgv.Rows[e.RowIndex].Cells["Bonous"].Value.ToString());
+                monthlyInformations.BaseSalary = int.Parse(Donordgv.Rows[e.RowIndex].Cells["BaseSalary"].Value.ToString());
+                monthlyInformations.Due = int.Parse(Donordgv.Rows[e.RowIndex].Cells["Due"].Value.ToString());
+                monthlyInformations.TotalAmmount = int.Parse(Donordgv.Rows[e.RowIndex].Cells["TotalAmmount"].Value.ToString());
+                monthlyInformations.ExtraHonorium = int.Parse(Donordgv.Rows[e.RowIndex].Cells["ExtraHonorium"].Value.ToString());
+                monthlyInformations.ProvidentFund = int.Parse(Donordgv.Rows[e.RowIndex].Cells["ProvidentFund"].Value.ToString());
+                monthlyInformations.NetPayableAmmount = int.Parse(Donordgv.Rows[e.RowIndex].Cells["NetPayableAmmount"].Value.ToString());
+                monthlyInformations.EmployeeName = Donordgv.Rows[e.RowIndex].Cells["EmployeeName"].Value.ToString();
+                monthlyInformations.MonthName = Donordgv.Rows[e.RowIndex].Cells["MonthName"].Value.ToString();
+                monthlyInformations.EmployeeType = Donordgv.Rows[e.RowIndex].Cells["EmployeeType"].Value.ToString();
+                monthlyInformations.PaymentDate = Donordgv.Rows[e.RowIndex].Cells["PaymentDate"].Value.ToString();
+                monthlyInformations.IsPaid = Donordgv.Rows[e.RowIndex].Cells["IsPaid"].Value.ToString();
+                
+
+                UpdateSalaryDetails updateForm = new UpdateSalaryDetails(monthlyInformations);
+                updateForm.ShowDialog();
+
+
+            }
         }
 
         public void LoadTeacher()
@@ -101,7 +151,7 @@ namespace DUMSM.Forms.Salary
                     {
                         errorMessage += ',';
                     }
-                    errorMessage += " ধার্যকৃত অনুদান";
+                    errorMessage += " তথ্য";
                     willInsert = false;
                 }
 
@@ -217,5 +267,34 @@ namespace DUMSM.Forms.Salary
             DataGridViewOperation.GetDataFromDataBase(Donordgv, typeof(MonthlyInformations).Name.ToString());
         }
 
+        private void DeleteAllbtn_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("আপনি বেতনের সকল তথ্য চিরতরে মুছে ফেলতে চাচ্ছেন?",
+                "বেতনের তালিকা", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                CRUDOperation.DeleteAllData("Salaries");
+                MessageBox.Show("সকল তথ্য মুছে ফেলা হয়েছে।");
+            }
+            else
+            {
+                MessageBox.Show("কোনো তথ্য মুছে ফেলা হয়নি।");
+            }
+        }
+
+        private void Backupbtn_Click(object sender, EventArgs e)
+        {
+            BackupOperation.Backup2Excel("Salaries");
+            MessageBox.Show("সফলভাবে বেতনের তথ্য ব্যাকআপ নেয়া হয়েছে");
+        }
+
+        private void Backbtn_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Location = this.Location;
+            dashboard.ShowDialog();
+            this.Close();
+        }
     }
 }
