@@ -30,7 +30,10 @@ namespace DUMSM.Forms.IncomeForm
 
         private void Backbtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            IncomeDetailsInsolvent form = new IncomeDetailsInsolvent();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
+            this.Hide();
         }
 
         private void GeneralRegisterbtn_Click(object sender, EventArgs e)

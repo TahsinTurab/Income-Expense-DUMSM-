@@ -30,6 +30,7 @@
         {
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.RegisterDatetxt = new System.Windows.Forms.TextBox();
             this.Fieldtxt = new System.Windows.Forms.ComboBox();
             this.Backbtn = new System.Windows.Forms.Button();
             this.GeneralRegisterbtn = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
-            this.RegisterDatetxt = new System.Windows.Forms.TextBox();
             this.tabControl3.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.SuspendLayout();
@@ -77,6 +77,14 @@
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "সাধারণ জমা আপডেট    ";
             // 
+            // RegisterDatetxt
+            // 
+            this.RegisterDatetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.RegisterDatetxt.Location = new System.Drawing.Point(187, 152);
+            this.RegisterDatetxt.Name = "RegisterDatetxt";
+            this.RegisterDatetxt.Size = new System.Drawing.Size(227, 29);
+            this.RegisterDatetxt.TabIndex = 33;
+            // 
             // Fieldtxt
             // 
             this.Fieldtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -104,7 +112,7 @@
             this.Backbtn.Name = "Backbtn";
             this.Backbtn.Size = new System.Drawing.Size(172, 41);
             this.Backbtn.TabIndex = 32;
-            this.Backbtn.Text = "বাতিল করুন";
+            this.Backbtn.Text = "ফিরে যান";
             this.Backbtn.UseVisualStyleBackColor = false;
             this.Backbtn.Click += new System.EventHandler(this.Backbtn_Click);
             // 
@@ -194,20 +202,13 @@
             this.button17.Text = "জমাদানের তারিখ";
             this.button17.UseVisualStyleBackColor = false;
             // 
-            // RegisterDatetxt
-            // 
-            this.RegisterDatetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.RegisterDatetxt.Location = new System.Drawing.Point(187, 152);
-            this.RegisterDatetxt.Name = "RegisterDatetxt";
-            this.RegisterDatetxt.Size = new System.Drawing.Size(227, 29);
-            this.RegisterDatetxt.TabIndex = 33;
-            // 
             // UpdateCommonIncomeDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 381);
             this.Controls.Add(this.tabControl3);
+            this.MaximizeBox = false;
             this.Name = "UpdateCommonIncomeDetails";
             this.Text = "UpdateCommonIncomeDetails";
             this.Load += new System.EventHandler(this.UpdateCommonIncomeDetails_Load);

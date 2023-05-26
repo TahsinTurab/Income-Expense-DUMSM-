@@ -42,6 +42,11 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Donordgv = new System.Windows.Forms.DataGridView();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.DeleteAllbtn = new System.Windows.Forms.Button();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SlipNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IsDonation = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,11 +54,6 @@
             this.Field = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ammount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RegisterDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.DeleteAllbtn = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Donordgv)).BeginInit();
@@ -181,15 +181,15 @@
             this.Donordgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.Donordgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Donordgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Delete,
+            this.Update,
             this.id,
             this.SlipNumber,
             this.IsDonation,
             this.DonationId,
             this.Field,
             this.Ammount,
-            this.RegisterDate,
-            this.Delete,
-            this.Update});
+            this.RegisterDate});
             this.Donordgv.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Donordgv.GridColor = System.Drawing.SystemColors.Window;
             this.Donordgv.Location = new System.Drawing.Point(3, 3);
@@ -197,6 +197,75 @@
             this.Donordgv.Size = new System.Drawing.Size(946, 376);
             this.Donordgv.TabIndex = 0;
             this.Donordgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Donordgv_CellContentClick);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.RosyBrown;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button2.Location = new System.Drawing.Point(783, 594);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(182, 41);
+            this.button2.TabIndex = 91;
+            this.button2.Text = "ব্যাকআপ ";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Image = global::DUMSM.Properties.Resources.logo1;
+            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pictureBox1.Location = new System.Drawing.Point(165, 12);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(116, 83);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 46;
+            this.pictureBox1.TabStop = false;
+            // 
+            // DeleteAllbtn
+            // 
+            this.DeleteAllbtn.BackColor = System.Drawing.Color.RosyBrown;
+            this.DeleteAllbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DeleteAllbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.DeleteAllbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.DeleteAllbtn.Location = new System.Drawing.Point(532, 594);
+            this.DeleteAllbtn.Name = "DeleteAllbtn";
+            this.DeleteAllbtn.Size = new System.Drawing.Size(245, 41);
+            this.DeleteAllbtn.TabIndex = 96;
+            this.DeleteAllbtn.Text = "সকল তথ্য ডিলিট করুন";
+            this.DeleteAllbtn.UseVisualStyleBackColor = false;
+            this.DeleteAllbtn.Click += new System.EventHandler(this.DeleteAllbtn_Click);
+            // 
+            // Delete
+            // 
+            this.Delete.DataPropertyName = "Delete";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Transparent;
+            this.Delete.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Delete.HeaderText = "ডিলিট";
+            this.Delete.Name = "Delete";
+            this.Delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Delete.Text = "ডিলিট";
+            this.Delete.UseColumnTextForButtonValue = true;
+            this.Delete.Width = 70;
+            // 
+            // Update
+            // 
+            this.Update.DataPropertyName = "Update";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Update.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Update.HeaderText = "আপডেট";
+            this.Update.Name = "Update";
+            this.Update.Text = "আপডেট";
+            this.Update.UseColumnTextForButtonValue = true;
+            this.Update.Width = 70;
             // 
             // id
             // 
@@ -244,75 +313,6 @@
             this.RegisterDate.Name = "RegisterDate";
             this.RegisterDate.Width = 140;
             // 
-            // Delete
-            // 
-            this.Delete.DataPropertyName = "Delete";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Transparent;
-            this.Delete.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Delete.HeaderText = "ডিলিট";
-            this.Delete.Name = "Delete";
-            this.Delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Delete.Text = "ডিলিট";
-            this.Delete.UseColumnTextForButtonValue = true;
-            this.Delete.Width = 70;
-            // 
-            // Update
-            // 
-            this.Update.DataPropertyName = "Update";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Update.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Update.HeaderText = "আপডেট";
-            this.Update.Name = "Update";
-            this.Update.Text = "আপডেট";
-            this.Update.UseColumnTextForButtonValue = true;
-            this.Update.Width = 70;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.RosyBrown;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button2.Location = new System.Drawing.Point(783, 594);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(182, 41);
-            this.button2.TabIndex = 91;
-            this.button2.Text = "ব্যাকআপ ";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = global::DUMSM.Properties.Resources.logo1;
-            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(165, 12);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(116, 83);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 46;
-            this.pictureBox1.TabStop = false;
-            // 
-            // DeleteAllbtn
-            // 
-            this.DeleteAllbtn.BackColor = System.Drawing.Color.RosyBrown;
-            this.DeleteAllbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DeleteAllbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.DeleteAllbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.DeleteAllbtn.Location = new System.Drawing.Point(532, 594);
-            this.DeleteAllbtn.Name = "DeleteAllbtn";
-            this.DeleteAllbtn.Size = new System.Drawing.Size(245, 41);
-            this.DeleteAllbtn.TabIndex = 96;
-            this.DeleteAllbtn.Text = "সকল তথ্য ডিলিট করুন";
-            this.DeleteAllbtn.UseVisualStyleBackColor = false;
-            this.DeleteAllbtn.Click += new System.EventHandler(this.DeleteAllbtn_Click);
-            // 
             // IncomeDetailsInsolvent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -330,6 +330,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "IncomeDetailsInsolvent";
             this.Text = "গোরাবা জমার বিস্তারিত বিবরণ";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.IncomeDetailsInsolvent_FormClosing);
@@ -355,6 +356,10 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.DataGridView Donordgv;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button DeleteAllbtn;
+        private System.Windows.Forms.DataGridViewButtonColumn Delete;
+        private System.Windows.Forms.DataGridViewButtonColumn Update;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn SlipNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn IsDonation;
@@ -362,9 +367,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Field;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ammount;
         private System.Windows.Forms.DataGridViewTextBoxColumn RegisterDate;
-        private System.Windows.Forms.DataGridViewButtonColumn Delete;
-        private System.Windows.Forms.DataGridViewButtonColumn Update;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button DeleteAllbtn;
     }
 }

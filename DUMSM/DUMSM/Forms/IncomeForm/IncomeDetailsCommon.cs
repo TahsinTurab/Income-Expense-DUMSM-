@@ -45,46 +45,51 @@ namespace DUMSM
 
         private void Donordgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (Donordgv.Columns[e.ColumnIndex].HeaderText == "ডিলিট")
+            if (Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString() != "")
             {
-                string id = Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString();
-                string donationId = Donordgv.Rows[e.RowIndex].Cells["DonationId"].Value.ToString();
-
-                DialogResult result = MessageBox.Show($"অনুদানের আইডিঃ {id}\n\nআপনি এই তথ্যটি ডিলিট করতে ইচ্ছুক? ",
-                    "সাধারণ অনুদানের তালিকা", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-
-                if (result == DialogResult.Yes)
+                if (Donordgv.Columns[e.ColumnIndex].HeaderText == "ডিলিট")
                 {
-                    CRUDOperation.Delete("GeneralIncome", id);
-                    CRUDOperation.Delete("Donations", donationId);
-                    DisplayData();
-                    MessageBox.Show("অনুদানের তথ্য মুছে ফেলা হয়েছে।");
+                    string id = Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString();
+                    string donationId = Donordgv.Rows[e.RowIndex].Cells["DonationId"].Value.ToString();
+
+                    DialogResult result = MessageBox.Show($"অনুদানের আইডিঃ {id}\n\nআপনি এই তথ্যটি ডিলিট করতে ইচ্ছুক? ",
+                        "সাধারণ অনুদানের তালিকা", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                    if (result == DialogResult.Yes)
+                    {
+                        CRUDOperation.Delete("GeneralIncome", id);
+                        CRUDOperation.Delete("Donations", donationId);
+                        DisplayData();
+                        MessageBox.Show("অনুদানের তথ্য মুছে ফেলা হয়েছে।");
+                    }
+
+                    else
+                    {
+                        MessageBox.Show("অনুদানের তথ্য মুছে ফেলা হয়নি।");
+
+                    }
+
                 }
 
-                else
+                else if (Donordgv.Columns[e.ColumnIndex].HeaderText.Trim() == "আপডেট")
                 {
-                    MessageBox.Show("অনুদানের তথ্য মুছে ফেলা হয়নি।");
+                    GeneralIncome generalIncome = new GeneralIncome();
+                    generalIncome.Id = Guid.Parse(Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString());
+                    generalIncome.SlipNumber = Donordgv.Rows[e.RowIndex].Cells["SlipNumber"].Value.ToString();
+                    generalIncome.RegisterDate = Donordgv.Rows[e.RowIndex].Cells["RegisterDate"].Value.ToString();
+                    generalIncome.IsDonation = Donordgv.Rows[e.RowIndex].Cells["IsDonation"].Value.ToString();
+                    generalIncome.DonationId = Donordgv.Rows[e.RowIndex].Cells["DonationId"].Value.ToString();
+                    generalIncome.Ammount = int.Parse(Donordgv.Rows[e.RowIndex].Cells["Ammount"].Value.ToString());
+                    generalIncome.Field = Donordgv.Rows[e.RowIndex].Cells["Field"].Value.ToString();
+
+
+                    UpdateCommonIncomeDetails updateForm = new UpdateCommonIncomeDetails(generalIncome);
+                    updateForm.StartPosition = FormStartPosition.CenterScreen;
+                    updateForm.ShowDialog();
+                    this.Hide();
+
 
                 }
-
-            }
-
-            else if (Donordgv.Columns[e.ColumnIndex].HeaderText.Trim() == "আপডেট")
-            {
-                GeneralIncome generalIncome = new GeneralIncome();
-                generalIncome.Id = Guid.Parse(Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString());
-                generalIncome.SlipNumber = Donordgv.Rows[e.RowIndex].Cells["SlipNumber"].Value.ToString();
-                generalIncome.RegisterDate = Donordgv.Rows[e.RowIndex].Cells["RegisterDate"].Value.ToString();
-                generalIncome.IsDonation = Donordgv.Rows[e.RowIndex].Cells["IsDonation"].Value.ToString();
-                generalIncome.DonationId = Donordgv.Rows[e.RowIndex].Cells["DonationId"].Value.ToString();
-                generalIncome.Ammount = int.Parse(Donordgv.Rows[e.RowIndex].Cells["Ammount"].Value.ToString());
-                generalIncome.Field = Donordgv.Rows[e.RowIndex].Cells["Field"].Value.ToString();
-               
-
-                UpdateCommonIncomeDetails updateForm = new UpdateCommonIncomeDetails(generalIncome);
-                updateForm.ShowDialog();
-
-
             }
         }
 

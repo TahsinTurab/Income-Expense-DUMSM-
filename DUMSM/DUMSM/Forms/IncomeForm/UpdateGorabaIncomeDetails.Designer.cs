@@ -112,7 +112,7 @@
             this.Backbtn.Name = "Backbtn";
             this.Backbtn.Size = new System.Drawing.Size(172, 41);
             this.Backbtn.TabIndex = 32;
-            this.Backbtn.Text = "বাতিল করুন";
+            this.Backbtn.Text = "ফিরে যান";
             this.Backbtn.UseVisualStyleBackColor = false;
             this.Backbtn.Click += new System.EventHandler(this.Backbtn_Click);
             // 
@@ -208,6 +208,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 381);
             this.Controls.Add(this.tabControl3);
+            this.MaximizeBox = false;
             this.Name = "UpdateGorabaIncomeDetails";
             this.Text = "UpdateGorabaIncomeDetails";
             this.Load += new System.EventHandler(this.UpdateGorabaIncomeDetails_Load);
