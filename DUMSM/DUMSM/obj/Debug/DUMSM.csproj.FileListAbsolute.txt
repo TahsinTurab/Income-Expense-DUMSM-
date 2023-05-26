@@ -73,7 +73,6 @@ C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.Expe
 C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.ExpenseForm.ExpenseDetailsGoraba.resources
 C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.ExpenseForm.UpdateCommonExpenseDetails.resources
 C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.ExpenseForm.UpdateGorabaExpenseDetails.resources
-C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.Salary.Salary.resources
 C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.Salary.UpdateSalaryDetails.resources
 C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.DonationForm.GorabaDonationList.resources
 C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.DonationForm.UpdateGorabaDonationDetails.resources
@@ -88,3 +87,4 @@ C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.Salary.UpdateSalar
 C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.TeacherForm.StuffProfile.resources
 C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.User.Login.resources
 C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.SidePanelControl.resources
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.Salary.Salaries.resources

@@ -123,16 +123,16 @@
     <Compile Include="Forms\IncomeForm\UpdateGorabaIncomeDetails.Designer.cs">
       <DependentUpon>UpdateGorabaIncomeDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Salary\Salary.cs">
+    <Compile Include="Forms\SalaryForm\Salaries.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Salary\Salary.Designer.cs">
-      <DependentUpon>Salary.cs</DependentUpon>
+    <Compile Include="Forms\SalaryForm\Salaries.Designer.cs">
+      <DependentUpon>Salaries.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Salary\UpdateSalaryDetails.cs">
+    <Compile Include="Forms\SalaryForm\UpdateSalaryDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Salary\UpdateSalaryDetails.Designer.cs">
+    <Compile Include="Forms\SalaryForm\UpdateSalaryDetails.Designer.cs">
       <DependentUpon>UpdateSalaryDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\SidePanelControl.cs">
@@ -317,10 +317,10 @@
     <EmbeddedResource Include="Forms\IncomeForm\UpdateGorabaIncomeDetails.resx">
       <DependentUpon>UpdateGorabaIncomeDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Salary\Salary.resx">
-      <DependentUpon>Salary.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\SalaryForm\Salaries.resx">
+      <DependentUpon>Salaries.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Salary\UpdateSalaryDetails.resx">
+    <EmbeddedResource Include="Forms\SalaryForm\UpdateSalaryDetails.resx">
       <DependentUpon>UpdateSalaryDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SidePanelControl.resx">
@@ -415,6 +415,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>DUMSMDataBase.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\close.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">

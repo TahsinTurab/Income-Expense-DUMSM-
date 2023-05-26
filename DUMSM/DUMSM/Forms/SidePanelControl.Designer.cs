@@ -76,6 +76,7 @@
             this.ProfileBtn.TabIndex = 16;
             this.ProfileBtn.Text = "প্রোফাইল সেটিংস";
             this.ProfileBtn.UseVisualStyleBackColor = false;
+            this.ProfileBtn.Click += new System.EventHandler(this.ProfileBtn_Click);
             // 
             // DonationBtn
             // 
@@ -89,6 +90,7 @@
             this.DonationBtn.TabIndex = 15;
             this.DonationBtn.Text = "অনুদান";
             this.DonationBtn.UseVisualStyleBackColor = false;
+            this.DonationBtn.Click += new System.EventHandler(this.DonationBtn_Click);
             // 
             // EmployeeBtn
             // 
@@ -102,6 +104,7 @@
             this.EmployeeBtn.TabIndex = 14;
             this.EmployeeBtn.Text = "শিক্ষক-স্টাফ";
             this.EmployeeBtn.UseVisualStyleBackColor = false;
+            this.EmployeeBtn.Click += new System.EventHandler(this.EmployeeBtn_Click);
             // 
             // DeleteBtn
             // 
@@ -115,6 +118,7 @@
             this.DeleteBtn.TabIndex = 13;
             this.DeleteBtn.Text = "তথ্য ডিলিট করুন";
             this.DeleteBtn.UseVisualStyleBackColor = false;
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
             // LogoutBtn
             // 
@@ -128,6 +132,7 @@
             this.LogoutBtn.TabIndex = 12;
             this.LogoutBtn.Text = "লগ আউট";
             this.LogoutBtn.UseVisualStyleBackColor = false;
+            this.LogoutBtn.Click += new System.EventHandler(this.LogoutBtn_Click);
             // 
             // ReportBtn
             // 
@@ -141,6 +146,7 @@
             this.ReportBtn.TabIndex = 11;
             this.ReportBtn.Text = "রিপোর্ট";
             this.ReportBtn.UseVisualStyleBackColor = false;
+            this.ReportBtn.Click += new System.EventHandler(this.ReportBtn_Click);
             // 
             // DonorBtn
             // 
@@ -154,6 +160,7 @@
             this.DonorBtn.TabIndex = 10;
             this.DonorBtn.Text = "স্থায়ী সদস্য";
             this.DonorBtn.UseVisualStyleBackColor = false;
+            this.DonorBtn.Click += new System.EventHandler(this.DonorBtn_Click);
             // 
             // SalaryBtn
             // 
@@ -167,6 +174,7 @@
             this.SalaryBtn.TabIndex = 9;
             this.SalaryBtn.Text = "বেতনের তথ্য";
             this.SalaryBtn.UseVisualStyleBackColor = false;
+            this.SalaryBtn.Click += new System.EventHandler(this.SalaryBtn_Click);
             // 
             // ExpenseBtn
             // 
@@ -180,6 +188,7 @@
             this.ExpenseBtn.TabIndex = 8;
             this.ExpenseBtn.Text = "খরচ";
             this.ExpenseBtn.UseVisualStyleBackColor = false;
+            this.ExpenseBtn.Click += new System.EventHandler(this.ExpenseBtn_Click);
             // 
             // IncomeBtn
             // 
@@ -193,6 +202,7 @@
             this.IncomeBtn.TabIndex = 7;
             this.IncomeBtn.Text = "জমা";
             this.IncomeBtn.UseVisualStyleBackColor = false;
+            this.IncomeBtn.Click += new System.EventHandler(this.IncomeBtn_Click);
             // 
             // DashboardBtn
             // 
@@ -206,6 +216,7 @@
             this.DashboardBtn.TabIndex = 6;
             this.DashboardBtn.Text = "ড্যাশবোর্ড";
             this.DashboardBtn.UseVisualStyleBackColor = false;
+            this.DashboardBtn.Click += new System.EventHandler(this.DashboardBtn_Click);
             // 
             // SidePanelControl
             // 

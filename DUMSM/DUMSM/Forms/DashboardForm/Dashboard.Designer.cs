@@ -365,6 +365,7 @@
             this.MaximizeBox = false;
             this.Name = "Dashboard";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Dashboard_FormClosing);
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

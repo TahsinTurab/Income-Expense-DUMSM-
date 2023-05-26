@@ -177,6 +177,7 @@
             this.MaximizeBox = false;
             this.Name = "Login";
             this.Text = "লগ ইন";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
             this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
