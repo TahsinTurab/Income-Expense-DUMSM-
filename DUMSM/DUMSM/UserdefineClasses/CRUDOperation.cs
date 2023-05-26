@@ -184,6 +184,17 @@ namespace DUMSM
             return record;
         }
 
+        public static void Update(string tableName, string Condition)
+        {
+            string query = $"UPDATE {tableName} SET {Condition}";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+                command.ExecuteNonQuery();
+                connection.Close();
+            }
+        }
 
         public static void Update(Object obj)
         {

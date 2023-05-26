@@ -91,7 +91,11 @@ namespace DUMSM.Forms
 
         private void ProfileBtn_Click(object sender, EventArgs e)
         {
-
+            Profile form = new Profile();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
+            Form parentForm = FindForm();
+            parentForm.Hide();
         }
 
         private void DeleteBtn_Click(object sender, EventArgs e)

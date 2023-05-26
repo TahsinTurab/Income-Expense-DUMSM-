@@ -127,7 +127,15 @@ namespace DUMSM.Forms.DonationForm
 
         private void GeneralDonationList_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            if (e.CloseReason != CloseReason.ApplicationExitCall)
+            {
+                e.Cancel = true; // Cancel the close operation
+                this.Hide(); // Hide the form instead of closing it
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
     }
 }

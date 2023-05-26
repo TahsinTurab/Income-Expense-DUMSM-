@@ -205,7 +205,15 @@ namespace DUMSM
 
         private void Donor_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            if (e.CloseReason != CloseReason.ApplicationExitCall)
+            {
+                e.Cancel = true; // Cancel the close operation
+                this.Hide(); // Hide the form instead of closing it
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
     }
 }
