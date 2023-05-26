@@ -34,38 +34,34 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TotalGeneral = new System.Windows.Forms.TextBox();
+            this.MonthlyExpenseGeneral = new System.Windows.Forms.TextBox();
+            this.MonthlyTotalGeneral = new System.Windows.Forms.TextBox();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.TotalGoraba = new System.Windows.Forms.TextBox();
             this.button17 = new System.Windows.Forms.Button();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.MonthlyExpenseGoraba = new System.Windows.Forms.TextBox();
             this.button16 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.MonthlyIncomeGoraba = new System.Windows.Forms.TextBox();
             this.button15 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button14 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.button13 = new System.Windows.Forms.Button();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.button19 = new System.Windows.Forms.Button();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.TotalDonar = new System.Windows.Forms.TextBox();
+            this.TotalTeacher = new System.Windows.Forms.TextBox();
             this.button18 = new System.Windows.Forms.Button();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.TotalExpenseGoraba = new System.Windows.Forms.TextBox();
+            this.TotalExpenseGeneral = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -109,42 +105,30 @@
             this.tabPage1.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage1.Controls.Add(this.textBox6);
-            this.tabPage1.Controls.Add(this.textBox5);
-            this.tabPage1.Controls.Add(this.textBox4);
-            this.tabPage1.Controls.Add(this.textBox3);
-            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.TotalExpenseGeneral);
+            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.TotalGeneral);
+            this.tabPage1.Controls.Add(this.MonthlyExpenseGeneral);
+            this.tabPage1.Controls.Add(this.MonthlyTotalGeneral);
             this.tabPage1.Controls.Add(this.button12);
             this.tabPage1.Controls.Add(this.button11);
             this.tabPage1.Controls.Add(this.button10);
-            this.tabPage1.Controls.Add(this.button9);
-            this.tabPage1.Controls.Add(this.button8);
             this.tabPage1.Name = "tabPage1";
             // 
-            // textBox6
+            // TotalGeneral
             // 
-            resources.ApplyResources(this.textBox6, "textBox6");
-            this.textBox6.Name = "textBox6";
+            resources.ApplyResources(this.TotalGeneral, "TotalGeneral");
+            this.TotalGeneral.Name = "TotalGeneral";
             // 
-            // textBox5
+            // MonthlyExpenseGeneral
             // 
-            resources.ApplyResources(this.textBox5, "textBox5");
-            this.textBox5.Name = "textBox5";
+            resources.ApplyResources(this.MonthlyExpenseGeneral, "MonthlyExpenseGeneral");
+            this.MonthlyExpenseGeneral.Name = "MonthlyExpenseGeneral";
             // 
-            // textBox4
+            // MonthlyTotalGeneral
             // 
-            resources.ApplyResources(this.textBox4, "textBox4");
-            this.textBox4.Name = "textBox4";
-            // 
-            // textBox3
-            // 
-            resources.ApplyResources(this.textBox3, "textBox3");
-            this.textBox3.Name = "textBox3";
-            // 
-            // textBox2
-            // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
+            resources.ApplyResources(this.MonthlyTotalGeneral, "MonthlyTotalGeneral");
+            this.MonthlyTotalGeneral.Name = "MonthlyTotalGeneral";
             // 
             // button12
             // 
@@ -171,43 +155,25 @@
             this.button10.Name = "button10";
             this.button10.UseVisualStyleBackColor = false;
             // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button9, "button9");
-            this.button9.Name = "button9";
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button8, "button8");
-            this.button8.Name = "button8";
-            this.button8.UseVisualStyleBackColor = false;
-            // 
             // tabPage2
             // 
             this.tabPage2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage2.Controls.Add(this.textBox11);
+            this.tabPage2.Controls.Add(this.TotalExpenseGoraba);
+            this.tabPage2.Controls.Add(this.button2);
+            this.tabPage2.Controls.Add(this.TotalGoraba);
             this.tabPage2.Controls.Add(this.button17);
-            this.tabPage2.Controls.Add(this.textBox10);
+            this.tabPage2.Controls.Add(this.MonthlyExpenseGoraba);
             this.tabPage2.Controls.Add(this.button16);
-            this.tabPage2.Controls.Add(this.textBox9);
+            this.tabPage2.Controls.Add(this.MonthlyIncomeGoraba);
             this.tabPage2.Controls.Add(this.button15);
-            this.tabPage2.Controls.Add(this.textBox8);
-            this.tabPage2.Controls.Add(this.button14);
-            this.tabPage2.Controls.Add(this.textBox7);
-            this.tabPage2.Controls.Add(this.button13);
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // textBox11
+            // TotalGoraba
             // 
-            resources.ApplyResources(this.textBox11, "textBox11");
-            this.textBox11.Name = "textBox11";
+            resources.ApplyResources(this.TotalGoraba, "TotalGoraba");
+            this.TotalGoraba.Name = "TotalGoraba";
             // 
             // button17
             // 
@@ -217,10 +183,10 @@
             this.button17.Name = "button17";
             this.button17.UseVisualStyleBackColor = false;
             // 
-            // textBox10
+            // MonthlyExpenseGoraba
             // 
-            resources.ApplyResources(this.textBox10, "textBox10");
-            this.textBox10.Name = "textBox10";
+            resources.ApplyResources(this.MonthlyExpenseGoraba, "MonthlyExpenseGoraba");
+            this.MonthlyExpenseGoraba.Name = "MonthlyExpenseGoraba";
             // 
             // button16
             // 
@@ -230,10 +196,10 @@
             this.button16.Name = "button16";
             this.button16.UseVisualStyleBackColor = false;
             // 
-            // textBox9
+            // MonthlyIncomeGoraba
             // 
-            resources.ApplyResources(this.textBox9, "textBox9");
-            this.textBox9.Name = "textBox9";
+            resources.ApplyResources(this.MonthlyIncomeGoraba, "MonthlyIncomeGoraba");
+            this.MonthlyIncomeGoraba.Name = "MonthlyIncomeGoraba";
             // 
             // button15
             // 
@@ -242,32 +208,6 @@
             resources.ApplyResources(this.button15, "button15");
             this.button15.Name = "button15";
             this.button15.UseVisualStyleBackColor = false;
-            // 
-            // textBox8
-            // 
-            resources.ApplyResources(this.textBox8, "textBox8");
-            this.textBox8.Name = "textBox8";
-            // 
-            // button14
-            // 
-            this.button14.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button14, "button14");
-            this.button14.Name = "button14";
-            this.button14.UseVisualStyleBackColor = false;
-            // 
-            // textBox7
-            // 
-            resources.ApplyResources(this.textBox7, "textBox7");
-            this.textBox7.Name = "textBox7";
-            // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button13, "button13");
-            this.button13.Name = "button13";
-            this.button13.UseVisualStyleBackColor = false;
             // 
             // tabControl2
             // 
@@ -287,8 +227,8 @@
             // 
             this.tabPage4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabPage4.Controls.Add(this.button19);
-            this.tabPage4.Controls.Add(this.textBox13);
-            this.tabPage4.Controls.Add(this.textBox12);
+            this.tabPage4.Controls.Add(this.TotalDonar);
+            this.tabPage4.Controls.Add(this.TotalTeacher);
             this.tabPage4.Controls.Add(this.button18);
             resources.ApplyResources(this.tabPage4, "tabPage4");
             this.tabPage4.Name = "tabPage4";
@@ -302,15 +242,15 @@
             this.button19.Name = "button19";
             this.button19.UseVisualStyleBackColor = false;
             // 
-            // textBox13
+            // TotalDonar
             // 
-            resources.ApplyResources(this.textBox13, "textBox13");
-            this.textBox13.Name = "textBox13";
+            resources.ApplyResources(this.TotalDonar, "TotalDonar");
+            this.TotalDonar.Name = "TotalDonar";
             // 
-            // textBox12
+            // TotalTeacher
             // 
-            resources.ApplyResources(this.textBox12, "textBox12");
-            this.textBox12.Name = "textBox12";
+            resources.ApplyResources(this.TotalTeacher, "TotalTeacher");
+            this.TotalTeacher.Name = "TotalTeacher";
             // 
             // button18
             // 
@@ -348,6 +288,32 @@
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // TotalExpenseGoraba
+            // 
+            resources.ApplyResources(this.TotalExpenseGoraba, "TotalExpenseGoraba");
+            this.TotalExpenseGoraba.Name = "TotalExpenseGoraba";
+            // 
+            // TotalExpenseGeneral
+            // 
+            resources.ApplyResources(this.TotalExpenseGeneral, "TotalExpenseGeneral");
+            this.TotalExpenseGeneral.Name = "TotalExpenseGeneral";
             // 
             // Dashboard
             // 
@@ -391,37 +357,33 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox MonthlyExpenseGeneral;
+        private System.Windows.Forms.TextBox MonthlyTotalGeneral;
+        private System.Windows.Forms.TextBox TotalGeneral;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox TotalGoraba;
         private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox MonthlyExpenseGoraba;
         private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox MonthlyIncomeGoraba;
         private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Button button13;
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox TotalDonar;
+        private System.Windows.Forms.TextBox TotalTeacher;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.TabControl tabControl4;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.TextBox TotalExpenseGeneral;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox TotalExpenseGoraba;
+        private System.Windows.Forms.Button button2;
     }
 }
 
