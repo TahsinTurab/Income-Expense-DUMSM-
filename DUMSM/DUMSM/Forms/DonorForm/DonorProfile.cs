@@ -1,6 +1,7 @@
 ﻿using DUMSM.Classes;
 using DUMSM.Forms;
 using DUMSM.Forms.DonorForm;
+using DUMSM.Forms.User;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,10 +34,10 @@ namespace DUMSM
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Donor donor = new Donor();
-            donor.Location = this.Location;
-            donor.ShowDialog();
-            this.Close();
+            Donor form = new Donor();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
+            this.Hide();
         }
 
         private void DonorProfile_Load(object sender, EventArgs e)
@@ -145,6 +146,11 @@ namespace DUMSM
             {
                 PopUpMessage.ErrorMessage("দাতার তথ্য আপডেট"); 
             }
+        }
+
+        private void DonorProfile_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -306,6 +306,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DonorProfile";
             this.Text = "DonorProfile";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DonorProfile_FormClosing);
             this.Load += new System.EventHandler(this.DonorProfile_Load);
             this.tabControl3.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);

@@ -1,4 +1,5 @@
 ﻿using DUMSM.Classes;
+using DUMSM.Forms.User;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -116,7 +117,10 @@ namespace DUMSM
                 {
                     CRUDOperation.Update(donor);
                     PopUpMessage.SuccessRegistrationMessage("দাতার তথ্য আপডেট");
-                    this.Close();
+                    DonorList form = new DonorList();
+                    form.StartPosition = FormStartPosition.CenterScreen;
+                    form.Show();
+                    this.Hide();
                 }
                 else
                 {

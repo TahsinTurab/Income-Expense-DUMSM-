@@ -1,6 +1,7 @@
 ﻿using DUMSM.Classes;
 using DUMSM.Forms;
 using DUMSM.Forms.DonorForm;
+using DUMSM.Forms.User;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -154,10 +155,10 @@ namespace DUMSM
 
         private void DonorListbtn_Click(object sender, EventArgs e)
         {
-            DonorList donorList = new DonorList();
-            donorList.Location = this.Location;
-            donorList.Show();
-            this.Close();
+            DonorList form = new DonorList();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
+            this.Hide();
         }
 
         private void Donor_Load(object sender, EventArgs e)
@@ -191,14 +192,20 @@ namespace DUMSM
                 donor.MobileNumber = (string)value["MobileNumber"];
 
 
-                DonorProfile donorProfile = new DonorProfile(donor);
-                donorProfile.ShowDialog();
-                this.Close();
+                DonorProfile form = new DonorProfile(donor);
+                form.StartPosition = FormStartPosition.CenterScreen;
+                form.Show();
+                this.Hide();
             }
             catch
             {
                 MessageBox.Show("দাতার নাম সিলেক্ট করুন"); 
             }
+        }
+
+        private void Donor_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

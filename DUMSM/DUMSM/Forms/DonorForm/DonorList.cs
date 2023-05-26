@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using Microsoft.Office.Interop.Excel;
 using Rectangle = System.Drawing.Rectangle;
 using DataTable = System.Data.DataTable;
+using DUMSM.Forms.User;
 
 namespace DUMSM
 {
@@ -24,46 +25,52 @@ namespace DUMSM
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (Donordgv.Columns[e.ColumnIndex].HeaderText == "ডিলিট")
+
+            if (Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString() != "")
             {
-                string id = Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString();
-
-                DialogResult result = MessageBox.Show($"দাতার আইডিঃ {id}\n\nআপনি এই তথ্যটি ডিলিট করতে ইচ্ছুক? ",
-                    "স্থায়ী দাতাদের তালিকা", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-
-                if (result == DialogResult.Yes)
+                if (Donordgv.Columns[e.ColumnIndex].HeaderText == "ডিলিট")
                 {
-                    CRUDOperation.Delete("Donors", id);
-                    MessageBox.Show("দাতার তথ্য মুছে ফেলা হয়েছে।");
-                    //DisplayData();
-                    
+                    string id = Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString();
+
+                    DialogResult result = MessageBox.Show($"দাতার আইডিঃ {id}\n\nআপনি এই তথ্যটি ডিলিট করতে ইচ্ছুক? ",
+                        "স্থায়ী দাতাদের তালিকা", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                    if (result == DialogResult.Yes)
+                    {
+                        CRUDOperation.Delete("Donors", id);
+                        MessageBox.Show("দাতার তথ্য মুছে ফেলা হয়েছে।");
+                        //DisplayData();
+
+
+                    }
+
+                    else
+                    {
+                        MessageBox.Show("দাতার তথ্য মুছে ফেলা হয়নি।");
+
+                    }
 
                 }
 
-                else
+                else if (Donordgv.Columns[e.ColumnIndex].HeaderText.Trim() == "আপডেট")
                 {
-                    MessageBox.Show("দাতার তথ্য মুছে ফেলা হয়নি।");
+                    Donors donor = new Donors();
+                    donor.Id = Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString();
+                    donor.DonorName = Donordgv.Rows[e.RowIndex].Cells["donorName"].Value.ToString();
+                    donor.DonorType = Donordgv.Rows[e.RowIndex].Cells["donorType"].Value.ToString();
+                    donor.MobileNumber = Donordgv.Rows[e.RowIndex].Cells["Mobile"].Value.ToString();
+                    donor.Address = Donordgv.Rows[e.RowIndex].Cells["Address"].Value.ToString();
+                    //int ammount = (int) Donordgv.Rows[e.RowIndex].Cells["donationAmmount"].Value;
+
+                    donor.DonationAmmount = (int)Donordgv.Rows[e.RowIndex].Cells["donationAmmount"].Value;
+
+                    UpdateDonorDetails form = new UpdateDonorDetails(donor);
+                    form.StartPosition = FormStartPosition.CenterScreen;
+                    form.Show();
+                    this.Hide();
+
 
                 }
-
-            }
-
-            else if (Donordgv.Columns[e.ColumnIndex].HeaderText.Trim() == "আপডেট")
-            {
-                Donors donor = new Donors();
-                donor.Id = Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString();
-                donor.DonorName = Donordgv.Rows[e.RowIndex].Cells["donorName"].Value.ToString();
-                donor.DonorType = Donordgv.Rows[e.RowIndex].Cells["donorType"].Value.ToString();
-                donor.MobileNumber = Donordgv.Rows[e.RowIndex].Cells["Mobile"].Value.ToString();
-                donor.Address = Donordgv.Rows[e.RowIndex].Cells["Address"].Value.ToString();
-                //int ammount = (int) Donordgv.Rows[e.RowIndex].Cells["donationAmmount"].Value;
-
-                donor.DonationAmmount = (int) Donordgv.Rows[e.RowIndex].Cells["donationAmmount"].Value;
-
-                UpdateDonorDetails updateForm = new UpdateDonorDetails(donor);
-                updateForm.ShowDialog();
-
-               
             }
 
         }
@@ -82,10 +89,9 @@ namespace DUMSM
 
         private void Backbtn_Click(object sender, EventArgs e)
         {
-            Donor donorForm = new Donor();
-            donorForm.Location = this.Location;
-            donorForm.ShowDialog();
-            //Application.Run(donorForm);
+            Donor form = new Donor();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
             this.Hide();
         }
 
@@ -293,6 +299,11 @@ namespace DUMSM
         private void searchNametxt_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void DonorList_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
         }
     }
 }

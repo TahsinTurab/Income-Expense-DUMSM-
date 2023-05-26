@@ -412,6 +412,7 @@
             this.Name = "Donor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Donor";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Donor_FormClosing);
             this.Load += new System.EventHandler(this.Donor_Load);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();

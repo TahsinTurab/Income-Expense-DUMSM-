@@ -107,5 +107,10 @@ namespace DUMSM.Forms
             Form parentForm = FindForm();
             parentForm.Hide();
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
