@@ -42,21 +42,16 @@
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.button11 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ProfileDeleteBtn = new System.Windows.Forms.Button();
             this.tabControl3.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -214,63 +209,15 @@
             this.button17.Text = "যোগদানের তারিখ";
             this.button17.UseVisualStyleBackColor = false;
             // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button12.Enabled = false;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button12.Location = new System.Drawing.Point(220, 158);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(177, 41);
-            this.button12.TabIndex = 23;
-            this.button12.Text = "যোগদানের তারিখ";
-            this.button12.UseVisualStyleBackColor = false;
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.tabControl1.Location = new System.Drawing.Point(251, 450);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(710, 199);
-            this.tabControl1.TabIndex = 60;
-            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.BackColor = System.Drawing.Color.Transparent;
-            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.tabPage1.Controls.Add(this.textBox5);
-            this.tabPage1.Controls.Add(this.button12);
-            this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage1.Location = new System.Drawing.Point(4, 40);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(702, 155);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "পূর্ববর্তী বেতন তথ্য";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(403, 163);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(277, 29);
-            this.textBox5.TabIndex = 34;
-            this.textBox5.Text = "০১-০১-২০০৬";
-            // 
             // button11
             // 
             this.button11.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.button11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button11.Location = new System.Drawing.Point(253, 402);
+            this.button11.Location = new System.Drawing.Point(617, 402);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(708, 41);
+            this.button11.Size = new System.Drawing.Size(344, 41);
             this.button11.TabIndex = 59;
             this.button11.Text = "তথ্য আপডেট করুন";
             this.button11.UseVisualStyleBackColor = false;
@@ -347,29 +294,42 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // ProfileDeleteBtn
+            // 
+            this.ProfileDeleteBtn.BackColor = System.Drawing.Color.RosyBrown;
+            this.ProfileDeleteBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ProfileDeleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.ProfileDeleteBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.ProfileDeleteBtn.Location = new System.Drawing.Point(253, 402);
+            this.ProfileDeleteBtn.Name = "ProfileDeleteBtn";
+            this.ProfileDeleteBtn.Size = new System.Drawing.Size(344, 41);
+            this.ProfileDeleteBtn.TabIndex = 62;
+            this.ProfileDeleteBtn.Text = "প্রোফাইল ডিলিট করুন";
+            this.ProfileDeleteBtn.UseVisualStyleBackColor = false;
+            this.ProfileDeleteBtn.Click += new System.EventHandler(this.ProfileDeleteBtn_Click);
+            // 
             // StuffProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.ProfileDeleteBtn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.tabControl3);
-            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.button11);
+            this.MaximizeBox = false;
             this.Name = "StuffProfile";
             this.Text = "StuffProfile";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StuffProfile_FormClosing);
             this.Load += new System.EventHandler(this.StuffProfile_Load);
             this.tabControl3.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -390,15 +350,12 @@
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button ProfileDeleteBtn;
     }
 }

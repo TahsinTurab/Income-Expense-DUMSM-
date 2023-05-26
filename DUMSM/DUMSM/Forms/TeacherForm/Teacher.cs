@@ -288,6 +288,11 @@ namespace DUMSM
             {
                 MessageBox.Show("স্টাফের নাম সিলেক্ট করুন");
             }
-        } 
+        }
+
+        private void Teacher_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

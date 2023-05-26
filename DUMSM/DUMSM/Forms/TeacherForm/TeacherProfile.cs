@@ -110,9 +110,45 @@ namespace DUMSM
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Teacher form = new Teacher();
+            form.StartPosition = FormStartPosition.CenterParent;
+            form.Show();
             this.Hide();
-            Teacher teacher = new Teacher();
-            teacher.ShowDialog();
+        }
+
+        private void TeacherProfile_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason != CloseReason.ApplicationExitCall)
+            {
+                e.Cancel = true; // Cancel the close operation
+                this.Hide(); // Hide the form instead of closing it
+            }
+            else
+            {
+                Application.Exit();
+            }
+        }
+
+        private void ProfileDeleteBtn_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("আপনি এই প্রোফাইল চিরতরে মুছে ফেলতে চাচ্ছেন?",
+                "শিক্ষকবৃন্দের তালিকা", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                Teacher form = new Teacher();
+                form.StartPosition = FormStartPosition.CenterScreen;
+                form.Show();
+                Form parentForm = FindForm();
+                parentForm.Hide();
+
+                CRUDOperation.Delete("Teachers", oldTeacher.Id);
+                MessageBox.Show("সকল তথ্য মুছে ফেলা হয়েছে।");
+            }
+            else
+            {
+                MessageBox.Show("কোনো তথ্য মুছে ফেলা হয়নি।");
+            }
         }
     }
 }

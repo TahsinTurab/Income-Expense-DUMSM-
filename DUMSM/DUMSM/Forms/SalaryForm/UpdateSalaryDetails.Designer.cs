@@ -38,6 +38,7 @@
             this.NetPayableAmmounttxt = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Registerbtn = new System.Windows.Forms.Button();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.ProvidentFundtxt = new System.Windows.Forms.TextBox();
@@ -64,7 +65,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.NameList = new System.Windows.Forms.ComboBox();
-            this.Registerbtn = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -205,6 +205,20 @@
             this.groupBox1.TabIndex = 103;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "মাসিক তথ্য আপডেট";
+            // 
+            // Registerbtn
+            // 
+            this.Registerbtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Registerbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Registerbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.Registerbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.Registerbtn.Location = new System.Drawing.Point(193, 251);
+            this.Registerbtn.Name = "Registerbtn";
+            this.Registerbtn.Size = new System.Drawing.Size(235, 46);
+            this.Registerbtn.TabIndex = 104;
+            this.Registerbtn.Text = "প্রাপ্য বেতন হিসাব";
+            this.Registerbtn.UseVisualStyleBackColor = false;
+            this.Registerbtn.Click += new System.EventHandler(this.Registerbtn_Click);
             // 
             // radioButton2
             // 
@@ -463,20 +477,6 @@
             this.NameList.Size = new System.Drawing.Size(89, 32);
             this.NameList.TabIndex = 71;
             // 
-            // Registerbtn
-            // 
-            this.Registerbtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Registerbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Registerbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.Registerbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Registerbtn.Location = new System.Drawing.Point(193, 251);
-            this.Registerbtn.Name = "Registerbtn";
-            this.Registerbtn.Size = new System.Drawing.Size(235, 46);
-            this.Registerbtn.TabIndex = 104;
-            this.Registerbtn.Text = "প্রাপ্য বেতন হিসাব";
-            this.Registerbtn.UseVisualStyleBackColor = false;
-            this.Registerbtn.Click += new System.EventHandler(this.Registerbtn_Click);
-            // 
             // UpdateSalaryDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -484,8 +484,10 @@
             this.ClientSize = new System.Drawing.Size(651, 513);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
             this.Name = "UpdateSalaryDetails";
             this.Text = "UpdateSalaryDetails";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UpdateSalaryDetails_FormClosing);
             this.Load += new System.EventHandler(this.UpdateSalaryDetails_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

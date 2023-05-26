@@ -235,7 +235,6 @@
             this.Fieldtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Fieldtxt.FormattingEnabled = true;
             this.Fieldtxt.Items.AddRange(new object[] {
-            "শিক্ষক ও স্টাফ বেতন",
             "বোর্ডিং",
             "নির্মাণ ও মেরামত",
             "লাইব্রেরী",

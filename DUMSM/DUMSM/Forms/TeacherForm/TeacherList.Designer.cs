@@ -45,15 +45,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Backupbtn = new System.Windows.Forms.Button();
             this.DeleteAllbtn = new System.Windows.Forms.Button();
-            this.Printbtn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.searchNametxt = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Donordgv = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dUMSMDataBaseTeachers = new DUMSM.DUMSMDataBaseTeachers();
-            this.dUMSMDataBaseTeachersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,6 +57,9 @@
             this.Mobile = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Designation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.JoinDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dUMSMDataBaseTeachers = new DUMSM.DUMSMDataBaseTeachers();
+            this.dUMSMDataBaseTeachersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.donorsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dUMSMDataBaseDataSet)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -166,7 +165,7 @@
             this.Backupbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Backupbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.Backupbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Backupbtn.Location = new System.Drawing.Point(722, 588);
+            this.Backupbtn.Location = new System.Drawing.Point(500, 588);
             this.Backupbtn.Name = "Backupbtn";
             this.Backupbtn.Size = new System.Drawing.Size(216, 41);
             this.Backupbtn.TabIndex = 95;
@@ -187,20 +186,6 @@
             this.DeleteAllbtn.Text = "সকল তথ্য ডিলিট করুন";
             this.DeleteAllbtn.UseVisualStyleBackColor = false;
             this.DeleteAllbtn.Click += new System.EventHandler(this.DeleteAllbtn_Click);
-            // 
-            // Printbtn
-            // 
-            this.Printbtn.BackColor = System.Drawing.Color.RosyBrown;
-            this.Printbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Printbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.Printbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Printbtn.Location = new System.Drawing.Point(499, 588);
-            this.Printbtn.Name = "Printbtn";
-            this.Printbtn.Size = new System.Drawing.Size(217, 41);
-            this.Printbtn.TabIndex = 93;
-            this.Printbtn.Text = "প্রিন্ট করুন";
-            this.Printbtn.UseVisualStyleBackColor = false;
-            this.Printbtn.Click += new System.EventHandler(this.Printbtn_Click);
             // 
             // textBox1
             // 
@@ -230,7 +215,7 @@
             this.tabControl1.Location = new System.Drawing.Point(9, 172);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(960, 399);
+            this.tabControl1.Size = new System.Drawing.Size(758, 399);
             this.tabControl1.TabIndex = 92;
             // 
             // tabPage1
@@ -240,7 +225,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 38);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(952, 357);
+            this.tabPage1.Size = new System.Drawing.Size(750, 357);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "শিক্ষরবৃন্দের বিস্তারিত বিবরণ";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -270,33 +255,9 @@
             this.Donordgv.GridColor = System.Drawing.SystemColors.Window;
             this.Donordgv.Location = new System.Drawing.Point(3, 3);
             this.Donordgv.Name = "Donordgv";
-            this.Donordgv.Size = new System.Drawing.Size(946, 351);
+            this.Donordgv.Size = new System.Drawing.Size(744, 351);
             this.Donordgv.TabIndex = 0;
             this.Donordgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Donordgv_CellContentClick);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = global::DUMSM.Properties.Resources.logo1;
-            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(176, 20);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(116, 83);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 88;
-            this.pictureBox1.TabStop = false;
-            // 
-            // dUMSMDataBaseTeachers
-            // 
-            this.dUMSMDataBaseTeachers.DataSetName = "DUMSMDataBaseTeachers";
-            this.dUMSMDataBaseTeachers.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dUMSMDataBaseTeachersBindingSource
-            // 
-            this.dUMSMDataBaseTeachersBindingSource.DataSource = this.dUMSMDataBaseTeachers;
-            this.dUMSMDataBaseTeachersBindingSource.Position = 0;
             // 
             // Delete
             // 
@@ -362,6 +323,30 @@
             this.JoinDate.Name = "JoinDate";
             this.JoinDate.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Image = global::DUMSM.Properties.Resources.logo1;
+            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pictureBox1.Location = new System.Drawing.Point(176, 20);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(116, 83);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 88;
+            this.pictureBox1.TabStop = false;
+            // 
+            // dUMSMDataBaseTeachers
+            // 
+            this.dUMSMDataBaseTeachers.DataSetName = "DUMSMDataBaseTeachers";
+            this.dUMSMDataBaseTeachers.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dUMSMDataBaseTeachersBindingSource
+            // 
+            this.dUMSMDataBaseTeachersBindingSource.DataSource = this.dUMSMDataBaseTeachers;
+            this.dUMSMDataBaseTeachersBindingSource.Position = 0;
+            // 
             // TeacherList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -375,13 +360,14 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Backupbtn);
             this.Controls.Add(this.DeleteAllbtn);
-            this.Controls.Add(this.Printbtn);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.searchNametxt);
             this.Controls.Add(this.tabControl1);
+            this.MaximizeBox = false;
             this.Name = "TeacherList";
             this.Text = "TeacherList";
             this.Activated += new System.EventHandler(this.TeacherList_Activated);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TeacherList_FormClosing);
             this.Load += new System.EventHandler(this.TeacherList_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.donorsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dUMSMDataBaseDataSet)).EndInit();
@@ -411,7 +397,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Backupbtn;
         private System.Windows.Forms.Button DeleteAllbtn;
-        private System.Windows.Forms.Button Printbtn;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox searchNametxt;
         private System.Windows.Forms.TabControl tabControl1;

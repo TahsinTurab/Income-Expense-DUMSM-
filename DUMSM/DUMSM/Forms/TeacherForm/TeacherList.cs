@@ -20,44 +20,49 @@ namespace DUMSM
 
         private void Donordgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (Donordgv.Columns[e.ColumnIndex].HeaderText == "ডিলিট")
+            if (Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString() != "")
             {
-                string id = Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString();
-
-                DialogResult result = MessageBox.Show($"শিক্ষকের আইডিঃ {id}\n\nআপনি এই তথ্যটি ডিলিট করতে ইচ্ছুক? ",
-                    "শিক্ষকের তালিকা", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-
-                if (result == DialogResult.Yes)
+                if (Donordgv.Columns[e.ColumnIndex].HeaderText == "ডিলিট")
                 {
-                    CRUDOperation.Delete("Teachers", id);
-                    MessageBox.Show("শিক্ষকের তথ্য মুছে ফেলা হয়েছে।");
-                    //DisplayData();
+                    string id = Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString();
 
+                    DialogResult result = MessageBox.Show($"শিক্ষকের আইডিঃ {id}\n\nআপনি এই তথ্যটি ডিলিট করতে ইচ্ছুক? ",
+                        "শিক্ষকের তালিকা", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                    if (result == DialogResult.Yes)
+                    {
+                        CRUDOperation.Delete("Teachers", id);
+                        MessageBox.Show("শিক্ষকের তথ্য মুছে ফেলা হয়েছে।");
+                        //DisplayData();
+
+
+                    }
+
+                    else
+                    {
+                        MessageBox.Show("শিক্ষকের তথ্য মুছে ফেলা হয়নি।");
+
+                    }
 
                 }
 
-                else
+                else if (Donordgv.Columns[e.ColumnIndex].HeaderText.Trim() == "আপডেট")
                 {
-                    MessageBox.Show("শিক্ষকের তথ্য মুছে ফেলা হয়নি।");
+                    var teacher = new Teachers();
+                    teacher.Id = Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString();
+                    teacher.Name = Donordgv.Rows[e.RowIndex].Cells["TeacherName"].Value.ToString();
+                    teacher.Designation = Donordgv.Rows[e.RowIndex].Cells["Designation"].Value.ToString();
+                    teacher.MobileNumber = Donordgv.Rows[e.RowIndex].Cells["Mobile"].Value.ToString();
+
+                    teacher.JoinDate = Donordgv.Rows[e.RowIndex].Cells["JoinDate"].Value.ToString();
+
+                    UpdateTeacherDetails updateForm = new UpdateTeacherDetails(teacher);
+                    updateForm.StartPosition = FormStartPosition.CenterScreen;
+                    updateForm.ShowDialog();
+                    this.Hide();
+
 
                 }
-
-            }
-
-            else if (Donordgv.Columns[e.ColumnIndex].HeaderText.Trim() == "আপডেট")
-            {
-                var teacher = new Teachers();
-                teacher.Id = Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString();
-                teacher.Name = Donordgv.Rows[e.RowIndex].Cells["TeacherName"].Value.ToString();
-                teacher.Designation = Donordgv.Rows[e.RowIndex].Cells["Designation"].Value.ToString();
-                teacher.MobileNumber = Donordgv.Rows[e.RowIndex].Cells["Mobile"].Value.ToString();
-
-                teacher.JoinDate = Donordgv.Rows[e.RowIndex].Cells["JoinDate"].Value.ToString();
-
-                UpdateTeacherDetails updateForm = new UpdateTeacherDetails(teacher);
-                updateForm.ShowDialog();
-
-
             }
         }
 
@@ -75,10 +80,9 @@ namespace DUMSM
 
         private void Backbtn_Click(object sender, EventArgs e)
         {
-            Teacher teacherForm = new Teacher();
-            teacherForm.Location = this.Location;
-            teacherForm.ShowDialog();
-            //Application.Run(donorForm);
+            Teacher form = new Teacher();
+            form.StartPosition = FormStartPosition.CenterParent;
+            form.Show();
             this.Hide();
         }
 
@@ -135,6 +139,11 @@ namespace DUMSM
         private void TeacherList_Load_1(object sender, EventArgs e)
         {
             DisplayData();
+        }
+
+        private void TeacherList_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -625,6 +625,7 @@
             this.MaximizeBox = false;
             this.Name = "Teacher";
             this.Text = "শিক্ষক";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Teacher_FormClosing);
             this.tabControl3.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();

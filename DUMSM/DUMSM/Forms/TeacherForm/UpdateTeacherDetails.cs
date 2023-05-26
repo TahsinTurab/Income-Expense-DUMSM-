@@ -72,7 +72,10 @@ namespace DUMSM
                 {
                     CRUDOperation.Update(teacher);
                     PopUpMessage.SuccessRegistrationMessage("শিক্ষক তথ্য আপডেট");
-                    this.Close();
+                    TeacherList form = new TeacherList();
+                    form.StartPosition = FormStartPosition.CenterParent;
+                    form.Show();
+                    this.Hide();
                 }
                 else
                 {
@@ -88,6 +91,11 @@ namespace DUMSM
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void UpdateTeacherDetails_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

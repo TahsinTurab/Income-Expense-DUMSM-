@@ -109,10 +109,10 @@ namespace DUMSM.Forms.TeacherForm
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Teacher form = new Teacher();
+            form.StartPosition = FormStartPosition.CenterParent;
+            form.Show();
             this.Hide();
-            var teacher = new Teacher();
-            teacher.ShowDialog();
-
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -143,6 +143,41 @@ namespace DUMSM.Forms.TeacherForm
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void StuffProfile_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason != CloseReason.ApplicationExitCall)
+            {
+                e.Cancel = true; // Cancel the close operation
+                this.Hide(); // Hide the form instead of closing it
+            }
+            else
+            {
+                Application.Exit();
+            }
+        }
+
+        private void ProfileDeleteBtn_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("আপনি এই প্রোফাইল চিরতরে মুছে ফেলতে চাচ্ছেন?",
+                "স্টাফদের তালিকা", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                CRUDOperation.Delete("Stuffs", oldStuff.Id);
+                MessageBox.Show("সকল তথ্য মুছে ফেলা হয়েছে।");
+
+                Teacher form = new Teacher();
+                form.StartPosition = FormStartPosition.CenterScreen;
+                form.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("কোনো তথ্য মুছে ফেলা হয়নি।");
+            }
+            
         }
     }
 }

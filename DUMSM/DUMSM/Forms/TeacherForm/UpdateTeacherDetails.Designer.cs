@@ -227,8 +227,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(457, 427);
             this.Controls.Add(this.tabControl3);
+            this.MaximizeBox = false;
             this.Name = "UpdateTeacherDetails";
             this.Text = "UpdateTeacherDetails";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UpdateTeacherDetails_FormClosing);
             this.Load += new System.EventHandler(this.UpdateTeacherDetails_Load);
             this.tabControl3.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);

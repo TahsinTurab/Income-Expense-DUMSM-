@@ -216,6 +216,11 @@ namespace DUMSM.Forms.Salary
                     CRUDOperation.Update(salary);
                     CRUDOperation.Update(salaryInformation);
                     MessageBox.Show("সফল হয়েছে!");
+                    Salaries form = new Salaries();
+                    form.StartPosition = FormStartPosition.CenterParent;
+                    form.Show();
+                    this.Hide();
+
                 }
             }
             catch
@@ -243,7 +248,15 @@ namespace DUMSM.Forms.Salary
 
         private void backBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Salaries form = new Salaries();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
+            this.Hide();
+        }
+
+        private void UpdateSalaryDetails_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
