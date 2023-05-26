@@ -43,6 +43,8 @@ namespace DUMSM.Forms.Salary
                 if (result == DialogResult.Yes)
                 {
                     CRUDOperation.Delete("Salaries", id);
+
+                    CRUDOperation.Delete("MonthlyInformations", id);
                     MessageBox.Show("বেতনের তথ্য মুছে ফেলা হয়েছে।");
                     //DisplayData();
                 }
@@ -248,6 +250,7 @@ namespace DUMSM.Forms.Salary
                     salary.MonthName = salaryInformation.MonthName;
                     salary.IsPaid = salaryInformation.IsPaid;
                     salary.Designation = salaryInformation.EmployeeType;
+                    salary.Date = salaryInformation.PaymentDate;
 
                     CRUDOperation.Insert(salary);
                     CRUDOperation.Insert(salaryInformation);

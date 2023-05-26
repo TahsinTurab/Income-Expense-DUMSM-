@@ -15,6 +15,7 @@ namespace DUMSM.Forms.Salary
     public partial class UpdateSalaryDetails : Form
     {
         MonthlyInformations oldMonthlyInfomatoin;
+        MonthlyInformations salaryInformation = new MonthlyInformations();
         public UpdateSalaryDetails(MonthlyInformations monthlyInformations)
         {
             InitializeComponent();
@@ -80,15 +81,16 @@ namespace DUMSM.Forms.Salary
             //MonthList.SelectedValue = oldMonthlyInfomatoin.MonthName;
         }
 
-        private void Paybtn_Click(object sender, EventArgs e)
+        
+        public void hisab()
         {
             try
             {
                 var willInsert = true;
 
                 string errorMessage = "";
-                MonthlyInformations salaryInformation = new MonthlyInformations();
-                salaryInformation.Id = Guid.NewGuid();
+                //MonthlyInformations salaryInformation = new MonthlyInformations();
+                salaryInformation.Id = oldMonthlyInfomatoin.Id;
                 object selectedItem = NameList.SelectedItem;
                 salaryInformation.EmployeeName = ((string)selectedItem);
 
@@ -183,6 +185,57 @@ namespace DUMSM.Forms.Salary
             {
                 PopUpMessage.ErrorMessage("বেতন তথ্য নিবন্ধন");
             }
+        }
+        private void Paybtn_Click(object sender, EventArgs e)
+        {
+            
+
+            try
+            {
+                if (salaryInformation.EmployeeName != null && salaryInformation.MonthName != null)
+                {
+                    salaryInformation.PaymentDate = DateTimetxt.Text;
+                    salaryInformation.IsPaid = "হ্যাঁ";
+                    var salary = new Salaries();
+                    salary.Id = salaryInformation.Id;
+                    salary.Name = salaryInformation.EmployeeName;
+                    salary.Ammount = salaryInformation.NetPayableAmmount;
+                    salary.MonthName = salaryInformation.MonthName;
+                    salary.IsPaid = salaryInformation.IsPaid;
+                    salary.Designation = salaryInformation.EmployeeType;
+                    salary.Date = salaryInformation.PaymentDate;
+
+                    CRUDOperation.Update(salary);
+                    CRUDOperation.Update(salaryInformation);
+                    MessageBox.Show("সফল হয়েছে!");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("আপডেট করা যাচ্ছে না!");
+            }
+        }
+
+        private void Registerbtn_Click(object sender, EventArgs e)
+        { 
+            hisab();
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            LoadStuff();
+            salaryInformation.EmployeeType = "স্টাফ";
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            LoadTeacher();
+            salaryInformation.EmployeeType = "শিক্ষক";
+        }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

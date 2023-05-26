@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.DateTimetxt = new System.Windows.Forms.TextBox();
             this.backBtn = new System.Windows.Forms.Button();
             this.TotalAmmount = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -63,7 +64,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.NameList = new System.Windows.Forms.ComboBox();
-            this.DateTimetxt = new System.Windows.Forms.TextBox();
+            this.Registerbtn = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -79,12 +80,20 @@
             this.groupBox2.Controls.Add(this.NetPayableAmmounttxt);
             this.groupBox2.Controls.Add(this.label20);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 263);
+            this.groupBox2.Location = new System.Drawing.Point(12, 336);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(624, 152);
             this.groupBox2.TabIndex = 104;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "বেতন তথ্য ";
+            // 
+            // DateTimetxt
+            // 
+            this.DateTimetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.DateTimetxt.Location = new System.Drawing.Point(121, 118);
+            this.DateTimetxt.Name = "DateTimetxt";
+            this.DateTimetxt.Size = new System.Drawing.Size(105, 29);
+            this.DateTimetxt.TabIndex = 96;
             // 
             // backBtn
             // 
@@ -98,6 +107,7 @@
             this.backBtn.TabIndex = 95;
             this.backBtn.Text = "বাতিল করুন";
             this.backBtn.UseVisualStyleBackColor = false;
+            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
             // 
             // TotalAmmount
             // 
@@ -161,6 +171,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.Registerbtn);
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.ProvidentFundtxt);
@@ -190,7 +201,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(624, 245);
+            this.groupBox1.Size = new System.Drawing.Size(624, 318);
             this.groupBox1.TabIndex = 103;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "মাসিক তথ্য আপডেট";
@@ -206,6 +217,7 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "স্টাফ";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton1
             // 
@@ -218,6 +230,7 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "শিক্ষক";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // ProvidentFundtxt
             // 
@@ -450,19 +463,25 @@
             this.NameList.Size = new System.Drawing.Size(89, 32);
             this.NameList.TabIndex = 71;
             // 
-            // DateTimetxt
+            // Registerbtn
             // 
-            this.DateTimetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.DateTimetxt.Location = new System.Drawing.Point(121, 118);
-            this.DateTimetxt.Name = "DateTimetxt";
-            this.DateTimetxt.Size = new System.Drawing.Size(105, 29);
-            this.DateTimetxt.TabIndex = 96;
+            this.Registerbtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Registerbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Registerbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.Registerbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.Registerbtn.Location = new System.Drawing.Point(193, 251);
+            this.Registerbtn.Name = "Registerbtn";
+            this.Registerbtn.Size = new System.Drawing.Size(235, 46);
+            this.Registerbtn.TabIndex = 104;
+            this.Registerbtn.Text = "প্রাপ্য বেতন হিসাব";
+            this.Registerbtn.UseVisualStyleBackColor = false;
+            this.Registerbtn.Click += new System.EventHandler(this.Registerbtn_Click);
             // 
             // UpdateSalaryDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(651, 438);
+            this.ClientSize = new System.Drawing.Size(651, 513);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "UpdateSalaryDetails";
@@ -514,5 +533,6 @@
         private System.Windows.Forms.ComboBox NameList;
         private System.Windows.Forms.Button backBtn;
         private System.Windows.Forms.TextBox DateTimetxt;
+        private System.Windows.Forms.Button Registerbtn;
     }
 }
