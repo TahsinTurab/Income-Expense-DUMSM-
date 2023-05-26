@@ -67,7 +67,7 @@ namespace DUMSM.Forms.Salary
                 monthlyInformations.Bonous = int.Parse(Donordgv.Rows[e.RowIndex].Cells["Bonous"].Value.ToString());
                 monthlyInformations.BaseSalary = int.Parse(Donordgv.Rows[e.RowIndex].Cells["BaseSalary"].Value.ToString());
                 monthlyInformations.Due = int.Parse(Donordgv.Rows[e.RowIndex].Cells["Due"].Value.ToString());
-                monthlyInformations.TotalAmmount = int.Parse(Donordgv.Rows[e.RowIndex].Cells["TotalAmmount"].Value.ToString());
+                monthlyInformations.TotalAmmount = int.Parse(Donordgv.Rows[e.RowIndex].Cells["TAmmount"].Value.ToString());
                 monthlyInformations.ExtraHonorium = int.Parse(Donordgv.Rows[e.RowIndex].Cells["ExtraHonorium"].Value.ToString());
                 monthlyInformations.ProvidentFund = int.Parse(Donordgv.Rows[e.RowIndex].Cells["ProvidentFund"].Value.ToString());
                 monthlyInformations.NetPayableAmmount = int.Parse(Donordgv.Rows[e.RowIndex].Cells["NetPayableAmmount"].Value.ToString());

@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.backBtn = new System.Windows.Forms.Button();
             this.TotalAmmount = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.Paybtn = new System.Windows.Forms.Button();
-            this.DateTimetxt = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.NetPayableAmmounttxt = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
@@ -63,18 +63,18 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.NameList = new System.Windows.Forms.ComboBox();
-            this.backBtn = new System.Windows.Forms.Button();
+            this.DateTimetxt = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.DateTimetxt);
             this.groupBox2.Controls.Add(this.backBtn);
             this.groupBox2.Controls.Add(this.TotalAmmount);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.Paybtn);
-            this.groupBox2.Controls.Add(this.DateTimetxt);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.NetPayableAmmounttxt);
             this.groupBox2.Controls.Add(this.label20);
@@ -85,6 +85,19 @@
             this.groupBox2.TabIndex = 104;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "বেতন তথ্য ";
+            // 
+            // backBtn
+            // 
+            this.backBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.backBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.backBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.backBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.backBtn.Location = new System.Drawing.Point(407, 28);
+            this.backBtn.Name = "backBtn";
+            this.backBtn.Size = new System.Drawing.Size(207, 41);
+            this.backBtn.TabIndex = 95;
+            this.backBtn.Text = "বাতিল করুন";
+            this.backBtn.UseVisualStyleBackColor = false;
             // 
             // TotalAmmount
             // 
@@ -116,15 +129,7 @@
             this.Paybtn.TabIndex = 92;
             this.Paybtn.Text = "আপডেট করুন";
             this.Paybtn.UseVisualStyleBackColor = false;
-            // 
-            // DateTimetxt
-            // 
-            this.DateTimetxt.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateTimetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateTimetxt.Location = new System.Drawing.Point(121, 118);
-            this.DateTimetxt.Name = "DateTimetxt";
-            this.DateTimetxt.Size = new System.Drawing.Size(229, 26);
-            this.DateTimetxt.TabIndex = 83;
+            this.Paybtn.Click += new System.EventHandler(this.Paybtn_Click);
             // 
             // label3
             // 
@@ -445,18 +450,13 @@
             this.NameList.Size = new System.Drawing.Size(89, 32);
             this.NameList.TabIndex = 71;
             // 
-            // backBtn
+            // DateTimetxt
             // 
-            this.backBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.backBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.backBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.backBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.backBtn.Location = new System.Drawing.Point(407, 28);
-            this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(207, 41);
-            this.backBtn.TabIndex = 95;
-            this.backBtn.Text = "বাতিল করুন";
-            this.backBtn.UseVisualStyleBackColor = false;
+            this.DateTimetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.DateTimetxt.Location = new System.Drawing.Point(121, 118);
+            this.DateTimetxt.Name = "DateTimetxt";
+            this.DateTimetxt.Size = new System.Drawing.Size(105, 29);
+            this.DateTimetxt.TabIndex = 96;
             // 
             // UpdateSalaryDetails
             // 
@@ -467,6 +467,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "UpdateSalaryDetails";
             this.Text = "UpdateSalaryDetails";
+            this.Load += new System.EventHandler(this.UpdateSalaryDetails_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -481,7 +482,6 @@
         private System.Windows.Forms.TextBox TotalAmmount;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button Paybtn;
-        private System.Windows.Forms.DateTimePicker DateTimetxt;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox NetPayableAmmounttxt;
         private System.Windows.Forms.Label label20;
@@ -513,5 +513,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox NameList;
         private System.Windows.Forms.Button backBtn;
+        private System.Windows.Forms.TextBox DateTimetxt;
     }
 }

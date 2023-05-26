@@ -58,7 +58,6 @@ C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.csproj.CoreCompileInputs
 C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\bn-BD\DUMSM.resources.dll
 C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.exe
 C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.pdb
-C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Stuff.resources
 C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.TeacherList.resources
 C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.UpdateTeacherDetails.resources
 C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.DonationForm.GeneralDonationList.resources
@@ -78,3 +77,14 @@ C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.Expe
 C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.ExpenseForm.UpdateGorabaExpenseDetails.resources
 C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.Salary.Salary.resources
 C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.Salary.UpdateSalaryDetails.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.DonationForm.GorabaDonationList.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.DonationForm.UpdateGorabaDonationDetails.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.ExpenseForm.ExpenseDetailsCommon.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.ExpenseForm.ExpenseDetailsGoraba.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.ExpenseForm.UpdateCommonExpenseDetails.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.ExpenseForm.UpdateGorabaExpenseDetails.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.IncomeForm.UpdateCommonIncomeDetails.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.IncomeForm.UpdateGorabaIncomeDetails.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.Salary.Salary.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.Salary.UpdateSalaryDetails.resources
+C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.TeacherForm.StuffProfile.resources
