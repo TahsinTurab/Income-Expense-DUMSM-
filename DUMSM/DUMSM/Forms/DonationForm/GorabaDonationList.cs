@@ -41,6 +41,7 @@ namespace DUMSM.Forms.DonationForm
 
             if (result == DialogResult.Yes)
             {
+                CRUDOperation.DeleteWithCondition("GorabaIncome", "Where IsDonation=N'হ্যাঁ'");
                 CRUDOperation.DeleteAllData("GorabaDonations");
                 MessageBox.Show("সকল তথ্য মুছে ফেলা হয়েছে।");
             }

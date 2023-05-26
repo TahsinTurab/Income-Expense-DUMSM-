@@ -94,6 +94,7 @@ namespace DUMSM.Forms.DonationForm
 
             if (result == DialogResult.Yes)
             {
+                CRUDOperation.DeleteWithCondition("GeneralIncome", "Where IsDonation=N'হ্যাঁ'");
                 CRUDOperation.DeleteAllData("Donations");
                 MessageBox.Show("সকল তথ্য মুছে ফেলা হয়েছে।");
             }

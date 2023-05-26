@@ -90,18 +90,23 @@ namespace DUMSM.Forms.ExpenseForm
 
             else if (Donordgv.Columns[e.ColumnIndex].HeaderText.Trim() == "আপডেট")
             {
-                GeneralExpense generalExpense = new GeneralExpense();
-                generalExpense.Id = Guid.Parse(Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString());
-                generalExpense.VoucherNumber = Donordgv.Rows[e.RowIndex].Cells["VoucherNumber"].Value.ToString();
-                generalExpense.ExpenseDate = Donordgv.Rows[e.RowIndex].Cells["ExpenseDate"].Value.ToString();
-                generalExpense.Ammount = int.Parse(Donordgv.Rows[e.RowIndex].Cells["Ammount"].Value.ToString());
-                generalExpense.Field = Donordgv.Rows[e.RowIndex].Cells["Field"].Value.ToString();
+                if (Donordgv.Rows[e.RowIndex].Cells["Field"].Value.ToString() == "বেতন")
+                {
+                    MessageBox.Show("বেতনের তথ্য আপডেট করতে বেতন নিবন্ধন এর তালিকাতে যান"); 
+                }
+                else
+                {
+                    GeneralExpense generalExpense = new GeneralExpense();
+                    generalExpense.Id = Guid.Parse(Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString());
+                    generalExpense.VoucherNumber = Donordgv.Rows[e.RowIndex].Cells["VoucherNumber"].Value.ToString();
+                    generalExpense.ExpenseDate = Donordgv.Rows[e.RowIndex].Cells["ExpenseDate"].Value.ToString();
+                    generalExpense.Ammount = int.Parse(Donordgv.Rows[e.RowIndex].Cells["Ammount"].Value.ToString());
+                    generalExpense.Field = Donordgv.Rows[e.RowIndex].Cells["Field"].Value.ToString();
 
 
-                UpdateCommonExpenseDetails updateForm = new UpdateCommonExpenseDetails(generalExpense);
-                updateForm.ShowDialog();
-
-
+                    UpdateCommonExpenseDetails updateForm = new UpdateCommonExpenseDetails(generalExpense);
+                    updateForm.ShowDialog();
+                }
             }
         }
     }
