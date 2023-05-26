@@ -31,16 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.ProfileBtn = new System.Windows.Forms.Button();
+            this.DonationBtn = new System.Windows.Forms.Button();
+            this.EmployeeBtn = new System.Windows.Forms.Button();
+            this.DeleteBtn = new System.Windows.Forms.Button();
+            this.LogoutBtn = new System.Windows.Forms.Button();
+            this.ReportBtn = new System.Windows.Forms.Button();
+            this.DonorBtn = new System.Windows.Forms.Button();
+            this.SalaryBtn = new System.Windows.Forms.Button();
+            this.ExpenseBtn = new System.Windows.Forms.Button();
+            this.IncomeBtn = new System.Windows.Forms.Button();
             this.DashboardBtn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -102,99 +102,99 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button7);
-            this.panel2.Controls.Add(this.button20);
-            this.panel2.Controls.Add(this.button21);
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.button22);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.ProfileBtn);
+            this.panel2.Controls.Add(this.DonationBtn);
+            this.panel2.Controls.Add(this.EmployeeBtn);
+            this.panel2.Controls.Add(this.DeleteBtn);
+            this.panel2.Controls.Add(this.LogoutBtn);
+            this.panel2.Controls.Add(this.ReportBtn);
+            this.panel2.Controls.Add(this.DonorBtn);
+            this.panel2.Controls.Add(this.SalaryBtn);
+            this.panel2.Controls.Add(this.ExpenseBtn);
+            this.panel2.Controls.Add(this.IncomeBtn);
             this.panel2.Controls.Add(this.DashboardBtn);
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
             // 
-            // button6
+            // ProfileBtn
             // 
-            this.button6.BackColor = System.Drawing.Color.RosyBrown;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button6, "button6");
-            this.button6.Name = "button6";
-            this.button6.UseVisualStyleBackColor = false;
+            this.ProfileBtn.BackColor = System.Drawing.Color.RosyBrown;
+            this.ProfileBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.ProfileBtn, "ProfileBtn");
+            this.ProfileBtn.Name = "ProfileBtn";
+            this.ProfileBtn.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // DonationBtn
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = false;
+            this.DonationBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.DonationBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.DonationBtn, "DonationBtn");
+            this.DonationBtn.Name = "DonationBtn";
+            this.DonationBtn.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // EmployeeBtn
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = false;
+            this.EmployeeBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.EmployeeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.EmployeeBtn, "EmployeeBtn");
+            this.EmployeeBtn.Name = "EmployeeBtn";
+            this.EmployeeBtn.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // DeleteBtn
             // 
-            this.button7.BackColor = System.Drawing.Color.RosyBrown;
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button7, "button7");
-            this.button7.Name = "button7";
-            this.button7.UseVisualStyleBackColor = false;
+            this.DeleteBtn.BackColor = System.Drawing.Color.RosyBrown;
+            this.DeleteBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.DeleteBtn, "DeleteBtn");
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.UseVisualStyleBackColor = false;
             // 
-            // button20
+            // LogoutBtn
             // 
-            this.button20.BackColor = System.Drawing.Color.RosyBrown;
-            this.button20.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button20, "button20");
-            this.button20.Name = "button20";
-            this.button20.UseVisualStyleBackColor = false;
+            this.LogoutBtn.BackColor = System.Drawing.Color.RosyBrown;
+            this.LogoutBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.LogoutBtn, "LogoutBtn");
+            this.LogoutBtn.Name = "LogoutBtn";
+            this.LogoutBtn.UseVisualStyleBackColor = false;
             // 
-            // button21
+            // ReportBtn
             // 
-            this.button21.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button21.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button21, "button21");
-            this.button21.Name = "button21";
-            this.button21.UseVisualStyleBackColor = false;
+            this.ReportBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ReportBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.ReportBtn, "ReportBtn");
+            this.ReportBtn.Name = "ReportBtn";
+            this.ReportBtn.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // DonorBtn
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = false;
+            this.DonorBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.DonorBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.DonorBtn, "DonorBtn");
+            this.DonorBtn.Name = "DonorBtn";
+            this.DonorBtn.UseVisualStyleBackColor = false;
             // 
-            // button22
+            // SalaryBtn
             // 
-            this.button22.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button22.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button22, "button22");
-            this.button22.Name = "button22";
-            this.button22.UseVisualStyleBackColor = false;
+            this.SalaryBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.SalaryBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.SalaryBtn, "SalaryBtn");
+            this.SalaryBtn.Name = "SalaryBtn";
+            this.SalaryBtn.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // ExpenseBtn
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = false;
+            this.ExpenseBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ExpenseBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.ExpenseBtn, "ExpenseBtn");
+            this.ExpenseBtn.Name = "ExpenseBtn";
+            this.ExpenseBtn.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // IncomeBtn
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = false;
+            this.IncomeBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.IncomeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.IncomeBtn, "IncomeBtn");
+            this.IncomeBtn.Name = "IncomeBtn";
+            this.IncomeBtn.UseVisualStyleBackColor = false;
             // 
             // DashboardBtn
             // 
@@ -554,16 +554,16 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button ProfileBtn;
+        private System.Windows.Forms.Button DonationBtn;
+        private System.Windows.Forms.Button EmployeeBtn;
+        private System.Windows.Forms.Button DeleteBtn;
+        private System.Windows.Forms.Button LogoutBtn;
+        private System.Windows.Forms.Button ReportBtn;
+        private System.Windows.Forms.Button DonorBtn;
+        private System.Windows.Forms.Button SalaryBtn;
+        private System.Windows.Forms.Button ExpenseBtn;
+        private System.Windows.Forms.Button IncomeBtn;
         private System.Windows.Forms.Button DashboardBtn;
     }
 }

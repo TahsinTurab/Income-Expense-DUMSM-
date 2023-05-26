@@ -118,306 +118,306 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button6.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="ProfileBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt, style=Bold</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="ProfileBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button6.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="ProfileBtn.Location" type="System.Drawing.Point, System.Drawing">
     <value>26, 514</value>
   </data>
-  <data name="button6.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="ProfileBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>185, 41</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button6.TabIndex" type="System.Int32, mscorlib">
+  <data name="ProfileBtn.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <data name="button6.Text" xml:space="preserve">
+  <data name="ProfileBtn.Text" xml:space="preserve">
     <value>প্রোফাইল সেটিংস</value>
   </data>
-  <data name="&gt;&gt;button6.Name" xml:space="preserve">
-    <value>button6</value>
+  <data name="&gt;&gt;ProfileBtn.Name" xml:space="preserve">
+    <value>ProfileBtn</value>
   </data>
-  <data name="&gt;&gt;button6.Type" xml:space="preserve">
+  <data name="&gt;&gt;ProfileBtn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ProfileBtn.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ProfileBtn.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="DonationBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt, style=Bold</value>
   </data>
-  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="DonationBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 173</value>
+  <data name="DonationBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 173</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 41</value>
+  <data name="DonationBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 41</value>
   </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+  <data name="DonationBtn.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
+  <data name="DonationBtn.Text" xml:space="preserve">
     <value>অনুদান</value>
   </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
+  <data name="&gt;&gt;DonationBtn.Name" xml:space="preserve">
+    <value>DonationBtn</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+  <data name="&gt;&gt;DonationBtn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;DonationBtn.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;DonationBtn.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="EmployeeBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt, style=Bold</value>
   </data>
-  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="EmployeeBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 314</value>
+  <data name="EmployeeBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 361</value>
   </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 41</value>
+  <data name="EmployeeBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 41</value>
   </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+  <data name="EmployeeBtn.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>শিক্ষক</value>
+  <data name="EmployeeBtn.Text" xml:space="preserve">
+    <value>শিক্ষক ও স্টাফ</value>
   </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
+  <data name="&gt;&gt;EmployeeBtn.Name" xml:space="preserve">
+    <value>EmployeeBtn</value>
   </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+  <data name="&gt;&gt;EmployeeBtn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;EmployeeBtn.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;EmployeeBtn.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="button7.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="DeleteBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt, style=Bold</value>
   </data>
-  <data name="button7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="DeleteBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="DeleteBtn.Location" type="System.Drawing.Point, System.Drawing">
     <value>26, 561</value>
   </data>
-  <data name="button7.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="DeleteBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>185, 41</value>
   </data>
-  <data name="button7.TabIndex" type="System.Int32, mscorlib">
+  <data name="DeleteBtn.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="button7.Text" xml:space="preserve">
+  <data name="DeleteBtn.Text" xml:space="preserve">
     <value>তথ্য ডিলিট করুন</value>
   </data>
-  <data name="&gt;&gt;button7.Name" xml:space="preserve">
-    <value>button7</value>
+  <data name="&gt;&gt;DeleteBtn.Name" xml:space="preserve">
+    <value>DeleteBtn</value>
   </data>
-  <data name="&gt;&gt;button7.Type" xml:space="preserve">
+  <data name="&gt;&gt;DeleteBtn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button7.Parent" xml:space="preserve">
+  <data name="&gt;&gt;DeleteBtn.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;DeleteBtn.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="button20.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="LogoutBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt, style=Bold</value>
   </data>
-  <data name="button20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="LogoutBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button20.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="LogoutBtn.Location" type="System.Drawing.Point, System.Drawing">
     <value>26, 608</value>
   </data>
-  <data name="button20.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="LogoutBtn.Size" type="System.Drawing.Size, System.Drawing">
     <value>185, 41</value>
   </data>
-  <data name="button20.TabIndex" type="System.Int32, mscorlib">
+  <data name="LogoutBtn.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="button20.Text" xml:space="preserve">
+  <data name="LogoutBtn.Text" xml:space="preserve">
     <value>লগ আউট</value>
   </data>
-  <data name="&gt;&gt;button20.Name" xml:space="preserve">
-    <value>button20</value>
+  <data name="&gt;&gt;LogoutBtn.Name" xml:space="preserve">
+    <value>LogoutBtn</value>
   </data>
-  <data name="&gt;&gt;button20.Type" xml:space="preserve">
+  <data name="&gt;&gt;LogoutBtn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button20.Parent" xml:space="preserve">
+  <data name="&gt;&gt;LogoutBtn.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;button20.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;LogoutBtn.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="button21.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="ReportBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt, style=Bold</value>
   </data>
-  <data name="button21.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="ReportBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 455</value>
+  <data name="ReportBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 455</value>
   </data>
-  <data name="button21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 41</value>
+  <data name="ReportBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 41</value>
   </data>
-  <data name="button21.TabIndex" type="System.Int32, mscorlib">
+  <data name="ReportBtn.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="button21.Text" xml:space="preserve">
+  <data name="ReportBtn.Text" xml:space="preserve">
     <value>রিপোর্ট</value>
   </data>
-  <data name="&gt;&gt;button21.Name" xml:space="preserve">
-    <value>button21</value>
+  <data name="&gt;&gt;ReportBtn.Name" xml:space="preserve">
+    <value>ReportBtn</value>
   </data>
-  <data name="&gt;&gt;button21.Type" xml:space="preserve">
+  <data name="&gt;&gt;ReportBtn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button21.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ReportBtn.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;button21.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ReportBtn.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="button5.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="DonorBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt, style=Bold</value>
   </data>
-  <data name="button5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="DonorBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 408</value>
+  <data name="DonorBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 408</value>
   </data>
-  <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 41</value>
+  <data name="DonorBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 41</value>
   </data>
-  <data name="button5.TabIndex" type="System.Int32, mscorlib">
+  <data name="DonorBtn.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="button5.Text" xml:space="preserve">
+  <data name="DonorBtn.Text" xml:space="preserve">
     <value>স্থায়ী সদস্য</value>
   </data>
-  <data name="&gt;&gt;button5.Name" xml:space="preserve">
-    <value>button5</value>
+  <data name="&gt;&gt;DonorBtn.Name" xml:space="preserve">
+    <value>DonorBtn</value>
   </data>
-  <data name="&gt;&gt;button5.Type" xml:space="preserve">
+  <data name="&gt;&gt;DonorBtn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;DonorBtn.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;DonorBtn.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="button22.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="SalaryBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt, style=Bold</value>
   </data>
-  <data name="button22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="SalaryBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 361</value>
+  <data name="SalaryBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 314</value>
   </data>
-  <data name="button22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 41</value>
+  <data name="SalaryBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 41</value>
   </data>
-  <data name="button22.TabIndex" type="System.Int32, mscorlib">
+  <data name="SalaryBtn.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="button22.Text" xml:space="preserve">
-    <value>স্টাফ</value>
+  <data name="SalaryBtn.Text" xml:space="preserve">
+    <value>বেতনের তথ্য</value>
   </data>
-  <data name="&gt;&gt;button22.Name" xml:space="preserve">
-    <value>button22</value>
+  <data name="&gt;&gt;SalaryBtn.Name" xml:space="preserve">
+    <value>SalaryBtn</value>
   </data>
-  <data name="&gt;&gt;button22.Type" xml:space="preserve">
+  <data name="&gt;&gt;SalaryBtn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button22.Parent" xml:space="preserve">
+  <data name="&gt;&gt;SalaryBtn.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;button22.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;SalaryBtn.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="button3.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="ExpenseBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt, style=Bold</value>
   </data>
-  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="ExpenseBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 267</value>
+  <data name="ExpenseBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 267</value>
   </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 41</value>
+  <data name="ExpenseBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 41</value>
   </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+  <data name="ExpenseBtn.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="button3.Text" xml:space="preserve">
+  <data name="ExpenseBtn.Text" xml:space="preserve">
     <value>খরচ</value>
   </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
+  <data name="&gt;&gt;ExpenseBtn.Name" xml:space="preserve">
+    <value>ExpenseBtn</value>
   </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+  <data name="&gt;&gt;ExpenseBtn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ExpenseBtn.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ExpenseBtn.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="button4.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="IncomeBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt, style=Bold</value>
   </data>
-  <data name="button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="IncomeBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 220</value>
+  <data name="IncomeBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 220</value>
   </data>
-  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 41</value>
+  <data name="IncomeBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>185, 41</value>
   </data>
-  <data name="button4.TabIndex" type="System.Int32, mscorlib">
+  <data name="IncomeBtn.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="button4.Text" xml:space="preserve">
+  <data name="IncomeBtn.Text" xml:space="preserve">
     <value>জমা</value>
   </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
+  <data name="&gt;&gt;IncomeBtn.Name" xml:space="preserve">
+    <value>IncomeBtn</value>
   </data>
-  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+  <data name="&gt;&gt;IncomeBtn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;IncomeBtn.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;IncomeBtn.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
   <data name="DashboardBtn.Font" type="System.Drawing.Font, System.Drawing">
@@ -427,10 +427,10 @@
     <value>NoControl</value>
   </data>
   <data name="DashboardBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 126</value>
+    <value>26, 126</value>
   </data>
   <data name="DashboardBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 41</value>
+    <value>185, 41</value>
   </data>
   <data name="DashboardBtn.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>

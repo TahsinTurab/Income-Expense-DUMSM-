@@ -29,7 +29,7 @@ namespace DUMSM
 
                 if (result == DialogResult.Yes)
                 {
-                    CRUDOperation.Delete("Donors", id);
+                    CRUDOperation.Delete("Teachers", id);
                     MessageBox.Show("শিক্ষকের তথ্য মুছে ফেলা হয়েছে।");
                     //DisplayData();
 
