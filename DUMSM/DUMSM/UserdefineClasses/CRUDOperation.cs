@@ -84,6 +84,21 @@ namespace DUMSM
 
         }
 
+        public static void DeleteWithCondition(string tableName, string Condition)
+        {
+
+            string query = $"DELETE FROM {tableName} WHERE  {Condition}";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+                command.ExecuteNonQuery();
+                connection.Close();
+            }
+
+        }
+
 
         public static List<string> GetColumnValues(string tableName, string columnName)
         {

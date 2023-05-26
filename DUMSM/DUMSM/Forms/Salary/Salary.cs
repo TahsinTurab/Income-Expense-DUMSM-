@@ -44,6 +44,7 @@ namespace DUMSM.Forms.Salary
                 {
                     CRUDOperation.Delete("Salaries", id);
 
+                    CRUDOperation.Delete("GeneralExpense", id);
                     CRUDOperation.Delete("MonthlyInformations", id);
                     MessageBox.Show("বেতনের তথ্য মুছে ফেলা হয়েছে।");
                     //DisplayData();
@@ -252,6 +253,14 @@ namespace DUMSM.Forms.Salary
                     salary.Designation = salaryInformation.EmployeeType;
                     salary.Date = salaryInformation.PaymentDate;
 
+                    var generalExpense = new GeneralExpense();
+                    generalExpense.Id = salaryInformation.Id;
+                    generalExpense.Ammount = salaryInformation.NetPayableAmmount;
+                    generalExpense.Field = "বেতন";
+                    generalExpense.ExpenseDate= salaryInformation.PaymentDate;
+                    generalExpense.VoucherNumber = "";
+
+                    CRUDOperation.Insert(generalExpense);
                     CRUDOperation.Insert(salary);
                     CRUDOperation.Insert(salaryInformation);
                     MessageBox.Show("সফল হয়েছে!");
@@ -278,6 +287,8 @@ namespace DUMSM.Forms.Salary
             if (result == DialogResult.Yes)
             {
                 CRUDOperation.DeleteAllData("Salaries");
+
+                CRUDOperation.DeleteWithCondition("GeneralExpense", "Field = N'বেতন'");
                 MessageBox.Show("সকল তথ্য মুছে ফেলা হয়েছে।");
             }
             else

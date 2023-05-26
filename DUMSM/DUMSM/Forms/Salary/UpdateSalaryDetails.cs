@@ -205,6 +205,14 @@ namespace DUMSM.Forms.Salary
                     salary.Designation = salaryInformation.EmployeeType;
                     salary.Date = salaryInformation.PaymentDate;
 
+                    var generalExpense = new GeneralExpense();
+                    generalExpense.Id = salaryInformation.Id;
+                    generalExpense.Ammount = salaryInformation.NetPayableAmmount;
+                    generalExpense.Field = "বেতন";
+                    generalExpense.ExpenseDate = salaryInformation.PaymentDate;
+                    generalExpense.VoucherNumber = "";
+
+                    CRUDOperation.Update(generalExpense);
                     CRUDOperation.Update(salary);
                     CRUDOperation.Update(salaryInformation);
                     MessageBox.Show("সফল হয়েছে!");
