@@ -30,7 +30,10 @@ namespace DUMSM.Forms.ExpenseForm
 
         private void ResetBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            ExpenseDetailsCommon form = new ExpenseDetailsCommon();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
+            this.Hide();
         }
 
         private void RegisterDateBtn_Click(object sender, EventArgs e)
@@ -55,7 +58,10 @@ namespace DUMSM.Forms.ExpenseForm
                 {
                     CRUDOperation.Update(expense);
                     PopUpMessage.SuccessRegistrationMessage("খরচের তথ্য আপডেট ");
-                    this.Close();
+                    ExpenseDetailsCommon form = new ExpenseDetailsCommon();
+                    form.StartPosition = FormStartPosition.CenterScreen;
+                    form.Show();
+                    this.Hide();
                 }
                 else
                 {

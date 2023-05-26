@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateDonorDetails));
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.Idtxt = new System.Windows.Forms.TextBox();
             this.button12 = new System.Windows.Forms.Button();
             this.DonorTypetxt = new System.Windows.Forms.ComboBox();
@@ -44,7 +45,6 @@
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.tabControl3.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.SuspendLayout();
@@ -85,6 +85,20 @@
             this.tabPage3.Size = new System.Drawing.Size(424, 366);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "দাতার তথ্য আপডেট করুন    ";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.RosyBrown;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button1.Location = new System.Drawing.Point(6, 304);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(174, 41);
+            this.button1.TabIndex = 39;
+            this.button1.Text = "বাতিল করুন";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Idtxt
             // 
@@ -237,20 +251,6 @@
             this.button17.Text = "ধার্যকৃত অনুদান";
             this.button17.UseVisualStyleBackColor = false;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.RosyBrown;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(6, 304);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(174, 41);
-            this.button1.TabIndex = 39;
-            this.button1.Text = "বাতিল করুন";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // UpdateDonorDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -258,6 +258,7 @@
             this.ClientSize = new System.Drawing.Size(457, 427);
             this.Controls.Add(this.tabControl3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "UpdateDonorDetails";
             this.Text = "UpdateDonorDetails";
             this.Load += new System.EventHandler(this.UpdateDonorDetails_Load);

@@ -74,8 +74,6 @@ namespace DUMSM.Forms.DonationForm
                     updateForm.StartPosition = FormStartPosition.CenterScreen;
                     updateForm.ShowDialog();
                     this.Hide();
-
-
                 }
             }
         }

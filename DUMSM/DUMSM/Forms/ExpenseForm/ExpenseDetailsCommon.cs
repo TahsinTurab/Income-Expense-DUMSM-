@@ -32,8 +32,9 @@ namespace DUMSM.Forms.ExpenseForm
 
         private void button35_Click(object sender, EventArgs e)
         {
-            Expense expense = new Expense();
-            expense.Show();
+            Expense form = new Expense();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
             this.Hide();
         }
 
@@ -67,47 +68,57 @@ namespace DUMSM.Forms.ExpenseForm
 
         private void Donordgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (Donordgv.Columns[e.ColumnIndex].HeaderText == "ডিলিট")
+            if (Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString() != "")
             {
-                string id = Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString();
-
-                DialogResult result = MessageBox.Show($"খরচের আইডিঃ {id}\n\nআপনি এই তথ্যটি ডিলিট করতে ইচ্ছুক? ",
-                    "সাধারণ খরচের তালিকা", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-
-                if (result == DialogResult.Yes)
+                if (Donordgv.Columns[e.ColumnIndex].HeaderText == "ডিলিট")
                 {
-                    CRUDOperation.Delete("GeneralExpense", id);
-                    MessageBox.Show("জমারখরচের তথ্য মুছে ফেলা হয়েছে।");
+                    string id = Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString();
+
+                    DialogResult result = MessageBox.Show($"খরচের আইডিঃ {id}\n\nআপনি এই তথ্যটি ডিলিট করতে ইচ্ছুক? ",
+                        "সাধারণ খরচের তালিকা", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                    if (result == DialogResult.Yes)
+                    {
+                        CRUDOperation.Delete("GeneralExpense", id);
+                        MessageBox.Show("জমারখরচের তথ্য মুছে ফেলা হয়েছে।");
+                    }
+
+                    else
+                    {
+                        MessageBox.Show("খরচের তথ্য মুছে ফেলা হয়নি।");
+
+                    }
+
                 }
 
-                else
+                else if (Donordgv.Columns[e.ColumnIndex].HeaderText.Trim() == "আপডেট")
                 {
-                    MessageBox.Show("খরচের তথ্য মুছে ফেলা হয়নি।");
+                    if (Donordgv.Rows[e.RowIndex].Cells["Field"].Value.ToString() == "বেতন")
+                    {
+                        MessageBox.Show("বেতনের তথ্য আপডেট করতে বেতন নিবন্ধন এর তালিকাতে যান");
+                    }
+                    else
+                    {
+                        GeneralExpense generalExpense = new GeneralExpense();
+                        generalExpense.Id = Guid.Parse(Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString());
+                        generalExpense.VoucherNumber = Donordgv.Rows[e.RowIndex].Cells["VoucherNumber"].Value.ToString();
+                        generalExpense.ExpenseDate = Donordgv.Rows[e.RowIndex].Cells["ExpenseDate"].Value.ToString();
+                        generalExpense.Ammount = int.Parse(Donordgv.Rows[e.RowIndex].Cells["Ammount"].Value.ToString());
+                        generalExpense.Field = Donordgv.Rows[e.RowIndex].Cells["Field"].Value.ToString();
 
+
+                        UpdateCommonExpenseDetails updateForm = new UpdateCommonExpenseDetails(generalExpense);
+                        updateForm.StartPosition = FormStartPosition.CenterScreen;
+                        updateForm.ShowDialog();
+                        this.Hide();
+                    }
                 }
-
             }
+        }
 
-            else if (Donordgv.Columns[e.ColumnIndex].HeaderText.Trim() == "আপডেট")
-            {
-                if (Donordgv.Rows[e.RowIndex].Cells["Field"].Value.ToString() == "বেতন")
-                {
-                    MessageBox.Show("বেতনের তথ্য আপডেট করতে বেতন নিবন্ধন এর তালিকাতে যান"); 
-                }
-                else
-                {
-                    GeneralExpense generalExpense = new GeneralExpense();
-                    generalExpense.Id = Guid.Parse(Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString());
-                    generalExpense.VoucherNumber = Donordgv.Rows[e.RowIndex].Cells["VoucherNumber"].Value.ToString();
-                    generalExpense.ExpenseDate = Donordgv.Rows[e.RowIndex].Cells["ExpenseDate"].Value.ToString();
-                    generalExpense.Ammount = int.Parse(Donordgv.Rows[e.RowIndex].Cells["Ammount"].Value.ToString());
-                    generalExpense.Field = Donordgv.Rows[e.RowIndex].Cells["Field"].Value.ToString();
-
-
-                    UpdateCommonExpenseDetails updateForm = new UpdateCommonExpenseDetails(generalExpense);
-                    updateForm.ShowDialog();
-                }
-            }
+        private void ExpenseDetailsCommon_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -59,49 +59,60 @@ namespace DUMSM.Forms.ExpenseForm
 
         private void Donordgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (Donordgv.Columns[e.ColumnIndex].HeaderText == "ডিলিট")
+            if (Donordgv.Rows[e.RowIndex].Cells["Id"].Value.ToString() != "")
             {
-                string id = Donordgv.Rows[e.RowIndex].Cells["Id"].Value.ToString();
-
-                DialogResult result = MessageBox.Show($"খরচের আইডিঃ {id}\n\nআপনি এই তথ্যটি ডিলিট করতে ইচ্ছুক? ",
-                    "গোরাবা খরচের তালিকা", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-
-                if (result == DialogResult.Yes)
+                if (Donordgv.Columns[e.ColumnIndex].HeaderText == "ডিলিট")
                 {
-                    CRUDOperation.Delete("GorabaExpense", id);
-                    MessageBox.Show("খরচের তথ্য মুছে ফেলা হয়েছে।");
+                    string id = Donordgv.Rows[e.RowIndex].Cells["Id"].Value.ToString();
+
+                    DialogResult result = MessageBox.Show($"খরচের আইডিঃ {id}\n\nআপনি এই তথ্যটি ডিলিট করতে ইচ্ছুক? ",
+                        "গোরাবা খরচের তালিকা", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                    if (result == DialogResult.Yes)
+                    {
+                        CRUDOperation.Delete("GorabaExpense", id);
+                        MessageBox.Show("খরচের তথ্য মুছে ফেলা হয়েছে।");
+                    }
+
+                    else
+                    {
+                        MessageBox.Show("খরচের তথ্য মুছে ফেলা হয়নি।");
+
+                    }
+
                 }
 
-                else
+                else if (Donordgv.Columns[e.ColumnIndex].HeaderText.Trim() == "আপডেট")
                 {
-                    MessageBox.Show("খরচের তথ্য মুছে ফেলা হয়নি।");
+                    GorabaExpense gorabaExpense = new GorabaExpense();
+                    gorabaExpense.Id = Guid.Parse(Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString());
+                    gorabaExpense.VoucherNumber = Donordgv.Rows[e.RowIndex].Cells["VoucherNumber"].Value.ToString();
+                    gorabaExpense.ExpenseDate = Donordgv.Rows[e.RowIndex].Cells["ExpenseDate"].Value.ToString();
+                    gorabaExpense.Ammount = int.Parse(Donordgv.Rows[e.RowIndex].Cells["Ammount"].Value.ToString());
+                    gorabaExpense.Field = Donordgv.Rows[e.RowIndex].Cells["Field"].Value.ToString();
+
+
+                    UpdateGorabaExpenseDetails updateForm = new UpdateGorabaExpenseDetails(gorabaExpense);
+                    updateForm.StartPosition = FormStartPosition.CenterScreen;
+                    updateForm.ShowDialog();
+                    this.Hide();
+
 
                 }
-
-            }
-
-            else if (Donordgv.Columns[e.ColumnIndex].HeaderText.Trim() == "আপডেট")
-            {
-                GorabaExpense gorabaExpense = new GorabaExpense();
-                gorabaExpense.Id = Guid.Parse(Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString());
-                gorabaExpense.VoucherNumber = Donordgv.Rows[e.RowIndex].Cells["VoucherNumber"].Value.ToString();
-                gorabaExpense.ExpenseDate = Donordgv.Rows[e.RowIndex].Cells["ExpenseDate"].Value.ToString();
-                gorabaExpense.Ammount = int.Parse(Donordgv.Rows[e.RowIndex].Cells["Ammount"].Value.ToString());
-                gorabaExpense.Field = Donordgv.Rows[e.RowIndex].Cells["Field"].Value.ToString();
-
-
-                UpdateGorabaExpenseDetails updateForm = new UpdateGorabaExpenseDetails(gorabaExpense);
-                updateForm.ShowDialog();
-
-
             }
         }
 
         private void button35_Click(object sender, EventArgs e)
         {
-            Expense expense = new Expense();
-            expense.Show();
+            Expense form = new Expense();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
             this.Hide();
+        }
+
+        private void ExpenseDetailsGoraba_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

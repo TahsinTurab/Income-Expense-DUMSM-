@@ -118,7 +118,7 @@
             this.ResetBtn.Name = "ResetBtn";
             this.ResetBtn.Size = new System.Drawing.Size(172, 41);
             this.ResetBtn.TabIndex = 32;
-            this.ResetBtn.Text = "বাতিল করুন";
+            this.ResetBtn.Text = "ফিরে যান";
             this.ResetBtn.UseVisualStyleBackColor = false;
             this.ResetBtn.Click += new System.EventHandler(this.ResetBtn_Click);
             // 
@@ -214,6 +214,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 381);
             this.Controls.Add(this.tabControl3);
+            this.MaximizeBox = false;
             this.Name = "UpdateGorabaExpenseDetails";
             this.Text = "UpdateGorabaExpenseDetails";
             this.Load += new System.EventHandler(this.UpdateGorabaExpenseDetails_Load);

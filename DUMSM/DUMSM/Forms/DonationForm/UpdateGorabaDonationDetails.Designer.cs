@@ -233,6 +233,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(457, 427);
             this.Controls.Add(this.tabControl3);
+            this.MaximizeBox = false;
             this.Name = "UpdateGorabaDonationDetails";
             this.Text = "UpdateGorabaDonationDetails";
             this.Load += new System.EventHandler(this.UpdateGorabaDonationDetails_Load);

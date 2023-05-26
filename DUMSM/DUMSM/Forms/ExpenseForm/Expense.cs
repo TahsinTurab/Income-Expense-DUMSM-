@@ -1,6 +1,7 @@
 ﻿using DUMSM.Classes;
 using DUMSM.Forms;
 using DUMSM.Forms.ExpenseForm;
+using DUMSM.Forms.User;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -190,18 +191,23 @@ namespace DUMSM
 
         private void button34_Click(object sender, EventArgs e)
         {
-            ExpenseDetailsCommon expenseDetailsCommon = new ExpenseDetailsCommon();
-            
-            expenseDetailsCommon.Show();
+            ExpenseDetailsCommon form = new ExpenseDetailsCommon();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
             this.Hide();
         }
 
         private void button35_Click(object sender, EventArgs e)
         {
-            ExpenseDetailsGoraba expenseDetailsGoraba = new ExpenseDetailsGoraba();
-
-            expenseDetailsGoraba.Show();
+            ExpenseDetailsGoraba form = new ExpenseDetailsGoraba();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
             this.Hide();
+        }
+
+        private void Expense_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

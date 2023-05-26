@@ -644,8 +644,10 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Expense";
             this.Text = "Expense";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Expense_FormClosing);
             this.tabControl2.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();

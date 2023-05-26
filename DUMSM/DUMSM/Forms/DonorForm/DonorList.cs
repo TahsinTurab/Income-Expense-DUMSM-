@@ -66,7 +66,7 @@ namespace DUMSM
 
                     UpdateDonorDetails form = new UpdateDonorDetails(donor);
                     form.StartPosition = FormStartPosition.CenterScreen;
-                    form.Show();
+                    form.ShowDialog();
                     this.Hide();
 
 

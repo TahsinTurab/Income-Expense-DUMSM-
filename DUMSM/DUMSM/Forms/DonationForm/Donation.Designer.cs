@@ -528,6 +528,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Donation";
             this.Text = "Donation";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Donation_FormClosing);

@@ -304,6 +304,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "DonorProfile";
             this.Text = "DonorProfile";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DonorProfile_FormClosing);

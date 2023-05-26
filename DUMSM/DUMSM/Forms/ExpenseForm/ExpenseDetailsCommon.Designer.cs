@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DeleteAllbtn = new System.Windows.Forms.Button();
             this.searchNametxt = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -44,13 +44,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VoucherNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ExpenseDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Field = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ammount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Donordgv)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -63,7 +63,7 @@
             this.DeleteAllbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DeleteAllbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.DeleteAllbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.DeleteAllbtn.Location = new System.Drawing.Point(530, 604);
+            this.DeleteAllbtn.Location = new System.Drawing.Point(403, 604);
             this.DeleteAllbtn.Name = "DeleteAllbtn";
             this.DeleteAllbtn.Size = new System.Drawing.Size(245, 41);
             this.DeleteAllbtn.TabIndex = 101;
@@ -76,7 +76,7 @@
             this.searchNametxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchNametxt.Location = new System.Drawing.Point(101, 608);
             this.searchNametxt.Name = "searchNametxt";
-            this.searchNametxt.Size = new System.Drawing.Size(250, 29);
+            this.searchNametxt.Size = new System.Drawing.Size(123, 29);
             this.searchNametxt.TabIndex = 99;
             // 
             // label9
@@ -95,7 +95,7 @@
             this.Searchbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Searchbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.Searchbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Searchbtn.Location = new System.Drawing.Point(357, 604);
+            this.Searchbtn.Location = new System.Drawing.Point(230, 604);
             this.Searchbtn.Name = "Searchbtn";
             this.Searchbtn.Size = new System.Drawing.Size(167, 41);
             this.Searchbtn.TabIndex = 98;
@@ -107,28 +107,28 @@
             // 
             this.Donordgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.Donordgv.BackgroundColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Donordgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Donordgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.Donordgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Donordgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Delete,
+            this.Update,
             this.id,
             this.VoucherNumber,
             this.ExpenseDate,
             this.Field,
-            this.Ammount,
-            this.Delete,
-            this.Update});
+            this.Ammount});
             this.Donordgv.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Donordgv.GridColor = System.Drawing.SystemColors.Window;
             this.Donordgv.Location = new System.Drawing.Point(3, 3);
             this.Donordgv.Name = "Donordgv";
-            this.Donordgv.Size = new System.Drawing.Size(946, 376);
+            this.Donordgv.Size = new System.Drawing.Size(834, 376);
             this.Donordgv.TabIndex = 0;
             this.Donordgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Donordgv_CellContentClick);
             // 
@@ -139,7 +139,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 38);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(952, 382);
+            this.tabPage1.Size = new System.Drawing.Size(840, 382);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "সাধারণ অনুদানের বিস্তারিত বিবরণ";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -151,7 +151,7 @@
             this.tabControl1.Location = new System.Drawing.Point(9, 174);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(960, 424);
+            this.tabControl1.Size = new System.Drawing.Size(848, 424);
             this.tabControl1.TabIndex = 97;
             // 
             // button2
@@ -160,7 +160,7 @@
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button2.Location = new System.Drawing.Point(780, 604);
+            this.button2.Location = new System.Drawing.Point(668, 604);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(182, 41);
             this.button2.TabIndex = 96;
@@ -235,6 +235,33 @@
             this.textBox1.TabIndex = 91;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // Delete
+            // 
+            this.Delete.DataPropertyName = "Delete";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Transparent;
+            this.Delete.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Delete.HeaderText = "ডিলিট";
+            this.Delete.Name = "Delete";
+            this.Delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Delete.Text = "ডিলিট";
+            this.Delete.UseColumnTextForButtonValue = true;
+            this.Delete.Width = 70;
+            // 
+            // Update
+            // 
+            this.Update.DataPropertyName = "Update";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Update.DefaultCellStyle = dataGridViewCellStyle6;
+            this.Update.HeaderText = "আপডেট";
+            this.Update.Name = "Update";
+            this.Update.Text = "আপডেট";
+            this.Update.UseColumnTextForButtonValue = true;
+            this.Update.Width = 70;
+            // 
             // id
             // 
             this.id.DataPropertyName = "Id";
@@ -270,33 +297,6 @@
             this.Ammount.Name = "Ammount";
             this.Ammount.Width = 150;
             // 
-            // Delete
-            // 
-            this.Delete.DataPropertyName = "Delete";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Transparent;
-            this.Delete.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Delete.HeaderText = "ডিলিট";
-            this.Delete.Name = "Delete";
-            this.Delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Delete.Text = "ডিলিট";
-            this.Delete.UseColumnTextForButtonValue = true;
-            this.Delete.Width = 70;
-            // 
-            // Update
-            // 
-            this.Update.DataPropertyName = "Update";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Update.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Update.HeaderText = "আপডেট";
-            this.Update.Name = "Update";
-            this.Update.Text = "আপডেট";
-            this.Update.UseColumnTextForButtonValue = true;
-            this.Update.Width = 70;
-            // 
             // ExpenseDetailsCommon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -313,8 +313,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox1);
+            this.MaximizeBox = false;
             this.Name = "ExpenseDetailsCommon";
             this.Text = "ExpenseDetailsCommon";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ExpenseDetailsCommon_FormClosing);
             this.Load += new System.EventHandler(this.ExpenseDetailsCommon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Donordgv)).EndInit();
             this.tabPage1.ResumeLayout(false);
@@ -340,12 +342,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridViewButtonColumn Delete;
+        private System.Windows.Forms.DataGridViewButtonColumn Update;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn VoucherNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn ExpenseDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn Field;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ammount;
-        private System.Windows.Forms.DataGridViewButtonColumn Delete;
-        private System.Windows.Forms.DataGridViewButtonColumn Update;
     }
 }
