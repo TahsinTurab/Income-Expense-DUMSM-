@@ -105,7 +105,7 @@
             this.textBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.textBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(-200, 4);
+            this.textBox1.Location = new System.Drawing.Point(-197, -5);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -291,7 +291,7 @@
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Image = global::DUMSM.Properties.Resources.logo1;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(164, 19);
+            this.pictureBox1.Location = new System.Drawing.Point(165, 12);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(116, 83);
@@ -332,6 +332,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "IncomeDetailsInsolvent";
             this.Text = "গোরাবা জমার বিস্তারিত বিবরণ";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.IncomeDetailsInsolvent_FormClosing);
             this.Load += new System.EventHandler(this.IncomeDetailsInsolvent_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

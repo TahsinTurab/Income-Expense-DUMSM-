@@ -30,20 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GorabaDonationList));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GorabaDonationList));
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Donordgv = new System.Windows.Forms.DataGridView();
-            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SlipNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonationAmmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonationType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonationField = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonationDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Backbtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.Backupbtn = new System.Windows.Forms.Button();
@@ -61,6 +52,15 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.donorsTableAdapter = new DUMSM.DUMSMDataBaseDataSetTableAdapters.DonorsTableAdapter();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SlipNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonationAmmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonationType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonationField = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonationDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Donordgv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dUMSMDataBaseDataSet)).BeginInit();
@@ -111,68 +111,6 @@
             this.Donordgv.Size = new System.Drawing.Size(946, 256);
             this.Donordgv.TabIndex = 0;
             this.Donordgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Donordgv_CellContentClick);
-            // 
-            // Delete
-            // 
-            this.Delete.DataPropertyName = "Delete";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.NullValue = "ডিলিট";
-            this.Delete.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Delete.HeaderText = "ডিলিট";
-            this.Delete.Name = "Delete";
-            this.Delete.Text = "ডিলিট";
-            // 
-            // Update
-            // 
-            this.Update.DataPropertyName = "Update";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.NullValue = "আপডেট";
-            this.Update.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Update.HeaderText = "আপডেট";
-            this.Update.Name = "Update";
-            this.Update.Text = "আপডেট";
-            // 
-            // Id
-            // 
-            this.Id.DataPropertyName = "Id";
-            this.Id.HeaderText = "আই ডি";
-            this.Id.Name = "Id";
-            // 
-            // SlipNumber
-            // 
-            this.SlipNumber.DataPropertyName = "SlipNumber";
-            this.SlipNumber.HeaderText = "রশিদ নাম্বার ";
-            this.SlipNumber.Name = "SlipNumber";
-            // 
-            // DonorName
-            // 
-            this.DonorName.DataPropertyName = "DonorName";
-            this.DonorName.HeaderText = "দাতার নাম";
-            this.DonorName.Name = "DonorName";
-            // 
-            // DonationAmmount
-            // 
-            this.DonationAmmount.DataPropertyName = "DonationAmmount";
-            this.DonationAmmount.HeaderText = "অনুদানের পরিমাণ ";
-            this.DonationAmmount.Name = "DonationAmmount";
-            // 
-            // DonationType
-            // 
-            this.DonationType.DataPropertyName = "DonationType";
-            this.DonationType.HeaderText = "অনুদানের ধরন";
-            this.DonationType.Name = "DonationType";
-            // 
-            // DonationField
-            // 
-            this.DonationField.DataPropertyName = "DonationField";
-            this.DonationField.HeaderText = "দানের খাত";
-            this.DonationField.Name = "DonationField";
-            // 
-            // DonationDate
-            // 
-            this.DonationDate.DataPropertyName = "DonationDate";
-            this.DonationDate.HeaderText = "দানের তারিখ";
-            this.DonationDate.Name = "DonationDate";
             // 
             // Backbtn
             // 
@@ -260,7 +198,7 @@
             this.textBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.textBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(-203, 1);
+            this.textBox1.Location = new System.Drawing.Point(-200, -7);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -341,13 +279,75 @@
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Image = global::DUMSM.Properties.Resources.logo1;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(176, 17);
+            this.pictureBox1.Location = new System.Drawing.Point(176, 12);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(116, 83);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 103;
             this.pictureBox1.TabStop = false;
+            // 
+            // Delete
+            // 
+            this.Delete.DataPropertyName = "Delete";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.NullValue = "ডিলিট";
+            this.Delete.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Delete.HeaderText = "ডিলিট";
+            this.Delete.Name = "Delete";
+            this.Delete.Text = "ডিলিট";
+            // 
+            // Update
+            // 
+            this.Update.DataPropertyName = "Update";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.NullValue = "আপডেট";
+            this.Update.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Update.HeaderText = "আপডেট";
+            this.Update.Name = "Update";
+            this.Update.Text = "আপডেট";
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "আই ডি";
+            this.Id.Name = "Id";
+            // 
+            // SlipNumber
+            // 
+            this.SlipNumber.DataPropertyName = "SlipNumber";
+            this.SlipNumber.HeaderText = "রশিদ নাম্বার ";
+            this.SlipNumber.Name = "SlipNumber";
+            // 
+            // DonorName
+            // 
+            this.DonorName.DataPropertyName = "DonorName";
+            this.DonorName.HeaderText = "দাতার নাম";
+            this.DonorName.Name = "DonorName";
+            // 
+            // DonationAmmount
+            // 
+            this.DonationAmmount.DataPropertyName = "DonationAmmount";
+            this.DonationAmmount.HeaderText = "অনুদানের পরিমাণ ";
+            this.DonationAmmount.Name = "DonationAmmount";
+            // 
+            // DonationType
+            // 
+            this.DonationType.DataPropertyName = "DonationType";
+            this.DonationType.HeaderText = "অনুদানের ধরন";
+            this.DonationType.Name = "DonationType";
+            // 
+            // DonationField
+            // 
+            this.DonationField.DataPropertyName = "DonationField";
+            this.DonationField.HeaderText = "দানের খাত";
+            this.DonationField.Name = "DonationField";
+            // 
+            // DonationDate
+            // 
+            this.DonationDate.DataPropertyName = "DonationDate";
+            this.DonationDate.HeaderText = "দানের তারিখ";
+            this.DonationDate.Name = "DonationDate";
             // 
             // GorabaDonationList
             // 
@@ -368,6 +368,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "GorabaDonationList";
             this.Text = "GorabaDonationList";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GorabaDonationList_FormClosing);
             this.Load += new System.EventHandler(this.GorabaDonationList_Load);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Donordgv)).EndInit();
@@ -384,15 +385,6 @@
 
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.DataGridView Donordgv;
-        private System.Windows.Forms.DataGridViewButtonColumn Delete;
-        private System.Windows.Forms.DataGridViewButtonColumn Update;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SlipNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DonorName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DonationAmmount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DonationType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DonationField;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DonationDate;
         private System.Windows.Forms.Button Backbtn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -410,5 +402,14 @@
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Windows.Forms.TabControl tabControl1;
         private DUMSMDataBaseDataSetTableAdapters.DonorsTableAdapter donorsTableAdapter;
+        private System.Windows.Forms.DataGridViewButtonColumn Delete;
+        private System.Windows.Forms.DataGridViewButtonColumn Update;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SlipNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DonorName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DonationAmmount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DonationType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DonationField;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DonationDate;
     }
 }

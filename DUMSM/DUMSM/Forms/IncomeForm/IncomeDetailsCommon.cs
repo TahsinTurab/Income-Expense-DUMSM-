@@ -37,10 +37,10 @@ namespace DUMSM
 
         private void button35_Click(object sender, EventArgs e)
         {
-            Income income = new Income();
-            income.Location = this.Location;
-            this.Close();
-            income.ShowDialog();
+            Income form = new Income();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
+            this.Hide();
         }
 
         private void Donordgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -57,6 +57,7 @@ namespace DUMSM
                 {
                     CRUDOperation.Delete("GeneralIncome", id);
                     CRUDOperation.Delete("Donations", donationId);
+                    DisplayData();
                     MessageBox.Show("অনুদানের তথ্য মুছে ফেলা হয়েছে।");
                 }
 
@@ -95,6 +96,7 @@ namespace DUMSM
             if (result == DialogResult.Yes)
             {
                 CRUDOperation.DeleteAllData("GeneralIncome");
+                DisplayData();
                 MessageBox.Show("সকল তথ্য মুছে ফেলা হয়েছে।");
             }
             else
@@ -148,6 +150,11 @@ namespace DUMSM
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void IncomeDetailsCommon_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

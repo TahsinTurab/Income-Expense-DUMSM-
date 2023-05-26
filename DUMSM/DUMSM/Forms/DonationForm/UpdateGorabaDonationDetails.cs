@@ -59,7 +59,15 @@ namespace DUMSM.Forms.DonationForm
 
                 object selectedDonor = DonorComboBox.SelectedItem;
                 //string type = ((string)selectedItem);
-                generalDonation.DonorName = ((string)selectedDonor);
+
+                if (selectedDonor != null)
+                {
+                    generalDonation.DonorName = ((string)selectedDonor);
+                }
+                else
+                {
+                    generalDonation.DonorName = oldDonation.DonorName;
+                }
 
                 if (IsDonationAmmountOK != "false")
                 {
@@ -87,6 +95,10 @@ namespace DUMSM.Forms.DonationForm
                     CRUDOperation.Update(generalDonation);
                     CRUDOperation.UpdateRelation(gorabaIncome, "DonationId", gorabaIncome.DonationId);
                     PopUpMessage.SuccessRegistrationMessage("অনুদানের তথ্য আপডেট ");
+                    GorabaDonationList form = new GorabaDonationList();
+                    form.StartPosition = FormStartPosition.CenterScreen;
+                    form.Show();
+                    this.Hide();
                 }
                 else
                 {

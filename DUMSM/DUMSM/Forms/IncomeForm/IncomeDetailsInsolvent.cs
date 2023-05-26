@@ -75,10 +75,10 @@ namespace DUMSM
 
         private void button35_Click(object sender, EventArgs e)
         {
-            Income income = new Income();
-            income.Location = this.Location;
-            this.Close();
-            income.ShowDialog();
+            Income form = new Income();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
+            this.Hide();
         }
 
         private void DeleteAllbtn_Click(object sender, EventArgs e)
@@ -108,6 +108,11 @@ namespace DUMSM
         {
             (Donordgv.DataSource as DataTable).DefaultView.RowFilter =
                 String.Format("SlipNumber like '%" + searchNametxt.Text + "%'");
+        }
+
+        private void IncomeDetailsInsolvent_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

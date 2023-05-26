@@ -638,6 +638,7 @@
             this.Name = "Income";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "জমা";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Income_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

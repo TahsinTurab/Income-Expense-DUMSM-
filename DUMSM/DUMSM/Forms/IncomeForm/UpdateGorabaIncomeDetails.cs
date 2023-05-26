@@ -85,7 +85,10 @@ namespace DUMSM.Forms.IncomeForm
                         CRUDOperation.Update(donation);
                     }
                     PopUpMessage.SuccessRegistrationMessage("আয়ের তথ্য আপডেট ");
-                    this.Close();
+                    IncomeDetailsInsolvent form = new IncomeDetailsInsolvent();
+                    form.StartPosition = FormStartPosition.CenterScreen;
+                    form.Show();
+                    this.Hide();
                 }
                 else
                 {

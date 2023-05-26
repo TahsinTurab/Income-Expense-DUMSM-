@@ -234,18 +234,23 @@ namespace DUMSM
 
         private void button36_Click(object sender, EventArgs e)
         {
-            var IncomeDetailsCommon = new IncomeDetailsCommon();
+            IncomeDetailsInsolvent form = new IncomeDetailsInsolvent();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
             this.Hide();
-            IncomeDetailsCommon.Location = this.Location;
-            IncomeDetailsCommon.ShowDialog();
         }
 
         private void button37_Click(object sender, EventArgs e)
         {
-            var IncomeDetailsInsolvant = new IncomeDetailsInsolvent();
+            IncomeDetailsCommon form = new IncomeDetailsCommon();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
             this.Hide();
-            IncomeDetailsInsolvant.Location = this.Location;
-            IncomeDetailsInsolvant.ShowDialog();
+        }
+
+        private void Income_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -135,6 +135,7 @@
             this.button37.TabIndex = 59;
             this.button37.Text = "গোরাবা অনুদানের বিস্তারিত তালিকা দেখুন";
             this.button37.UseVisualStyleBackColor = false;
+            this.button37.Click += new System.EventHandler(this.button37_Click);
             // 
             // DonorComboBox
             // 
@@ -251,6 +252,7 @@
             this.button36.TabIndex = 57;
             this.button36.Text = "সাধারণ অনুদানের বিস্তারিত তালিকা দেখুন";
             this.button36.UseVisualStyleBackColor = false;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
             // 
             // tabControl3
             // 
@@ -528,6 +530,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Donation";
             this.Text = "Donation";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Donation_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl3.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);

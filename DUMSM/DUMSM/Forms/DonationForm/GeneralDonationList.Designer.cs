@@ -41,15 +41,6 @@
             this.donorsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dUMSMDataBaseDataSet = new DUMSM.DUMSMDataBaseDataSet();
             this.Donordgv = new System.Windows.Forms.DataGridView();
-            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SlipNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonationAmmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonationType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonationField = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonationDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Backbtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -61,6 +52,15 @@
             this.searchNametxt = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SlipNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonationAmmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonationType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonationField = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonationDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.donorsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dUMSMDataBaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Donordgv)).BeginInit();
@@ -149,68 +149,6 @@
             this.Donordgv.TabIndex = 0;
             this.Donordgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Donordgv_CellContentClick);
             // 
-            // Delete
-            // 
-            this.Delete.DataPropertyName = "Delete";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.NullValue = "ডিলিট";
-            this.Delete.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Delete.HeaderText = "ডিলিট";
-            this.Delete.Name = "Delete";
-            this.Delete.Text = "ডিলিট";
-            // 
-            // Update
-            // 
-            this.Update.DataPropertyName = "Update";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.NullValue = "আপডেট";
-            this.Update.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Update.HeaderText = "আপডেট";
-            this.Update.Name = "Update";
-            this.Update.Text = "আপডেট";
-            // 
-            // Id
-            // 
-            this.Id.DataPropertyName = "Id";
-            this.Id.HeaderText = "আই ডি";
-            this.Id.Name = "Id";
-            // 
-            // SlipNumber
-            // 
-            this.SlipNumber.DataPropertyName = "SlipNumber";
-            this.SlipNumber.HeaderText = "রশিদ নাম্বার ";
-            this.SlipNumber.Name = "SlipNumber";
-            // 
-            // DonorName
-            // 
-            this.DonorName.DataPropertyName = "DonorName";
-            this.DonorName.HeaderText = "দাতার নাম";
-            this.DonorName.Name = "DonorName";
-            // 
-            // DonationAmmount
-            // 
-            this.DonationAmmount.DataPropertyName = "DonationAmmount";
-            this.DonationAmmount.HeaderText = "অনুদানের পরিমাণ ";
-            this.DonationAmmount.Name = "DonationAmmount";
-            // 
-            // DonationType
-            // 
-            this.DonationType.DataPropertyName = "DonationType";
-            this.DonationType.HeaderText = "অনুদানের ধরন";
-            this.DonationType.Name = "DonationType";
-            // 
-            // DonationField
-            // 
-            this.DonationField.DataPropertyName = "DonationField";
-            this.DonationField.HeaderText = "দানের খাত";
-            this.DonationField.Name = "DonationField";
-            // 
-            // DonationDate
-            // 
-            this.DonationDate.DataPropertyName = "DonationDate";
-            this.DonationDate.HeaderText = "দানের তারিখ";
-            this.DonationDate.Name = "DonationDate";
-            // 
             // Backbtn
             // 
             this.Backbtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -244,7 +182,7 @@
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Image = global::DUMSM.Properties.Resources.logo1;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(176, 20);
+            this.pictureBox1.Location = new System.Drawing.Point(176, 6);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(116, 83);
@@ -311,7 +249,7 @@
             this.textBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.textBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(-203, 4);
+            this.textBox1.Location = new System.Drawing.Point(-205, -4);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -349,6 +287,68 @@
             this.tabPage1.Text = "সাধারণ দানের বিস্তারিত বিবরণ";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // Delete
+            // 
+            this.Delete.DataPropertyName = "Delete";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.NullValue = "ডিলিট";
+            this.Delete.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Delete.HeaderText = "ডিলিট";
+            this.Delete.Name = "Delete";
+            this.Delete.Text = "ডিলিট";
+            // 
+            // Update
+            // 
+            this.Update.DataPropertyName = "Update";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.NullValue = "আপডেট";
+            this.Update.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Update.HeaderText = "আপডেট";
+            this.Update.Name = "Update";
+            this.Update.Text = "আপডেট";
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "আই ডি";
+            this.Id.Name = "Id";
+            // 
+            // SlipNumber
+            // 
+            this.SlipNumber.DataPropertyName = "SlipNumber";
+            this.SlipNumber.HeaderText = "রশিদ নাম্বার ";
+            this.SlipNumber.Name = "SlipNumber";
+            // 
+            // DonorName
+            // 
+            this.DonorName.DataPropertyName = "DonorName";
+            this.DonorName.HeaderText = "দাতার নাম";
+            this.DonorName.Name = "DonorName";
+            // 
+            // DonationAmmount
+            // 
+            this.DonationAmmount.DataPropertyName = "DonationAmmount";
+            this.DonationAmmount.HeaderText = "অনুদানের পরিমাণ ";
+            this.DonationAmmount.Name = "DonationAmmount";
+            // 
+            // DonationType
+            // 
+            this.DonationType.DataPropertyName = "DonationType";
+            this.DonationType.HeaderText = "অনুদানের ধরন";
+            this.DonationType.Name = "DonationType";
+            // 
+            // DonationField
+            // 
+            this.DonationField.DataPropertyName = "DonationField";
+            this.DonationField.HeaderText = "দানের খাত";
+            this.DonationField.Name = "DonationField";
+            // 
+            // DonationDate
+            // 
+            this.DonationDate.DataPropertyName = "DonationDate";
+            this.DonationDate.HeaderText = "দানের তারিখ";
+            this.DonationDate.Name = "DonationDate";
+            // 
             // GeneralDonationList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -369,6 +369,7 @@
             this.Name = "GeneralDonationList";
             this.Text = "সাধারণ দানের তথ্য";
             this.Activated += new System.EventHandler(this.GeneralDonationList_Activated);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GeneralDonationList_FormClosing);
             this.Load += new System.EventHandler(this.GeneralDonationList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.donorsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dUMSMDataBaseDataSet)).EndInit();

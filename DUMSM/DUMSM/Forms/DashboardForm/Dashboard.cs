@@ -18,19 +18,7 @@ namespace DUMSM
         public Dashboard()
         {
             InitializeComponent();
-            //FormBorderStyle = FormBorderStyle.None;
-
-            //Topbar topbar = new Topbar();
-            //topbar.Dock = DockStyle.Top;
-            //topbar.Anchor = AnchorStyles.Right;
             
-           // topbar.Height = 50;
-            //topbar.Width = 150;
-
-            // Add the user panel control to the form
-            //Controls.Add(topbar);
-            //topbar.BringToFront();
-
 
             SidePanelControl sidePanel = new SidePanelControl();
 

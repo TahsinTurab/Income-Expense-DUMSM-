@@ -1,4 +1,5 @@
 ﻿using DUMSM.Classes;
+using DUMSM.Forms.DonationForm;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -59,7 +60,14 @@ namespace DUMSM.Forms.DonorForm
 
                 object selectedDonor = DonorComboBox.SelectedItem;
                 //string type = ((string)selectedItem);
-                generalDonation.DonorName = ((string)selectedDonor);
+                if (selectedDonor != null)
+                {
+                    generalDonation.DonorName = ((string)selectedDonor);
+                }
+                else
+                {
+                    generalDonation.DonorName = oldDonation.DonorName;
+                }
 
                 if (IsDonationAmmountOK != "false")
                 {
@@ -87,6 +95,10 @@ namespace DUMSM.Forms.DonorForm
                     CRUDOperation.Update(generalDonation);
                     CRUDOperation.UpdateRelation(generalIncome, "DonationId", generalIncome.DonationId);
                     PopUpMessage.SuccessRegistrationMessage("অনুদানের তথ্য আপডেট ");
+                    GeneralDonationList form = new GeneralDonationList();
+                    form.StartPosition = FormStartPosition.CenterScreen;
+                    form.Show();
+                    this.Hide();
                 }
                 else
                 {

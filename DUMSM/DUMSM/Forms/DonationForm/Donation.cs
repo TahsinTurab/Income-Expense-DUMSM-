@@ -1,5 +1,6 @@
 ﻿using DUMSM.Classes;
 using DUMSM.Forms;
+using DUMSM.Forms.DonationForm;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -195,6 +196,27 @@ namespace DUMSM
             {
                 PopUpMessage.ErrorMessage("অনুদানের তথ্য নিবন্ধন");
             }
+        }
+
+        private void Donation_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button36_Click(object sender, EventArgs e)
+        {
+            GeneralDonationList form = new GeneralDonationList();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
+            this.Hide();
+        }
+
+        private void button37_Click(object sender, EventArgs e)
+        {
+            GorabaDonationList form = new GorabaDonationList();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
+            this.Hide();
         }
     }
 }
