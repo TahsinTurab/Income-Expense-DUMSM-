@@ -1,4 +1,5 @@
 ﻿using DUMSM.Classes;
+using DUMSM.Forms;
 using DUMSM.Forms.DonorForm;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,15 @@ namespace DUMSM
         public Donor()
         {
             InitializeComponent();
+
+            SidePanelControl sidePanel = new SidePanelControl();
+
+            // Set the properties of the side panel control
+            sidePanel.Dock = DockStyle.Left;
+            sidePanel.Width = 190;
+
+            // Add the side panel control to the form
+            Controls.Add(sidePanel);
         }
 
         private void textBox8_TextChanged(object sender, EventArgs e)

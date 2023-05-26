@@ -1,4 +1,5 @@
 ﻿using DUMSM.Classes;
+using DUMSM.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,14 @@ namespace DUMSM
         public Donation()
         {
             InitializeComponent();
+            SidePanelControl sidePanel = new SidePanelControl();
+
+            // Set the properties of the side panel control
+            sidePanel.Dock = DockStyle.Left;
+            sidePanel.Width = 190;
+
+            // Add the side panel control to the form
+            Controls.Add(sidePanel);
             LoadDonerList();
         }
 

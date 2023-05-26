@@ -1,5 +1,6 @@
 ﻿using DUMSM.Forms.DonationForm;
 using DUMSM.Forms.Salary;
+using DUMSM.Forms.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +19,9 @@ namespace DUMSM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Expense());
+            Login login = new Login();
+            login.StartPosition = FormStartPosition.CenterScreen;
+            Application.Run(login);
         }
     }
 }

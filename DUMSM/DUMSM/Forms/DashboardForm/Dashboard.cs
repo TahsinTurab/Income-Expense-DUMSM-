@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DUMSM.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,15 @@ namespace DUMSM
         public Dashboard()
         {
             InitializeComponent();
+
+            SidePanelControl sidePanel = new SidePanelControl();
+
+            // Set the properties of the side panel control
+            sidePanel.Dock = DockStyle.Left;
+            sidePanel.Width = 190;
+
+            // Add the side panel control to the form
+            Controls.Add(sidePanel);
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
@@ -33,6 +43,60 @@ namespace DUMSM
         }
 
         private void button12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DashboardBtn_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void DonationBtn_Click(object sender, EventArgs e)
+        {
+            Donation donation = new Donation();
+        }
+
+        private void IncomeBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ExpenseBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SalaryBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EmployeeBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DonorBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ReportBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProfileBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LogoutBtn_Click(object sender, EventArgs e)
         {
 
         }

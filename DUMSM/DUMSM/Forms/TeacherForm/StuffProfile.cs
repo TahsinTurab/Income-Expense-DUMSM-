@@ -17,6 +17,16 @@ namespace DUMSM.Forms.TeacherForm
         public StuffProfile(Stuffs stuff)
         {
             InitializeComponent();
+
+
+            SidePanelControl sidePanel = new SidePanelControl();
+
+            // Set the properties of the side panel control
+            sidePanel.Dock = DockStyle.Left;
+            sidePanel.Width = 190;
+
+            // Add the side panel control to the form
+            Controls.Add(sidePanel);
             oldStuff = stuff;
         }
 
@@ -102,6 +112,36 @@ namespace DUMSM.Forms.TeacherForm
             this.Hide();
             var teacher = new Teacher();
             teacher.ShowDialog();
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabControl3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

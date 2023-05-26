@@ -135,11 +135,23 @@
     <Compile Include="Forms\Salary\UpdateSalaryDetails.Designer.cs">
       <DependentUpon>UpdateSalaryDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SidePanelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\SidePanelControl.Designer.cs">
+      <DependentUpon>SidePanelControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\TeacherForm\StuffProfile.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\TeacherForm\StuffProfile.Designer.cs">
       <DependentUpon>StuffProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\User\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\User\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="UserdefineClasses\BackupOperation.cs" />
     <Compile Include="Classes\GorabaDonations.cs" />
@@ -311,6 +323,9 @@
     <EmbeddedResource Include="Forms\Salary\UpdateSalaryDetails.resx">
       <DependentUpon>UpdateSalaryDetails.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SidePanelControl.resx">
+      <DependentUpon>SidePanelControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\TeacherForm\StuffProfile.resx">
       <DependentUpon>StuffProfile.cs</DependentUpon>
     </EmbeddedResource>
@@ -322,6 +337,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\IncomeForm\IncomeDetailsInsolvent.resx">
       <DependentUpon>IncomeDetailsInsolvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\User\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -29,21 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.ProfileBtn = new System.Windows.Forms.Button();
-            this.DonationBtn = new System.Windows.Forms.Button();
-            this.EmployeeBtn = new System.Windows.Forms.Button();
-            this.DeleteBtn = new System.Windows.Forms.Button();
-            this.LogoutBtn = new System.Windows.Forms.Button();
-            this.ReportBtn = new System.Windows.Forms.Button();
-            this.DonorBtn = new System.Windows.Forms.Button();
-            this.SalaryBtn = new System.Windows.Forms.Button();
-            this.ExpenseBtn = new System.Windows.Forms.Button();
-            this.IncomeBtn = new System.Windows.Forms.Button();
-            this.DashboardBtn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -79,9 +65,7 @@
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -90,119 +74,8 @@
             this.tabPage4.SuspendLayout();
             this.tabControl4.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel1.Controls.Add(this.panel2);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel2.Controls.Add(this.ProfileBtn);
-            this.panel2.Controls.Add(this.DonationBtn);
-            this.panel2.Controls.Add(this.EmployeeBtn);
-            this.panel2.Controls.Add(this.DeleteBtn);
-            this.panel2.Controls.Add(this.LogoutBtn);
-            this.panel2.Controls.Add(this.ReportBtn);
-            this.panel2.Controls.Add(this.DonorBtn);
-            this.panel2.Controls.Add(this.SalaryBtn);
-            this.panel2.Controls.Add(this.ExpenseBtn);
-            this.panel2.Controls.Add(this.IncomeBtn);
-            this.panel2.Controls.Add(this.DashboardBtn);
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
-            // 
-            // ProfileBtn
-            // 
-            this.ProfileBtn.BackColor = System.Drawing.Color.RosyBrown;
-            this.ProfileBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.ProfileBtn, "ProfileBtn");
-            this.ProfileBtn.Name = "ProfileBtn";
-            this.ProfileBtn.UseVisualStyleBackColor = false;
-            // 
-            // DonationBtn
-            // 
-            this.DonationBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.DonationBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.DonationBtn, "DonationBtn");
-            this.DonationBtn.Name = "DonationBtn";
-            this.DonationBtn.UseVisualStyleBackColor = false;
-            // 
-            // EmployeeBtn
-            // 
-            this.EmployeeBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.EmployeeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.EmployeeBtn, "EmployeeBtn");
-            this.EmployeeBtn.Name = "EmployeeBtn";
-            this.EmployeeBtn.UseVisualStyleBackColor = false;
-            // 
-            // DeleteBtn
-            // 
-            this.DeleteBtn.BackColor = System.Drawing.Color.RosyBrown;
-            this.DeleteBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.DeleteBtn, "DeleteBtn");
-            this.DeleteBtn.Name = "DeleteBtn";
-            this.DeleteBtn.UseVisualStyleBackColor = false;
-            // 
-            // LogoutBtn
-            // 
-            this.LogoutBtn.BackColor = System.Drawing.Color.RosyBrown;
-            this.LogoutBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.LogoutBtn, "LogoutBtn");
-            this.LogoutBtn.Name = "LogoutBtn";
-            this.LogoutBtn.UseVisualStyleBackColor = false;
-            // 
-            // ReportBtn
-            // 
-            this.ReportBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ReportBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.ReportBtn, "ReportBtn");
-            this.ReportBtn.Name = "ReportBtn";
-            this.ReportBtn.UseVisualStyleBackColor = false;
-            // 
-            // DonorBtn
-            // 
-            this.DonorBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.DonorBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.DonorBtn, "DonorBtn");
-            this.DonorBtn.Name = "DonorBtn";
-            this.DonorBtn.UseVisualStyleBackColor = false;
-            // 
-            // SalaryBtn
-            // 
-            this.SalaryBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.SalaryBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.SalaryBtn, "SalaryBtn");
-            this.SalaryBtn.Name = "SalaryBtn";
-            this.SalaryBtn.UseVisualStyleBackColor = false;
-            // 
-            // ExpenseBtn
-            // 
-            this.ExpenseBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ExpenseBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.ExpenseBtn, "ExpenseBtn");
-            this.ExpenseBtn.Name = "ExpenseBtn";
-            this.ExpenseBtn.UseVisualStyleBackColor = false;
-            // 
-            // IncomeBtn
-            // 
-            this.IncomeBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.IncomeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.IncomeBtn, "IncomeBtn");
-            this.IncomeBtn.Name = "IncomeBtn";
-            this.IncomeBtn.UseVisualStyleBackColor = false;
-            // 
-            // DashboardBtn
-            // 
-            this.DashboardBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.DashboardBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.DashboardBtn, "DashboardBtn");
-            this.DashboardBtn.Name = "DashboardBtn";
-            this.DashboardBtn.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
@@ -211,15 +84,6 @@
             resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = global::DUMSM.Properties.Resources.logo1;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -476,6 +340,15 @@
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.ShowTodayCircle = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Image = global::DUMSM.Properties.Resources.logo1;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
             // Dashboard
             // 
             resources.ApplyResources(this, "$this");
@@ -488,15 +361,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "Dashboard";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Load += new System.EventHandler(this.Dashboard_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -508,14 +377,13 @@
             this.tabPage4.PerformLayout();
             this.tabControl4.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
@@ -553,18 +421,6 @@
         private System.Windows.Forms.TabControl tabControl4;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button ProfileBtn;
-        private System.Windows.Forms.Button DonationBtn;
-        private System.Windows.Forms.Button EmployeeBtn;
-        private System.Windows.Forms.Button DeleteBtn;
-        private System.Windows.Forms.Button LogoutBtn;
-        private System.Windows.Forms.Button ReportBtn;
-        private System.Windows.Forms.Button DonorBtn;
-        private System.Windows.Forms.Button SalaryBtn;
-        private System.Windows.Forms.Button ExpenseBtn;
-        private System.Windows.Forms.Button IncomeBtn;
-        private System.Windows.Forms.Button DashboardBtn;
     }
 }
 

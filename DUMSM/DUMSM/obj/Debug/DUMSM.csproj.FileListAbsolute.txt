@@ -86,3 +86,5 @@ C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.IncomeForm.UpdateG
 C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.Salary.Salary.resources
 C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.Salary.UpdateSalaryDetails.resources
 C:\Users\User\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.TeacherForm.StuffProfile.resources
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.User.Login.resources
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.SidePanelControl.resources
