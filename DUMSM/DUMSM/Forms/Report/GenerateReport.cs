@@ -94,14 +94,8 @@ namespace DUMSM.Forms.Report
             int monthNumber = monthList[monthName];
             int year = int.Parse(Conversion.BnNumber2EnNumber(YearGeneral.Text));
 
-            DateTime first = new DateTime(year, monthNumber, 1);
-            DateTime last = first.AddMonths(1).AddDays(-1);
-
-            string firstDateOfMonth = first.ToString("dd/MM/yyyy");
-            string lastDateOfMonth = last.ToString("dd/MM/yyyy");
-
             var fields = GeneralIncomeFields();
-            string Condition = $"RegisterDate >= '{firstDateOfMonth}' and RegisterDate <= '{lastDateOfMonth}'";
+            string Condition = $"MonthName = '{monthNumber}' and Year = '{year}'";
 
             foreach (var field in fields)
             {
@@ -127,12 +121,7 @@ namespace DUMSM.Forms.Report
             int monthNumber = monthList[monthName];
             int year = int.Parse(Conversion.BnNumber2EnNumber(YearGeneral.Text));
 
-            DateTime first = new DateTime(year, monthNumber, 1);
-            DateTime last = first.AddMonths(1).AddDays(-1);
-
-            string firstDateOfMonth = first.ToString("dd/MM/yyyy");
-            string lastDateOfMonth = last.ToString("dd/MM/yyyy");
-            string Condition = $"ExpenseDate >= '{firstDateOfMonth}' and ExpenseDate <= '{lastDateOfMonth}'";
+            string Condition = $"MonthName = '{monthNumber}' and Year = '{year}'";
 
             foreach (var field in fields)
             {
@@ -153,14 +142,9 @@ namespace DUMSM.Forms.Report
             int monthNumber = monthList[monthName];
             int year = int.Parse(Conversion.BnNumber2EnNumber(YearGoraba.Text));
 
-            DateTime first = new DateTime(year, monthNumber, 1);
-            DateTime last = first.AddMonths(1).AddDays(-1);
-
-            string firstDateOfMonth = first.ToString("dd/MM/yyyy");
-            string lastDateOfMonth = last.ToString("dd/MM/yyyy");
+            string Condition = $"MonthName = '{monthNumber}' and Year = '{year}'";
 
             var fields = GorabaIncomeFields();
-            string Condition = $"RegisterDate >= '{firstDateOfMonth}' and RegisterDate <= '{lastDateOfMonth}'";
 
             foreach (var field in fields)
             {
@@ -186,12 +170,7 @@ namespace DUMSM.Forms.Report
             int monthNumber = monthList[monthName];
             int year = int.Parse(Conversion.BnNumber2EnNumber(YearGoraba.Text));
 
-            DateTime first = new DateTime(year, monthNumber, 1);
-            DateTime last = first.AddMonths(1).AddDays(-1);
-
-            string firstDateOfMonth = first.ToString("dd/MM/yyyy");
-            string lastDateOfMonth = last.ToString("dd/MM/yyyy");
-            string Condition = $"ExpenseDate >= '{firstDateOfMonth}' and ExpenseDate <= '{lastDateOfMonth}'";
+            string Condition = $"MonthName = '{monthNumber}' and Year = '{year}'";
 
             foreach (var field in fields)
             {
@@ -223,13 +202,13 @@ namespace DUMSM.Forms.Report
 
                 int monthNumber = monthList[MonthName];
                 string year = Conversion.BnNumber2EnNumber(YearGeneral.Text);
-                string Condition = $"RegisterDate >= '01/03/2023' and RegisterDate <= '31/03/2023'";
+                string Condition = $"MonthName = '{monthNumber}' and Year = '{year}'";
                 //string Condition = $"RegisterDate >= '01/0{monthNumber}/{year}' and RegisterDate <= '31/0{monthNumber}/{year}'";
 
 
                 var TotalIncome = "৳ " + Conversion.EnNumber2BnNumber(
                 TotalClass.TotalOfColumnWithCondition("GeneralIncome", "Ammount", Condition).ToString());
-                Condition = $"ExpenseDate >= '01/0{monthNumber}/{year}' and ExpenseDate <= '31/0{monthNumber}/{year}'";
+                Condition = $"MonthName = '{monthNumber}' and Year = '{year}'";
                 var TotalExpense = "৳ " + Conversion.EnNumber2BnNumber(
                 TotalClass.TotalOfColumnWithCondition("GeneralExpense", "Ammount", Condition).ToString());
 
@@ -263,18 +242,18 @@ namespace DUMSM.Forms.Report
                 var monthList = MonthList();
                 var fields = GeneralIncomeFields();
                 int monthNumber = monthList[MonthName];
-                string year = Conversion.BnNumber2EnNumber(YearGeneral.Text);
-                string Condition = $"RegisterDate >= '01/0{monthNumber}/{year}' and RegisterDate <= '31/0{monthNumber}/{year}'";
+                string year = Conversion.BnNumber2EnNumber(YearGoraba.Text);
+                string Condition = $"MonthName = '{monthNumber}' and Year = '{year}'";
                 var TotalIncome = "৳ " + Conversion.EnNumber2BnNumber(
                 TotalClass.TotalOfColumnWithCondition("GorabaIncome", "Ammount", Condition).ToString());
-                Condition = $"ExpenseDate >= '01/0{monthNumber}/{year}' and ExpenseDate <= '31/0{monthNumber}/{year}'";
+                Condition = $"MonthName = '{monthNumber}' and Year = '{year}'";
                 var TotalExpense = "৳ " + Conversion.EnNumber2BnNumber(
                 TotalClass.TotalOfColumnWithCondition("GorabaExpense", "Ammount", Condition).ToString());
 
                 var IncomeField = GorabaIncomeFields();
                 var ExpenseField = GorabaExpenseFields();
 
-                year = Conversion.EnNumber2BnNumber(YearGeneral.Text);
+                year = Conversion.EnNumber2BnNumber(YearGoraba.Text);
                 var form = new MonthlyReport(FieldDataIncome, IncomeField, FieldDataExpense, ExpenseField, TotalIncome, TotalExpense, $"{MonthName}, {year}", "গোরাবা  মাসিক  রিপোর্ট");
                 form.StartPosition = FormStartPosition.CenterScreen;
                 form.Show();

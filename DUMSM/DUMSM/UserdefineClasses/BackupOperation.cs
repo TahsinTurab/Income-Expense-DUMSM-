@@ -62,7 +62,14 @@ namespace DUMSM
                                 col = 1;
                                 for (int i = 0; i < reader.FieldCount; i++)
                                 {
-                                    excelWorksheet.Cells[row, col].Value2 = reader[i];
+                                    if (reader.GetName(i) == "Id")
+                                    {
+                                        excelWorksheet.Cells[row, col].Value2 = reader[i].ToString();
+                                    }
+                                    else
+                                    {
+                                        excelWorksheet.Cells[row, col].Value2 = reader[i];
+                                    }
                                     col++;
                                 }
                                 row++;

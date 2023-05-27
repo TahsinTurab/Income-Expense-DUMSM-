@@ -47,12 +47,15 @@ namespace DUMSM
             TotalExpenseGoraba.Text = "৳ " + Conversion.EnNumber2BnNumber(
                 TotalClass.TotalOfColumnWithoutCondition("GorabaExpense", "Ammount").ToString());
 
-            DateTime firstDayOfMonth = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
-            string formattedDate = firstDayOfMonth.ToString("dd/MM/yyyy");
+            //DateTime firstDayOfMonth = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
+            //string formattedDate = firstDayOfMonth.ToString("dd/MM/yyyy");
 
-            string presentDay = DateTime.Now.ToString("dd/MM/yyyy");
+            //string presentDay = DateTime.Now.ToString("dd/MM/yyyy");
 
-            string Condition = $"RegisterDate >= '{formattedDate}' and RegisterDate <= '{presentDay}'";
+            //string Condition = $"RegisterDate >= '{formattedDate}' and RegisterDate <= '{presentDay}'";
+
+            int monthNumber = DateTime.Now.Month;
+            string Condition = $"MonthName = {monthNumber}";
 
             MonthlyTotalGeneral.Text = "৳ " + Conversion.EnNumber2BnNumber(
                 TotalClass.TotalOfColumnWithCondition("GeneralIncome", "Ammount", Condition).ToString());
@@ -60,7 +63,7 @@ namespace DUMSM
             MonthlyIncomeGoraba.Text = "৳ " + Conversion.EnNumber2BnNumber(
                 TotalClass.TotalOfColumnWithCondition("GorabaIncome", "Ammount", Condition).ToString());
 
-            Condition = $"ExpenseDate >= '{formattedDate}' and ExpenseDate <= '{presentDay}'";
+            Condition = $"MonthName = {monthNumber}";
 
             MonthlyExpenseGoraba.Text = "৳ " + Conversion.EnNumber2BnNumber(
                 TotalClass.TotalOfColumnWithCondition("GorabaExpense", "Ammount", Condition).ToString());
@@ -163,6 +166,21 @@ namespace DUMSM
             {
                 Application.Exit();
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

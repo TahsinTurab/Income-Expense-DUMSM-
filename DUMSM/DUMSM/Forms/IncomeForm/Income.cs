@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -109,8 +110,16 @@ namespace DUMSM
                 generalIncome.SlipNumber = SlipNumbertxt.Text;
                 generalIncome.IsDonation = "না"; 
                 generalIncome.RegisterDate = DateTimetxt.Value.ToString("dd/MM/yyyy");
-                generalIncome.MonthName = DateTime.Parse(DateTimetxt.Value.ToString("dd/MM/yyyy")).Month;
-                generalIncome.Year = DateTime.Parse(DateTimetxt.Value.ToString("dd/MM/yyyy")).Year;
+
+                DateTime date;
+                if (DateTime.TryParseExact(generalIncome.RegisterDate, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out date))
+                {
+                    int monthNumber = date.Month; // Get the month number
+                    int year = date.Year; // Get the year
+
+                    generalIncome.MonthName = monthNumber;
+                    generalIncome.Year = year;
+                }
 
                 if (IsDonationAmmountOK != "false")
                 {
@@ -188,8 +197,15 @@ namespace DUMSM
                 gorabaIncome.SlipNumber = GorabaSlipNumbertxt.Text;
                 gorabaIncome.IsDonation = "না";
                 gorabaIncome.RegisterDate = GorabaDateTimetxt.Value.ToString("dd/MM/yyyy");
-                gorabaIncome.MonthName = DateTime.Parse(GorabaDateTimetxt.Value.ToString("dd/MM/yyyy")).Month;
-                gorabaIncome.Year = DateTime.Parse(GorabaDateTimetxt.Value.ToString("dd/MM/yyyy")).Year;
+                DateTime date;
+                if (DateTime.TryParseExact(gorabaIncome.RegisterDate, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out date))
+                {
+                    int monthNumber = date.Month; // Get the month number
+                    int year = date.Year; // Get the year
+
+                    gorabaIncome.MonthName = monthNumber;
+                    gorabaIncome.Year = year;
+                }
 
                 if (IsDonationAmmountOK != "false")
                 {

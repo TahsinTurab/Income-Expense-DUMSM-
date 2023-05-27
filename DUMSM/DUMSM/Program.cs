@@ -19,9 +19,9 @@ namespace DUMSM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Login login = new Login();
-            login.StartPosition = FormStartPosition.CenterScreen;
-            Application.Run(login);
+            StartForm startForm = new StartForm();
+            startForm.StartPosition = FormStartPosition.CenterScreen;
+            Application.Run(startForm);
         }
     }
 }
