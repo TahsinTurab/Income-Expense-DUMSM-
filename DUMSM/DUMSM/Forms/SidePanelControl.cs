@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DUMSM.Forms;
+using DUMSM.Forms.Report;
 using DUMSM.Forms.Salary;
 using DUMSM.Forms.User;
 
@@ -86,7 +87,11 @@ namespace DUMSM.Forms
 
         private void ReportBtn_Click(object sender, EventArgs e)
         {
-
+            MonthlyReport form = new MonthlyReport();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
+            Form parentForm = FindForm();
+            parentForm.Hide();
         }
 
         private void ProfileBtn_Click(object sender, EventArgs e)
@@ -100,7 +105,17 @@ namespace DUMSM.Forms
 
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
-
+            BackupOperation.Backup2Excel("GeneralExpense");
+            BackupOperation.Backup2Excel("GorabaExpense");
+            BackupOperation.Backup2Excel("GeneralIncome");
+            BackupOperation.Backup2Excel("GorabaIncome");
+            BackupOperation.Backup2Excel("Salaries");
+            BackupOperation.Backup2Excel("MonthlyInformations");
+            BackupOperation.Backup2Excel("Donations");
+            BackupOperation.Backup2Excel("Donors");
+            BackupOperation.Backup2Excel("Teachers");
+            BackupOperation.Backup2Excel("Stuffs");
+            MessageBox.Show("সফলভাবে ব্যাকআপ নেয়া হয়েছে।"); 
         }
 
         private void LogoutBtn_Click(object sender, EventArgs e)

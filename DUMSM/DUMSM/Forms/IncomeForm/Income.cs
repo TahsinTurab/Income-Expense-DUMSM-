@@ -234,7 +234,7 @@ namespace DUMSM
 
         private void button36_Click(object sender, EventArgs e)
         {
-            IncomeDetailsInsolvent form = new IncomeDetailsInsolvent();
+            IncomeDetailsCommon form = new IncomeDetailsCommon();
             form.StartPosition = FormStartPosition.CenterScreen;
             form.Show();
             this.Hide();
@@ -242,7 +242,7 @@ namespace DUMSM
 
         private void button37_Click(object sender, EventArgs e)
         {
-            IncomeDetailsCommon form = new IncomeDetailsCommon();
+            IncomeDetailsInsolvent form = new IncomeDetailsInsolvent();
             form.StartPosition = FormStartPosition.CenterScreen;
             form.Show();
             this.Hide();

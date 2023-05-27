@@ -117,7 +117,7 @@
             this.DeleteBtn.Name = "DeleteBtn";
             this.DeleteBtn.Size = new System.Drawing.Size(152, 41);
             this.DeleteBtn.TabIndex = 13;
-            this.DeleteBtn.Text = "তথ্য ডিলিট করুন";
+            this.DeleteBtn.Text = "ব্যাকআপ";
             this.DeleteBtn.UseVisualStyleBackColor = false;
             this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 

@@ -55,7 +55,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Backupbtn = new System.Windows.Forms.Button();
             this.DeleteAllbtn = new System.Windows.Forms.Button();
-            this.Printbtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.searchNametxt = new System.Windows.Forms.TextBox();
@@ -258,7 +257,7 @@
             this.Backupbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Backupbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.Backupbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Backupbtn.Location = new System.Drawing.Point(725, 539);
+            this.Backupbtn.Location = new System.Drawing.Point(516, 539);
             this.Backupbtn.Name = "Backupbtn";
             this.Backupbtn.Size = new System.Drawing.Size(216, 41);
             this.Backupbtn.TabIndex = 95;
@@ -279,19 +278,6 @@
             this.DeleteAllbtn.Text = "সকল তথ্য ডিলিট করুন";
             this.DeleteAllbtn.UseVisualStyleBackColor = false;
             this.DeleteAllbtn.Click += new System.EventHandler(this.DeleteAllbtn_Click);
-            // 
-            // Printbtn
-            // 
-            this.Printbtn.BackColor = System.Drawing.Color.RosyBrown;
-            this.Printbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Printbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.Printbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Printbtn.Location = new System.Drawing.Point(499, 539);
-            this.Printbtn.Name = "Printbtn";
-            this.Printbtn.Size = new System.Drawing.Size(217, 41);
-            this.Printbtn.TabIndex = 93;
-            this.Printbtn.Text = "প্রিন্ট করুন";
-            this.Printbtn.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -361,7 +347,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Backupbtn);
             this.Controls.Add(this.DeleteAllbtn);
-            this.Controls.Add(this.Printbtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.searchNametxt);
@@ -398,7 +383,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Backupbtn;
         private System.Windows.Forms.Button DeleteAllbtn;
-        private System.Windows.Forms.Button Printbtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox searchNametxt;
