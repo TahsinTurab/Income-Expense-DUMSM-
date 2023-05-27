@@ -188,7 +188,7 @@
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(210, 46);
             this.button24.TabIndex = 16;
-            this.button24.Text = "সর্বমোট জমা আছে";
+            this.button24.Text = "সর্বমোট জমা হয়েছে";
             this.button24.UseVisualStyleBackColor = false;
             // 
             // button10
@@ -257,7 +257,7 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(210, 46);
             this.button9.TabIndex = 16;
-            this.button9.Text = "সর্বমোট জমা আছে";
+            this.button9.Text = "সর্বমোট জমা হয়েছে";
             this.button9.UseVisualStyleBackColor = false;
             // 
             // button11
