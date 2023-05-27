@@ -109,6 +109,8 @@ namespace DUMSM
                 generalIncome.SlipNumber = SlipNumbertxt.Text;
                 generalIncome.IsDonation = "না"; 
                 generalIncome.RegisterDate = DateTimetxt.Value.ToString("dd/MM/yyyy");
+                generalIncome.MonthName = DateTime.Parse(DateTimetxt.Value.ToString("dd/MM/yyyy")).Month;
+                generalIncome.Year = DateTime.Parse(DateTimetxt.Value.ToString("dd/MM/yyyy")).Year;
 
                 if (IsDonationAmmountOK != "false")
                 {
@@ -186,6 +188,8 @@ namespace DUMSM
                 gorabaIncome.SlipNumber = GorabaSlipNumbertxt.Text;
                 gorabaIncome.IsDonation = "না";
                 gorabaIncome.RegisterDate = GorabaDateTimetxt.Value.ToString("dd/MM/yyyy");
+                gorabaIncome.MonthName = DateTime.Parse(GorabaDateTimetxt.Value.ToString("dd/MM/yyyy")).Month;
+                gorabaIncome.Year = DateTime.Parse(GorabaDateTimetxt.Value.ToString("dd/MM/yyyy")).Year;
 
                 if (IsDonationAmmountOK != "false")
                 {

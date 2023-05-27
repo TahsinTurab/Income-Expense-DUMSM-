@@ -13,5 +13,7 @@ namespace DUMSM.Classes
         public string ExpenseDate { get; set; }
         public string Field { get; set; }
         public int Ammount { get; set; }
+        public int MonthName { get; set; }
+        public int Year { get; set; }
     }
 }

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -89,6 +90,15 @@ namespace DUMSM.Forms.DonorForm
                     generalIncome.SlipNumber = generalDonation.SlipNumber;
                     generalIncome.Ammount = generalDonation.DonationAmmount;
                     generalIncome.RegisterDate = generalDonation.DonationDate;
+                    DateTime date;
+                    if (DateTime.TryParseExact(generalIncome.RegisterDate, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out date))
+                    {
+                        int monthNumber = date.Month; // Get the month number
+                        int year = date.Year; // Get the year
+
+                        generalIncome.MonthName = monthNumber;
+                        generalIncome.Year = year;
+                    }
                     generalIncome.IsDonation = "হ্যাঁ";
                     generalIncome.Field = generalDonation.DonationField;
                     generalIncome.DonationId = generalDonation.Id.ToString();

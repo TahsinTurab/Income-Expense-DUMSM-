@@ -38,6 +38,7 @@ namespace DUMSM.Forms.ExpenseForm
             {
                 CRUDOperation.DeleteAllData("GorabaExpense");
                 MessageBox.Show("সকল তথ্য মুছে ফেলা হয়েছে।");
+                DisplayData();
             }
             else
             {
@@ -72,6 +73,7 @@ namespace DUMSM.Forms.ExpenseForm
                     {
                         CRUDOperation.Delete("GorabaExpense", id);
                         MessageBox.Show("খরচের তথ্য মুছে ফেলা হয়েছে।");
+                        DisplayData();
                     }
 
                     else

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -262,6 +263,15 @@ namespace DUMSM.Forms.Salary
                     generalExpense.Ammount = salaryInformation.NetPayableAmmount;
                     generalExpense.Field = "বেতন";
                     generalExpense.ExpenseDate= salaryInformation.PaymentDate;
+                    DateTime date;
+                    if (DateTime.TryParseExact(generalExpense.ExpenseDate, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out date))
+                    {
+                        int monthNumber = date.Month; // Get the month number
+                        int year = date.Year; // Get the year
+
+                        generalExpense.MonthName = monthNumber;
+                        generalExpense.Year = year;
+                    }
                     generalExpense.VoucherNumber = "";
 
                     CRUDOperation.Insert(generalExpense);
@@ -291,9 +301,11 @@ namespace DUMSM.Forms.Salary
             if (result == DialogResult.Yes)
             {
                 CRUDOperation.DeleteAllData("Salaries");
+                CRUDOperation.DeleteAllData("MonthlyInformations");
 
                 CRUDOperation.DeleteWithCondition("GeneralExpense", "Field = N'বেতন'");
                 MessageBox.Show("সকল তথ্য মুছে ফেলা হয়েছে।");
+                DisplayData();
             }
             else
             {

@@ -47,6 +47,7 @@ namespace DUMSM.Forms.ExpenseForm
             {
                 CRUDOperation.DeleteAllData("GeneralExpense");
                 MessageBox.Show("সকল তথ্য মুছে ফেলা হয়েছে।");
+                DisplayData();
             }
             else
             {
@@ -80,7 +81,8 @@ namespace DUMSM.Forms.ExpenseForm
                     if (result == DialogResult.Yes)
                     {
                         CRUDOperation.Delete("GeneralExpense", id);
-                        MessageBox.Show("জমারখরচের তথ্য মুছে ফেলা হয়েছে।");
+                        MessageBox.Show("জমার তথ্য মুছে ফেলা হয়েছে।");
+                        DisplayData();
                     }
 
                     else

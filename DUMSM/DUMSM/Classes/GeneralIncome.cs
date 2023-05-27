@@ -15,5 +15,7 @@ namespace DUMSM.Classes
         public string DonationId { get; set; }
         public string RegisterDate { get; set; }
         public int Ammount { get; set; }
+        public int MonthName { get; set; }
+        public int Year { get; set; }
     }
 }

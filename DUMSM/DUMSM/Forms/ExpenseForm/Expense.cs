@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -43,6 +44,16 @@ namespace DUMSM
                 var IsDonationAmmountOK = Conversion.BnNumber2EnNumber(Ammounttxt.Text.Trim());
                 generalExpense.VoucherNumber = Vouchertxt.Text;
                 generalExpense.ExpenseDate = RegisterDatetxt.Value.ToString("dd/MM/yyyy");
+
+                DateTime date;
+                if (DateTime.TryParseExact(generalExpense.ExpenseDate, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out date))
+                {
+                    int monthNumber = date.Month; // Get the month number
+                    int year = date.Year; // Get the year
+
+                    generalExpense.MonthName = monthNumber;
+                    generalExpense.Year = year;
+                }
 
                 if (IsDonationAmmountOK != "false")
                 {
@@ -117,6 +128,15 @@ namespace DUMSM
                 var IsDonationAmmountOK = Conversion.BnNumber2EnNumber(GorabaAmmounttxt.Text.Trim());
                 gorabaExpense.VoucherNumber = GorabaVouchertxt.Text;
                 gorabaExpense.ExpenseDate = GorabaRegisterDatetxt.Value.ToString("dd/MM/yyyy");
+                DateTime date;
+                if (DateTime.TryParseExact(gorabaExpense.ExpenseDate, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out date))
+                {
+                    int monthNumber = date.Month; // Get the month number
+                    int year = date.Year; // Get the year
+
+                    gorabaExpense.MonthName = monthNumber;
+                    gorabaExpense.Year = year;
+                }
 
                 if (IsDonationAmmountOK != "false")
                 {

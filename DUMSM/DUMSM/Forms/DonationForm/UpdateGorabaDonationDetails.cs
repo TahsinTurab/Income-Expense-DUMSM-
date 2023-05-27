@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -88,7 +89,16 @@ namespace DUMSM.Forms.DonationForm
                     var gorabaIncome = new GorabaIncome();
                     gorabaIncome.SlipNumber = generalDonation.SlipNumber;
                     gorabaIncome.Ammount = generalDonation.DonationAmmount;
-                    gorabaIncome.RegisterDate = generalDonation.DonationDate;
+                    gorabaIncome.RegisterDate = generalDonation.DonationDate; 
+                    DateTime date;
+                    if (DateTime.TryParseExact(gorabaIncome.RegisterDate, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out date))
+                    {
+                        int monthNumber = date.Month; // Get the month number
+                        int year = date.Year; // Get the year
+
+                        gorabaIncome.MonthName = monthNumber;
+                        gorabaIncome.Year = year;
+                    }
                     gorabaIncome.IsDonation = "হ্যাঁ";
                     gorabaIncome.Field = generalDonation.DonationField;
                     gorabaIncome.DonationId = generalDonation.Id.ToString();

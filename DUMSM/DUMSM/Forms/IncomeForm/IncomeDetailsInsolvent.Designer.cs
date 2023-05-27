@@ -30,7 +30,6 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IncomeDetailsInsolvent));
             this.button35 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,7 +45,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.DeleteAllbtn = new System.Windows.Forms.Button();
             this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SlipNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IsDonation = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,6 +52,8 @@
             this.Field = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ammount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RegisterDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MonthName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Year = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Donordgv)).BeginInit();
@@ -182,14 +182,15 @@
             this.Donordgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Donordgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Delete,
-            this.Update,
             this.id,
             this.SlipNumber,
             this.IsDonation,
             this.DonationId,
             this.Field,
             this.Ammount,
-            this.RegisterDate});
+            this.RegisterDate,
+            this.MonthName,
+            this.Year});
             this.Donordgv.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Donordgv.GridColor = System.Drawing.SystemColors.Window;
             this.Donordgv.Location = new System.Drawing.Point(3, 3);
@@ -254,19 +255,6 @@
             this.Delete.UseColumnTextForButtonValue = true;
             this.Delete.Width = 70;
             // 
-            // Update
-            // 
-            this.Update.DataPropertyName = "Update";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Update.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Update.HeaderText = "আপডেট";
-            this.Update.Name = "Update";
-            this.Update.Text = "আপডেট";
-            this.Update.UseColumnTextForButtonValue = true;
-            this.Update.Width = 70;
-            // 
             // id
             // 
             this.id.DataPropertyName = "Id";
@@ -312,6 +300,18 @@
             this.RegisterDate.HeaderText = "তারিখ";
             this.RegisterDate.Name = "RegisterDate";
             this.RegisterDate.Width = 140;
+            // 
+            // MonthName
+            // 
+            this.MonthName.DataPropertyName = "MonthName";
+            this.MonthName.HeaderText = "মাস";
+            this.MonthName.Name = "MonthName";
+            // 
+            // Year
+            // 
+            this.Year.DataPropertyName = "Year";
+            this.Year.HeaderText = "বছর";
+            this.Year.Name = "Year";
             // 
             // IncomeDetailsInsolvent
             // 
@@ -359,7 +359,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button DeleteAllbtn;
         private System.Windows.Forms.DataGridViewButtonColumn Delete;
-        private System.Windows.Forms.DataGridViewButtonColumn Update;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn SlipNumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn IsDonation;
@@ -367,5 +366,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Field;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ammount;
         private System.Windows.Forms.DataGridViewTextBoxColumn RegisterDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MonthName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Year;
     }
 }
