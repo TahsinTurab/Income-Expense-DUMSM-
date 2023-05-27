@@ -46,6 +46,7 @@ namespace DUMSM
                         CRUDOperation.Delete("GorabaIncome", id);
                         CRUDOperation.Delete("GorabaDonations", donationId);
                         MessageBox.Show("জমার তথ্য মুছে ফেলা হয়েছে।");
+                        DisplayData();
                     }
 
                     else
@@ -95,6 +96,7 @@ namespace DUMSM
             {
                 CRUDOperation.DeleteAllData("GorabaIncome");
                 MessageBox.Show("সকল তথ্য মুছে ফেলা হয়েছে।");
+                DisplayData();
             }
             else
             {

@@ -87,7 +87,7 @@ namespace DUMSM.Forms
 
         private void ReportBtn_Click(object sender, EventArgs e)
         {
-            MonthlyReport form = new MonthlyReport();
+            GenerateReport form = new GenerateReport();
             form.StartPosition = FormStartPosition.CenterScreen;
             form.Show();
             Form parentForm = FindForm();

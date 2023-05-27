@@ -484,12 +484,13 @@
             this.GorabaFieldtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GorabaFieldtxt.FormattingEnabled = true;
             this.GorabaFieldtxt.Items.AddRange(new object[] {
-            "ফরম / ভর্তি ফি",
-            "শিক্ষার্থীর বেতন",
-            "বোডিং/খানার চার্জ",
-            "নির্মাণ ও মেরামত",
-            "লাইব্রেরী",
-            "অনুষ্ঠান / ইফতার  ",
+            "যাকাত",
+            "ফিতরা",
+            "মান্নত",
+            "কাফফারা",
+            "কোরবানীর চামড়া",
+            "ব্যংক ঋণ",
+            "কর্য গ্রহন",
             "বিবিধ "});
             this.GorabaFieldtxt.Location = new System.Drawing.Point(187, 58);
             this.GorabaFieldtxt.Name = "GorabaFieldtxt";

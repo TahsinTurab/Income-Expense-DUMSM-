@@ -141,6 +141,12 @@
     <Compile Include="Forms\IncomeForm\UpdateGorabaIncomeDetails.Designer.cs">
       <DependentUpon>UpdateGorabaIncomeDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Report\GenerateReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Report\GenerateReport.Designer.cs">
+      <DependentUpon>GenerateReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Report\MonthlyReport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -347,6 +353,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\IncomeForm\UpdateGorabaIncomeDetails.resx">
       <DependentUpon>UpdateGorabaIncomeDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Report\GenerateReport.resx">
+      <DependentUpon>GenerateReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Report\MonthlyReport.rdlc" />
     <EmbeddedResource Include="Forms\Report\MonthlyReport.resx">

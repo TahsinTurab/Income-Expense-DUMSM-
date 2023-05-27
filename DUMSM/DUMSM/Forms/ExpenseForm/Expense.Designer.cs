@@ -366,6 +366,7 @@
             this.GorabaFieldtxt.FormattingEnabled = true;
             this.GorabaFieldtxt.Items.AddRange(new object[] {
             "খোরাকী",
+            "পোষাক",
             "নগদ প্রদান",
             "কিতাব ক্রয়",
             "চিকিৎসা",
