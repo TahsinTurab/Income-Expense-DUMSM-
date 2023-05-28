@@ -105,6 +105,7 @@ namespace DUMSM.Forms
 
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("ব্যাকআপ নেয়ার জন্য ok তে ক্লিক করুন\nঅনুগ্রহপুর্বক কিছুক্ষন অপেক্ষা করুন।");
             BackupOperation.Backup2Excel("GeneralExpense");
             BackupOperation.Backup2Excel("GorabaExpense");
             BackupOperation.Backup2Excel("GeneralIncome");

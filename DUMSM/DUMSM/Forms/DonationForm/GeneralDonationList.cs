@@ -42,6 +42,7 @@ namespace DUMSM.Forms.DonationForm
                     if (result == DialogResult.Yes)
                     {
                         CRUDOperation.Delete("Donations", id);
+                        CRUDOperation.Delete("GeneralIncome", id);
                         MessageBox.Show("অনুদানের তথ্য মুছে ফেলা হয়েছে।");
                         //DisplayData();
 
@@ -98,7 +99,7 @@ namespace DUMSM.Forms.DonationForm
 
             if (result == DialogResult.Yes)
             {
-                CRUDOperation.DeleteWithCondition("GeneralIncome", "Where IsDonation=N'হ্যাঁ'");
+                CRUDOperation.DeleteWithCondition("GeneralIncome", "IsDonation=N'হ্যাঁ'");
                 CRUDOperation.DeleteAllData("Donations");
                 MessageBox.Show("সকল তথ্য মুছে ফেলা হয়েছে।");
             }
@@ -127,15 +128,7 @@ namespace DUMSM.Forms.DonationForm
 
         private void GeneralDonationList_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (e.CloseReason != CloseReason.ApplicationExitCall)
-            {
-                e.Cancel = true; // Cancel the close operation
-                this.Hide(); // Hide the form instead of closing it
-            }
-            else
-            {
-                Application.Exit();
-            }
+            Application.Exit();
         }
     }
 }

@@ -166,7 +166,7 @@ namespace DUMSM.Forms.TeacherForm
             if (result == DialogResult.Yes)
             {
                 CRUDOperation.Delete("Stuffs", oldStuff.Id);
-                MessageBox.Show("সকল তথ্য মুছে ফেলা হয়েছে।");
+                
 
                 Teacher form = new Teacher();
                 form.StartPosition = FormStartPosition.CenterScreen;

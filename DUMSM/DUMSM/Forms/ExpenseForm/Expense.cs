@@ -188,12 +188,10 @@ namespace DUMSM
             DailyTotalGorabatxt.Text = "৳ " + Conversion.EnNumber2BnNumber(
                 TotalClass.TotalOfColumnWithCondition("GorabaExpense", "Ammount", Condition1).ToString());
 
-            DateTime firstDayOfMonth = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
-            string formattedDate = firstDayOfMonth.ToString("dd/MM/yyyy");
+            var monthNumber = DateTime.Now.Month;
+            var year = DateTime.Now.Year;
 
-            
-
-            string Condition = $"ExpenseDate >= '{formattedDate}' and ExpenseDate <= '{presentDay}'";
+            string Condition = $"MonthName = '{monthNumber}' and Year ='{year}'";
 
             MonthlyTotalGeneraltxt.Text = "৳ " + Conversion.EnNumber2BnNumber(
                 TotalClass.TotalOfColumnWithCondition("GeneralExpense", "Ammount", Condition).ToString());
@@ -227,15 +225,7 @@ namespace DUMSM
 
         private void Expense_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (e.CloseReason != CloseReason.ApplicationExitCall)
-            {
-                e.Cancel = true; // Cancel the close operation
-                this.Hide(); // Hide the form instead of closing it
-            }
-            else
-            {
-                Application.Exit();
-            }
+            Application.Exit();
         }
     }
 }

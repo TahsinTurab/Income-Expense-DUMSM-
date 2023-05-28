@@ -52,20 +52,20 @@ namespace DUMSM
                     string id = Donordgv.Rows[e.RowIndex].Cells["id"].Value.ToString();
                     string donationId = Donordgv.Rows[e.RowIndex].Cells["DonationId"].Value.ToString();
 
-                    DialogResult result = MessageBox.Show($"অনুদানের আইডিঃ {id}\n\nআপনি এই তথ্যটি ডিলিট করতে ইচ্ছুক? ",
+                    DialogResult result = MessageBox.Show($"সাধারণ জমার আইডিঃ {id}\n\nআপনি এই তথ্যটি ডিলিট করতে ইচ্ছুক? ",
                         "সাধারণ অনুদানের তালিকা", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-                    if (result == DialogResult.Yes)
+                    if (result == DialogResult.Yes) 
                     {
                         CRUDOperation.Delete("GeneralIncome", id);
-                        CRUDOperation.Delete("Donations", donationId);
+                        //CRUDOperation.Delete("Donations", donationId);
                         DisplayData();
-                        MessageBox.Show("অনুদানের তথ্য মুছে ফেলা হয়েছে।");
+                        MessageBox.Show("সাধারণ জমার তথ্য মুছে ফেলা হয়েছে।");
                     }
 
                     else
                     {
-                        MessageBox.Show("অনুদানের তথ্য মুছে ফেলা হয়নি।");
+                        MessageBox.Show("সাধারণ জমার তথ্য মুছে ফেলা হয়নি।");
 
                     }
 
@@ -159,15 +159,7 @@ namespace DUMSM
 
         private void IncomeDetailsCommon_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (e.CloseReason != CloseReason.ApplicationExitCall)
-            {
-                e.Cancel = true; // Cancel the close operation
-                this.Hide(); // Hide the form instead of closing it
-            }
-            else
-            {
-                Application.Exit();
-            }
+            Application.Exit();
         }
     }
 }

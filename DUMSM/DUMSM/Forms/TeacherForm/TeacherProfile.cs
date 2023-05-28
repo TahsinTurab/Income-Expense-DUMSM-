@@ -136,14 +136,15 @@ namespace DUMSM
 
             if (result == DialogResult.Yes)
             {
+                
+                CRUDOperation.Delete("Teachers", oldTeacher.Id);
+
                 Teacher form = new Teacher();
                 form.StartPosition = FormStartPosition.CenterScreen;
                 form.Show();
-                Form parentForm = FindForm();
-                parentForm.Hide();
+                this.Hide();
 
-                CRUDOperation.Delete("Teachers", oldTeacher.Id);
-                MessageBox.Show("সকল তথ্য মুছে ফেলা হয়েছে।");
+
             }
             else
             {

@@ -41,9 +41,10 @@ namespace DUMSM.Forms.DonationForm
 
             if (result == DialogResult.Yes)
             {
-                CRUDOperation.DeleteWithCondition("GorabaIncome", "Where IsDonation=N'হ্যাঁ'");
+                CRUDOperation.DeleteWithCondition("GorabaIncome", "IsDonation=N'হ্যাঁ'");
                 CRUDOperation.DeleteAllData("GorabaDonations");
                 MessageBox.Show("সকল তথ্য মুছে ফেলা হয়েছে।");
+                DisplayData();
             }
             else
             {
@@ -122,15 +123,7 @@ namespace DUMSM.Forms.DonationForm
 
         private void GorabaDonationList_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (e.CloseReason != CloseReason.ApplicationExitCall)
-            {
-                e.Cancel = true; // Cancel the close operation
-                this.Hide(); // Hide the form instead of closing it
-            }
-            else
-            {
-                Application.Exit();
-            }
+            Application.Exit();
         }
     }
 }

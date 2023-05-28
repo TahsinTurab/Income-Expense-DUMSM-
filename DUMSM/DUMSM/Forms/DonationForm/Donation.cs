@@ -78,7 +78,7 @@ namespace DUMSM
                 if (willInsert)
                 {
                     var generalIncome = new GeneralIncome();
-                    generalIncome.Id = Guid.NewGuid();
+                    generalIncome.Id = generalDonation.Id;
                     generalIncome.SlipNumber = generalDonation.SlipNumber;
                     generalIncome.Ammount = generalDonation.DonationAmmount;
                     generalIncome.RegisterDate = generalDonation.DonationDate;
@@ -187,7 +187,7 @@ namespace DUMSM
                 if (willInsert)
                 {
                     var gorabaIncome = new GorabaIncome();
-                    gorabaIncome.Id = Guid.NewGuid();
+                    gorabaIncome.Id = gorabaDonation.Id;
                     gorabaIncome.SlipNumber = gorabaDonation.SlipNumber;
                     gorabaIncome.Ammount = gorabaDonation.DonationAmmount;
                     gorabaIncome.RegisterDate = gorabaDonation.DonationDate;
@@ -224,15 +224,7 @@ namespace DUMSM
 
         private void Donation_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (e.CloseReason != CloseReason.ApplicationExitCall)
-            {
-                e.Cancel = true; // Cancel the close operation
-                this.Hide(); // Hide the form instead of closing it
-            }
-            else
-            {
-                Application.Exit();
-            }
+            Application.Exit();
         }
 
         private void button36_Click(object sender, EventArgs e)

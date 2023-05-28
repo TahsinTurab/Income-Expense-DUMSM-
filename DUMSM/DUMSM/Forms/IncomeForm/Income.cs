@@ -41,12 +41,10 @@ namespace DUMSM
             TotalGorabatxt.Text = "৳ " + Conversion.EnNumber2BnNumber(
                 TotalClass.TotalOfColumnWithoutCondition("GorabaIncome", "Ammount").ToString());
 
-            DateTime firstDayOfMonth = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
-            string formattedDate = firstDayOfMonth.ToString("dd/MM/yyyy");
+            var monthNumber = DateTime.Now.Month;
+            var year = DateTime.Now.Year;
 
-            string presentDay = DateTime.Now.ToString("dd/MM/yyyy");
-
-            string Condition = $"RegisterDate >= '{formattedDate}' and RegisterDate <= '{presentDay}'";
+            string Condition = $"MonthName = '{monthNumber}' and Year ='{year}'";
 
             MonthlyTotalGeneraltxt.Text = "৳ " + Conversion.EnNumber2BnNumber(
                 TotalClass.TotalOfColumnWithCondition("GeneralIncome", "Ammount", Condition).ToString() );
@@ -106,6 +104,7 @@ namespace DUMSM
                 var willInsert = true;
 
                 var generalIncome = new GeneralIncome();
+                generalIncome.Id = Guid.NewGuid();
                 var IsDonationAmmountOK = Conversion.BnNumber2EnNumber(Ammounttxt.Text.Trim());
                 generalIncome.SlipNumber = SlipNumbertxt.Text;
                 generalIncome.IsDonation = "না"; 
@@ -270,15 +269,7 @@ namespace DUMSM
 
         private void Income_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (e.CloseReason != CloseReason.ApplicationExitCall)
-            {
-                e.Cancel = true; // Cancel the close operation
-                this.Hide(); // Hide the form instead of closing it
-            }
-            else
-            {
-                Application.Exit();
-            }
+            Application.Exit();
         }
     }
 }

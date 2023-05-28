@@ -303,15 +303,10 @@ namespace DUMSM
 
         private void DonorList_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (e.CloseReason != CloseReason.ApplicationExitCall)
-            {
-                e.Cancel = true; // Cancel the close operation
-                this.Hide(); // Hide the form instead of closing it
-            }
-            else
-            {
-                this.Close();
-            }
+            Donor form = new Donor();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
+            this.Hide();
         }
     }
 }

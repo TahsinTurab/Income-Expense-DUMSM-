@@ -153,3 +153,8 @@ C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.Repo
 C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.csproj.CopyComplete
 C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.Report.GenerateReport.resources
 C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.User.StartForm.resources
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.Forms.backup.resources
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\bin\Debug\DUMSM.exe.manifest
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\bin\Debug\DUMSM.application
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.exe.manifest
+C:\Users\Tahsin Hasan Turab\Desktop\DUMSM\DUMSM\DUMSM\obj\Debug\DUMSM.application

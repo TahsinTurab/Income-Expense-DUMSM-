@@ -271,7 +271,10 @@ namespace DUMSM.Forms.Salary
 
         private void UpdateSalaryDetails_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            Salaries form = new Salaries();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
+            this.Hide();
         }
     }
 }
