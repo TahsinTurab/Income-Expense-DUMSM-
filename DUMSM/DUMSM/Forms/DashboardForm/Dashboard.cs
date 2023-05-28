@@ -157,7 +157,7 @@ namespace DUMSM
 
         private void Dashboard_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

@@ -206,7 +206,7 @@ namespace DUMSM
 
         private void Donor_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
         }
     }
 }

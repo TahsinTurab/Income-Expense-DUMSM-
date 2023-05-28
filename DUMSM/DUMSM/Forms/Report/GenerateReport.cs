@@ -29,7 +29,7 @@ namespace DUMSM.Forms.Report
 
         private void GenerateReport_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
         }
 
         public Dictionary<string, int> MonthList()
@@ -92,7 +92,7 @@ namespace DUMSM.Forms.Report
             var monthList = MonthList();
 
             int monthNumber = monthList[monthName];
-            int year = int.Parse(Conversion.BnNumber2EnNumber(YearGeneral.Text));
+            int year = int.Parse(Conversion.BnNumber2EnNumber(YearGeneral.Text.Trim()));
 
             var fields = GeneralIncomeFields();
             string Condition = $"MonthName = '{monthNumber}' and Year = '{year}'";
@@ -119,7 +119,7 @@ namespace DUMSM.Forms.Report
             var fields = GeneralExpenseFields();
 
             int monthNumber = monthList[monthName];
-            int year = int.Parse(Conversion.BnNumber2EnNumber(YearGeneral.Text));
+            int year = int.Parse(Conversion.BnNumber2EnNumber(YearGeneral.Text.Trim()));
 
             string Condition = $"MonthName = '{monthNumber}' and Year = '{year}'";
 
@@ -140,7 +140,7 @@ namespace DUMSM.Forms.Report
             var monthList = MonthList();
 
             int monthNumber = monthList[monthName];
-            int year = int.Parse(Conversion.BnNumber2EnNumber(YearGoraba.Text));
+            int year = int.Parse(Conversion.BnNumber2EnNumber(YearGoraba.Text.Trim()));
 
             string Condition = $"MonthName = '{monthNumber}' and Year = '{year}'";
 
@@ -168,7 +168,7 @@ namespace DUMSM.Forms.Report
             var fields = GorabaExpenseFields();
 
             int monthNumber = monthList[monthName];
-            int year = int.Parse(Conversion.BnNumber2EnNumber(YearGoraba.Text));
+            int year = int.Parse(Conversion.BnNumber2EnNumber(YearGoraba.Text.Trim()));
 
             string Condition = $"MonthName = '{monthNumber}' and Year = '{year}'";
 
@@ -187,9 +187,10 @@ namespace DUMSM.Forms.Report
         {
             object selectedItem = MonthListGeneral.SelectedItem;
             string MonthName = ((string)selectedItem);
-            
-            
-            if(MonthName == null || YearGeneral.Text == "")
+            int x;
+            string year = Conversion.BnNumber2EnNumber(YearGeneral.Text.Trim());
+            bool isYear = int.TryParse(year,out x);
+            if (MonthName == null || YearGeneral.Text == "" || isYear == false)
             {
                 PopUpMessage.ErrorMessage("সাধারণ রিপোর্ট"); 
             }
@@ -201,7 +202,6 @@ namespace DUMSM.Forms.Report
                 var fields = GeneralIncomeFields();
 
                 int monthNumber = monthList[MonthName];
-                string year = Conversion.BnNumber2EnNumber(YearGeneral.Text);
                 string Condition = $"MonthName = '{monthNumber}' and Year = '{year}'";
                 //string Condition = $"RegisterDate >= '01/0{monthNumber}/{year}' and RegisterDate <= '31/0{monthNumber}/{year}'";
 
@@ -215,7 +215,7 @@ namespace DUMSM.Forms.Report
                 var IncomeField = GeneralIncomeFields();
                 var ExpenseField = GeneralExpenseFields();
 
-                year = Conversion.EnNumber2BnNumber(YearGeneral.Text);
+                year = Conversion.EnNumber2BnNumber(year);
                 var form = new MonthlyReport(FieldDataIncome, IncomeField, FieldDataExpense, ExpenseField, 
                     TotalIncome, TotalExpense, $"{MonthName}, {year}", "সাধারণ  মাসিক  রিপোর্ট");
                 form.StartPosition = FormStartPosition.CenterScreen;
@@ -229,9 +229,10 @@ namespace DUMSM.Forms.Report
         {
             object selectedItem = MonthListGoraba.SelectedItem;
             string MonthName = ((string)selectedItem);
-
-
-            if (MonthName == null || YearGoraba.Text == "")
+            int x;
+            string year = Conversion.BnNumber2EnNumber(YearGoraba.Text.Trim());
+            bool isYear = int.TryParse(year, out x);
+            if (MonthName == null || YearGoraba.Text == "" || isYear == false)
             {
                 PopUpMessage.ErrorMessage("গোরাবা রিপোর্ট");
             }
@@ -242,7 +243,7 @@ namespace DUMSM.Forms.Report
                 var monthList = MonthList();
                 var fields = GeneralIncomeFields();
                 int monthNumber = monthList[MonthName];
-                string year = Conversion.BnNumber2EnNumber(YearGoraba.Text);
+                
                 string Condition = $"MonthName = '{monthNumber}' and Year = '{year}'";
                 var TotalIncome = "৳ " + Conversion.EnNumber2BnNumber(
                 TotalClass.TotalOfColumnWithCondition("GorabaIncome", "Ammount", Condition).ToString());
@@ -253,7 +254,7 @@ namespace DUMSM.Forms.Report
                 var IncomeField = GorabaIncomeFields();
                 var ExpenseField = GorabaExpenseFields();
 
-                year = Conversion.EnNumber2BnNumber(YearGoraba.Text);
+                year = Conversion.EnNumber2BnNumber(year);
                 var form = new MonthlyReport(FieldDataIncome, IncomeField, FieldDataExpense, ExpenseField, TotalIncome, TotalExpense, $"{MonthName}, {year}", "গোরাবা  মাসিক  রিপোর্ট");
                 form.StartPosition = FormStartPosition.CenterScreen;
                 form.Show();

@@ -923,7 +923,7 @@
     <value>Microsoft Sans Serif, 20.25pt, style=Bold</value>
   </data>
   <data name="tabControl3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>733, 347</value>
+    <value>725, 396</value>
   </data>
   <data name="tabControl3.Size" type="System.Drawing.Size, System.Drawing">
     <value>227, 245</value>
@@ -942,6 +942,9 @@
   </data>
   <data name="&gt;&gt;tabControl3.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="monthCalendar1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20.25pt, style=Bold</value>
   </data>
   <data name="monthCalendar1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -971,7 +974,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 159</value>
+    <value>215, 160</value>
   </data>
   <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -998,7 +1001,7 @@
     <value>729, 133</value>
   </data>
   <data name="tabControl4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 203</value>
+    <value>223, 204</value>
   </data>
   <data name="tabControl4.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>

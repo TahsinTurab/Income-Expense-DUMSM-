@@ -120,7 +120,7 @@ namespace DUMSM.Forms.ExpenseForm
 
         private void ExpenseDetailsCommon_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
         }
     }
 }

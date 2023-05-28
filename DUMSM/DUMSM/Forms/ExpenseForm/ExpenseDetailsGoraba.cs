@@ -114,7 +114,7 @@ namespace DUMSM.Forms.ExpenseForm
 
         private void ExpenseDetailsGoraba_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
         }
     }
 }

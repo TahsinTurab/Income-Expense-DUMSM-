@@ -314,9 +314,11 @@
             // 
             // monthCalendar1
             // 
+            this.monthCalendar1.BackColor = System.Drawing.SystemColors.Window;
             resources.ApplyResources(this.monthCalendar1, "monthCalendar1");
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.ShowTodayCircle = false;
+            this.monthCalendar1.TrailingForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             // 
             // pictureBox1
             // 

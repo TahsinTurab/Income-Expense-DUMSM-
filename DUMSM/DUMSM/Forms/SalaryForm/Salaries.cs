@@ -329,7 +329,7 @@ namespace DUMSM.Forms.Salary
 
         private void Salaries_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
         }
 
         private void searchNametxt_TextChanged(object sender, EventArgs e)

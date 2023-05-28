@@ -25,7 +25,7 @@ namespace DUMSM.Forms.User
 
         private void button8_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -71,7 +71,7 @@ namespace DUMSM.Forms.User
 
         private void Login_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
         }
     }
 }

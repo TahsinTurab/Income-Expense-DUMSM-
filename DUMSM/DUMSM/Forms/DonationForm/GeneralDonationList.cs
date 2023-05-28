@@ -128,7 +128,7 @@ namespace DUMSM.Forms.DonationForm
 
         private void GeneralDonationList_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
         }
     }
 }

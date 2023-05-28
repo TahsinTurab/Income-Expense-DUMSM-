@@ -150,7 +150,7 @@ namespace DUMSM
 
         private void DonorProfile_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
         }
     }
 }

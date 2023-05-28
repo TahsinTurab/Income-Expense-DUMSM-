@@ -119,7 +119,7 @@ namespace DUMSM
 
         private void IncomeDetailsInsolvent_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
         }
     }
 }

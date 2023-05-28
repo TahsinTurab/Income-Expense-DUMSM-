@@ -167,6 +167,7 @@
             this.TotalGeneraltxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.TotalGeneraltxt.Location = new System.Drawing.Point(222, 62);
             this.TotalGeneraltxt.Name = "TotalGeneraltxt";
+            this.TotalGeneraltxt.ReadOnly = true;
             this.TotalGeneraltxt.Size = new System.Drawing.Size(133, 29);
             this.TotalGeneraltxt.TabIndex = 35;
             // 
@@ -175,6 +176,7 @@
             this.MonthlyTotalGeneraltxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.MonthlyTotalGeneraltxt.Location = new System.Drawing.Point(221, 14);
             this.MonthlyTotalGeneraltxt.Name = "MonthlyTotalGeneraltxt";
+            this.MonthlyTotalGeneraltxt.ReadOnly = true;
             this.MonthlyTotalGeneraltxt.Size = new System.Drawing.Size(133, 29);
             this.MonthlyTotalGeneraltxt.TabIndex = 34;
             // 
@@ -236,6 +238,7 @@
             this.TotalGorabatxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.TotalGorabatxt.Location = new System.Drawing.Point(218, 65);
             this.TotalGorabatxt.Name = "TotalGorabatxt";
+            this.TotalGorabatxt.ReadOnly = true;
             this.TotalGorabatxt.Size = new System.Drawing.Size(133, 29);
             this.TotalGorabatxt.TabIndex = 35;
             // 
@@ -244,6 +247,7 @@
             this.MonthlyTotalGorabatxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.MonthlyTotalGorabatxt.Location = new System.Drawing.Point(216, 14);
             this.MonthlyTotalGorabatxt.Name = "MonthlyTotalGorabatxt";
+            this.MonthlyTotalGorabatxt.ReadOnly = true;
             this.MonthlyTotalGorabatxt.Size = new System.Drawing.Size(133, 29);
             this.MonthlyTotalGorabatxt.TabIndex = 34;
             // 
