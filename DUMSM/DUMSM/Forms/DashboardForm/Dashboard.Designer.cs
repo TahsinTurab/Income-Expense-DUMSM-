@@ -121,6 +121,7 @@
             // 
             resources.ApplyResources(this.TotalExpenseGeneral, "TotalExpenseGeneral");
             this.TotalExpenseGeneral.Name = "TotalExpenseGeneral";
+            this.TotalExpenseGeneral.ReadOnly = true;
             // 
             // button1
             // 
@@ -134,16 +135,19 @@
             // 
             resources.ApplyResources(this.TotalGeneral, "TotalGeneral");
             this.TotalGeneral.Name = "TotalGeneral";
+            this.TotalGeneral.ReadOnly = true;
             // 
             // MonthlyExpenseGeneral
             // 
             resources.ApplyResources(this.MonthlyExpenseGeneral, "MonthlyExpenseGeneral");
             this.MonthlyExpenseGeneral.Name = "MonthlyExpenseGeneral";
+            this.MonthlyExpenseGeneral.ReadOnly = true;
             // 
             // MonthlyTotalGeneral
             // 
             resources.ApplyResources(this.MonthlyTotalGeneral, "MonthlyTotalGeneral");
             this.MonthlyTotalGeneral.Name = "MonthlyTotalGeneral";
+            this.MonthlyTotalGeneral.ReadOnly = true;
             // 
             // button12
             // 
@@ -189,6 +193,7 @@
             // 
             resources.ApplyResources(this.TotalExpenseGoraba, "TotalExpenseGoraba");
             this.TotalExpenseGoraba.Name = "TotalExpenseGoraba";
+            this.TotalExpenseGoraba.ReadOnly = true;
             // 
             // button2
             // 
@@ -202,6 +207,7 @@
             // 
             resources.ApplyResources(this.TotalGoraba, "TotalGoraba");
             this.TotalGoraba.Name = "TotalGoraba";
+            this.TotalGoraba.ReadOnly = true;
             // 
             // button17
             // 
@@ -215,6 +221,7 @@
             // 
             resources.ApplyResources(this.MonthlyExpenseGoraba, "MonthlyExpenseGoraba");
             this.MonthlyExpenseGoraba.Name = "MonthlyExpenseGoraba";
+            this.MonthlyExpenseGoraba.ReadOnly = true;
             // 
             // button16
             // 
@@ -228,6 +235,7 @@
             // 
             resources.ApplyResources(this.MonthlyIncomeGoraba, "MonthlyIncomeGoraba");
             this.MonthlyIncomeGoraba.Name = "MonthlyIncomeGoraba";
+            this.MonthlyIncomeGoraba.ReadOnly = true;
             // 
             // button15
             // 
@@ -274,11 +282,13 @@
             // 
             resources.ApplyResources(this.TotalDonar, "TotalDonar");
             this.TotalDonar.Name = "TotalDonar";
+            this.TotalDonar.ReadOnly = true;
             // 
             // TotalTeacher
             // 
             resources.ApplyResources(this.TotalTeacher, "TotalTeacher");
             this.TotalTeacher.Name = "TotalTeacher";
+            this.TotalTeacher.ReadOnly = true;
             // 
             // button18
             // 

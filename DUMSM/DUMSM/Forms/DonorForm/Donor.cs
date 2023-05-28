@@ -121,6 +121,7 @@ namespace DUMSM
                     CRUDOperation.Insert(donor);
                     PopUpMessage.SuccessRegistrationMessage("দাতার তথ্য নিবন্ধন");
                     ResetForm();
+                    LoadDonorList();
                 }
                 else
                 {

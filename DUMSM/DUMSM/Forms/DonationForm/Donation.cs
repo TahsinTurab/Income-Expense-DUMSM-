@@ -33,6 +33,8 @@ namespace DUMSM
         public void LoadDonerList()
         {
             var list = CRUDOperation.GetColumnValues("Donors", "DonorName");
+            DonorComboBox.Items.Clear();
+            GorabaDonorComboBox.Items.Clear();
             
             DonorComboBox.Items.AddRange(list.ToArray());
             GorabaDonorComboBox.Items.AddRange(list.ToArray());

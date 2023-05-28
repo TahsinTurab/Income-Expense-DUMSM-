@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Salaries));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.donorsTableAdapter = new DUMSM.DUMSMDataBaseDataSetTableAdapters.DonorsTableAdapter();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -104,6 +104,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.NetPayableAmmounttxt = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
+            this.searchNametxt = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.Searchbtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.donorsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dUMSMDataBaseDataSet)).BeginInit();
@@ -452,14 +455,14 @@
             // 
             this.Donordgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.Donordgv.BackgroundColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Donordgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Donordgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.Donordgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Donordgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Delete,
@@ -493,10 +496,10 @@
             // Delete
             // 
             this.Delete.DataPropertyName = "Delete";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Transparent;
-            this.Delete.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Transparent;
+            this.Delete.DefaultCellStyle = dataGridViewCellStyle5;
             this.Delete.HeaderText = "ডিলিট";
             this.Delete.Name = "Delete";
             this.Delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
@@ -507,10 +510,10 @@
             // Update
             // 
             this.Update.DataPropertyName = "Update";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Update.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Update.DefaultCellStyle = dataGridViewCellStyle6;
             this.Update.HeaderText = "আপডেট";
             this.Update.Name = "Update";
             this.Update.Text = "আপডেট";
@@ -637,11 +640,11 @@
             this.Backbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Backbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.Backbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Backbtn.Location = new System.Drawing.Point(9, 616);
+            this.Backbtn.Location = new System.Drawing.Point(13, 616);
             this.Backbtn.Name = "Backbtn";
-            this.Backbtn.Size = new System.Drawing.Size(231, 41);
+            this.Backbtn.Size = new System.Drawing.Size(133, 41);
             this.Backbtn.TabIndex = 91;
-            this.Backbtn.Text = "পূর্বের পাতায় ফিরে যান";
+            this.Backbtn.Text = "পূর্বের পাতা";
             this.Backbtn.UseVisualStyleBackColor = false;
             this.Backbtn.Click += new System.EventHandler(this.Backbtn_Click);
             // 
@@ -678,9 +681,9 @@
             this.Backupbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Backupbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.Backupbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Backupbtn.Location = new System.Drawing.Point(509, 616);
+            this.Backupbtn.Location = new System.Drawing.Point(848, 616);
             this.Backupbtn.Name = "Backupbtn";
-            this.Backupbtn.Size = new System.Drawing.Size(216, 41);
+            this.Backupbtn.Size = new System.Drawing.Size(114, 41);
             this.Backupbtn.TabIndex = 95;
             this.Backupbtn.Text = "ব্যাকআপ ";
             this.Backupbtn.UseVisualStyleBackColor = false;
@@ -692,7 +695,7 @@
             this.DeleteAllbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DeleteAllbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.DeleteAllbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.DeleteAllbtn.Location = new System.Drawing.Point(248, 616);
+            this.DeleteAllbtn.Location = new System.Drawing.Point(597, 616);
             this.DeleteAllbtn.Name = "DeleteAllbtn";
             this.DeleteAllbtn.Size = new System.Drawing.Size(245, 41);
             this.DeleteAllbtn.TabIndex = 94;
@@ -835,14 +838,50 @@
             this.label20.Text = "প্রাপ্য বেতন";
             this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
+            // searchNametxt
+            // 
+            this.searchNametxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchNametxt.Location = new System.Drawing.Point(209, 623);
+            this.searchNametxt.Name = "searchNametxt";
+            this.searchNametxt.Size = new System.Drawing.Size(209, 29);
+            this.searchNametxt.TabIndex = 104;
+            this.searchNametxt.TextChanged += new System.EventHandler(this.searchNametxt_TextChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(166, 626);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(37, 24);
+            this.label9.TabIndex = 105;
+            this.label9.Text = "নাম";
+            // 
+            // Searchbtn
+            // 
+            this.Searchbtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Searchbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Searchbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.Searchbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.Searchbtn.Location = new System.Drawing.Point(424, 616);
+            this.Searchbtn.Name = "Searchbtn";
+            this.Searchbtn.Size = new System.Drawing.Size(167, 41);
+            this.Searchbtn.TabIndex = 103;
+            this.Searchbtn.Text = "অনুসন্ধান";
+            this.Searchbtn.UseVisualStyleBackColor = false;
+            this.Searchbtn.Click += new System.EventHandler(this.Searchbtn_Click);
+            // 
             // Salaries
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.Backbtn);
+            this.Controls.Add(this.searchNametxt);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.Searchbtn);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.Backbtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Backupbtn);
@@ -942,5 +981,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NetPayableAmmount;
         private System.Windows.Forms.DataGridViewTextBoxColumn PaymentDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn IsPaid;
+        private System.Windows.Forms.TextBox searchNametxt;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button Searchbtn;
     }
 }

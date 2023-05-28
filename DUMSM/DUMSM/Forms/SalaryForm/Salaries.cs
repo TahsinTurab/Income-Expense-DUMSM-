@@ -331,5 +331,16 @@ namespace DUMSM.Forms.Salary
         {
             Application.Exit();
         }
+
+        private void searchNametxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Searchbtn_Click(object sender, EventArgs e)
+        {
+            (Donordgv.DataSource as DataTable).DefaultView.RowFilter =
+                String.Format("EmployeeName like '%" + searchNametxt.Text + "%'");
+        }
     }
 }
