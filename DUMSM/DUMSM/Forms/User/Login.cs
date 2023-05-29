@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DUMSM.UserdefineClasses;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,7 +16,21 @@ namespace DUMSM.Forms.User
         public Login()
         {
             InitializeComponent();
+            //InitializeUserControl();
             Passwordtxt.UseSystemPasswordChar = true;
+        }
+
+        private void InitializeUserControl()
+        {
+            ExitControl myUserControl = new ExitControl();
+            myUserControl.Dock = DockStyle.None;
+            myUserControl.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            myUserControl.Location = new System.Drawing.Point(
+                ClientSize.Width - myUserControl.Width,
+                0
+            );
+            Controls.Add(myUserControl);
+            myUserControl.BringToFront();
         }
 
         private void UserNametxt_TextChanged(object sender, EventArgs e)
@@ -25,6 +40,7 @@ namespace DUMSM.Forms.User
 
         private void button8_Click(object sender, EventArgs e)
         {
+            Close();
             Application.Exit();
         }
 
@@ -71,7 +87,18 @@ namespace DUMSM.Forms.User
 
         private void Login_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //Application.Exit();
+            Close();
+            Application.Exit();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

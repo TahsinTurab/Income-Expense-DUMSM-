@@ -18,8 +18,13 @@ namespace DUMSM
         public Dashboard()
         {
             InitializeComponent();
-            
 
+            InitializeUserControl();
+            
+        }
+
+        private void InitializeUserControl()
+        {
             SidePanelControl sidePanel = new SidePanelControl();
 
             // Set the properties of the side panel control
@@ -28,6 +33,17 @@ namespace DUMSM
 
             // Add the side panel control to the form
             Controls.Add(sidePanel);
+
+            ExitControl myUserControl = new ExitControl();
+            myUserControl.Dock = DockStyle.None;
+            myUserControl.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            myUserControl.Location = new System.Drawing.Point(
+                ClientSize.Width - myUserControl.Width,
+                0
+            );
+            Controls.Add(myUserControl);
+            myUserControl.BringToFront();
+
         }
 
         public void Display()

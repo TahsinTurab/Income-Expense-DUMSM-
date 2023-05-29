@@ -33,7 +33,7 @@ namespace DUMSM
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
         }
 
         private void Registerbtn_Click(object sender, EventArgs e)
@@ -117,9 +117,9 @@ namespace DUMSM
                 {
                     CRUDOperation.Update(donor);
                     PopUpMessage.SuccessRegistrationMessage("দাতার তথ্য আপডেট");
-                    DonorList form = new DonorList();
-                    form.StartPosition = FormStartPosition.CenterScreen;
-                    form.Show();
+                    //DonorList form = new DonorList();
+                    //form.StartPosition = FormStartPosition.CenterScreen;
+                    //form.Show();
                     this.Hide();
                 }
                 else

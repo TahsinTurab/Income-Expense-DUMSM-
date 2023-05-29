@@ -26,7 +26,7 @@
     <ProductName>DUMSM</ProductName>
     <PublisherName>TahsinTurab</PublisherName>
     <SuiteName>DUMSM</SuiteName>
-    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationRevision>5</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -131,6 +131,12 @@
     <Compile Include="Forms\DonationForm\UpdateGorabaDonationDetails.Designer.cs">
       <DependentUpon>UpdateGorabaDonationDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ExitControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ExitControl.Designer.cs">
+      <DependentUpon>ExitControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ExpenseForm\ExpenseDetailsCommon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +239,7 @@
     <Compile Include="Classes\MonthlyInformations.cs" />
     <Compile Include="Classes\Stuffs.cs" />
     <Compile Include="Classes\Teachers.cs" />
+    <Compile Include="UserdefineClasses\CloseForm.cs" />
     <Compile Include="UserdefineClasses\Conversion.cs" />
     <Compile Include="UserdefineClasses\CRUDOperation.cs" />
     <Compile Include="Forms\DashboardForm\Dashboard.cs">
@@ -367,6 +374,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DonorForm\DonorProfile.resx">
       <DependentUpon>DonorProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ExitControl.resx">
+      <DependentUpon>ExitControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ExpenseForm\Expense.resx">
       <DependentUpon>Expense.cs</DependentUpon>
