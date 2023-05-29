@@ -90,14 +90,14 @@ namespace DUMSM
         }
         private void Dashboard_Load(object sender, EventArgs e)
         {
-            var teachers = CRUDOperation.GetColumnValues("Teachers", "Id");
-            string teacherNumber = Conversion.EnNumber2BnNumber(teachers.Count.ToString());
+            //var teachers = CRUDOperation.GetColumnValues("Teachers", "Id");
+            //string teacherNumber = Conversion.EnNumber2BnNumber(teachers.Count.ToString());
 
-            TotalTeacher.Text = teacherNumber + " জন";
+            //TotalTeacher.Text = teacherNumber + " জন";
              
-            var donors = CRUDOperation.GetColumnValues("Donors", "Id");
-            var donerNumber = Conversion.EnNumber2BnNumber(donors.Count.ToString());
-            TotalDonar.Text = donerNumber + " জন";
+            //var donors = CRUDOperation.GetColumnValues("Donors", "Id");
+            //var donerNumber = Conversion.EnNumber2BnNumber(donors.Count.ToString());
+            //TotalDonar.Text = donerNumber + " জন";
 
             Display();
         }
@@ -203,6 +203,33 @@ namespace DUMSM
             var condition = $"Field = N'{type}'";
             var Total = TotalClass.TotalOfColumnWithCondition("GeneralIncome", "Ammount", condition);
             showGeneraltotal.Text = "৳ " +Conversion.EnNumber2BnNumber(Total.ToString());
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            object selectedItem = comboBox1.SelectedItem;
+            string type = ((string)selectedItem);
+            var condition = $"Field = N'{type}'";
+            var Total = TotalClass.TotalOfColumnWithCondition("GeneralExpense", "Ammount", condition);
+            showExpenseGeneraltotal.Text = "৳ " + Conversion.EnNumber2BnNumber(Total.ToString());
+        }
+
+        private void GorabaFieldtxt_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            object selectedItem = GorabaFieldtxt.SelectedItem;
+            string type = ((string)selectedItem);
+            var condition = $"Field = N'{type}'";
+            var Total = TotalClass.TotalOfColumnWithCondition("GorabaIncome", "Ammount", condition);
+            textBox2.Text = "৳ " + Conversion.EnNumber2BnNumber(Total.ToString());
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            object selectedItem = comboBox2.SelectedItem;
+            string type = ((string)selectedItem);
+            var condition = $"Field = N'{type}'";
+            var Total = TotalClass.TotalOfColumnWithCondition("GorabaExpense", "Ammount", condition);
+            textBox3.Text = "৳ " + Conversion.EnNumber2BnNumber(Total.ToString());
         }
     }
 }

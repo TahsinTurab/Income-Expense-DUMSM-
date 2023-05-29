@@ -52,16 +52,10 @@
             this.MonthlyIncomeGoraba = new System.Windows.Forms.TextBox();
             this.button15 = new System.Windows.Forms.Button();
             this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.tabControl3 = new System.Windows.Forms.TabControl();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button19 = new System.Windows.Forms.Button();
-            this.TotalDonar = new System.Windows.Forms.TextBox();
-            this.TotalTeacher = new System.Windows.Forms.TextBox();
-            this.button18 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.showExpenseGeneraltotal = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.showGeneraltotal = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
@@ -69,12 +63,18 @@
             this.button7 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button8 = new System.Windows.Forms.Button();
+            this.GorabaFieldtxt = new System.Windows.Forms.ComboBox();
+            this.button21 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabControl2.SuspendLayout();
-            this.tabControl3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,7 +119,7 @@
             this.tabPage1.Controls.Add(this.button7);
             this.tabPage1.Controls.Add(this.showGeneraltotal);
             this.tabPage1.Controls.Add(this.button6);
-            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.showExpenseGeneraltotal);
             this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.TotalExpenseGeneral);
@@ -193,6 +193,14 @@
             // tabPage2
             // 
             this.tabPage2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPage2.Controls.Add(this.button20);
+            this.tabPage2.Controls.Add(this.comboBox2);
+            this.tabPage2.Controls.Add(this.textBox3);
+            this.tabPage2.Controls.Add(this.button13);
+            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Controls.Add(this.button9);
+            this.tabPage2.Controls.Add(this.GorabaFieldtxt);
+            this.tabPage2.Controls.Add(this.button21);
             this.tabPage2.Controls.Add(this.button4);
             this.tabPage2.Controls.Add(this.TotalExpenseGoraba);
             this.tabPage2.Controls.Add(this.button2);
@@ -269,52 +277,6 @@
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
             // 
-            // tabControl3
-            // 
-            this.tabControl3.Controls.Add(this.tabPage4);
-            resources.ApplyResources(this.tabControl3, "tabControl3");
-            this.tabControl3.Name = "tabControl3";
-            this.tabControl3.SelectedIndex = 0;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage4.Controls.Add(this.button19);
-            this.tabPage4.Controls.Add(this.TotalDonar);
-            this.tabPage4.Controls.Add(this.TotalTeacher);
-            this.tabPage4.Controls.Add(this.button18);
-            resources.ApplyResources(this.tabPage4, "tabPage4");
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // button19
-            // 
-            this.button19.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button19.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button19, "button19");
-            this.button19.Name = "button19";
-            this.button19.UseVisualStyleBackColor = false;
-            // 
-            // TotalDonar
-            // 
-            resources.ApplyResources(this.TotalDonar, "TotalDonar");
-            this.TotalDonar.Name = "TotalDonar";
-            this.TotalDonar.ReadOnly = true;
-            // 
-            // TotalTeacher
-            // 
-            resources.ApplyResources(this.TotalTeacher, "TotalTeacher");
-            this.TotalTeacher.Name = "TotalTeacher";
-            this.TotalTeacher.ReadOnly = true;
-            // 
-            // button18
-            // 
-            this.button18.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button18.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button18, "button18");
-            this.button18.Name = "button18";
-            this.button18.UseVisualStyleBackColor = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -341,15 +303,15 @@
             this.button4.Name = "button4";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // showExpenseGeneraltotal
             // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
+            resources.ApplyResources(this.showExpenseGeneraltotal, "showExpenseGeneraltotal");
+            this.showExpenseGeneraltotal.Name = "showExpenseGeneraltotal";
+            this.showExpenseGeneraltotal.ReadOnly = true;
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button5.BackColor = System.Drawing.Color.RosyBrown;
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.button5, "button5");
             this.button5.Name = "button5";
@@ -363,7 +325,7 @@
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button6.BackColor = System.Drawing.Color.RosyBrown;
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.button6, "button6");
             this.button6.Name = "button6";
@@ -380,13 +342,14 @@
             resources.GetString("Fieldtxt.Items3"),
             resources.GetString("Fieldtxt.Items4"),
             resources.GetString("Fieldtxt.Items5"),
-            resources.GetString("Fieldtxt.Items6")});
+            resources.GetString("Fieldtxt.Items6"),
+            resources.GetString("Fieldtxt.Items7")});
             this.Fieldtxt.Name = "Fieldtxt";
             this.Fieldtxt.SelectedIndexChanged += new System.EventHandler(this.Fieldtxt_SelectedIndexChanged);
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button7.BackColor = System.Drawing.Color.RosyBrown;
             this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.button7, "button7");
             this.button7.Name = "button7";
@@ -410,20 +373,101 @@
             resources.GetString("comboBox1.Items10"),
             resources.GetString("comboBox1.Items11")});
             this.comboBox1.Name = "comboBox1";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button8
             // 
-            this.button8.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button8.BackColor = System.Drawing.Color.RosyBrown;
             this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.button8, "button8");
             this.button8.Name = "button8";
             this.button8.UseVisualStyleBackColor = false;
             // 
+            // GorabaFieldtxt
+            // 
+            resources.ApplyResources(this.GorabaFieldtxt, "GorabaFieldtxt");
+            this.GorabaFieldtxt.FormattingEnabled = true;
+            this.GorabaFieldtxt.Items.AddRange(new object[] {
+            resources.GetString("GorabaFieldtxt.Items"),
+            resources.GetString("GorabaFieldtxt.Items1"),
+            resources.GetString("GorabaFieldtxt.Items2"),
+            resources.GetString("GorabaFieldtxt.Items3"),
+            resources.GetString("GorabaFieldtxt.Items4"),
+            resources.GetString("GorabaFieldtxt.Items5"),
+            resources.GetString("GorabaFieldtxt.Items6"),
+            resources.GetString("GorabaFieldtxt.Items7"),
+            resources.GetString("GorabaFieldtxt.Items8")});
+            this.GorabaFieldtxt.Name = "GorabaFieldtxt";
+            this.GorabaFieldtxt.SelectedIndexChanged += new System.EventHandler(this.GorabaFieldtxt_SelectedIndexChanged);
+            // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.Color.RosyBrown;
+            this.button21.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button21, "button21");
+            this.button21.Name = "button21";
+            this.button21.UseVisualStyleBackColor = false;
+            // 
+            // textBox2
+            // 
+            resources.ApplyResources(this.textBox2, "textBox2");
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.RosyBrown;
+            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button9, "button9");
+            this.button9.Name = "button9";
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // textBox3
+            // 
+            resources.ApplyResources(this.textBox3, "textBox3");
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.RosyBrown;
+            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button13, "button13");
+            this.button13.Name = "button13";
+            this.button13.UseVisualStyleBackColor = false;
+            // 
+            // button20
+            // 
+            this.button20.BackColor = System.Drawing.Color.RosyBrown;
+            this.button20.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button20, "button20");
+            this.button20.Name = "button20";
+            this.button20.UseVisualStyleBackColor = false;
+            // 
+            // comboBox2
+            // 
+            resources.ApplyResources(this.comboBox2, "comboBox2");
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            resources.GetString("comboBox2.Items"),
+            resources.GetString("comboBox2.Items1"),
+            resources.GetString("comboBox2.Items2"),
+            resources.GetString("comboBox2.Items3"),
+            resources.GetString("comboBox2.Items4"),
+            resources.GetString("comboBox2.Items5"),
+            resources.GetString("comboBox2.Items6"),
+            resources.GetString("comboBox2.Items7"),
+            resources.GetString("comboBox2.Items8"),
+            resources.GetString("comboBox2.Items9"),
+            resources.GetString("comboBox2.Items10"),
+            resources.GetString("comboBox2.Items11")});
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
             // Dashboard
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.tabControl3);
             this.Controls.Add(this.tabControl2);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label2);
@@ -441,9 +485,6 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabControl2.ResumeLayout(false);
-            this.tabControl3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -471,19 +512,13 @@
         private System.Windows.Forms.TextBox MonthlyIncomeGoraba;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.TabControl tabControl2;
-        private System.Windows.Forms.TabControl tabControl3;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.TextBox TotalDonar;
-        private System.Windows.Forms.TextBox TotalTeacher;
-        private System.Windows.Forms.Button button18;
         private System.Windows.Forms.TextBox TotalExpenseGeneral;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox TotalExpenseGoraba;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox showGeneraltotal;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox showExpenseGeneraltotal;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
@@ -491,6 +526,14 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.ComboBox GorabaFieldtxt;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
 
