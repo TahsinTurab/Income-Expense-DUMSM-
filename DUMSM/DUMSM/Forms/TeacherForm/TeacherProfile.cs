@@ -118,15 +118,15 @@ namespace DUMSM
 
         private void TeacherProfile_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //if (e.CloseReason != CloseReason.ApplicationExitCall)
-            //{
-            //    e.Cancel = true; // Cancel the close operation
-            //    this.Hide(); // Hide the form instead of closing it
-            //}
-            //else
-            //{
-            //    Application.Exit();
-            //}
+            if (e.CloseReason != CloseReason.ApplicationExitCall)
+            {
+                e.Cancel = true; // Cancel the close operation
+                this.Hide(); // Hide the form instead of closing it
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
 
         private void ProfileDeleteBtn_Click(object sender, EventArgs e)

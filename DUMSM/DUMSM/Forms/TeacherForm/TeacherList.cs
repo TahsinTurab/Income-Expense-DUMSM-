@@ -143,7 +143,7 @@ namespace DUMSM
 
         private void TeacherList_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //Application.Exit();
+            Application.Exit();
         }
     }
 }

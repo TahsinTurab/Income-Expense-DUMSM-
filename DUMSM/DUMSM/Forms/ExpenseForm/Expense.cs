@@ -225,7 +225,7 @@ namespace DUMSM
 
         private void Expense_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //Application.Exit();
+            Application.Exit();
         }
     }
 }

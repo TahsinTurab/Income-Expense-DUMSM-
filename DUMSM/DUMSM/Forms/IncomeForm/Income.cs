@@ -269,7 +269,7 @@ namespace DUMSM
 
         private void Income_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //Application.Exit();
+            Application.Exit();
         }
     }
 }

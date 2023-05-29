@@ -123,7 +123,7 @@ namespace DUMSM.Forms.DonationForm
 
         private void GorabaDonationList_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //Application.Exit();
+            Application.Exit();
         }
     }
 }

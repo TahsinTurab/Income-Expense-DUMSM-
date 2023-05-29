@@ -292,7 +292,7 @@ namespace DUMSM
 
         private void Teacher_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //Application.Exit();
+            Application.Exit();
         }
     }
 }

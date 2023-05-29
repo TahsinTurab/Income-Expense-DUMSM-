@@ -41,9 +41,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Donordgv = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.DeleteAllbtn = new System.Windows.Forms.Button();
             this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SlipNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,6 +51,9 @@
             this.RegisterDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MonthName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Year = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.DeleteAllbtn = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Donordgv)).BeginInit();
@@ -164,7 +164,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(952, 382);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "গোরাবা অনুদানের বিস্তারিত বিবরণ";
+            this.tabPage1.Text = "গোরাবা জমার বিস্তারিত বিবরণ";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // Donordgv
@@ -198,48 +198,6 @@
             this.Donordgv.Size = new System.Drawing.Size(946, 376);
             this.Donordgv.TabIndex = 0;
             this.Donordgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Donordgv_CellContentClick);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.RosyBrown;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button2.Location = new System.Drawing.Point(783, 594);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(182, 41);
-            this.button2.TabIndex = 91;
-            this.button2.Text = "ব্যাকআপ ";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = global::DUMSM.Properties.Resources.logo1;
-            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(165, 12);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(116, 83);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 46;
-            this.pictureBox1.TabStop = false;
-            // 
-            // DeleteAllbtn
-            // 
-            this.DeleteAllbtn.BackColor = System.Drawing.Color.RosyBrown;
-            this.DeleteAllbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DeleteAllbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.DeleteAllbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.DeleteAllbtn.Location = new System.Drawing.Point(532, 594);
-            this.DeleteAllbtn.Name = "DeleteAllbtn";
-            this.DeleteAllbtn.Size = new System.Drawing.Size(245, 41);
-            this.DeleteAllbtn.TabIndex = 96;
-            this.DeleteAllbtn.Text = "সকল তথ্য ডিলিট করুন";
-            this.DeleteAllbtn.UseVisualStyleBackColor = false;
-            this.DeleteAllbtn.Click += new System.EventHandler(this.DeleteAllbtn_Click);
             // 
             // Delete
             // 
@@ -312,6 +270,48 @@
             this.Year.DataPropertyName = "Year";
             this.Year.HeaderText = "বছর";
             this.Year.Name = "Year";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.RosyBrown;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button2.Location = new System.Drawing.Point(783, 594);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(182, 41);
+            this.button2.TabIndex = 91;
+            this.button2.Text = "ব্যাকআপ ";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Image = global::DUMSM.Properties.Resources.logo1;
+            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pictureBox1.Location = new System.Drawing.Point(165, 12);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(116, 83);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 46;
+            this.pictureBox1.TabStop = false;
+            // 
+            // DeleteAllbtn
+            // 
+            this.DeleteAllbtn.BackColor = System.Drawing.Color.RosyBrown;
+            this.DeleteAllbtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DeleteAllbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.DeleteAllbtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.DeleteAllbtn.Location = new System.Drawing.Point(532, 594);
+            this.DeleteAllbtn.Name = "DeleteAllbtn";
+            this.DeleteAllbtn.Size = new System.Drawing.Size(245, 41);
+            this.DeleteAllbtn.TabIndex = 96;
+            this.DeleteAllbtn.Text = "সকল তথ্য ডিলিট করুন";
+            this.DeleteAllbtn.UseVisualStyleBackColor = false;
+            this.DeleteAllbtn.Click += new System.EventHandler(this.DeleteAllbtn_Click);
             // 
             // IncomeDetailsInsolvent
             // 

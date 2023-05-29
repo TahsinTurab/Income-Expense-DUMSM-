@@ -29,7 +29,7 @@ namespace DUMSM.Forms.Report
 
         private void GenerateReport_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //Application.Exit();
+            Application.Exit();
         }
 
         public Dictionary<string, int> MonthList()

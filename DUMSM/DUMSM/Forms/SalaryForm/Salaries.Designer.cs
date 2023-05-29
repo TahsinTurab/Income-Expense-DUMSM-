@@ -30,9 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Salaries));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.donorsTableAdapter = new DUMSM.DUMSMDataBaseDataSetTableAdapters.DonorsTableAdapter();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -67,26 +66,6 @@
             this.donorsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dUMSMDataBaseDataSet = new DUMSM.DUMSMDataBaseDataSet();
             this.Donordgv = new System.Windows.Forms.DataGridView();
-            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EmployeeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EmployeeType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MonthName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BaseSalary = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TotalPresent = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TotalAbsent = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TotalLeave = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TAmmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ExtraHonorium = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Due = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Bonous = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Advance = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Loan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProvidentFund = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NetPayableAmmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PaymentDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IsPaid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Backbtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -107,6 +86,25 @@
             this.searchNametxt = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.Searchbtn = new System.Windows.Forms.Button();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EmployeeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EmployeeType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MonthName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BaseSalary = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TotalPresent = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TotalAbsent = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TotalLeave = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TAmmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ExtraHonorium = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Due = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Bonous = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Advance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Loan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProvidentFund = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NetPayableAmmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PaymentDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IsPaid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.donorsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dUMSMDataBaseDataSet)).BeginInit();
@@ -455,18 +453,17 @@
             // 
             this.Donordgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.Donordgv.BackgroundColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Donordgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Donordgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.Donordgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Donordgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Delete,
-            this.Update,
             this.id,
             this.EmployeeName,
             this.EmployeeType,
@@ -492,147 +489,6 @@
             this.Donordgv.Size = new System.Drawing.Size(946, 216);
             this.Donordgv.TabIndex = 0;
             this.Donordgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Donordgv_CellContentClick);
-            // 
-            // Delete
-            // 
-            this.Delete.DataPropertyName = "Delete";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Transparent;
-            this.Delete.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Delete.HeaderText = "ডিলিট";
-            this.Delete.Name = "Delete";
-            this.Delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Delete.Text = "ডিলিট";
-            this.Delete.UseColumnTextForButtonValue = true;
-            this.Delete.Width = 70;
-            // 
-            // Update
-            // 
-            this.Update.DataPropertyName = "Update";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Update.DefaultCellStyle = dataGridViewCellStyle6;
-            this.Update.HeaderText = "আপডেট";
-            this.Update.Name = "Update";
-            this.Update.Text = "আপডেট";
-            this.Update.UseColumnTextForButtonValue = true;
-            this.Update.Width = 70;
-            // 
-            // id
-            // 
-            this.id.DataPropertyName = "Id";
-            this.id.HeaderText = "আইডি ";
-            this.id.Name = "id";
-            this.id.Width = 60;
-            // 
-            // EmployeeName
-            // 
-            this.EmployeeName.DataPropertyName = "EmployeeName";
-            this.EmployeeName.HeaderText = "নাম ";
-            this.EmployeeName.Name = "EmployeeName";
-            this.EmployeeName.Width = 150;
-            // 
-            // EmployeeType
-            // 
-            this.EmployeeType.DataPropertyName = "EmployeeType";
-            this.EmployeeType.HeaderText = "ধরণ";
-            this.EmployeeType.Name = "EmployeeType";
-            // 
-            // MonthName
-            // 
-            this.MonthName.DataPropertyName = "MonthName";
-            this.MonthName.HeaderText = "মাসের নাম";
-            this.MonthName.Name = "MonthName";
-            this.MonthName.Width = 150;
-            // 
-            // BaseSalary
-            // 
-            this.BaseSalary.DataPropertyName = "BaseSalary";
-            this.BaseSalary.HeaderText = "মুল বেতন";
-            this.BaseSalary.Name = "BaseSalary";
-            // 
-            // TotalPresent
-            // 
-            this.TotalPresent.DataPropertyName = "TotalPresent";
-            this.TotalPresent.HeaderText = "উপস্থিতি";
-            this.TotalPresent.Name = "TotalPresent";
-            this.TotalPresent.Width = 80;
-            // 
-            // TotalAbsent
-            // 
-            this.TotalAbsent.DataPropertyName = "TotalAbsent";
-            this.TotalAbsent.HeaderText = "অনুপস্থিতি";
-            this.TotalAbsent.Name = "TotalAbsent";
-            this.TotalAbsent.Width = 80;
-            // 
-            // TotalLeave
-            // 
-            this.TotalLeave.DataPropertyName = "TotalLeave";
-            this.TotalLeave.HeaderText = "ছুটি";
-            this.TotalLeave.Name = "TotalLeave";
-            this.TotalLeave.Width = 50;
-            // 
-            // TAmmount
-            // 
-            this.TAmmount.DataPropertyName = "TotalAmmount";
-            this.TAmmount.HeaderText = "চলতি মাসের প্রাপ্ত বেতন ";
-            this.TAmmount.Name = "TAmmount";
-            // 
-            // ExtraHonorium
-            // 
-            this.ExtraHonorium.DataPropertyName = "ExtraHonorium";
-            this.ExtraHonorium.HeaderText = "অতিরিক্ত সম্মানী ";
-            this.ExtraHonorium.Name = "ExtraHonorium";
-            // 
-            // Due
-            // 
-            this.Due.DataPropertyName = "Due";
-            this.Due.HeaderText = "বকেয়া";
-            this.Due.Name = "Due";
-            // 
-            // Bonous
-            // 
-            this.Bonous.DataPropertyName = "Bonous";
-            this.Bonous.HeaderText = "বোনাস";
-            this.Bonous.Name = "Bonous";
-            // 
-            // Advance
-            // 
-            this.Advance.DataPropertyName = "Advance";
-            this.Advance.HeaderText = "অগ্রীম";
-            this.Advance.Name = "Advance";
-            // 
-            // Loan
-            // 
-            this.Loan.DataPropertyName = "Loan";
-            this.Loan.HeaderText = "ঋণ কর্তণ ";
-            this.Loan.Name = "Loan";
-            // 
-            // ProvidentFund
-            // 
-            this.ProvidentFund.DataPropertyName = "ProvidentFund";
-            this.ProvidentFund.HeaderText = "প্রভিডেন্ট ফান্ড";
-            this.ProvidentFund.Name = "ProvidentFund";
-            // 
-            // NetPayableAmmount
-            // 
-            this.NetPayableAmmount.DataPropertyName = "NetPayableAmmount";
-            this.NetPayableAmmount.HeaderText = "প্রাপ্ত বেতন ";
-            this.NetPayableAmmount.Name = "NetPayableAmmount";
-            // 
-            // PaymentDate
-            // 
-            this.PaymentDate.DataPropertyName = "PaymentDate";
-            this.PaymentDate.HeaderText = "পরিশোধের তারিখ";
-            this.PaymentDate.Name = "PaymentDate";
-            // 
-            // IsPaid
-            // 
-            this.IsPaid.DataPropertyName = "IsPaid";
-            this.IsPaid.HeaderText = "পরিশোধ";
-            this.IsPaid.Name = "IsPaid";
             // 
             // Backbtn
             // 
@@ -871,6 +727,134 @@
             this.Searchbtn.UseVisualStyleBackColor = false;
             this.Searchbtn.Click += new System.EventHandler(this.Searchbtn_Click);
             // 
+            // Delete
+            // 
+            this.Delete.DataPropertyName = "Delete";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Transparent;
+            this.Delete.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Delete.HeaderText = "ডিলিট";
+            this.Delete.Name = "Delete";
+            this.Delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Delete.Text = "ডিলিট";
+            this.Delete.UseColumnTextForButtonValue = true;
+            this.Delete.Width = 70;
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "Id";
+            this.id.HeaderText = "আইডি ";
+            this.id.Name = "id";
+            this.id.Width = 60;
+            // 
+            // EmployeeName
+            // 
+            this.EmployeeName.DataPropertyName = "EmployeeName";
+            this.EmployeeName.HeaderText = "নাম ";
+            this.EmployeeName.Name = "EmployeeName";
+            this.EmployeeName.Width = 150;
+            // 
+            // EmployeeType
+            // 
+            this.EmployeeType.DataPropertyName = "EmployeeType";
+            this.EmployeeType.HeaderText = "ধরণ";
+            this.EmployeeType.Name = "EmployeeType";
+            // 
+            // MonthName
+            // 
+            this.MonthName.DataPropertyName = "MonthName";
+            this.MonthName.HeaderText = "মাসের নাম";
+            this.MonthName.Name = "MonthName";
+            this.MonthName.Width = 150;
+            // 
+            // BaseSalary
+            // 
+            this.BaseSalary.DataPropertyName = "BaseSalary";
+            this.BaseSalary.HeaderText = "মুল বেতন";
+            this.BaseSalary.Name = "BaseSalary";
+            // 
+            // TotalPresent
+            // 
+            this.TotalPresent.DataPropertyName = "TotalPresent";
+            this.TotalPresent.HeaderText = "উপস্থিতি";
+            this.TotalPresent.Name = "TotalPresent";
+            this.TotalPresent.Width = 80;
+            // 
+            // TotalAbsent
+            // 
+            this.TotalAbsent.DataPropertyName = "TotalAbsent";
+            this.TotalAbsent.HeaderText = "অনুপস্থিতি";
+            this.TotalAbsent.Name = "TotalAbsent";
+            this.TotalAbsent.Width = 80;
+            // 
+            // TotalLeave
+            // 
+            this.TotalLeave.DataPropertyName = "TotalLeave";
+            this.TotalLeave.HeaderText = "ছুটি";
+            this.TotalLeave.Name = "TotalLeave";
+            this.TotalLeave.Width = 50;
+            // 
+            // TAmmount
+            // 
+            this.TAmmount.DataPropertyName = "TotalAmmount";
+            this.TAmmount.HeaderText = "চলতি মাসের প্রাপ্ত বেতন ";
+            this.TAmmount.Name = "TAmmount";
+            // 
+            // ExtraHonorium
+            // 
+            this.ExtraHonorium.DataPropertyName = "ExtraHonorium";
+            this.ExtraHonorium.HeaderText = "অতিরিক্ত সম্মানী ";
+            this.ExtraHonorium.Name = "ExtraHonorium";
+            // 
+            // Due
+            // 
+            this.Due.DataPropertyName = "Due";
+            this.Due.HeaderText = "বকেয়া";
+            this.Due.Name = "Due";
+            // 
+            // Bonous
+            // 
+            this.Bonous.DataPropertyName = "Bonous";
+            this.Bonous.HeaderText = "বোনাস";
+            this.Bonous.Name = "Bonous";
+            // 
+            // Advance
+            // 
+            this.Advance.DataPropertyName = "Advance";
+            this.Advance.HeaderText = "অগ্রীম";
+            this.Advance.Name = "Advance";
+            // 
+            // Loan
+            // 
+            this.Loan.DataPropertyName = "Loan";
+            this.Loan.HeaderText = "ঋণ কর্তণ ";
+            this.Loan.Name = "Loan";
+            // 
+            // ProvidentFund
+            // 
+            this.ProvidentFund.DataPropertyName = "ProvidentFund";
+            this.ProvidentFund.HeaderText = "প্রভিডেন্ট ফান্ড";
+            this.ProvidentFund.Name = "ProvidentFund";
+            // 
+            // NetPayableAmmount
+            // 
+            this.NetPayableAmmount.DataPropertyName = "NetPayableAmmount";
+            this.NetPayableAmmount.HeaderText = "প্রাপ্ত বেতন ";
+            this.NetPayableAmmount.Name = "NetPayableAmmount";
+            // 
+            // PaymentDate
+            // 
+            this.PaymentDate.DataPropertyName = "PaymentDate";
+            this.PaymentDate.HeaderText = "পরিশোধের তারিখ";
+            this.PaymentDate.Name = "PaymentDate";
+            // 
+            // IsPaid
+            // 
+            this.IsPaid.DataPropertyName = "IsPaid";
+            this.IsPaid.HeaderText = "পরিশোধ";
+            this.IsPaid.Name = "IsPaid";
+            // 
             // Salaries
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -961,8 +945,10 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.TextBox TotalAmmount;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox searchNametxt;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button Searchbtn;
         private System.Windows.Forms.DataGridViewButtonColumn Delete;
-        private System.Windows.Forms.DataGridViewButtonColumn Update;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeName;
         private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeType;
@@ -981,8 +967,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NetPayableAmmount;
         private System.Windows.Forms.DataGridViewTextBoxColumn PaymentDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn IsPaid;
-        private System.Windows.Forms.TextBox searchNametxt;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button Searchbtn;
     }
 }

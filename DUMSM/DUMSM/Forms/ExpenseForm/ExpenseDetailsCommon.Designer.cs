@@ -35,14 +35,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.Searchbtn = new System.Windows.Forms.Button();
             this.Donordgv = new System.Windows.Forms.DataGridView();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button35 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VoucherNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,6 +43,14 @@
             this.Ammount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MonthName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Year = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button35 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.Donordgv)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -133,6 +133,67 @@
             this.Donordgv.TabIndex = 0;
             this.Donordgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Donordgv_CellContentClick);
             // 
+            // Delete
+            // 
+            this.Delete.DataPropertyName = "Delete";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Transparent;
+            this.Delete.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Delete.HeaderText = "ডিলিট";
+            this.Delete.Name = "Delete";
+            this.Delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Delete.Text = "ডিলিট";
+            this.Delete.UseColumnTextForButtonValue = true;
+            this.Delete.Width = 70;
+            // 
+            // id
+            // 
+            this.id.DataPropertyName = "Id";
+            this.id.HeaderText = "আইডি ";
+            this.id.Name = "id";
+            this.id.Width = 60;
+            // 
+            // VoucherNumber
+            // 
+            this.VoucherNumber.DataPropertyName = "VoucherNumber";
+            this.VoucherNumber.HeaderText = "ভাউচার নাম্বার";
+            this.VoucherNumber.Name = "VoucherNumber";
+            this.VoucherNumber.Width = 150;
+            // 
+            // ExpenseDate
+            // 
+            this.ExpenseDate.DataPropertyName = "ExpenseDate";
+            this.ExpenseDate.HeaderText = "তারিখ";
+            this.ExpenseDate.Name = "ExpenseDate";
+            this.ExpenseDate.Width = 140;
+            // 
+            // Field
+            // 
+            this.Field.DataPropertyName = "Field";
+            this.Field.HeaderText = "খরচের খাত";
+            this.Field.Name = "Field";
+            this.Field.Width = 150;
+            // 
+            // Ammount
+            // 
+            this.Ammount.DataPropertyName = "Ammount";
+            this.Ammount.HeaderText = "খরচের পরিমাণ";
+            this.Ammount.Name = "Ammount";
+            this.Ammount.Width = 150;
+            // 
+            // MonthName
+            // 
+            this.MonthName.DataPropertyName = "MonthName";
+            this.MonthName.HeaderText = "মাস";
+            this.MonthName.Name = "MonthName";
+            // 
+            // Year
+            // 
+            this.Year.DataPropertyName = "Year";
+            this.Year.HeaderText = "বছর";
+            this.Year.Name = "Year";
+            // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.Donordgv);
@@ -142,7 +203,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(952, 382);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "সাধারণ অনুদানের বিস্তারিত বিবরণ";
+            this.tabPage1.Text = "সাধারণ খরচের বিস্তারিত বিবরণ";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tabControl1
@@ -235,67 +296,6 @@
             this.textBox1.Size = new System.Drawing.Size(1390, 107);
             this.textBox1.TabIndex = 91;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // Delete
-            // 
-            this.Delete.DataPropertyName = "Delete";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Transparent;
-            this.Delete.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Delete.HeaderText = "ডিলিট";
-            this.Delete.Name = "Delete";
-            this.Delete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Delete.Text = "ডিলিট";
-            this.Delete.UseColumnTextForButtonValue = true;
-            this.Delete.Width = 70;
-            // 
-            // id
-            // 
-            this.id.DataPropertyName = "Id";
-            this.id.HeaderText = "আইডি ";
-            this.id.Name = "id";
-            this.id.Width = 60;
-            // 
-            // VoucherNumber
-            // 
-            this.VoucherNumber.DataPropertyName = "VoucherNumber";
-            this.VoucherNumber.HeaderText = "ভাউচার নাম্বার";
-            this.VoucherNumber.Name = "VoucherNumber";
-            this.VoucherNumber.Width = 150;
-            // 
-            // ExpenseDate
-            // 
-            this.ExpenseDate.DataPropertyName = "ExpenseDate";
-            this.ExpenseDate.HeaderText = "তারিখ";
-            this.ExpenseDate.Name = "ExpenseDate";
-            this.ExpenseDate.Width = 140;
-            // 
-            // Field
-            // 
-            this.Field.DataPropertyName = "Field";
-            this.Field.HeaderText = "খরচের খাত";
-            this.Field.Name = "Field";
-            this.Field.Width = 150;
-            // 
-            // Ammount
-            // 
-            this.Ammount.DataPropertyName = "Ammount";
-            this.Ammount.HeaderText = "খরচের পরিমাণ";
-            this.Ammount.Name = "Ammount";
-            this.Ammount.Width = 150;
-            // 
-            // MonthName
-            // 
-            this.MonthName.DataPropertyName = "MonthName";
-            this.MonthName.HeaderText = "মাস";
-            this.MonthName.Name = "MonthName";
-            // 
-            // Year
-            // 
-            this.Year.DataPropertyName = "Year";
-            this.Year.HeaderText = "বছর";
-            this.Year.Name = "Year";
             // 
             // ExpenseDetailsCommon
             // 

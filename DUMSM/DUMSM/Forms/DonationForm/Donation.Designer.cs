@@ -129,7 +129,7 @@
             this.button37.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button37.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.button37.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button37.Location = new System.Drawing.Point(610, 470);
+            this.button37.Location = new System.Drawing.Point(607, 466);
             this.button37.Name = "button37";
             this.button37.Size = new System.Drawing.Size(368, 41);
             this.button37.TabIndex = 59;

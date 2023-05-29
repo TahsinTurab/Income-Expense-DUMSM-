@@ -159,7 +159,7 @@ namespace DUMSM
 
         private void IncomeDetailsCommon_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //Application.Exit();
+            Application.Exit();
         }
     }
 }
