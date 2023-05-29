@@ -107,6 +107,18 @@
     <Compile Include="Forms\backup.Designer.cs">
       <DependentUpon>backup.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\DashboardForm\GeneralFIeldDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DashboardForm\GeneralFIeldDetails.Designer.cs">
+      <DependentUpon>GeneralFIeldDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DashboardForm\GorabaFieldDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DashboardForm\GorabaFieldDetails.Designer.cs">
+      <DependentUpon>GorabaFieldDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DonationForm\GeneralDonationList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -350,6 +362,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DashboardForm\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DashboardForm\GeneralFIeldDetails.resx">
+      <DependentUpon>GeneralFIeldDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DonationForm\Donation.resx">
       <DependentUpon>Donation.cs</DependentUpon>

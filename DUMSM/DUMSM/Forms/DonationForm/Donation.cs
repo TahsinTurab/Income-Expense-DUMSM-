@@ -164,9 +164,10 @@ namespace DUMSM
                 gorabaDonation.DonationDate = GorabaRegisterDate.Value.ToString("dd/MM/yyyy");
                 gorabaDonation.DonationType = "গোরাবা অনুদান";
 
-                object selectedItem = GorabaFieldtxt.SelectedItem;
-                string type = ((string)selectedItem);
-                gorabaDonation.DonationField = ((string)selectedItem);
+                //object selectedItem = GorabaFieldtxt.SelectedItem;
+                //string type = ((string)selectedItem);
+                //gorabaDonation.DonationField = ((string)selectedItem);
+                gorabaDonation.DonationField = GorabaFieldtxt.Text;
 
                 object selectedDonor = GorabaDonorComboBox.SelectedItem;
                 //string type = ((string)selectedItem);

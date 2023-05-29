@@ -51,7 +51,6 @@
             this.button14 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.GorabaFieldtxt = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
             this.GorabaDonorComboBox = new System.Windows.Forms.ComboBox();
             this.GorabaResetBtn = new System.Windows.Forms.Button();
@@ -63,6 +62,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.GorabaFieldtxt = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl3.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -294,7 +294,7 @@
             this.Fieldtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Fieldtxt.FormattingEnabled = true;
             this.Fieldtxt.Items.AddRange(new object[] {
-            "সাধারণ অনুদান ",
+            "অনুদান ",
             "নির্মাণ ও মেরামত",
             "লাইব্রেরী",
             "অনুষ্ঠান / ইফতার  ",
@@ -367,21 +367,6 @@
             this.tabPage1.Size = new System.Drawing.Size(368, 300);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "গোরাবা অনুদান নিবন্ধন    ";
-            // 
-            // GorabaFieldtxt
-            // 
-            this.GorabaFieldtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GorabaFieldtxt.FormattingEnabled = true;
-            this.GorabaFieldtxt.Items.AddRange(new object[] {
-            "গোরাবা অনুদান ",
-            "নির্মাণ ও মেরামত",
-            "লাইব্রেরী",
-            "অনুষ্ঠান / ইফতার  ",
-            "বিবিধ "});
-            this.GorabaFieldtxt.Location = new System.Drawing.Point(187, 154);
-            this.GorabaFieldtxt.Name = "GorabaFieldtxt";
-            this.GorabaFieldtxt.Size = new System.Drawing.Size(172, 32);
-            this.GorabaFieldtxt.TabIndex = 35;
             // 
             // button3
             // 
@@ -514,6 +499,16 @@
             this.button7.Text = "জমাদানের তারিখ";
             this.button7.UseVisualStyleBackColor = false;
             // 
+            // GorabaFieldtxt
+            // 
+            this.GorabaFieldtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.GorabaFieldtxt.Location = new System.Drawing.Point(187, 155);
+            this.GorabaFieldtxt.Name = "GorabaFieldtxt";
+            this.GorabaFieldtxt.ReadOnly = true;
+            this.GorabaFieldtxt.Size = new System.Drawing.Size(172, 29);
+            this.GorabaFieldtxt.TabIndex = 35;
+            this.GorabaFieldtxt.Text = "অনুদান";
+            // 
             // Donation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -579,6 +574,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ComboBox Fieldtxt;
-        private System.Windows.Forms.ComboBox GorabaFieldtxt;
+        private System.Windows.Forms.TextBox GorabaFieldtxt;
     }
 }

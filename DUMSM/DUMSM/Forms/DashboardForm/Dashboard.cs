@@ -190,5 +190,19 @@ namespace DUMSM
         {
 
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Fieldtxt_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            object selectedItem = Fieldtxt.SelectedItem;
+            string type = ((string)selectedItem);
+            var condition = $"Field = N'{type}'";
+            var Total = TotalClass.TotalOfColumnWithCondition("GeneralIncome", "Ammount", condition);
+            showGeneraltotal.Text = "৳ " +Conversion.EnNumber2BnNumber(Total.ToString());
+        }
     }
 }
