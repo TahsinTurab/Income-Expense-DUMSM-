@@ -48,6 +48,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button19 = new System.Windows.Forms.Button();
+            this.ProfileDeleteBtn = new System.Windows.Forms.Button();
             this.tabControl3.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -283,19 +284,34 @@
             this.button19.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.button19.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button19.Location = new System.Drawing.Point(251, 489);
+            this.button19.Location = new System.Drawing.Point(591, 489);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(706, 41);
+            this.button19.Size = new System.Drawing.Size(366, 41);
             this.button19.TabIndex = 63;
             this.button19.Text = "আপডেট করুন";
             this.button19.UseVisualStyleBackColor = false;
             this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
+            // ProfileDeleteBtn
+            // 
+            this.ProfileDeleteBtn.BackColor = System.Drawing.Color.RosyBrown;
+            this.ProfileDeleteBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ProfileDeleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.ProfileDeleteBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.ProfileDeleteBtn.Location = new System.Drawing.Point(251, 489);
+            this.ProfileDeleteBtn.Name = "ProfileDeleteBtn";
+            this.ProfileDeleteBtn.Size = new System.Drawing.Size(334, 41);
+            this.ProfileDeleteBtn.TabIndex = 64;
+            this.ProfileDeleteBtn.Text = "প্রোফাইল ডিলিট করুন";
+            this.ProfileDeleteBtn.UseVisualStyleBackColor = false;
+            this.ProfileDeleteBtn.Click += new System.EventHandler(this.ProfileDeleteBtn_Click);
             // 
             // DonorProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.ProfileDeleteBtn);
             this.Controls.Add(this.button19);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tabControl3);
@@ -340,5 +356,6 @@
         private System.Windows.Forms.TextBox DonationTypetxt;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button ProfileDeleteBtn;
     }
 }

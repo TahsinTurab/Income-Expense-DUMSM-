@@ -233,39 +233,42 @@
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="comboBox1.Items" xml:space="preserve">
-    <value>বোর্ডিং</value>
+    <value>বেতন</value>
   </data>
   <data name="comboBox1.Items1" xml:space="preserve">
-    <value>নির্মাণ ও মেরামত</value>
+    <value>বোর্ডিং</value>
   </data>
   <data name="comboBox1.Items2" xml:space="preserve">
-    <value>লাইব্রেরী</value>
+    <value>নির্মাণ ও মেরামত</value>
   </data>
   <data name="comboBox1.Items3" xml:space="preserve">
-    <value>আসবাব পত্র</value>
+    <value>লাইব্রেরী</value>
   </data>
   <data name="comboBox1.Items4" xml:space="preserve">
-    <value>অনুষ্ঠান / ইফতার</value>
+    <value>আসবাব পত্র</value>
   </data>
   <data name="comboBox1.Items5" xml:space="preserve">
-    <value>সম্মানী/অডিট/বোর্ড ফি</value>
+    <value>অনুষ্ঠান / ইফতার</value>
   </data>
   <data name="comboBox1.Items6" xml:space="preserve">
-    <value>ফোন</value>
+    <value>সম্মানী/অডিট/বোর্ড ফি</value>
   </data>
   <data name="comboBox1.Items7" xml:space="preserve">
-    <value>পানি, বিদ্যুৎ ও গ্যাস</value>
+    <value>ফোন</value>
   </data>
   <data name="comboBox1.Items8" xml:space="preserve">
-    <value>ছাপা ও স্টেশনারী</value>
+    <value>পানি, বিদ্যুৎ ও গ্যাস</value>
   </data>
   <data name="comboBox1.Items9" xml:space="preserve">
-    <value>যাতায়াত</value>
+    <value>ছাপা ও স্টেশনারী</value>
   </data>
   <data name="comboBox1.Items10" xml:space="preserve">
-    <value>ঋণ পরিশোধ  </value>
+    <value>যাতায়াত</value>
   </data>
   <data name="comboBox1.Items11" xml:space="preserve">
+    <value>ঋণ পরিশোধ  </value>
+  </data>
+  <data name="comboBox1.Items12" xml:space="preserve">
     <value>বিবিধ </value>
   </data>
   <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
@@ -2590,9 +2593,6 @@
         AAAAAAL/////////////////////////////////////////////////////////////////////////
         //////////////////////////////////8=
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>7, 6, 7, 6</value>

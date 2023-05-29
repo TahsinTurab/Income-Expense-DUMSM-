@@ -34,6 +34,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.Fieldtxt = new System.Windows.Forms.ComboBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.showGeneraltotal = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.showExpenseGeneraltotal = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.TotalExpenseGeneral = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.TotalGeneral = new System.Windows.Forms.TextBox();
@@ -43,6 +52,15 @@
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button20 = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button13 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.GorabaFieldtxt = new System.Windows.Forms.ComboBox();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.TotalExpenseGoraba = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.TotalGoraba = new System.Windows.Forms.TextBox();
@@ -53,24 +71,6 @@
             this.button15 = new System.Windows.Forms.Button();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.showExpenseGeneraltotal = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.showGeneraltotal = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.Fieldtxt = new System.Windows.Forms.ComboBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.GorabaFieldtxt = new System.Windows.Forms.ComboBox();
-            this.button21 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -131,6 +131,95 @@
             this.tabPage1.Controls.Add(this.button11);
             this.tabPage1.Controls.Add(this.button10);
             this.tabPage1.Name = "tabPage1";
+            // 
+            // comboBox1
+            // 
+            resources.ApplyResources(this.comboBox1, "comboBox1");
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            resources.GetString("comboBox1.Items"),
+            resources.GetString("comboBox1.Items1"),
+            resources.GetString("comboBox1.Items2"),
+            resources.GetString("comboBox1.Items3"),
+            resources.GetString("comboBox1.Items4"),
+            resources.GetString("comboBox1.Items5"),
+            resources.GetString("comboBox1.Items6"),
+            resources.GetString("comboBox1.Items7"),
+            resources.GetString("comboBox1.Items8"),
+            resources.GetString("comboBox1.Items9"),
+            resources.GetString("comboBox1.Items10"),
+            resources.GetString("comboBox1.Items11"),
+            resources.GetString("comboBox1.Items12")});
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.RosyBrown;
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button8, "button8");
+            this.button8.Name = "button8";
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // Fieldtxt
+            // 
+            resources.ApplyResources(this.Fieldtxt, "Fieldtxt");
+            this.Fieldtxt.FormattingEnabled = true;
+            this.Fieldtxt.Items.AddRange(new object[] {
+            resources.GetString("Fieldtxt.Items"),
+            resources.GetString("Fieldtxt.Items1"),
+            resources.GetString("Fieldtxt.Items2"),
+            resources.GetString("Fieldtxt.Items3"),
+            resources.GetString("Fieldtxt.Items4"),
+            resources.GetString("Fieldtxt.Items5"),
+            resources.GetString("Fieldtxt.Items6"),
+            resources.GetString("Fieldtxt.Items7")});
+            this.Fieldtxt.Name = "Fieldtxt";
+            this.Fieldtxt.SelectedIndexChanged += new System.EventHandler(this.Fieldtxt_SelectedIndexChanged);
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.RosyBrown;
+            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button7, "button7");
+            this.button7.Name = "button7";
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // showGeneraltotal
+            // 
+            resources.ApplyResources(this.showGeneraltotal, "showGeneraltotal");
+            this.showGeneraltotal.Name = "showGeneraltotal";
+            this.showGeneraltotal.ReadOnly = true;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.RosyBrown;
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button6, "button6");
+            this.button6.Name = "button6";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // showExpenseGeneraltotal
+            // 
+            resources.ApplyResources(this.showExpenseGeneraltotal, "showExpenseGeneraltotal");
+            this.showExpenseGeneraltotal.Name = "showExpenseGeneraltotal";
+            this.showExpenseGeneraltotal.ReadOnly = true;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.RosyBrown;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button5, "button5");
+            this.button5.Name = "button5";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.RosyBrown;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // TotalExpenseGeneral
             // 
@@ -214,6 +303,95 @@
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // button20
+            // 
+            this.button20.BackColor = System.Drawing.Color.RosyBrown;
+            this.button20.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button20, "button20");
+            this.button20.Name = "button20";
+            this.button20.UseVisualStyleBackColor = false;
+            // 
+            // comboBox2
+            // 
+            resources.ApplyResources(this.comboBox2, "comboBox2");
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            resources.GetString("comboBox2.Items"),
+            resources.GetString("comboBox2.Items1"),
+            resources.GetString("comboBox2.Items2"),
+            resources.GetString("comboBox2.Items3"),
+            resources.GetString("comboBox2.Items4"),
+            resources.GetString("comboBox2.Items5"),
+            resources.GetString("comboBox2.Items6"),
+            resources.GetString("comboBox2.Items7"),
+            resources.GetString("comboBox2.Items8"),
+            resources.GetString("comboBox2.Items9"),
+            resources.GetString("comboBox2.Items10"),
+            resources.GetString("comboBox2.Items11")});
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // textBox3
+            // 
+            resources.ApplyResources(this.textBox3, "textBox3");
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.RosyBrown;
+            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button13, "button13");
+            this.button13.Name = "button13";
+            this.button13.UseVisualStyleBackColor = false;
+            // 
+            // textBox2
+            // 
+            resources.ApplyResources(this.textBox2, "textBox2");
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.RosyBrown;
+            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button9, "button9");
+            this.button9.Name = "button9";
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // GorabaFieldtxt
+            // 
+            resources.ApplyResources(this.GorabaFieldtxt, "GorabaFieldtxt");
+            this.GorabaFieldtxt.FormattingEnabled = true;
+            this.GorabaFieldtxt.Items.AddRange(new object[] {
+            resources.GetString("GorabaFieldtxt.Items"),
+            resources.GetString("GorabaFieldtxt.Items1"),
+            resources.GetString("GorabaFieldtxt.Items2"),
+            resources.GetString("GorabaFieldtxt.Items3"),
+            resources.GetString("GorabaFieldtxt.Items4"),
+            resources.GetString("GorabaFieldtxt.Items5"),
+            resources.GetString("GorabaFieldtxt.Items6"),
+            resources.GetString("GorabaFieldtxt.Items7"),
+            resources.GetString("GorabaFieldtxt.Items8")});
+            this.GorabaFieldtxt.Name = "GorabaFieldtxt";
+            this.GorabaFieldtxt.SelectedIndexChanged += new System.EventHandler(this.GorabaFieldtxt_SelectedIndexChanged);
+            // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.Color.RosyBrown;
+            this.button21.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button21, "button21");
+            this.button21.Name = "button21";
+            this.button21.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.RosyBrown;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button4, "button4");
+            this.button4.Name = "button4";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
             // TotalExpenseGoraba
             // 
             resources.ApplyResources(this.TotalExpenseGoraba, "TotalExpenseGoraba");
@@ -286,183 +464,6 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.RosyBrown;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.RosyBrown;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // showExpenseGeneraltotal
-            // 
-            resources.ApplyResources(this.showExpenseGeneraltotal, "showExpenseGeneraltotal");
-            this.showExpenseGeneraltotal.Name = "showExpenseGeneraltotal";
-            this.showExpenseGeneraltotal.ReadOnly = true;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.RosyBrown;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // showGeneraltotal
-            // 
-            resources.ApplyResources(this.showGeneraltotal, "showGeneraltotal");
-            this.showGeneraltotal.Name = "showGeneraltotal";
-            this.showGeneraltotal.ReadOnly = true;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.RosyBrown;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button6, "button6");
-            this.button6.Name = "button6";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // Fieldtxt
-            // 
-            resources.ApplyResources(this.Fieldtxt, "Fieldtxt");
-            this.Fieldtxt.FormattingEnabled = true;
-            this.Fieldtxt.Items.AddRange(new object[] {
-            resources.GetString("Fieldtxt.Items"),
-            resources.GetString("Fieldtxt.Items1"),
-            resources.GetString("Fieldtxt.Items2"),
-            resources.GetString("Fieldtxt.Items3"),
-            resources.GetString("Fieldtxt.Items4"),
-            resources.GetString("Fieldtxt.Items5"),
-            resources.GetString("Fieldtxt.Items6"),
-            resources.GetString("Fieldtxt.Items7")});
-            this.Fieldtxt.Name = "Fieldtxt";
-            this.Fieldtxt.SelectedIndexChanged += new System.EventHandler(this.Fieldtxt_SelectedIndexChanged);
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.RosyBrown;
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button7, "button7");
-            this.button7.Name = "button7";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // comboBox1
-            // 
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            resources.GetString("comboBox1.Items"),
-            resources.GetString("comboBox1.Items1"),
-            resources.GetString("comboBox1.Items2"),
-            resources.GetString("comboBox1.Items3"),
-            resources.GetString("comboBox1.Items4"),
-            resources.GetString("comboBox1.Items5"),
-            resources.GetString("comboBox1.Items6"),
-            resources.GetString("comboBox1.Items7"),
-            resources.GetString("comboBox1.Items8"),
-            resources.GetString("comboBox1.Items9"),
-            resources.GetString("comboBox1.Items10"),
-            resources.GetString("comboBox1.Items11")});
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.RosyBrown;
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button8, "button8");
-            this.button8.Name = "button8";
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // GorabaFieldtxt
-            // 
-            resources.ApplyResources(this.GorabaFieldtxt, "GorabaFieldtxt");
-            this.GorabaFieldtxt.FormattingEnabled = true;
-            this.GorabaFieldtxt.Items.AddRange(new object[] {
-            resources.GetString("GorabaFieldtxt.Items"),
-            resources.GetString("GorabaFieldtxt.Items1"),
-            resources.GetString("GorabaFieldtxt.Items2"),
-            resources.GetString("GorabaFieldtxt.Items3"),
-            resources.GetString("GorabaFieldtxt.Items4"),
-            resources.GetString("GorabaFieldtxt.Items5"),
-            resources.GetString("GorabaFieldtxt.Items6"),
-            resources.GetString("GorabaFieldtxt.Items7"),
-            resources.GetString("GorabaFieldtxt.Items8")});
-            this.GorabaFieldtxt.Name = "GorabaFieldtxt";
-            this.GorabaFieldtxt.SelectedIndexChanged += new System.EventHandler(this.GorabaFieldtxt_SelectedIndexChanged);
-            // 
-            // button21
-            // 
-            this.button21.BackColor = System.Drawing.Color.RosyBrown;
-            this.button21.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button21, "button21");
-            this.button21.Name = "button21";
-            this.button21.UseVisualStyleBackColor = false;
-            // 
-            // textBox2
-            // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.RosyBrown;
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button9, "button9");
-            this.button9.Name = "button9";
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // textBox3
-            // 
-            resources.ApplyResources(this.textBox3, "textBox3");
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.Color.RosyBrown;
-            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button13, "button13");
-            this.button13.Name = "button13";
-            this.button13.UseVisualStyleBackColor = false;
-            // 
-            // button20
-            // 
-            this.button20.BackColor = System.Drawing.Color.RosyBrown;
-            this.button20.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button20, "button20");
-            this.button20.Name = "button20";
-            this.button20.UseVisualStyleBackColor = false;
-            // 
-            // comboBox2
-            // 
-            resources.ApplyResources(this.comboBox2, "comboBox2");
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            resources.GetString("comboBox2.Items"),
-            resources.GetString("comboBox2.Items1"),
-            resources.GetString("comboBox2.Items2"),
-            resources.GetString("comboBox2.Items3"),
-            resources.GetString("comboBox2.Items4"),
-            resources.GetString("comboBox2.Items5"),
-            resources.GetString("comboBox2.Items6"),
-            resources.GetString("comboBox2.Items7"),
-            resources.GetString("comboBox2.Items8"),
-            resources.GetString("comboBox2.Items9"),
-            resources.GetString("comboBox2.Items10"),
-            resources.GetString("comboBox2.Items11")});
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // Dashboard
             // 

@@ -152,5 +152,26 @@ namespace DUMSM
         {
             Application.Exit();
         }
+
+        private void ProfileDeleteBtn_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("আপনি এই প্রোফাইল চিরতরে মুছে ফেলতে চাচ্ছেন?",
+                "দাতাদের তালিকা", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                CRUDOperation.Delete("Donors", oldDonor.Id);
+
+
+                Donor form = new Donor();
+                form.StartPosition = FormStartPosition.CenterScreen;
+                form.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("কোনো তথ্য মুছে ফেলা হয়নি।");
+            }
+        }
     }
 }
