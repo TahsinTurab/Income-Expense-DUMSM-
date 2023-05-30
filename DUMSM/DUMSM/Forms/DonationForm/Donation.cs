@@ -59,10 +59,22 @@ namespace DUMSM
                 string type = ((string)selectedItem);
                 generalDonation.DonationField = ((string)selectedItem);
 
-                object selectedDonor= DonorComboBox.SelectedItem;
-                //string type = ((string)selectedItem);
-                generalDonation.DonorName = ((string)selectedDonor);
-                
+                if (radioButton2.Checked)
+                {
+                    object selectedDonor = DonorComboBox.SelectedItem;
+                    generalDonation.DonorName = ((string)selectedDonor);
+                }
+
+                else if (radioButton1.Checked)
+                {
+                    generalDonation.DonorName = DonorComboBox.Text.Trim();
+                }
+
+                else
+                {
+                    errorMessage += " দাতার ধরণ"; 
+
+                }
                 if (IsDonationAmmountOK != "false")
                 {
                     generalDonation.DonationAmmount = int.Parse(IsDonationAmmountOK);
@@ -167,11 +179,21 @@ namespace DUMSM
                 //object selectedItem = GorabaFieldtxt.SelectedItem;
                 //string type = ((string)selectedItem);
                 //gorabaDonation.DonationField = ((string)selectedItem);
-                gorabaDonation.DonationField = GorabaFieldtxt.Text;
+                gorabaDonation.DonationField = "অনুদান";
 
-                object selectedDonor = GorabaDonorComboBox.SelectedItem;
-                //string type = ((string)selectedItem);
-                gorabaDonation.DonorName = ((string)selectedDonor);
+                if (radioButton3.Checked)
+                {
+                    object selectedDonor = GorabaDonorComboBox.SelectedItem;
+                    gorabaDonation.DonorName = ((string)selectedDonor);
+                }
+                else if (radioButton4.Checked)
+                {
+                    gorabaDonation.DonorName = GorabaDonorComboBox.Text.Trim();
+                }
+                else
+                {
+                    errorMessage += "দাতার ধরন"; 
+                }
 
                 if (IsDonationAmmountOK != "false")
                 {
@@ -244,6 +266,21 @@ namespace DUMSM
             form.StartPosition = FormStartPosition.CenterScreen;
             form.Show();
             this.Hide();
+        }
+
+        private void GorabaFieldtxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
