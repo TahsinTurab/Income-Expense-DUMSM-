@@ -15,7 +15,7 @@ namespace DUMSM.Forms.User
         public Profile()
         {
             InitializeComponent();
-            UserNametxt.ReadOnly = true;
+            
             SidePanelControl sidePanel = new SidePanelControl();
 
             // Set the properties of the side panel control
@@ -37,17 +37,20 @@ namespace DUMSM.Forms.User
             //{
             //    Application.Exit();
             //}
+            Application.Exit();
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            var UserName = UserNametxt.Text;
+            var UserName = "DUMSM";
             var oldPassword = OldPasswordtxt.Text;
             var newPassword = NewPasswordtxt.Text; 
+            //var newName = newNametxt.Text;
+            
             var password = CRUDOperation.GetColumnValues("Users", "Password", $"UserName = '{UserName}'");
             if (password[0].ToString() == oldPassword)
             {
-                CRUDOperation.Update("Users", $"Password = {newPassword} WHERE UserName = '{UserName}'");
+                CRUDOperation.Update("Users", $"Password = N'{newPassword}' WHERE UserName = N'{UserName}'");
                 MessageBox.Show("সফল হয়েছে");
             }
             else

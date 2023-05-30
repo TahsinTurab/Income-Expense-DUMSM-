@@ -34,11 +34,11 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button10 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.OldPasswordtxt = new System.Windows.Forms.TextBox();
-            this.UserNametxt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.NewPasswordtxt = new System.Windows.Forms.TextBox();
+            this.UserNametxt = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,7 +101,7 @@
             this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.button10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button10.Location = new System.Drawing.Point(550, 361);
+            this.button10.Location = new System.Drawing.Point(550, 352);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(166, 41);
             this.button10.TabIndex = 38;
@@ -119,16 +119,6 @@
             this.label3.TabIndex = 37;
             this.label3.Text = "পুরাতন পাসওয়ার্ড";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(436, 185);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 24);
-            this.label4.TabIndex = 36;
-            this.label4.Text = "নাম";
-            // 
             // OldPasswordtxt
             // 
             this.OldPasswordtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -136,15 +126,6 @@
             this.OldPasswordtxt.Name = "OldPasswordtxt";
             this.OldPasswordtxt.Size = new System.Drawing.Size(237, 29);
             this.OldPasswordtxt.TabIndex = 35;
-            // 
-            // UserNametxt
-            // 
-            this.UserNametxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserNametxt.Location = new System.Drawing.Point(479, 182);
-            this.UserNametxt.Name = "UserNametxt";
-            this.UserNametxt.Size = new System.Drawing.Size(237, 29);
-            this.UserNametxt.TabIndex = 34;
-            this.UserNametxt.Text = "DUMSM";
             // 
             // label5
             // 
@@ -163,6 +144,26 @@
             this.NewPasswordtxt.Name = "NewPasswordtxt";
             this.NewPasswordtxt.Size = new System.Drawing.Size(237, 29);
             this.NewPasswordtxt.TabIndex = 39;
+            // 
+            // UserNametxt
+            // 
+            this.UserNametxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserNametxt.Location = new System.Drawing.Point(479, 182);
+            this.UserNametxt.Name = "UserNametxt";
+            this.UserNametxt.ReadOnly = true;
+            this.UserNametxt.Size = new System.Drawing.Size(237, 29);
+            this.UserNametxt.TabIndex = 34;
+            this.UserNametxt.Text = "DUMSM";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(382, 185);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 24);
+            this.label4.TabIndex = 36;
+            this.label4.Text = "বর্তমান নাম";
             // 
             // Profile
             // 
@@ -198,10 +199,10 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox OldPasswordtxt;
-        private System.Windows.Forms.TextBox UserNametxt;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox NewPasswordtxt;
+        private System.Windows.Forms.TextBox UserNametxt;
+        private System.Windows.Forms.Label label4;
     }
 }

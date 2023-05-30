@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.UserNametxt = new System.Windows.Forms.TextBox();
             this.Passwordtxt = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -39,18 +37,11 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.dumsmDataBaseDataSet1 = new DUMSM.DUMSMDataBaseDataSet();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.UserNametxt = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dumsmDataBaseDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // UserNametxt
-            // 
-            this.UserNametxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserNametxt.Location = new System.Drawing.Point(127, 241);
-            this.UserNametxt.Name = "UserNametxt";
-            this.UserNametxt.Size = new System.Drawing.Size(237, 29);
-            this.UserNametxt.TabIndex = 0;
-            this.UserNametxt.TextChanged += new System.EventHandler(this.UserNametxt_TextChanged);
             // 
             // Passwordtxt
             // 
@@ -59,16 +50,6 @@
             this.Passwordtxt.Name = "Passwordtxt";
             this.Passwordtxt.Size = new System.Drawing.Size(237, 29);
             this.Passwordtxt.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(84, 244);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 24);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "নাম";
             // 
             // label2
             // 
@@ -168,6 +149,25 @@
             this.pictureBox1.TabIndex = 59;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(84, 244);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 24);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "নাম";
+            // 
+            // UserNametxt
+            // 
+            this.UserNametxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserNametxt.Location = new System.Drawing.Point(127, 241);
+            this.UserNametxt.Name = "UserNametxt";
+            this.UserNametxt.Size = new System.Drawing.Size(237, 29);
+            this.UserNametxt.TabIndex = 0;
+            this.UserNametxt.TextChanged += new System.EventHandler(this.UserNametxt_TextChanged);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -196,10 +196,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox UserNametxt;
         private System.Windows.Forms.TextBox Passwordtxt;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button10;
@@ -208,5 +205,7 @@
         private System.Windows.Forms.TextBox textBox3;
         private DUMSMDataBaseDataSet dumsmDataBaseDataSet1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox UserNametxt;
     }
 }
