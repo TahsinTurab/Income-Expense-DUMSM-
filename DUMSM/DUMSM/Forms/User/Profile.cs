@@ -42,7 +42,7 @@ namespace DUMSM.Forms.User
 
         private void button10_Click(object sender, EventArgs e)
         {
-            var UserName = "DUMSM";
+            var UserName = UserNametxt.Text.Trim();
             var oldPassword = OldPasswordtxt.Text;
             var newPassword = NewPasswordtxt.Text; 
             //var newName = newNametxt.Text;

@@ -105,18 +105,24 @@ namespace DUMSM.Forms
 
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("ব্যাকআপ নেয়ার জন্য ok তে ক্লিক করুন\nঅনুগ্রহপুর্বক কিছুক্ষন অপেক্ষা করুন।");
-            BackupOperation.Backup2Excel("GeneralExpense");
-            BackupOperation.Backup2Excel("GorabaExpense");
-            BackupOperation.Backup2Excel("GeneralIncome");
-            BackupOperation.Backup2Excel("GorabaIncome");
-            BackupOperation.Backup2Excel("Salaries");
-            BackupOperation.Backup2Excel("MonthlyInformations");
-            BackupOperation.Backup2Excel("Donations");
-            BackupOperation.Backup2Excel("Donors");
-            BackupOperation.Backup2Excel("Teachers");
-            BackupOperation.Backup2Excel("Stuffs");
-            MessageBox.Show("সফলভাবে ব্যাকআপ নেয়া হয়েছে।"); 
+            //MessageBox.Show("ব্যাকআপ নেয়ার জন্য ok তে ক্লিক করুন\nঅনুগ্রহপুর্বক কিছুক্ষন অপেক্ষা করুন।");
+            //BackupOperation.Backup2Excel("GeneralExpense");
+            //BackupOperation.Backup2Excel("GorabaExpense");
+            //BackupOperation.Backup2Excel("GeneralIncome");
+            //BackupOperation.Backup2Excel("GorabaIncome");
+            //BackupOperation.Backup2Excel("Salaries");
+            //BackupOperation.Backup2Excel("MonthlyInformations");
+            //BackupOperation.Backup2Excel("Donations");
+            //BackupOperation.Backup2Excel("Donors");
+            //BackupOperation.Backup2Excel("Teachers");
+            //BackupOperation.Backup2Excel("Stuffs");
+            //MessageBox.Show("সফলভাবে ব্যাকআপ নেয়া হয়েছে।"); 
+
+            backup form = new backup();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
+            Form parentForm = FindForm();
+            parentForm.Hide();
         }
 
         private void LogoutBtn_Click(object sender, EventArgs e)
