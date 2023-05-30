@@ -27,16 +27,22 @@ namespace DUMSM
 
             // Add the side panel control to the form
             Controls.Add(sidePanel);
-            LoadDonerList();
+            //LoadDonerList();
         }
 
-        public void LoadDonerList()
+        public void LoadDonerListGeneral() 
         {
             var list = CRUDOperation.GetColumnValues("Donors", "DonorName");
             DonorComboBox.Items.Clear();
-            GorabaDonorComboBox.Items.Clear();
             
             DonorComboBox.Items.AddRange(list.ToArray());
+
+        }
+        public void LoadDonerListGoraba()
+        {
+            var list = CRUDOperation.GetColumnValues("Donors", "DonorName");
+            GorabaDonorComboBox.Items.Clear();
+
             GorabaDonorComboBox.Items.AddRange(list.ToArray());
 
         }
@@ -55,19 +61,22 @@ namespace DUMSM
                 generalDonation.DonationDate = RegisterDate.Value.ToString("dd/MM/yyyy");
                 generalDonation.DonationType = "সাধারণ অনুদান";
 
-                object selectedItem = Fieldtxt.SelectedItem;
-                string type = ((string)selectedItem);
-                generalDonation.DonationField = ((string)selectedItem);
+
+                //object selectedItem = Fieldtxt.SelectedItem;
+                //string type = ((string)selectedItem);
+                //generalDonation.DonationField = ((string)selectedItem);
 
                 if (radioButton2.Checked)
                 {
                     object selectedDonor = DonorComboBox.SelectedItem;
                     generalDonation.DonorName = ((string)selectedDonor);
-                }
+                    generalDonation.DonationField = "স্থায়ী দাতার অনুদান";
+                } 
 
                 else if (radioButton1.Checked)
                 {
                     generalDonation.DonorName = DonorComboBox.Text.Trim();
+                    generalDonation.DonationField = "অনুদান";
                 }
 
                 else
@@ -115,7 +124,7 @@ namespace DUMSM
                     CRUDOperation.Insert(generalIncome);
                     PopUpMessage.SuccessRegistrationMessage("অনুদানের তথ্য নিবন্ধন ");
                     ResetForm();
-                    LoadDonerList();
+                    //LoadDonerList();
                 }
                 else
                 {
@@ -138,10 +147,16 @@ namespace DUMSM
             GorabaDonorComboBox.Text = "";
             RegisterDate.Value = DateTime.Now;
             GorabaRegisterDate.Value = DateTime.Now;
-            Fieldtxt.Text = "";
-            GorabaFieldtxt.Text = "";
+            //Fieldtxt.Text = "";
+            //GorabaFieldtxt.Text = "";
             Ammounttxt.Text = "";
             GorabaAmmount.Text = "";
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            radioButton3.Checked = false;
+            radioButton4.Checked = false;
+            DonorComboBox.Items.Clear();
+            GorabaDonorComboBox.Items.Clear();
 
         }
 
@@ -153,13 +168,13 @@ namespace DUMSM
         private void ResetBtn_Click(object sender, EventArgs e)
         {
             ResetForm();
-            LoadDonerList();
+            //LoadDonerList();
         }
 
         private void GorabaResetBtn_Click(object sender, EventArgs e)
         {
             ResetForm();
-            LoadDonerList();
+            //LoadDonerList();
         }
 
         private void GorabaRegisterBtn_Click(object sender, EventArgs e)
@@ -179,16 +194,18 @@ namespace DUMSM
                 //object selectedItem = GorabaFieldtxt.SelectedItem;
                 //string type = ((string)selectedItem);
                 //gorabaDonation.DonationField = ((string)selectedItem);
-                gorabaDonation.DonationField = "অনুদান";
+                //gorabaDonation.DonationField = "অনুদান"; 
 
                 if (radioButton3.Checked)
                 {
                     object selectedDonor = GorabaDonorComboBox.SelectedItem;
                     gorabaDonation.DonorName = ((string)selectedDonor);
+                    gorabaDonation.DonationField = "স্থায়ী দাতার অনুদান";
                 }
                 else if (radioButton4.Checked)
                 {
                     gorabaDonation.DonorName = GorabaDonorComboBox.Text.Trim();
+                    gorabaDonation.DonationField = "অনুদান";
                 }
                 else
                 {
@@ -234,7 +251,7 @@ namespace DUMSM
                     CRUDOperation.Insert(gorabaIncome);
                     PopUpMessage.SuccessRegistrationMessage("অনুদানের তথ্য নিবন্ধন ");
                     ResetForm();
-                    LoadDonerList();
+                    //LoadDonerList();
                 }
                 else
                 {
@@ -275,12 +292,32 @@ namespace DUMSM
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            
+            LoadDonerListGeneral();
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
+            DonorComboBox.Items.Clear();
+        }
 
+        private void GorabaRegisterDate_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            LoadDonerListGoraba();
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+            GorabaDonorComboBox.Items.Clear();
         }
     }
 }

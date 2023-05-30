@@ -358,7 +358,7 @@
             <Top>1.71527in</Top>
             <Left>0.16542in</Left>
             <Height>0.25in</Height>
-            <Width>1.55209in</Width>
+            <Width>1.8507in</Width>
             <ZIndex>18</ZIndex>
             <Style>
               <Border>
@@ -2093,7 +2093,7 @@
             </Style>
           </Line>
         </ReportItems>
-        <Height>6.47082in</Height>
+        <Height>6.44652in</Height>
         <Style />
       </Body>
       <Width>6.75917in</Width>
@@ -2192,7 +2192,7 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>0.52778in</Height>
+          <Height>1.13195in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -2211,8 +2211,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>ReportDate</rd:DefaultName>
-              <Top>0.02778in</Top>
-              <Left>5.31473in</Left>
+              <Top>0.88195in</Top>
+              <Left>5.58556in</Left>
               <Height>0.25in</Height>
               <Width>1in</Width>
               <Style>
@@ -2225,6 +2225,150 @@
                 <PaddingBottom>2pt</PaddingBottom>
               </Style>
             </Textbox>
+            <Textbox Name="Textbox7">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>মোহতামীম </Value>
+                      <Style>
+                        <FontFamily>kalpurush</FontFamily>
+                        <FontSize>12pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox5</rd:DefaultName>
+              <Top>0.50695in</Top>
+              <Left>0.17584in</Left>
+              <Height>0.22569in</Height>
+              <Width>1.32292in</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox8">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>সাধারণ সম্পাদক</Value>
+                      <Style>
+                        <FontFamily>kalpurush</FontFamily>
+                        <FontSize>12pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox5</rd:DefaultName>
+              <Top>0.50695in</Top>
+              <Left>2.59312in</Left>
+              <Height>0.22569in</Height>
+              <Width>1.32292in</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox9">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>সভাপতি</Value>
+                      <Style>
+                        <FontFamily>kalpurush</FontFamily>
+                        <FontSize>12pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox5</rd:DefaultName>
+              <Top>0.50695in</Top>
+              <Left>5.31126in</Left>
+              <Height>0.21875in</Height>
+              <Width>1.32292in</Width>
+              <ZIndex>3</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Line Name="Line20">
+              <Top>0.45139in</Top>
+              <Left>0.14347in</Left>
+              <Height>0in</Height>
+              <Width>1.46987in</Width>
+              <ZIndex>4</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+              </Style>
+            </Line>
+            <Line Name="Line21">
+              <Top>0.46528in</Top>
+              <Left>2.44618in</Left>
+              <Height>0in</Height>
+              <Width>1.46987in</Width>
+              <ZIndex>5</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+              </Style>
+            </Line>
+            <Line Name="Line22">
+              <Top>0.45139in</Top>
+              <Left>5.16431in</Left>
+              <Height>0in</Height>
+              <Width>1.46987in</Width>
+              <ZIndex>6</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+              </Style>
+            </Line>
           </ReportItems>
           <Style>
             <Border>

@@ -48,7 +48,7 @@ namespace DUMSM.Forms.Report
         public List<string> GeneralIncomeFields()
         {
             List<string> fields = new List<string>();
-            string[] list = {"অনুদান","ফরম / ভর্তি ফি", "শিক্ষার্থীর বেতন", "বোডিং/খানার চার্জ",
+            string[] list = {"অনুদান", "স্থায়ী দাতার অনুদান", "ফরম / ভর্তি ফি", "শিক্ষার্থীর বেতন", "বোডিং/খানার চার্জ",
                     "নির্মাণ ও মেরামত","লাইব্রেরী","অনুষ্ঠান / ইফতার","বিবিধ" };
 
             fields.AddRange(list);
@@ -69,7 +69,7 @@ namespace DUMSM.Forms.Report
         public List<string> GorabaIncomeFields()
         {
             List<string> fields = new List<string>();
-            string[] list = {"অনুদান","যাকাত", "ফিতরা", "মান্নত",
+            string[] list = {"অনুদান", "স্থায়ী দাতার অনুদান","যাকাত", "ফিতরা", "মান্নত",
                     "কাফফারা","কোরবানীর চামড়া","ব্যংক ঋণ","কর্য গ্রহন","বিবিধ" };
             fields.AddRange(list);
             return fields;

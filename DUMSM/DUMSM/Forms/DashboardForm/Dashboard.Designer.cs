@@ -173,7 +173,8 @@
             resources.GetString("Fieldtxt.Items4"),
             resources.GetString("Fieldtxt.Items5"),
             resources.GetString("Fieldtxt.Items6"),
-            resources.GetString("Fieldtxt.Items7")});
+            resources.GetString("Fieldtxt.Items7"),
+            resources.GetString("Fieldtxt.Items8")});
             this.Fieldtxt.Name = "Fieldtxt";
             this.Fieldtxt.SelectedIndexChanged += new System.EventHandler(this.Fieldtxt_SelectedIndexChanged);
             // 
@@ -372,7 +373,8 @@
             resources.GetString("GorabaFieldtxt.Items5"),
             resources.GetString("GorabaFieldtxt.Items6"),
             resources.GetString("GorabaFieldtxt.Items7"),
-            resources.GetString("GorabaFieldtxt.Items8")});
+            resources.GetString("GorabaFieldtxt.Items8"),
+            resources.GetString("GorabaFieldtxt.Items9")});
             this.GorabaFieldtxt.Name = "GorabaFieldtxt";
             this.GorabaFieldtxt.SelectedIndexChanged += new System.EventHandler(this.GorabaFieldtxt_SelectedIndexChanged);
             // 

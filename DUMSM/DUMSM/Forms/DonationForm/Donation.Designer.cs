@@ -46,13 +46,13 @@
             this.button36 = new System.Windows.Forms.Button();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.Fieldtxt = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.button14 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.GorabaFieldtxt = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.GorabaDonorComboBox = new System.Windows.Forms.ComboBox();
             this.GorabaResetBtn = new System.Windows.Forms.Button();
             this.GorabaRegisterDate = new System.Windows.Forms.DateTimePicker();
@@ -63,10 +63,6 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl3.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -133,7 +129,7 @@
             this.button37.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button37.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.button37.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button37.Location = new System.Drawing.Point(603, 537);
+            this.button37.Location = new System.Drawing.Point(606, 501);
             this.button37.Name = "button37";
             this.button37.Size = new System.Drawing.Size(368, 41);
             this.button37.TabIndex = 59;
@@ -156,7 +152,7 @@
             this.ResetBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ResetBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.ResetBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ResetBtn.Location = new System.Drawing.Point(12, 318);
+            this.ResetBtn.Location = new System.Drawing.Point(12, 276);
             this.ResetBtn.Name = "ResetBtn";
             this.ResetBtn.Size = new System.Drawing.Size(172, 41);
             this.ResetBtn.TabIndex = 32;
@@ -167,7 +163,7 @@
             // RegisterDate
             // 
             this.RegisterDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegisterDate.Location = new System.Drawing.Point(188, 276);
+            this.RegisterDate.Location = new System.Drawing.Point(188, 234);
             this.RegisterDate.Name = "RegisterDate";
             this.RegisterDate.Size = new System.Drawing.Size(172, 26);
             this.RegisterDate.TabIndex = 20;
@@ -178,7 +174,7 @@
             this.RegisterBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RegisterBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.RegisterBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.RegisterBtn.Location = new System.Drawing.Point(193, 318);
+            this.RegisterBtn.Location = new System.Drawing.Point(193, 276);
             this.RegisterBtn.Name = "RegisterBtn";
             this.RegisterBtn.Size = new System.Drawing.Size(166, 41);
             this.RegisterBtn.TabIndex = 31;
@@ -237,7 +233,7 @@
             this.button17.Enabled = false;
             this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.button17.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button17.Location = new System.Drawing.Point(8, 270);
+            this.button17.Location = new System.Drawing.Point(8, 228);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(177, 41);
             this.button17.TabIndex = 23;
@@ -250,7 +246,7 @@
             this.button36.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button36.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.button36.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button36.Location = new System.Drawing.Point(228, 537);
+            this.button36.Location = new System.Drawing.Point(231, 501);
             this.button36.Name = "button36";
             this.button36.Size = new System.Drawing.Size(368, 41);
             this.button36.TabIndex = 57;
@@ -265,7 +261,7 @@
             this.tabControl3.Location = new System.Drawing.Point(228, 120);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(376, 411);
+            this.tabControl3.Size = new System.Drawing.Size(376, 375);
             this.tabControl3.TabIndex = 56;
             // 
             // tabPage3
@@ -275,8 +271,6 @@
             this.tabPage3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabPage3.Controls.Add(this.radioButton2);
             this.tabPage3.Controls.Add(this.radioButton1);
-            this.tabPage3.Controls.Add(this.Fieldtxt);
-            this.tabPage3.Controls.Add(this.button2);
             this.tabPage3.Controls.Add(this.DonorComboBox);
             this.tabPage3.Controls.Add(this.ResetBtn);
             this.tabPage3.Controls.Add(this.RegisterDate);
@@ -291,39 +285,35 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 40);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(368, 367);
+            this.tabPage3.Size = new System.Drawing.Size(368, 331);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "সাধারণ অনুদান নিবন্ধন    ";
             // 
-            // Fieldtxt
+            // radioButton2
             // 
-            this.Fieldtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Fieldtxt.FormattingEnabled = true;
-            this.Fieldtxt.Items.AddRange(new object[] {
-            "অনুদান ",
-            "নির্মাণ ও মেরামত",
-            "লাইব্রেরী",
-            "অনুষ্ঠান / ইফতার  ",
-            "বিবিধ "});
-            this.Fieldtxt.Location = new System.Drawing.Point(187, 228);
-            this.Fieldtxt.Name = "Fieldtxt";
-            this.Fieldtxt.Size = new System.Drawing.Size(172, 32);
-            this.Fieldtxt.TabIndex = 34;
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(12, 73);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(166, 28);
+            this.radioButton2.TabIndex = 38;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "স্থায়ী দাতার অনুদান";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
-            // button2
+            // radioButton1
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Enabled = false;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button2.Location = new System.Drawing.Point(8, 223);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(177, 41);
-            this.button2.TabIndex = 33;
-            this.button2.Text = "অনুদানের খাত";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(188, 73);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(135, 28);
+            this.radioButton1.TabIndex = 37;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "অস্থায়ী অনুদান";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // button14
             // 
@@ -346,7 +336,7 @@
             this.tabControl1.Location = new System.Drawing.Point(606, 120);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(376, 411);
+            this.tabControl1.Size = new System.Drawing.Size(376, 375);
             this.tabControl1.TabIndex = 60;
             // 
             // tabPage1
@@ -356,8 +346,6 @@
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabPage1.Controls.Add(this.radioButton3);
             this.tabPage1.Controls.Add(this.radioButton4);
-            this.tabPage1.Controls.Add(this.GorabaFieldtxt);
-            this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.GorabaDonorComboBox);
             this.tabPage1.Controls.Add(this.GorabaResetBtn);
             this.tabPage1.Controls.Add(this.GorabaRegisterDate);
@@ -372,34 +360,35 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 40);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(368, 367);
+            this.tabPage1.Size = new System.Drawing.Size(368, 331);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "গোরাবা অনুদান নিবন্ধন    ";
             // 
-            // GorabaFieldtxt
+            // radioButton3
             // 
-            this.GorabaFieldtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.GorabaFieldtxt.Location = new System.Drawing.Point(187, 229);
-            this.GorabaFieldtxt.Name = "GorabaFieldtxt";
-            this.GorabaFieldtxt.ReadOnly = true;
-            this.GorabaFieldtxt.Size = new System.Drawing.Size(172, 29);
-            this.GorabaFieldtxt.TabIndex = 35;
-            this.GorabaFieldtxt.Text = "অনুদান";
-            this.GorabaFieldtxt.TextChanged += new System.EventHandler(this.GorabaFieldtxt_TextChanged);
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton3.Location = new System.Drawing.Point(19, 73);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(166, 28);
+            this.radioButton3.TabIndex = 40;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "স্থায়ী দাতার অনুদান";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
-            // button3
+            // radioButton4
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Enabled = false;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button3.Location = new System.Drawing.Point(6, 223);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(177, 41);
-            this.button3.TabIndex = 34;
-            this.button3.Text = "অনুদানের খাত";
-            this.button3.UseVisualStyleBackColor = false;
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton4.Location = new System.Drawing.Point(195, 73);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(135, 28);
+            this.radioButton4.TabIndex = 39;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "অস্থায়ী অনুদান";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
             // GorabaDonorComboBox
             // 
@@ -416,7 +405,7 @@
             this.GorabaResetBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.GorabaResetBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.GorabaResetBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.GorabaResetBtn.Location = new System.Drawing.Point(11, 318);
+            this.GorabaResetBtn.Location = new System.Drawing.Point(13, 276);
             this.GorabaResetBtn.Name = "GorabaResetBtn";
             this.GorabaResetBtn.Size = new System.Drawing.Size(172, 41);
             this.GorabaResetBtn.TabIndex = 32;
@@ -427,10 +416,11 @@
             // GorabaRegisterDate
             // 
             this.GorabaRegisterDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GorabaRegisterDate.Location = new System.Drawing.Point(187, 276);
+            this.GorabaRegisterDate.Location = new System.Drawing.Point(189, 234);
             this.GorabaRegisterDate.Name = "GorabaRegisterDate";
             this.GorabaRegisterDate.Size = new System.Drawing.Size(172, 26);
             this.GorabaRegisterDate.TabIndex = 20;
+            this.GorabaRegisterDate.ValueChanged += new System.EventHandler(this.GorabaRegisterDate_ValueChanged);
             // 
             // GorabaRegisterBtn
             // 
@@ -438,7 +428,7 @@
             this.GorabaRegisterBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.GorabaRegisterBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.GorabaRegisterBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.GorabaRegisterBtn.Location = new System.Drawing.Point(192, 318);
+            this.GorabaRegisterBtn.Location = new System.Drawing.Point(194, 276);
             this.GorabaRegisterBtn.Name = "GorabaRegisterBtn";
             this.GorabaRegisterBtn.Size = new System.Drawing.Size(166, 41);
             this.GorabaRegisterBtn.TabIndex = 31;
@@ -511,62 +501,13 @@
             this.button7.Enabled = false;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.button7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button7.Location = new System.Drawing.Point(6, 270);
+            this.button7.Location = new System.Drawing.Point(8, 228);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(177, 41);
             this.button7.TabIndex = 23;
             this.button7.Text = "জমাদানের তারিখ";
             this.button7.UseVisualStyleBackColor = false;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(188, 73);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(135, 28);
-            this.radioButton1.TabIndex = 37;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "অস্থায়ী অনুদান";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(12, 73);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(166, 28);
-            this.radioButton2.TabIndex = 38;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "স্থায়ী দাতার অনুদান";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(19, 73);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(166, 28);
-            this.radioButton3.TabIndex = 40;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "স্থায়ী দাতার অনুদান";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(195, 73);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(135, 28);
-            this.radioButton4.TabIndex = 39;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "অস্থায়ী অনুদান";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Donation
             // 
@@ -630,10 +571,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.ComboBox Fieldtxt;
-        private System.Windows.Forms.TextBox GorabaFieldtxt;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton3;
