@@ -97,6 +97,7 @@
             this.teacherId.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.teacherId.Location = new System.Drawing.Point(403, 17);
             this.teacherId.Name = "teacherId";
+            this.teacherId.ReadOnly = true;
             this.teacherId.Size = new System.Drawing.Size(277, 29);
             this.teacherId.TabIndex = 36;
             // 

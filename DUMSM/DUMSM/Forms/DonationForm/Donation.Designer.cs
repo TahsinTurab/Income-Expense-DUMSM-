@@ -193,7 +193,7 @@
             // SlipNumbertxt
             // 
             this.SlipNumbertxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SlipNumbertxt.Location = new System.Drawing.Point(187, 11);
+            this.SlipNumbertxt.Location = new System.Drawing.Point(186, 87);
             this.SlipNumbertxt.Name = "SlipNumbertxt";
             this.SlipNumbertxt.Size = new System.Drawing.Size(172, 29);
             this.SlipNumbertxt.TabIndex = 26;
@@ -219,7 +219,7 @@
             this.button16.Enabled = false;
             this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button16.Location = new System.Drawing.Point(6, 6);
+            this.button16.Location = new System.Drawing.Point(5, 82);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(179, 41);
             this.button16.TabIndex = 25;
@@ -293,7 +293,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(12, 73);
+            this.radioButton2.Location = new System.Drawing.Point(12, 19);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(166, 28);
             this.radioButton2.TabIndex = 38;
@@ -306,7 +306,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(188, 73);
+            this.radioButton1.Location = new System.Drawing.Point(188, 19);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(135, 28);
             this.radioButton1.TabIndex = 37;
@@ -368,7 +368,7 @@
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(19, 73);
+            this.radioButton3.Location = new System.Drawing.Point(19, 19);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(166, 28);
             this.radioButton3.TabIndex = 40;
@@ -381,7 +381,7 @@
             // 
             this.radioButton4.AutoSize = true;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(195, 73);
+            this.radioButton4.Location = new System.Drawing.Point(195, 19);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(135, 28);
             this.radioButton4.TabIndex = 39;
@@ -447,7 +447,7 @@
             // GorabaSlipNumbertxt
             // 
             this.GorabaSlipNumbertxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GorabaSlipNumbertxt.Location = new System.Drawing.Point(187, 11);
+            this.GorabaSlipNumbertxt.Location = new System.Drawing.Point(187, 80);
             this.GorabaSlipNumbertxt.Name = "GorabaSlipNumbertxt";
             this.GorabaSlipNumbertxt.Size = new System.Drawing.Size(172, 29);
             this.GorabaSlipNumbertxt.TabIndex = 26;
@@ -487,7 +487,7 @@
             this.button6.Enabled = false;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button6.Location = new System.Drawing.Point(6, 6);
+            this.button6.Location = new System.Drawing.Point(6, 75);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(179, 41);
             this.button6.TabIndex = 25;

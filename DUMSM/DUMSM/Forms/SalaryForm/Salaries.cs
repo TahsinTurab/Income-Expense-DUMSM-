@@ -252,7 +252,17 @@ namespace DUMSM.Forms.Salary
                     var salary = new Classes.Salaries();
                     salary.Id = salaryInformation.Id;
                     salary.Name = salaryInformation.EmployeeName;
-                    salary.Ammount = salaryInformation.NetPayableAmmount;
+                    //salary.Ammount = salaryInformation.NetPayableAmmount;
+                    var IsNetAmmountOK = Conversion.BnNumber2EnNumber(NetPayableAmmounttxt.Text.Trim());
+                    if (IsNetAmmountOK != "false")
+                    {
+                        salary.Ammount = int.Parse(IsNetAmmountOK);
+                        salaryInformation.NetPayableAmmount = salary.Ammount;
+                    }
+                    else
+                    {
+                        MessageBox.Show("বেতনের সঠিক তথ্য দিন");
+                    }
                     salary.MonthName = salaryInformation.MonthName;
                     salary.IsPaid = salaryInformation.IsPaid;
                     salary.Designation = salaryInformation.EmployeeType;
@@ -260,7 +270,7 @@ namespace DUMSM.Forms.Salary
 
                     var generalExpense = new GeneralExpense();
                     generalExpense.Id = salaryInformation.Id;
-                    generalExpense.Ammount = salaryInformation.NetPayableAmmount;
+                    generalExpense.Ammount = salary.Ammount;
                     generalExpense.Field = "বেতন";
                     generalExpense.ExpenseDate= salaryInformation.PaymentDate;
                     DateTime date;

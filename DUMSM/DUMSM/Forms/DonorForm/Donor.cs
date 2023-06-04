@@ -170,7 +170,7 @@ namespace DUMSM
         public void LoadDonorList()
         {
             var list = CRUDOperation.GetColumnValues("Donors", "DonorName");
-
+            DonorComboBox.Items.Clear();
             DonorComboBox.Items.AddRange(list.ToArray());
         }
 
