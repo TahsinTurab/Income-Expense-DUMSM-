@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DUMSM.exe" size="2113072">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DUMSM.exe" size="2125872">
       <assemblyIdentity name="DUMSM" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>q+KwdOZrVoDGNt9zQHNJxIwTBbdaUBIpDDtt2lE8xTU=</dsig:DigestValue>
+        <dsig:DigestValue>nNVb1CidK4MOV4B6ud4NGt6UAO2CdmI9LmcLKn5Q4gI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>bHxavPQXoygvHgNQiQAISeRcJtGZuXDqAmDGpAeb1bk=</dsig:DigestValue>
+        <dsig:DigestValue>F2+5M6D91BoxPVlzbqUGndQiM9IQ5T0BNFUQiVx7HBk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -561,7 +561,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>gz0qtl20/bgr+NYtHDcCaWNTnXtPV1OMp49RmJEAaLs=</dsig:DigestValue>
+      <dsig:DigestValue>r2wHlCuqdJ+gkoxvYAZlnL3uTR8cTMRMBJ+ybqOoFaE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="DUMSMDataBase_log.ldf" size="8388608">
@@ -570,7 +570,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>lyMsP57a0OPmkgZryAKgZHCzWcT9goNFGC4I8/aueAE=</dsig:DigestValue>
+      <dsig:DigestValue>IUkQ76++IQqr9hVRNYAPOfRbYtBkvag5DxK8pfFo8wc=</dsig:DigestValue>
     </hash>
   </file>
   <file name="logo.ico" size="241886">

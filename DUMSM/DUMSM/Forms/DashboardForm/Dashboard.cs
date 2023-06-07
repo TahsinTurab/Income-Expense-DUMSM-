@@ -63,12 +63,7 @@ namespace DUMSM
             TotalExpenseGoraba.Text = "৳ " + Conversion.EnNumber2BnNumber(
                 TotalClass.TotalOfColumnWithoutCondition("GorabaExpense", "Ammount").ToString());
 
-            //DateTime firstDayOfMonth = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
-            //string formattedDate = firstDayOfMonth.ToString("dd/MM/yyyy");
-
-            //string presentDay = DateTime.Now.ToString("dd/MM/yyyy");
-
-            //string Condition = $"RegisterDate >= '{formattedDate}' and RegisterDate <= '{presentDay}'";
+            
 
             int monthNumber = DateTime.Now.Month;
             string Condition = $"MonthName = {monthNumber}";
@@ -86,6 +81,23 @@ namespace DUMSM
 
             MonthlyExpenseGeneral.Text = "৳ " + Conversion.EnNumber2BnNumber(
                 TotalClass.TotalOfColumnWithCondition("GeneralExpense", "Ammount", Condition).ToString());
+
+            string TodayDate = DateTime.Now.ToString("dd/MM/yyyy");
+
+            Condition = $"RegisterDate = '{TodayDate}'";
+
+            TodayIncomeGeneral.Text = "৳ " + Conversion.EnNumber2BnNumber(
+                TotalClass.TotalOfColumnWithCondition("GeneralIncome", "Ammount", Condition).ToString());
+            TodayIncomeGoraba.Text = "৳ " + Conversion.EnNumber2BnNumber(
+                TotalClass.TotalOfColumnWithCondition("GorabaIncome", "Ammount", Condition).ToString());
+
+            Condition = $"ExpenseDate = '{TodayDate}'";
+
+            TodayExpenseGeneral.Text = "৳ " + Conversion.EnNumber2BnNumber(
+                TotalClass.TotalOfColumnWithCondition("GeneralExpense", "Ammount", Condition).ToString());
+            TodayExpenseGoraba.Text = "৳ " + Conversion.EnNumber2BnNumber(
+                TotalClass.TotalOfColumnWithCondition("GorabaExpense", "Ammount", Condition).ToString());
+
 
         }
         private void Dashboard_Load(object sender, EventArgs e)
@@ -230,6 +242,11 @@ namespace DUMSM
             var condition = $"Field = N'{type}'";
             var Total = TotalClass.TotalOfColumnWithCondition("GorabaExpense", "Ammount", condition);
             textBox3.Text = "৳ " + Conversion.EnNumber2BnNumber(Total.ToString());
+        }
+
+        private void TotalExpenseGeneral_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
