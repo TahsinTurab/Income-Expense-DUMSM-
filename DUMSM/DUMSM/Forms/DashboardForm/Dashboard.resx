@@ -229,6 +229,63 @@
   <data name="tabPage1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
+  <data name="NogodGeneral.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="NogodGeneral.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 183</value>
+  </data>
+  <data name="NogodGeneral.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NogodGeneral.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 31</value>
+  </data>
+  <data name="NogodGeneral.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;NogodGeneral.Name" xml:space="preserve">
+    <value>NogodGeneral</value>
+  </data>
+  <data name="&gt;&gt;NogodGeneral.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NogodGeneral.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;NogodGeneral.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button23.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
+  </data>
+  <data name="button23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 179</value>
+  </data>
+  <data name="button23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 37</value>
+  </data>
+  <data name="button23.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="button23.Text" xml:space="preserve">
+    <value> নগদ আছে</value>
+  </data>
+  <data name="&gt;&gt;button23.Name" xml:space="preserve">
+    <value>button23</value>
+  </data>
+  <data name="&gt;&gt;button23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button23.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;button23.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="TodayExpenseGeneral.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
@@ -251,7 +308,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;TodayExpenseGeneral.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="comboBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
@@ -314,7 +371,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="button19.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
@@ -344,7 +401,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;button19.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="button8.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -377,7 +434,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;button8.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="TodayIncomeGeneral.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
@@ -401,7 +458,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;TodayIncomeGeneral.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="Fieldtxt.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
@@ -452,7 +509,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;Fieldtxt.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="button22.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
@@ -482,7 +539,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;button22.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="button7.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -515,7 +572,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="showGeneraltotal.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
@@ -542,7 +599,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;showGeneraltotal.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="button6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
@@ -572,7 +629,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="showExpenseGeneraltotal.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
@@ -599,7 +656,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;showExpenseGeneraltotal.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="button5.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
@@ -629,7 +686,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="button3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
@@ -659,13 +716,13 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="TotalExpenseGeneral.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="TotalExpenseGeneral.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 167</value>
+    <value>161, 146</value>
   </data>
   <data name="TotalExpenseGeneral.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -686,7 +743,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;TotalExpenseGeneral.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
@@ -695,7 +752,7 @@
     <value>NoControl</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 143</value>
+    <value>161, 122</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 28</value>
@@ -716,13 +773,13 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="TotalGeneral.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="TotalGeneral.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 166</value>
+    <value>6, 145</value>
   </data>
   <data name="TotalGeneral.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -743,13 +800,13 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;TotalGeneral.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="MonthlyExpenseGeneral.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="MonthlyExpenseGeneral.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 99</value>
+    <value>161, 91</value>
   </data>
   <data name="MonthlyExpenseGeneral.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 29</value>
@@ -767,13 +824,13 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;MonthlyExpenseGeneral.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
   </data>
   <data name="MonthlyTotalGeneral.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="MonthlyTotalGeneral.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 99</value>
+    <value>6, 91</value>
   </data>
   <data name="MonthlyTotalGeneral.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 29</value>
@@ -791,7 +848,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;MonthlyTotalGeneral.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>19</value>
   </data>
   <data name="button12.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
@@ -800,7 +857,7 @@
     <value>NoControl</value>
   </data>
   <data name="button12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 143</value>
+    <value>6, 122</value>
   </data>
   <data name="button12.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 31</value>
@@ -821,7 +878,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;button12.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>20</value>
   </data>
   <data name="button11.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
@@ -830,7 +887,7 @@
     <value>NoControl</value>
   </data>
   <data name="button11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 75</value>
+    <value>161, 67</value>
   </data>
   <data name="button11.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 33</value>
@@ -851,7 +908,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;button11.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>21</value>
   </data>
   <data name="button10.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
@@ -860,7 +917,7 @@
     <value>NoControl</value>
   </data>
   <data name="button10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 75</value>
+    <value>6, 67</value>
   </data>
   <data name="button10.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 33</value>
@@ -881,7 +938,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;button10.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>22</value>
   </data>
   <data name="tabPage1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 15.75pt, style=Bold</value>
@@ -893,7 +950,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>696, 211</value>
+    <value>696, 220</value>
   </data>
   <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -920,7 +977,7 @@
     <value>264, 133</value>
   </data>
   <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>704, 255</value>
+    <value>704, 264</value>
   </data>
   <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -937,11 +994,38 @@
   <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="NogodGoraba.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
+  <data name="NogodGoraba.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 188</value>
+  </data>
+  <data name="NogodGoraba.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NogodGoraba.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 30</value>
+  </data>
+  <data name="NogodGoraba.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;NogodGoraba.Name" xml:space="preserve">
+    <value>NogodGoraba</value>
+  </data>
+  <data name="&gt;&gt;NogodGoraba.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NogodGoraba.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;NogodGoraba.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="TodayExpenseGoraba.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="TodayExpenseGoraba.Location" type="System.Drawing.Point, System.Drawing">
-    <value>157, 47</value>
+    <value>157, 28</value>
   </data>
   <data name="TodayExpenseGoraba.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 29</value>
@@ -959,7 +1043,37 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;TodayExpenseGoraba.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
+  </data>
+  <data name="button24.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
+  </data>
+  <data name="button24.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 184</value>
+  </data>
+  <data name="button24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 37</value>
+  </data>
+  <data name="button24.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="button24.Text" xml:space="preserve">
+    <value> নগদ আছে</value>
+  </data>
+  <data name="&gt;&gt;button24.Name" xml:space="preserve">
+    <value>button24</value>
+  </data>
+  <data name="&gt;&gt;button24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button24.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;button24.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="button14.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
@@ -968,7 +1082,7 @@
     <value>NoControl</value>
   </data>
   <data name="button14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>157, 21</value>
+    <value>157, 2</value>
   </data>
   <data name="button14.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 33</value>
@@ -989,13 +1103,13 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;button14.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="TodayIncomeGoraba.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="TodayIncomeGoraba.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 47</value>
+    <value>5, 28</value>
   </data>
   <data name="TodayIncomeGoraba.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 29</value>
@@ -1013,7 +1127,7 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;TodayIncomeGoraba.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="button18.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
@@ -1022,7 +1136,7 @@
     <value>NoControl</value>
   </data>
   <data name="button18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 21</value>
+    <value>5, 2</value>
   </data>
   <data name="button18.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 33</value>
@@ -1043,7 +1157,7 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;button18.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="button20.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1076,7 +1190,7 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;button20.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="comboBox2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
@@ -1136,7 +1250,7 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;comboBox2.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="textBox3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
@@ -1163,7 +1277,7 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="button13.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
@@ -1193,7 +1307,7 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;button13.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="textBox2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
@@ -1220,7 +1334,7 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="button9.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
@@ -1250,7 +1364,7 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="GorabaFieldtxt.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
@@ -1304,7 +1418,7 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;GorabaFieldtxt.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="button21.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1337,7 +1451,7 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;button21.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="button4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
@@ -1367,13 +1481,13 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="TotalExpenseGoraba.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="TotalExpenseGoraba.Location" type="System.Drawing.Point, System.Drawing">
-    <value>157, 171</value>
+    <value>157, 153</value>
   </data>
   <data name="TotalExpenseGoraba.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1394,7 +1508,7 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;TotalExpenseGoraba.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
@@ -1403,7 +1517,7 @@
     <value>NoControl</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>157, 141</value>
+    <value>157, 123</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 33</value>
@@ -1424,13 +1538,13 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="TotalGoraba.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="TotalGoraba.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 169</value>
+    <value>5, 151</value>
   </data>
   <data name="TotalGoraba.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1451,7 +1565,7 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;TotalGoraba.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="button17.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
@@ -1460,7 +1574,7 @@
     <value>NoControl</value>
   </data>
   <data name="button17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 141</value>
+    <value>5, 123</value>
   </data>
   <data name="button17.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 50</value>
@@ -1481,13 +1595,13 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;button17.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
   </data>
   <data name="MonthlyExpenseGoraba.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="MonthlyExpenseGoraba.Location" type="System.Drawing.Point, System.Drawing">
-    <value>157, 107</value>
+    <value>157, 89</value>
   </data>
   <data name="MonthlyExpenseGoraba.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 29</value>
@@ -1505,7 +1619,7 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;MonthlyExpenseGoraba.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>19</value>
   </data>
   <data name="button16.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
@@ -1514,7 +1628,7 @@
     <value>NoControl</value>
   </data>
   <data name="button16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>157, 81</value>
+    <value>157, 63</value>
   </data>
   <data name="button16.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 33</value>
@@ -1535,13 +1649,13 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;button16.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>20</value>
   </data>
   <data name="MonthlyIncomeGoraba.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="MonthlyIncomeGoraba.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 107</value>
+    <value>5, 89</value>
   </data>
   <data name="MonthlyIncomeGoraba.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 29</value>
@@ -1559,7 +1673,7 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;MonthlyIncomeGoraba.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>21</value>
   </data>
   <data name="button15.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt, style=Bold</value>
@@ -1568,7 +1682,7 @@
     <value>NoControl</value>
   </data>
   <data name="button15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 81</value>
+    <value>5, 63</value>
   </data>
   <data name="button15.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 33</value>
@@ -1589,7 +1703,7 @@
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;button15.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>22</value>
   </data>
   <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 40</value>
@@ -1598,7 +1712,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>692, 218</value>
+    <value>692, 222</value>
   </data>
   <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1625,7 +1739,7 @@
     <value>264, 394</value>
   </data>
   <data name="tabControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>700, 262</value>
+    <value>700, 266</value>
   </data>
   <data name="tabControl2.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>

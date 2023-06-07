@@ -55,7 +55,35 @@ namespace DUMSM
             TotalExpenseGeneral.Text = "৳ " + Conversion.EnNumber2BnNumber(
                 TotalClass.TotalOfColumnWithoutCondition("GeneralExpense", "Ammount").ToString());
 
-            
+            int NagadGeneral = TotalClass.TotalOfColumnWithoutCondition("GeneralIncome", "Ammount") -
+                TotalClass.TotalOfColumnWithoutCondition("GeneralExpense", "Ammount");
+
+            int NagadGoraba = TotalClass.TotalOfColumnWithoutCondition("GorabaIncome", "Ammount") -
+                TotalClass.TotalOfColumnWithoutCondition("GorabaExpense", "Ammount");
+
+
+            if(NagadGeneral >= 0)
+            {
+                NogodGeneral.Text = "৳ " + Conversion.EnNumber2BnNumber(NagadGeneral.ToString()).ToString();
+            }
+            else
+            {
+                NagadGeneral = NagadGeneral * (-1);
+                NogodGeneral.Text = "- ৳ " + Conversion.EnNumber2BnNumber(NagadGeneral.ToString()).ToString();
+            }
+
+            if (NagadGoraba >= 0)
+            {
+                NogodGoraba.Text = "৳ " + Conversion.EnNumber2BnNumber(NagadGoraba.ToString()).ToString();
+            }
+            else
+            {
+                NagadGoraba = NagadGoraba * (-1);
+                NogodGoraba.Text = "- ৳ " + Conversion.EnNumber2BnNumber(NagadGoraba.ToString()).ToString();
+            }
+
+
+
 
             TotalGoraba.Text = "৳ " + Conversion.EnNumber2BnNumber(
                 TotalClass.TotalOfColumnWithoutCondition("GorabaIncome", "Ammount").ToString());

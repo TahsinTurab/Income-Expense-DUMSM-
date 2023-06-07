@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DUMSM.exe" size="2125872">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DUMSM.exe" size="2132016">
       <assemblyIdentity name="DUMSM" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>nNVb1CidK4MOV4B6ud4NGt6UAO2CdmI9LmcLKn5Q4gI=</dsig:DigestValue>
+        <dsig:DigestValue>LHV9lHHWRy0EyOYEYZL7VVjcwZDP8WMXH4oIeG6N1MI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>F2+5M6D91BoxPVlzbqUGndQiM9IQ5T0BNFUQiVx7HBk=</dsig:DigestValue>
+        <dsig:DigestValue>f6QBduwCwlLlh9e7O0EfYsxPe9UAxLJ0dISAM8pjbDY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

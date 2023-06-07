@@ -34,9 +34,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.TodayExpenseGeneral = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button19 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.TodayIncomeGeneral = new System.Windows.Forms.TextBox();
             this.Fieldtxt = new System.Windows.Forms.ComboBox();
+            this.button22 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.showGeneraltotal = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
@@ -52,6 +56,10 @@
             this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.TodayExpenseGoraba = new System.Windows.Forms.TextBox();
+            this.button14 = new System.Windows.Forms.Button();
+            this.TodayIncomeGoraba = new System.Windows.Forms.TextBox();
+            this.button18 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -71,14 +79,10 @@
             this.button15 = new System.Windows.Forms.Button();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.TodayExpenseGoraba = new System.Windows.Forms.TextBox();
-            this.button14 = new System.Windows.Forms.Button();
-            this.TodayIncomeGoraba = new System.Windows.Forms.TextBox();
-            this.button18 = new System.Windows.Forms.Button();
-            this.TodayExpenseGeneral = new System.Windows.Forms.TextBox();
-            this.button19 = new System.Windows.Forms.Button();
-            this.TodayIncomeGeneral = new System.Windows.Forms.TextBox();
-            this.button22 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.NogodGeneral = new System.Windows.Forms.TextBox();
+            this.NogodGoraba = new System.Windows.Forms.TextBox();
+            this.button24 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -121,6 +125,8 @@
             this.tabPage1.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPage1.Controls.Add(this.NogodGeneral);
+            this.tabPage1.Controls.Add(this.button23);
             this.tabPage1.Controls.Add(this.TodayExpenseGeneral);
             this.tabPage1.Controls.Add(this.comboBox1);
             this.tabPage1.Controls.Add(this.button19);
@@ -144,6 +150,12 @@
             this.tabPage1.Controls.Add(this.button10);
             this.tabPage1.Name = "tabPage1";
             // 
+            // TodayExpenseGeneral
+            // 
+            resources.ApplyResources(this.TodayExpenseGeneral, "TodayExpenseGeneral");
+            this.TodayExpenseGeneral.Name = "TodayExpenseGeneral";
+            this.TodayExpenseGeneral.ReadOnly = true;
+            // 
             // comboBox1
             // 
             resources.ApplyResources(this.comboBox1, "comboBox1");
@@ -165,6 +177,14 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // button19
+            // 
+            this.button19.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button19.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button19, "button19");
+            this.button19.Name = "button19";
+            this.button19.UseVisualStyleBackColor = false;
+            // 
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.RosyBrown;
@@ -172,6 +192,12 @@
             resources.ApplyResources(this.button8, "button8");
             this.button8.Name = "button8";
             this.button8.UseVisualStyleBackColor = false;
+            // 
+            // TodayIncomeGeneral
+            // 
+            resources.ApplyResources(this.TodayIncomeGeneral, "TodayIncomeGeneral");
+            this.TodayIncomeGeneral.Name = "TodayIncomeGeneral";
+            this.TodayIncomeGeneral.ReadOnly = true;
             // 
             // Fieldtxt
             // 
@@ -189,6 +215,14 @@
             resources.GetString("Fieldtxt.Items8")});
             this.Fieldtxt.Name = "Fieldtxt";
             this.Fieldtxt.SelectedIndexChanged += new System.EventHandler(this.Fieldtxt_SelectedIndexChanged);
+            // 
+            // button22
+            // 
+            this.button22.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button22.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button22, "button22");
+            this.button22.Name = "button22";
+            this.button22.UseVisualStyleBackColor = false;
             // 
             // button7
             // 
@@ -296,7 +330,9 @@
             // tabPage2
             // 
             this.tabPage2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPage2.Controls.Add(this.NogodGoraba);
             this.tabPage2.Controls.Add(this.TodayExpenseGoraba);
+            this.tabPage2.Controls.Add(this.button24);
             this.tabPage2.Controls.Add(this.button14);
             this.tabPage2.Controls.Add(this.TodayIncomeGoraba);
             this.tabPage2.Controls.Add(this.button18);
@@ -320,6 +356,34 @@
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // TodayExpenseGoraba
+            // 
+            resources.ApplyResources(this.TodayExpenseGoraba, "TodayExpenseGoraba");
+            this.TodayExpenseGoraba.Name = "TodayExpenseGoraba";
+            this.TodayExpenseGoraba.ReadOnly = true;
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button14, "button14");
+            this.button14.Name = "button14";
+            this.button14.UseVisualStyleBackColor = false;
+            // 
+            // TodayIncomeGoraba
+            // 
+            resources.ApplyResources(this.TodayIncomeGoraba, "TodayIncomeGoraba");
+            this.TodayIncomeGoraba.Name = "TodayIncomeGoraba";
+            this.TodayIncomeGoraba.ReadOnly = true;
+            // 
+            // button18
+            // 
+            this.button18.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button18.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button18, "button18");
+            this.button18.Name = "button18";
+            this.button18.UseVisualStyleBackColor = false;
             // 
             // button20
             // 
@@ -484,61 +548,33 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // TodayExpenseGoraba
+            // button23
             // 
-            resources.ApplyResources(this.TodayExpenseGoraba, "TodayExpenseGoraba");
-            this.TodayExpenseGoraba.Name = "TodayExpenseGoraba";
-            this.TodayExpenseGoraba.ReadOnly = true;
+            this.button23.BackColor = System.Drawing.Color.RosyBrown;
+            this.button23.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button23, "button23");
+            this.button23.Name = "button23";
+            this.button23.UseVisualStyleBackColor = false;
             // 
-            // button14
+            // NogodGeneral
             // 
-            this.button14.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button14, "button14");
-            this.button14.Name = "button14";
-            this.button14.UseVisualStyleBackColor = false;
+            resources.ApplyResources(this.NogodGeneral, "NogodGeneral");
+            this.NogodGeneral.Name = "NogodGeneral";
+            this.NogodGeneral.ReadOnly = true;
             // 
-            // TodayIncomeGoraba
+            // NogodGoraba
             // 
-            resources.ApplyResources(this.TodayIncomeGoraba, "TodayIncomeGoraba");
-            this.TodayIncomeGoraba.Name = "TodayIncomeGoraba";
-            this.TodayIncomeGoraba.ReadOnly = true;
+            resources.ApplyResources(this.NogodGoraba, "NogodGoraba");
+            this.NogodGoraba.Name = "NogodGoraba";
+            this.NogodGoraba.ReadOnly = true;
             // 
-            // button18
+            // button24
             // 
-            this.button18.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button18.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button18, "button18");
-            this.button18.Name = "button18";
-            this.button18.UseVisualStyleBackColor = false;
-            // 
-            // TodayExpenseGeneral
-            // 
-            resources.ApplyResources(this.TodayExpenseGeneral, "TodayExpenseGeneral");
-            this.TodayExpenseGeneral.Name = "TodayExpenseGeneral";
-            this.TodayExpenseGeneral.ReadOnly = true;
-            // 
-            // button19
-            // 
-            this.button19.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button19.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button19, "button19");
-            this.button19.Name = "button19";
-            this.button19.UseVisualStyleBackColor = false;
-            // 
-            // TodayIncomeGeneral
-            // 
-            resources.ApplyResources(this.TodayIncomeGeneral, "TodayIncomeGeneral");
-            this.TodayIncomeGeneral.Name = "TodayIncomeGeneral";
-            this.TodayIncomeGeneral.ReadOnly = true;
-            // 
-            // button22
-            // 
-            this.button22.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button22.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button22, "button22");
-            this.button22.Name = "button22";
-            this.button22.UseVisualStyleBackColor = false;
+            this.button24.BackColor = System.Drawing.Color.RosyBrown;
+            this.button24.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.button24, "button24");
+            this.button24.Name = "button24";
+            this.button24.UseVisualStyleBackColor = false;
             // 
             // Dashboard
             // 
@@ -618,6 +654,10 @@
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.TextBox TodayIncomeGoraba;
         private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.TextBox NogodGeneral;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.TextBox NogodGoraba;
+        private System.Windows.Forms.Button button24;
     }
 }
 
